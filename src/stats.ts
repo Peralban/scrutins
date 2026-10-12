@@ -126,6 +126,19 @@ export const queries = {
     return { depute: d, groupes, groupe_actuel: current, siege, stat, span: { ...span, scrutins: tenure.n }, mois, themes, dissidences };
   },
 
+  carte: (db: Database, scope: string) => {
+    const meta = db.query(`SELECT * FROM carte_meta WHERE scope = ?`).get(scope);
+    if (!meta) return null;
+    return {
+      meta,
+      points: db.query(`SELECT c.depute_id id, sd.nom, sd.groupe, c.x, c.y, c.votes
+                        FROM carte c JOIN stat_depute sd ON sd.id = c.depute_id WHERE c.scope = ?`).all(scope),
+      groupes: db.query(`SELECT sigle, nom, couleur FROM groupe`).all(),
+      scopes: db.query(`SELECT m.scope, COALESCE(t.label, 'Tous les scrutins') label, m.scrutins, m.deputes
+                        FROM carte_meta m LEFT JOIN theme t ON t.id = m.scope ORDER BY (m.scope = 'all') DESC, label`).all(),
+    };
+  },
+
   themes: (db: Database, scope: "ensemble" | "tous") => ({
     themes: db.query(`SELECT t.id, t.label, st.scrutins FROM theme t
                       JOIN stat_theme_scrutins st ON st.theme_id = t.id AND st.scope = ? ORDER BY t.label`).all(scope),
