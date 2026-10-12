@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scrutins</title>
+<style>
+:root {
+  --bg: #f6f6f4; --surface: #ffffff; --ink: #111; --ink2: #444; --muted: #777;
+  --line: #d8d8d4; --grid: #e8e8e4; --adopte: #1a1a1a; --rejete: #b3b3ad;
+  --mono: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101011; --surface: #17171a; --ink: #eee; --ink2: #bbb; --muted: #888;
+    --line: #2c2c30; --grid: #232327; --adopte: #e8e8e8; --rejete: #55555c;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101011; --surface: #17171a; --ink: #eee; --ink2: #bbb; --muted: #888;
+  --line: #2c2c30; --grid: #232327; --adopte: #e8e8e8; --rejete: #55555c;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, sans-serif; }
+main { max-width: 1040px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font: 600 22px var(--mono); letter-spacing: .02em; margin: 0 0 4px; text-transform: uppercase; }
+.sub { color: var(--muted); font: 13px var(--mono); margin: 0 0 28px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px;
+        background: var(--line); border: 1px solid var(--line); margin-bottom: 40px; }
+.kpi { background: var(--surface); padding: 14px 16px; }
+.kpi b { display: block; font: 600 26px var(--mono); font-variant-numeric: tabular-nums; }
+.kpi span { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+section { margin-bottom: 48px; }
+h2 { font: 600 14px var(--mono); text-transform: uppercase; letter-spacing: .06em; margin: 0 0 4px; }
+.def { color: var(--muted); font-size: 13px; margin: 0 0 14px; max-width: 70ch; }
+.card { background: var(--surface); border: 1px solid var(--line); padding: 12px 8px 8px; }
+svg { display: block; width: 100%; height: auto; overflow: visible; }
+svg text { font: 12px var(--mono); fill: var(--ink2); }
+svg .val { fill: var(--ink); font-variant-numeric: tabular-nums; }
+svg .grid { stroke: var(--grid); }
+table { width: 100%; border-collapse: collapse; font: 13px var(--mono); font-variant-numeric: tabular-nums; }
+th, td { text-align: right; padding: 5px 10px; border-bottom: 1px solid var(--line); }
+th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+th { color: var(--muted); font-weight: 500; text-transform: uppercase; font-size: 11px; letter-spacing: .06em; cursor: pointer; user-select: none; }
+th[aria-sort] { color: var(--ink); }
+details { margin-top: 8px; } summary { cursor: pointer; color: var(--muted); font: 12px var(--mono); }
+.tools { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; font: 12px var(--mono); color: var(--muted); flex-wrap: wrap; }
+input { font: 13px var(--mono); background: var(--surface); color: var(--ink); border: 1px solid var(--line); padding: 5px 8px; }
+.scroll { max-height: 520px; overflow: auto; border: 1px solid var(--line); background: var(--surface); }
+#tip { position: fixed; pointer-events: none; background: var(--ink); color: var(--bg); font: 12px var(--mono);
+       padding: 6px 8px; display: none; z-index: 5; white-space: pre; }
+footer { color: var(--muted); font: 12px var(--mono); border-top: 1px solid var(--line); padding-top: 14px; }
+footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Scrutins</h1>
+  <p class="sub">Assemblée nationale · XVIIe législature · votes publics nominatifs</p>
+
+  <div class="kpis" id="kpis"></div>
+
+  <section>
+    <h2>Dissidence par groupe</h2>
+    <p class="def">Part des votes exprimés (pour, contre, abstention) contraires à la position majoritaire du groupe sur le même scrutin. Scrutins sans majorité nette exclus.</p>
+    <div class="card"><svg id="c-diss" role="img" aria-label="Dissidence par groupe"></svg></div>
+    <details><summary>données</summary><div id="t-diss"></div></details>
+  </section>
+
+  <section>
+    <h2>Participation par groupe</h2>
+    <p class="def">Votes exprimés rapportés aux places du groupe (effectif déclaré × scrutins). Un député absent n'apparaît pas dans le décompte nominatif.</p>
+    <div class="card"><svg id="c-part" role="img" aria-label="Participation par groupe"></svg></div>
+    <details><summary>données</summary><div id="t-part"></div></details>
+  </section>
+
+  <section>
+    <h2>Scrutins par mois</h2>
+    <p class="def">Nombre de scrutins publics selon le sort : adopté ou rejeté.</p>
+    <div class="card"><svg id="c-mois" role="img" aria-label="Scrutins par mois"></svg></div>
+    <details><summary>données</summary><div id="t-mois"></div></details>
+  </section>
+
+  <section>
+    <h2>Députés</h2>
+    <p class="def">Taux de dissidence individuel. « Délégation » : part des votes exprimés par délégation.</p>
+    <div class="tools"><label>min. votes exprimés <input id="min" type="number" value="200" min="1" style="width:80px"></label>
+      <label>recherche <input id="q" type="search" placeholder="nom"></label><span id="count"></span></div>
+    <div class="scroll"><table id="deputes"></table></div>
+  </section>
+
+  <footer>
+    Source : data.assemblee-nationale.fr (Scrutins, AMO10, AMO50), licence ouverte. Les chiffres sont calculés sans pondération ni jugement.
+    <br>Groupe « UDR (réf. antérieure) » : ancienne référence du groupe Union des droites pour la République, renommé en septembre 2025.
+  </footer>
+</main>
+<div id="tip"></div>
+<script type="module">
+const $ = (s) => document.querySelector(s);
+const fmt = new Intl.NumberFormat("fr-FR");
+const pct = (n) => n.toFixed(1).replace(".", ",") + " %";
+const tip = $("#tip");
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const NEUTRAL = "#8d949a";
+
+function showTip(e, text) {
+  tip.textContent = text; tip.style.display = "block";
+  tip.style.left = Math.min(e.clientX + 12, innerWidth - tip.offsetWidth - 8) + "px";
+  tip.style.top = e.clientY + 14 + "px";
+}
+document.addEventListener("mouseout", (e) => { if (e.target.closest?.("[data-tip]")) tip.style.display = "none"; });
+document.addEventListener("mousemove", (e) => {
+  const t = e.target.closest?.("[data-tip]");
+  if (t) showTip(e, t.dataset.tip); else tip.style.display = "none";
+});
+
+// Horizontal bars from zero, one per group, direct value labels.
+function hbars(svg, rows, key, max) {
+  const W = 960, L = 96, R = 70, row = 30, H = rows.length * row + 24;
+  const x = (v) => L + (v / max) * (W - L - R);
+  let out = "";
+  for (let t = 0; t <= 5; t++) {
+    const v = (max / 5) * t;
+    out += `<line class="grid" x1="${x(v)}" x2="${x(v)}" y1="0" y2="${H - 20}"/>` +
+           `<text x="${x(v)}" y="${H - 4}" text-anchor="middle">${Math.round(v)}</text>`;
+  }
+  rows.forEach((r, i) => {
+    const y = i * row + 5, w = Math.max(x(r[key]) - L, 1);
+    out += `<text x="${L - 10}" y="${y + 14}" text-anchor="end">${esc(r.sigle)}</text>` +
+      `<rect data-tip="${esc(r.nom)}\n${key === "dissidence" ? "dissidence" : "participation"} ${pct(r[key])}\n${fmt.format(r.votes_exprimes)} votes exprimés" ` +
+      `x="${L}" y="${y}" width="${w}" height="18" rx="0" fill="${r.couleur ?? NEUTRAL}"/>` +
+      `<rect x="${L}" y="${y}" width="${w}" height="18" fill="none" stroke="var(--ink)" stroke-opacity=".25"/>` +
+      `<text class="val" x="${L + w + 8}" y="${y + 14}">${pct(r[key])}</text>`;
+  });
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.innerHTML = out;
+}
+
+function simpleTable(el, cols, rows) {
+  el.innerHTML = `<table><thead><tr>${cols.map((c) => `<th>${c[0]}</th>`).join("")}</tr></thead><tbody>` +
+    rows.map((r) => `<tr>${cols.map((c) => `<td>${esc(c[1](r))}</td>`).join("")}</tr>`).join("") + "</tbody></table>";
+}
+
+function monthly(svg, rows) {
+  const W = 960, H = 260, L = 44, B = 28, T = 8;
+  const max = Math.ceil(Math.max(...rows.map((r) => r.total)) / 100) * 100;
+  const bw = (W - L) / rows.length, y = (v) => T + (H - T - B) * (1 - v / max);
+  let out = "";
+  for (let t = 0; t <= 4; t++) {
+    const v = (max / 4) * t;
+    out += `<line class="grid" x1="${L}" x2="${W}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
+  }
+  rows.forEach((r, i) => {
+    const x = L + i * bw + 2, w = bw - 4;
+    out += `<g data-tip="${r.mois}\n${r.total} scrutins\n${r.adoptes} adoptés · ${r.rejetes} rejetés">` +
+      `<rect x="${L + i * bw}" y="${T}" width="${bw}" height="${H - T - B}" fill="transparent"/>` +
+      `<rect x="${x}" y="${y(r.adoptes)}" width="${w}" height="${y(0) - y(r.adoptes)}" fill="var(--adopte)"/>` +
+      `<rect x="${x}" y="${y(r.total)}" width="${w}" height="${Math.max(y(r.adoptes) - y(r.total) - 2, 0)}" fill="var(--rejete)"/></g>`;
+    if (i % 3 === 0) out += `<text x="${x + w / 2}" y="${H - 8}" text-anchor="middle">${r.mois.slice(2)}</text>`;
+  });
+  out += `<g transform="translate(${L},${H + 14})"><rect width="10" height="10" fill="var(--adopte)"/><text x="16" y="9">adopté</text>` +
+         `<rect x="90" width="10" height="10" fill="var(--rejete)"/><text x="106" y="9">rejeté</text></g>`;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H + 30}`);
+  svg.innerHTML = out;
+}
+
+let deputes = [], sortKey = "dissidence", sortDir = -1;
+function renderDeputes() {
+  const min = +$("#min").value || 1, q = $("#q").value.trim().toLowerCase();
+  const rows = deputes.filter((d) => d.votes_exprimes >= min && d.nom.toLowerCase().includes(q))
+    .sort((a, b) => (typeof a[sortKey] === "string" ? a[sortKey].localeCompare(b[sortKey]) : a[sortKey] - b[sortKey]) * sortDir);
+  const cols = [["nom", "Nom"], ["groupe", "Groupe"], ["votes_exprimes", "Votes exprimés"], ["dissidence", "Dissidence"], ["delegation", "Délégation"]];
+  $("#deputes").innerHTML = `<thead><tr>${cols.map(([k, l]) => `<th data-k="${k}" ${k === sortKey ? `aria-sort="${sortDir < 0 ? "descending" : "ascending"}"` : ""}>${l}${k === sortKey ? (sortDir < 0 ? " ↓" : " ↑") : ""}</th>`).join("")}</tr></thead><tbody>` +
+    rows.map((d) => `<tr><td>${esc(d.nom)}</td><td>${esc(d.groupe ?? "")}</td><td>${fmt.format(d.votes_exprimes)}</td><td>${pct(d.dissidence)}</td><td>${pct(d.delegation)}</td></tr>`).join("") + "</tbody>";
+  $("#count").textContent = `${rows.length} / ${deputes.length}`;
+}
+$("#deputes").addEventListener("click", (e) => {
+  const k = e.target.closest("th")?.dataset.k; if (!k) return;
+  sortDir = k === sortKey ? -sortDir : (k === "nom" || k === "groupe" ? 1 : -1); sortKey = k; renderDeputes();
+});
+$("#min").addEventListener("input", renderDeputes);
+$("#q").addEventListener("input", renderDeputes);
+
+const [ov, groupes, mois, deps] = await Promise.all(
+  ["overview", "groupes", "mensuel", "deputes?min=1"].map((p) => fetch("/api/" + p).then((r) => r.json())));
+
+$("#kpis").innerHTML = [
+  [fmt.format(ov.scrutins), "scrutins"], [fmt.format(ov.votes), "positions nominatives"],
+  [pct(100 * ov.adoptes / ov.scrutins), "adoptés"], [`${ov.du.slice(0, 7)} → ${ov.au.slice(0, 7)}`, "période"],
+].map(([v, l]) => `<div class="kpi"><b style="${l === "période" ? "font-size:17px;line-height:39px" : ""}">${v}</b><span>${l}</span></div>`).join("");
+
+const withDiss = groupes.map((g) => ({ ...g, dissidence: +(100 - g.cohesion).toFixed(1) }));
+const byDiss = [...withDiss].sort((a, b) => a.dissidence - b.dissidence);
+hbars($("#c-diss"), byDiss, "dissidence", Math.ceil(Math.max(...byDiss.map((g) => g.dissidence)) / 5) * 5);
+simpleTable($("#t-diss"), [["Groupe", (g) => g.sigle], ["Nom", (g) => g.nom], ["Votes exprimés", (g) => fmt.format(g.votes_exprimes)], ["Dissidence", (g) => pct(g.dissidence)]], byDiss);
+
+const byPart = [...groupes].sort((a, b) => b.participation - a.participation);
+hbars($("#c-part"), byPart, "participation", Math.ceil(Math.max(...byPart.map((g) => g.participation)) / 5) * 5);
+simpleTable($("#t-part"), [["Groupe", (g) => g.sigle], ["Nom", (g) => g.nom], ["Places", (g) => fmt.format(g.places)], ["Participation", (g) => pct(g.participation)]], byPart);
+
+monthly($("#c-mois"), mois);
+simpleTable($("#t-mois"), [["Mois", (r) => r.mois], ["Total", (r) => r.total], ["Adoptés", (r) => r.adoptes], ["Rejetés", (r) => r.rejetes]], mois);
+
+deputes = deps; renderDeputes();
+</script>
+</body>
+</html>
