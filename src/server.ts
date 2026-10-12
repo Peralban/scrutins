@@ -23,6 +23,10 @@ app.get("/api/scrutins", (c) =>
     limit: Math.min(+(c.req.query("limit") ?? 100), 500),
   })));
 app.get("/api/themes", (c) => c.json(queries.themes(fresh(), c.req.query("scope") === "tous" ? "tous" : "ensemble")));
+app.get("/api/depute/:id", (c) => {
+  const r = queries.depute(fresh(), c.req.param("id"), c.req.query("kind") ?? "");
+  return r ? c.json(r) : c.json({ error: "not found" }, 404);
+});
 app.get("/api/scrutin/:id", (c) => {
   const r = queries.hemicycle(fresh(), c.req.param("id"));
   return r ? c.json(r) : c.json({ error: "not found" }, 404);

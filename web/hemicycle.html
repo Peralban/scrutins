@@ -24,7 +24,7 @@
 <body>
 <main>
   <h1>Scrutins</h1>
-  <nav><a href="/">Statistiques</a><a href="/hemicycle.html" aria-current="page">Hémicycle</a><a href="/themes.html">Thèmes</a></nav>
+  <nav><a href="/">Statistiques</a><a href="/hemicycle.html" aria-current="page">Hémicycle</a><a href="/themes.html">Thèmes</a><a href="/depute.html">Député</a></nav>
   <div class="layout">
     <div>
       <div class="filters">
@@ -73,6 +73,7 @@ async function loadList() {
     `${esc((s.texte ?? s.titre).slice(0, 150))}<small>${s.date} · n°${s.numero} · ${esc(s.sort)} · ${s.pour}/${s.contre}/${s.abstentions}${s.etape ? " · " + esc(s.etape) : ""}</small></button>`).join("") || `<div class="item">aucun scrutin</div>`;
   if (!current && rows[0]) select(rows[0].id);
 }
+$("#hemi").addEventListener("click", (e) => { const id = e.target.dataset?.id; if (id) location.href = "/depute.html?id=" + id; });
 $("#list").addEventListener("click", (e) => { const id = e.target.closest(".item")?.dataset.id; if (id) select(id); });
 let timer; $("#q").addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(loadList, 200); });
 $("#theme").addEventListener("change", loadList);
@@ -107,7 +108,7 @@ function draw(data) {
     const fill = pos === "pour" ? "var(--pour)" : pos === "contre" ? "var(--contre)" : "none";
     const stroke = pos === "abstention" ? "var(--abst)" : pos === "non_votant" ? "var(--abst)" : pos === "absent" ? "var(--line)" : "none";
     const rr = pos === "absent" ? dot * 0.55 : dot;
-    out += `<circle data-tip="${esc(tip)}" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rr.toFixed(1)}" fill="${fill}" stroke="${stroke}" stroke-width="${dot > 7 ? 2 : 1.5}"${pos === "non_votant" ? ' stroke-dasharray="2 2"' : ""}/>`;
+    out += `<circle data-id="${seat.id}" style="cursor:pointer" data-tip="${esc(tip)}" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rr.toFixed(1)}" fill="${fill}" stroke="${stroke}" stroke-width="${dot > 7 ? 2 : 1.5}"${pos === "non_votant" ? ' stroke-dasharray="2 2"' : ""}/>`;
     if (p.row === R - 1) { // outer band: group colour, one tick per outer-row seat
       const bx = cx + Math.cos(Math.PI - p.a) * (p.r * scale + dot + 9), by = cy - Math.sin(p.a) * (p.r * scale + dot + 9);
       out += `<circle cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="3.2" fill="${color[seat.groupe] ?? NEUTRAL}"/>`;

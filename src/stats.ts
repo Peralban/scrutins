@@ -42,6 +42,51 @@ export const queries = {
               ORDER BY s.date DESC, s.numero DESC LIMIT $limit`)
       .all({ $q: `%${o.q ?? ""}%`, $kind: o.kind ?? "", $theme: o.theme ?? "", $limit: o.limit ?? 100 }),
 
+  depute: (db: Database, id: string, kind = "") => {
+    const d: any = db.query(`SELECT id, prenom, nom FROM depute WHERE id = ?`).get(id);
+    if (!d) return null;
+    const groupes = db.query(`SELECT a.groupe_id id, g.sigle, g.nom, g.couleur, a.debut, a.fin
+                              FROM appartenance a JOIN groupe g ON g.id = a.groupe_id
+                              WHERE a.depute_id = ? ORDER BY a.debut`).all(id) as any[];
+    const current = groupes.reduce((a, b) => (b.fin >= a.fin ? b : a), groupes[0]);
+    const siege = db.query(`SELECT place, debut, fin, votes FROM siege WHERE depute_id = ? ORDER BY votes DESC LIMIT 1`).get(id);
+    const stat: any = db.query(`SELECT votes_exprimes, dissidence, delegation FROM stat_depute WHERE id = ?`).get(id);
+    const span: any = db.query(`SELECT MIN(s.date) debut, MAX(s.date) fin, COUNT(*) positions, SUM(v.delegation) delegues
+                                FROM vote v JOIN scrutin s ON s.id = v.scrutin_id WHERE v.depute_id = ?`).get(id);
+    const tenure: any = db.query(`SELECT COUNT(*) n FROM scrutin WHERE date BETWEEN ? AND ?`).get(span.debut, span.fin);
+    const mois = db.query(`
+      WITH m AS (SELECT substr(date,1,7) mois, COUNT(*) scrutins FROM scrutin
+                 WHERE date BETWEEN $d AND $f GROUP BY 1),
+           v AS (SELECT substr(s.date,1,7) mois, COUNT(*) votes FROM vote v JOIN scrutin s ON s.id = v.scrutin_id
+                 WHERE v.depute_id = $id GROUP BY 1)
+      SELECT m.mois, m.scrutins, COALESCE(v.votes, 0) votes FROM m LEFT JOIN v USING (mois) ORDER BY m.mois`)
+      .all({ $d: span.debut, $f: span.fin, $id: id });
+    const themes = db.query(`
+      SELECT t.id, t.label, COUNT(*) n,
+             SUM(v.position = 'pour') pour, SUM(v.position = 'contre') contre, SUM(v.position = 'abstention') abstention,
+             SUM(m.position IS NOT NULL AND v.position != m.position) dissidents
+      FROM vote v JOIN scrutin s ON s.id = v.scrutin_id AND s.kind = 'ensemble'
+        JOIN scrutin_theme st ON st.scrutin_id = s.id JOIN theme t ON t.id = st.theme_id
+        LEFT JOIN majorite m ON m.scrutin_id = v.scrutin_id AND m.groupe_id = v.groupe_id
+      WHERE v.depute_id = ? AND v.position IN ('pour','contre','abstention')
+      GROUP BY t.id ORDER BY t.label`).all(id) as any[];
+    const base = new Map((db.query(`SELECT theme_id, pour, contre, abstention FROM stat_theme WHERE scope = 'ensemble' AND groupe_id = ?`)
+      .all(current.id) as any[]).map((r) => [r.theme_id, r]));
+    for (const t of themes) {
+      const b = base.get(t.id);
+      t.groupe_pour = b ? +((100 * b.pour) / (b.pour + b.contre + b.abstention)).toFixed(1) : null;
+    }
+    const dissidences = db.query(`
+      SELECT s.id, s.date, s.numero, s.kind, s.titre, s.sort, v.position, m.position majorite, g.sigle
+      FROM vote v JOIN scrutin s ON s.id = v.scrutin_id
+        JOIN majorite m ON m.scrutin_id = v.scrutin_id AND m.groupe_id = v.groupe_id
+        JOIN groupe g ON g.id = v.groupe_id
+      WHERE v.depute_id = $id AND v.position IN ('pour','contre','abstention') AND v.position != m.position
+        AND ($kind = '' OR s.kind = $kind)
+      ORDER BY s.date DESC, s.numero DESC LIMIT 200`).all({ $id: id, $kind: kind });
+    return { depute: d, groupes, groupe_actuel: current, siege, stat, span: { ...span, scrutins: tenure.n }, mois, themes, dissidences };
+  },
+
   themes: (db: Database, scope: "ensemble" | "tous") => ({
     themes: db.query(`SELECT t.id, t.label, st.scrutins FROM theme t
                       JOIN stat_theme_scrutins st ON st.theme_id = t.id AND st.scope = ? ORDER BY t.label`).all(scope),

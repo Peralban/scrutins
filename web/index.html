@@ -9,7 +9,7 @@
 <body>
 <main>
   <h1>Scrutins</h1>
-  <nav><a href="/" aria-current="page">Statistiques</a><a href="/hemicycle.html">Hémicycle</a><a href="/themes.html">Thèmes</a></nav>
+  <nav><a href="/" aria-current="page">Statistiques</a><a href="/hemicycle.html">Hémicycle</a><a href="/themes.html">Thèmes</a><a href="/depute.html">Député</a></nav>
   <p class="sub">Assemblée nationale · XVIIe législature · votes publics nominatifs</p>
 
   <div class="kpis" id="kpis"></div>
@@ -109,7 +109,7 @@ function renderDeputes() {
     .sort((a, b) => (typeof a[sortKey] === "string" ? a[sortKey].localeCompare(b[sortKey]) : a[sortKey] - b[sortKey]) * sortDir);
   const cols = [["nom", "Nom"], ["groupe", "Groupe"], ["votes_exprimes", "Votes exprimés"], ["dissidence", "Dissidence"], ["delegation", "Délégation"]];
   $("#deputes").innerHTML = `<thead><tr>${cols.map(([k, l]) => `<th data-k="${k}" ${k === sortKey ? `aria-sort="${sortDir < 0 ? "descending" : "ascending"}"` : ""}>${l}${k === sortKey ? (sortDir < 0 ? " ↓" : " ↑") : ""}</th>`).join("")}</tr></thead><tbody>` +
-    rows.map((d) => `<tr><td>${esc(d.nom)}</td><td>${esc(d.groupe ?? "")}</td><td>${fmt.format(d.votes_exprimes)}</td><td>${pct(d.dissidence)}</td><td>${pct(d.delegation)}</td></tr>`).join("") + "</tbody>";
+    rows.map((d) => `<tr><td><a href="/depute.html?id=${d.id}" style="color:inherit">${esc(d.nom)}</a></td><td>${esc(d.groupe ?? "")}</td><td>${fmt.format(d.votes_exprimes)}</td><td>${pct(d.dissidence)}</td><td>${pct(d.delegation)}</td></tr>`).join("") + "</tbody>";
   $("#count").textContent = `${rows.length} / ${deputes.length}`;
 }
 $("#deputes").addEventListener("click", (e) => {
