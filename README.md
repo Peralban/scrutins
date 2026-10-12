@@ -8,7 +8,7 @@ bun run refresh   # download the open data (~46 MB) and build data/scrutins.db
 bun run start     # http://localhost:3000
 ```
 
-Pages: `/` (group and deputy statistics), `/depute.html?id=PA…` (one deputy: groups, presence, dissent, theme profile), `/hemicycle.html` (one dot per seat, coloured by position on a chosen scrutin), `/themes.html` (vote profile of each group by theme).
+Pages: `/accords.html` (who votes with whom: group matrix, nearest and furthest deputies, two-deputy comparison), `/` (group and deputy statistics), `/depute.html?id=PA…` (one deputy: groups, presence, dissent, theme profile), `/hemicycle.html` (one dot per seat, coloured by position on a chosen scrutin), `/themes.html` (vote profile of each group by theme).
 
 Daily refresh: `deploy/install-timer.sh` installs a systemd user timer (06:30). The server picks up the new database without restarting.
 

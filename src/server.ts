@@ -27,6 +27,16 @@ app.get("/api/depute/:id", (c) => {
   const r = queries.depute(fresh(), c.req.param("id"), c.req.query("kind") ?? "");
   return r ? c.json(r) : c.json({ error: "not found" }, 404);
 });
+app.get("/api/accords/groupes", (c) =>
+  c.json(queries.accordGroupes(fresh(), c.req.query("scope") === "tous" ? "tous" : "ensemble", c.req.query("theme") ?? "")));
+app.get("/api/accords/depute/:id", (c) =>
+  c.json(queries.accordDepute(fresh(), c.req.param("id"), {
+    horsGroupe: c.req.query("hors") === "1", min: Math.max(+(c.req.query("min") ?? 100), 20), kind: c.req.query("kind") ?? "",
+  })));
+app.get("/api/accords/duo/:a/:b", (c) => {
+  const r = queries.accordDuo(fresh(), c.req.param("a"), c.req.param("b"), c.req.query("kind") ?? "");
+  return r ? c.json(r) : c.json({ error: "not found" }, 404);
+});
 app.get("/api/scrutin/:id", (c) => {
   const r = queries.hemicycle(fresh(), c.req.param("id"));
   return r ? c.json(r) : c.json({ error: "not found" }, 404);

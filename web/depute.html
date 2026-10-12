@@ -24,7 +24,7 @@ td.t a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(
 <body>
 <main>
   <h1>Scrutins</h1>
-  <nav><a href="/">Statistiques</a><a href="/hemicycle.html">Hémicycle</a><a href="/themes.html">Thèmes</a><a href="/depute.html" aria-current="page">Député</a></nav>
+  <nav><a href="/">Statistiques</a><a href="/hemicycle.html">Hémicycle</a><a href="/themes.html">Thèmes</a><a href="/depute.html" aria-current="page">Député</a><a href="/accords.html">Accords</a></nav>
   <div class="tools"><input id="q" class="search" type="search" list="noms" placeholder="rechercher un député" autocomplete="off"><datalist id="noms"></datalist></div>
   <div id="page"></div>
   <footer style="margin-top:40px">
@@ -73,7 +73,7 @@ function render(d) {
   const hist = d.groupes.map((x) => `<span class="chip"><i style="background:${x.couleur ?? NEUTRAL}"></i>${esc(x.sigle)}</span><span class="tl">${x.debut} → ${x.fin}</span>`).join(" ");
   $("#page").innerHTML = `
     <div class="id"><div><h2>${esc(nom)}</h2><div style="margin-top:8px">${hist}</div></div>
-      <div class="tl">${d.siege ? `siège n°${d.siege.place}` : "siège inconnu"} · ${esc(g.nom)}</div></div>
+      <div class="tl"><a href="/accords.html?depute=${d.depute.id}" style="color:inherit">qui vote comme lui →</a><br>${d.siege ? `siège n°${d.siege.place}` : "siège inconnu"} · ${esc(g.nom)}</div></div>
     <div class="kpis">
       <div class="kpi"><b>${fmt.format(d.span.positions)}</b><span>positions enregistrées</span></div>
       <div class="kpi"><b>${pct(pres)}</b><span>présence aux scrutins</span></div>

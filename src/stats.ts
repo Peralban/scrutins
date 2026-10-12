@@ -42,6 +42,45 @@ export const queries = {
               ORDER BY s.date DESC, s.numero DESC LIMIT $limit`)
       .all({ $q: `%${o.q ?? ""}%`, $kind: o.kind ?? "", $theme: o.theme ?? "", $limit: o.limit ?? 100 }),
 
+  // Share of scrutins on which two groups' majority positions are identical.
+  accordGroupes: (db: Database, scope: "ensemble" | "tous", theme = "") =>
+    theme === "" ? db.query(`SELECT a, b, communs, accord FROM stat_accord_groupes WHERE scope = ?`).all(scope) : db.query(`
+      SELECT a.groupe_id a, b.groupe_id b, COUNT(*) communs, SUM(a.position = b.position) accord
+      FROM majorite a JOIN majorite b ON b.scrutin_id = a.scrutin_id
+        JOIN scrutin s ON s.id = a.scrutin_id
+      WHERE ($scope = 'tous' OR s.kind = 'ensemble')
+        AND ($theme = '' OR EXISTS (SELECT 1 FROM scrutin_theme t WHERE t.scrutin_id = s.id AND t.theme_id = $theme))
+      GROUP BY a.groupe_id, b.groupe_id`).all({ $scope: scope, $theme: theme }),
+
+  // Deputies voting most / least like one deputy, on scrutins where both expressed a position.
+  accordDepute: (db: Database, id: string, o: { horsGroupe: boolean; min: number; kind: string }) => {
+    const rows = db.query(`
+      SELECT d.id, d.prenom || ' ' || d.nom nom, COUNT(*) communs, SUM(v1.position = v2.position) accord
+      FROM vote v1 JOIN vote v2 ON v2.scrutin_id = v1.scrutin_id AND v2.depute_id != v1.depute_id
+        JOIN depute d ON d.id = v2.depute_id JOIN scrutin s ON s.id = v1.scrutin_id
+      WHERE v1.depute_id = $id AND ${EXPRIME.replaceAll("v.", "v1.")} AND ${EXPRIME.replaceAll("v.", "v2.")}
+        AND ($kind = '' OR s.kind = $kind) AND ($hors = 0 OR v1.groupe_id != v2.groupe_id)
+      GROUP BY d.id HAVING communs >= $min`).all({ $id: id, $kind: o.kind, $hors: o.horsGroupe ? 1 : 0, $min: o.min }) as any[];
+    const groupe = new Map((db.query(`SELECT id, groupe FROM stat_depute`).all() as any[]).map((r) => [r.id, r.groupe]));
+    for (const r of rows) { r.taux = +((100 * r.accord) / r.communs).toFixed(1); r.groupe = groupe.get(r.id) ?? ""; }
+    rows.sort((a, b) => b.taux - a.taux || b.communs - a.communs);
+    return { proches: rows.slice(0, 15), eloignes: rows.slice(-15).reverse(), candidats: rows.length };
+  },
+
+  accordDuo: (db: Database, a: string, b: string, kind: string) => {
+    const names = db.query(`SELECT id, prenom || ' ' || nom nom FROM depute WHERE id IN (?, ?)`).all(a, b) as any[];
+    if (names.length < 2 && a !== b) return null;
+    const rows = db.query(`
+      SELECT s.id, s.date, s.numero, s.kind, s.titre, v1.position pa, v2.position pb
+      FROM vote v1 JOIN vote v2 ON v2.scrutin_id = v1.scrutin_id AND v2.depute_id = $b
+        JOIN scrutin s ON s.id = v1.scrutin_id
+      WHERE v1.depute_id = $a AND ${EXPRIME.replaceAll("v.", "v1.")} AND ${EXPRIME.replaceAll("v.", "v2.")}
+        AND ($kind = '' OR s.kind = $kind) ORDER BY s.date DESC, s.numero DESC`).all({ $a: a, $b: b, $kind: kind }) as any[];
+    const desaccords = rows.filter((r) => r.pa !== r.pb);
+    return { a: names.find((n) => n.id === a), b: names.find((n) => n.id === b), communs: rows.length,
+             accord: rows.length - desaccords.length, desaccords: desaccords.slice(0, 200), total_desaccords: desaccords.length };
+  },
+
   depute: (db: Database, id: string, kind = "") => {
     const d: any = db.query(`SELECT id, prenom, nom FROM depute WHERE id = ?`).get(id);
     if (!d) return null;
@@ -151,7 +190,13 @@ const THEME_SCRUTINS = (scope: string, cond: string) => `
   SELECT '${scope}' AS scope, t.theme_id, COUNT(*) scrutins
   FROM scrutin_theme t JOIN scrutin s ON s.id = t.scrutin_id WHERE 1 = 1 ${cond} GROUP BY t.theme_id`;
 
+const ACCORD = (scope: string, cond: string) => `
+  SELECT '${scope}' AS scope, a.groupe_id a, b.groupe_id b, COUNT(*) communs, SUM(a.position = b.position) accord
+  FROM majorite a JOIN majorite b ON b.scrutin_id = a.scrutin_id JOIN scrutin s ON s.id = a.scrutin_id
+  WHERE 1 = 1 ${cond} GROUP BY a.groupe_id, b.groupe_id`;
+
 export const MATERIALIZED = {
+  stat_accord_groupes: `${ACCORD("ensemble", "AND s.kind = 'ensemble'")} UNION ALL ${ACCORD("tous", "")}`,
   stat_theme: `${THEME_SCOPE("ensemble", "AND s.kind = 'ensemble'")} UNION ALL ${THEME_SCOPE("tous", "")}`,
   stat_theme_scrutins: `${THEME_SCRUTINS("ensemble", "AND s.kind = 'ensemble'")} UNION ALL ${THEME_SCRUTINS("tous", "")}`,
   stat_groupe: `WITH c AS (
