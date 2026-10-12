@@ -16,6 +16,7 @@
 .item small { display: block; font: 11px var(--mono); color: var(--muted); }
 .head { font: 600 15px/1.35 system-ui, sans-serif; margin: 0 0 4px; }
 .meta { font: 12px var(--mono); color: var(--muted); margin: 0 0 10px; }
+.meta a { color: var(--ink); }
 .legend { display: flex; gap: 16px; flex-wrap: wrap; font: 12px var(--mono); margin: 10px 4px 0; }
 .legend i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: 6px; }
 .tally { margin-top: 14px; }
@@ -127,7 +128,8 @@ function draw(data) {
   $("#hemi").setAttribute("viewBox", `0 0 ${W} ${cy + 30}`);
   $("#hemi").innerHTML = out;
   $("#head").textContent = s.titre.charAt(0).toUpperCase() + s.titre.slice(1);
-  $("#meta").textContent = `${s.date} · scrutin n°${s.numero} · ${s.kind}${s.etape ? " · " + s.etape : ""}`;
+  $("#meta").innerHTML = `${esc(s.date)} · scrutin n°${s.numero} · ${esc(s.kind)}${s.etape ? " · " + esc(s.etape) : ""} · ` +
+    `<a href="https://www.assemblee-nationale.fr/dyn/17/scrutins/${s.numero}" target="_blank" rel="noopener noreferrer">fiche sur assemblee-nationale.fr ↗</a>`;
   $("#legend").innerHTML = `<span><i style="background:var(--pour)"></i>pour ${c.pour ?? 0}</span><span><i style="background:var(--contre)"></i>contre ${c.contre ?? 0}</span>` +
     `<span><i style="border:2px solid var(--abst)"></i>abstention ${c.abstention ?? 0}</span><span><i style="border:2px dashed var(--abst)"></i>non-votant ${c.non_votant ?? 0}</span>` +
     `<span><i style="border:2px solid var(--line)"></i>absent ${c.absent ?? 0}</span>`;
