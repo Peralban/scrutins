@@ -1,0 +1,10 @@
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 860px) { .two { grid-template-columns: 1fr; } }
+.two h3 { font: 600 12px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 6px; }
+.t { text-align: left !important; font-family: system-ui, sans-serif !important; }
+.t a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.pour { color: var(--pour); }
+.contre { color: var(--contre); }
+.search { width: 260px; max-width: 100%; }
+.pick { cursor: pointer; }
+.pick:hover { background: var(--bg); }

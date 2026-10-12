@@ -1,6 +1,15 @@
 {
   "name": "scrutins",
-  "scripts": {"fetch":"bun src/fetch.ts","ingest":"bun src/ingest.ts","refresh":"bun src/fetch.ts && bun src/ingest.ts","dev":"bun --hot src/server.ts","start":"bun src/server.ts"},
+  "scripts": {
+    "fetch": "bun src/fetch.ts",
+    "ingest": "bun src/ingest.ts",
+    "refresh": "bun src/fetch.ts && bun src/ingest.ts",
+    "dev": "bun --hot src/server.ts",
+    "start": "bun src/server.ts",
+    "web:dev": "cd web && bun run dev",
+    "web:build": "cd web && bun run build",
+    "web:start": "cd web && bun run start"
+  },
   "type": "module",
   "private": true,
   "devDependencies": {

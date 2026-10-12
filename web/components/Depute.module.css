@@ -1,0 +1,15 @@
+.id { display: flex; justify-content: space-between; gap: 16px; align-items: flex-end; flex-wrap: wrap; margin: 4px 0 20px; }
+.id h2 { font: 600 26px system-ui, sans-serif; text-transform: none; letter-spacing: 0; margin: 0; }
+.tl { font: 12px var(--mono); color: var(--muted); }
+.tl a { color: inherit; }
+.chip { display: inline-block; font: 12px var(--mono); padding: 2px 8px; border: 1px solid var(--line); margin-right: 6px; }
+.chip i { display: inline-block; width: 9px; height: 9px; margin-right: 6px; }
+.notice { border-left: 3px solid var(--ink); padding-left: 10px; }
+.t { text-align: left !important; font-family: system-ui, sans-serif !important; }
+.t a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.cmp { position: relative; display: inline-block; width: 120px; height: 10px; background: var(--grid); vertical-align: middle; }
+.cmp b { position: absolute; top: 0; bottom: 0; left: 0; background: var(--ink); opacity: .85; }
+.cmp u { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--contre); }
+.pour { color: var(--pour); }
+.contre { color: var(--contre); }
+.search { max-width: 340px; width: 100%; }

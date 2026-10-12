@@ -1,0 +1,14 @@
+.layout { display: grid; grid-template-columns: minmax(280px, 340px) 1fr; gap: 20px; align-items: start; }
+@media (max-width: 860px) { .layout { grid-template-columns: 1fr; } }
+.filters { display: grid; gap: 8px; margin-bottom: 10px; }
+.list { max-height: 640px; overflow: auto; border: 1px solid var(--line); background: var(--surface); }
+.item { display: block; width: 100%; text-align: left; border: 0; border-bottom: 1px solid var(--line); background: none; padding: 8px 10px; font: 12px/1.4 system-ui, sans-serif; color: var(--ink2); cursor: pointer; }
+.item:hover { background: var(--bg); }
+.item[aria-current="true"] { background: var(--bg); box-shadow: inset 3px 0 0 var(--ink); color: var(--ink); }
+.item small { display: block; font: 11px var(--mono); color: var(--muted); }
+.head { font: 600 15px/1.35 system-ui, sans-serif; margin: 0 0 4px; }
+.meta { font: 12px var(--mono); color: var(--muted); margin: 0 0 10px; }
+.meta a { color: var(--ink); }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; font: 12px var(--mono); margin: 10px 4px 0; }
+.legend i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: 6px; }
+.tally { margin-top: 14px; }

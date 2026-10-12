@@ -4,9 +4,15 @@ Votes of the French National Assembly (17th legislature), turned into plain stat
 
 ```
 bun install
-bun run refresh   # download the open data (~46 MB) and build data/scrutins.db
-bun run start     # http://localhost:3000
+bun run refresh        # download the open data (~50 MB) and build data/scrutins.db
+bun run start          # data API on http://localhost:3001
+
+cd web && bun install
+bun run dev            # Next.js on http://localhost:3000 (proxies /api to the data API)
+bun run build && bun run start   # production
 ```
+
+Two processes: `src/` is the data layer (Bun, SQLite, JSON API on :3001) and `web/` is the Next.js front (:3000). Set `API_URL` for the front if the API lives elsewhere.
 
 Pages: `/accords.html` (who votes with whom: group matrix, nearest and furthest deputies, two-deputy comparison), `/` (group and deputy statistics), `/depute.html?id=PA…` (one deputy: groups, presence, dissent, theme profile), `/hemicycle.html` (one dot per seat, coloured by position on a chosen scrutin), `/themes.html` (vote profile of each group by theme).
 

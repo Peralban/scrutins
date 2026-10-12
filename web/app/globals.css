@@ -54,3 +54,7 @@ button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
 :root { --pour: #1f5fbf; --contre: #d4640a; --abst: #8a8a84; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --pour: #5b9bff; --contre: #ff9a3d; --abst: #9a9aa2; } }
 
+.skeleton { color: var(--muted); font: 13px var(--mono); padding: 32px 0; }
+.chip { display: inline-block; font: 12px var(--mono); padding: 2px 8px; border: 1px solid var(--line); margin-right: 6px; }
+:root { --lo: #eef2fa; --hi: #1f4f9f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --lo: #1d2230; --hi: #6aa3ff; } }
