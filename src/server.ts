@@ -1,5 +1,4 @@
 import { Hono } from "hono";
-import { serveStatic } from "hono/bun";
 import { statSync } from "node:fs";
 import { DB_PATH, open, queries } from "./stats";
 
@@ -46,6 +45,4 @@ app.get("/api/scrutin/:id", (c) => {
   return r ? c.json(r) : c.json({ error: "not found" }, 404);
 });
 
-app.use("/*", serveStatic({ root: "./web" }));
-
-export default { port: +(process.env.PORT ?? 3000), fetch: app.fetch };
+export default { port: +(process.env.PORT ?? 3001), fetch: app.fetch };
