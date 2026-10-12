@@ -25,7 +25,7 @@ export const queries = {
                      SUM(sort = 'adopté') adoptes, SUM(sort != 'adopté') rejetes
               FROM scrutin GROUP BY 1 ORDER BY 1`).all(),
 
-  deputes: (db: Database, limit = 577, min = 50) =>
+  deputes: (db: Database, limit = 2000, min = 50) =>
     db.query(`
       SELECT * FROM stat_depute WHERE votes_exprimes >= ? ORDER BY dissidence DESC LIMIT ?
     `).all(min, limit),

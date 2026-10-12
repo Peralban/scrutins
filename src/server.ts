@@ -16,7 +16,7 @@ app.get("/api/overview", (c) => c.json(queries.overview(fresh())));
 app.get("/api/groupes", (c) => c.json(queries.groupes(fresh())));
 app.get("/api/mensuel", (c) => c.json(queries.mensuel(fresh())));
 app.get("/api/deputes", (c) =>
-  c.json(queries.deputes(fresh(), Math.min(+(c.req.query("limit") ?? 577), 577), +(c.req.query("min") ?? 50))));
+  c.json(queries.deputes(fresh(), Math.min(+(c.req.query("limit") ?? 2000), 2000), +(c.req.query("min") ?? 50))));
 app.get("/api/scrutins", (c) =>
   c.json(queries.scrutins(fresh(), {
     q: c.req.query("q"), theme: c.req.query("theme"), kind: c.req.query("kind"),
