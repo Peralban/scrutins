@@ -20,15 +20,16 @@
   <nav><a href="/">Statistiques</a><a href="/hemicycle.html">Hémicycle</a><a href="/themes.html">Thèmes</a><a href="/depute.html">Député</a><a href="/accords.html">Accords</a><a href="/carte.html" aria-current="page">Carte</a></nav>
   <section>
     <h2>Carte des députés</h2>
-    <p class="def">Chaque point est un député. Deux députés proches votent de façon proche sur les scrutins retenus. Les axes sont les deux directions qui expliquent le plus les différences de vote (analyse en composantes principales) ; ils n'ont pas d'étiquette propre : seules les distances comptent.</p>
+    <p class="def"><b>Comment lire :</b> un point = un député. <b>Plus deux points sont proches, plus ces deux députés votent de la même façon.</b> Un groupe qui vote en bloc forme un paquet compact ; un point loin de son paquet est un député qui vote autrement que son groupe. Clique un point pour voir ses voisins les plus proches.</p>
     <div class="tools"><select id="scope"></select><input id="q" class="search" type="search" list="noms" placeholder="repérer un député" autocomplete="off"><datalist id="noms"></datalist><span id="info"></span></div>
     <div class="card"><svg id="plot" role="img" aria-label="Carte des députés"></svg></div>
     <div class="legend" id="legend"></div>
+    <div id="side" class="card" style="margin-top:14px;padding:12px 16px;display:none"></div>
   </section>
   <footer>
     Méthode : matrice députés × scrutins (pour +1, abstention 0, contre −1). Une absence est remplacée par la position moyenne du groupe sur ce scrutin, pour qu'elle ne crée pas de distance artificielle ;
     seuls les députés ayant au moins 100 votes exprimés (15 par thème) sont placés. Par thème, la carte ne porte que sur les scrutins rattachés au thème (voir la page Thèmes pour les règles).
-    Les axes sont orientés par convention (LFI-NFP à gauche, groupes centraux en haut) : une carte par thème peut ne pas montrer un axe gauche-droite. Les points d'un même groupe se superposent souvent : c'est la discipline de vote.
+    Les axes n'ont pas de sens propre : seules les distances comptent. Les noms aux extrémités indiquent quels groupes s'y trouvent, pas une étiquette politique. L'orientation est une convention (LFI-NFP à gauche, groupes centraux en haut). Les points d'un même groupe se superposent souvent : c'est la discipline de vote.
   </footer>
 </main>
 <div id="tip"></div>
@@ -60,14 +61,37 @@ function draw() {
     const on = focus === p.id;
     out += `<circle data-id="${p.id}" cx="${X(p.x).toFixed(1)}" cy="${Y(p.y).toFixed(1)}" r="${on ? 9 : 5.5}" fill="${color[p.groupe] ?? NEUTRAL}" fill-opacity="${focus && !on ? 0.35 : 0.85}" stroke="${on ? "var(--ink)" : "var(--surface)"}" stroke-width="${on ? 2.5 : 1}" data-tip="${esc(p.nom)}\\n${esc(p.groupe ?? "")} · ${p.votes} votes exprimés"/>`;
   }
-  if (focus) { const p = pts.find((q) => q.id === focus); if (p) out += `<text class="val" x="${X(p.x) + 12}" y="${Y(p.y) - 10}">${esc(p.nom)}</text>`; }
+  // Group names on their block (median position), so the colours need no legend lookup.
+  const by = {}; for (const p of pts) (by[p.groupe] ??= []).push(p);
+  const med = (a) => [...a].sort((u, v) => u - v)[Math.floor(a.length / 2)];
+  const cen = Object.entries(by).filter(([g, a]) => a.length >= 4 && !hidden.has(g)).map(([g, a]) => ({ g, n: a.length, x: med(a.map((p) => p.x)), y: med(a.map((p) => p.y)) }));
+  for (const c of cen) out += `<text class="val" x="${X(c.x).toFixed(1)}" y="${(Y(c.y) - 14).toFixed(1)}" text-anchor="middle" style="font-weight:600;paint-order:stroke;stroke:var(--surface);stroke-width:4px">${esc(c.g)}</text>`;
+  // Axis ends: which groups sit there (factual), not a political label.
+  const ends = (key, sign) => { const o = [...cen].sort((u, v) => sign * (v[key] - u[key])).slice(0, 2).map((c) => c.g); return o.join(" · "); };
+  out += `<text x="${P}" y="${H - 8}">← ${esc(ends("x", -1))}</text><text x="${W - P}" y="${H - 8}" text-anchor="end">${esc(ends("x", 1))} →</text>` +
+         `<text x="${P}" y="16">↑ ${esc(ends("y", 1))}</text><text x="${P}" y="${H - 26}">↓ ${esc(ends("y", -1))}</text>`;
+  if (focus) { const p = pts.find((q) => q.id === focus); if (p) out += `<text class="val" x="${X(p.x) + 14}" y="${Y(p.y) + 16}" style="font-weight:600;paint-order:stroke;stroke:var(--surface);stroke-width:4px">${esc(p.nom)}</text>`; }
   $("#plot").setAttribute("viewBox", `0 0 ${W} ${H}`);
   $("#plot").innerHTML = out;
+  const side = $("#side");
+  const f = focus && pts.find((q) => q.id === focus);
+  if (f) {
+    const near = pts.filter((q) => q.id !== f.id).map((q) => ({ ...q, d: Math.hypot(q.x - f.x, q.y - f.y) })).sort((u, v) => u.d - v.d).slice(0, 6);
+    const cx0 = by[f.groupe] ? med(by[f.groupe].map((q) => q.x)) : f.x, cy0 = by[f.groupe] ? med(by[f.groupe].map((q) => q.y)) : f.y;
+    const gx = Math.hypot(f.x - cx0, f.y - cy0);
+    const ds = (by[f.groupe] ?? []).map((q) => Math.hypot(q.x - cx0, q.y - cy0)).sort((u, v) => u - v);
+    const typical = ds.length ? ds[Math.floor(ds.length / 2)] : 0;
+    side.style.display = "block";
+    side.innerHTML = `<b>${esc(f.nom)}</b> · ${esc(f.groupe)} · ${f.votes} votes exprimés · <a href="/depute.html?id=${f.id}" style="color:inherit">sa page →</a>` +
+      `<p class="def" style="margin:8px 0">Distance au centre de son groupe : <b>${gx.toFixed(1)}</b>, contre <b>${typical.toFixed(1)}</b> pour un membre médian de ${esc(f.groupe)}. Plus la distance est grande, plus il vote autrement que son groupe.</p>` +
+      `<div style="font:12px var(--mono);color:var(--muted)">les plus proches sur la carte :</div>` +
+      near.map((q) => `<span class="chip" style="display:inline-block;border:1px solid var(--line);padding:2px 8px;margin:4px 6px 0 0;font:12px var(--mono)"><i style="display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;background:${color[q.groupe] ?? NEUTRAL}"></i>${esc(q.nom)} · ${esc(q.groupe)}</span>`).join("");
+  } else side.style.display = "none";
   const counts = {}; for (const p of pts) counts[p.groupe] = (counts[p.groupe] ?? 0) + 1;
   $("#legend").innerHTML = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([g, n]) =>
     `<button data-g="${esc(g)}" aria-pressed="${!hidden.has(g)}"><i style="background:${color[g] ?? NEUTRAL}"></i>${esc(g)} ${n}</button>`).join("");
 }
-$("#plot").addEventListener("click", (e) => { const id = e.target.dataset?.id; if (id) location.href = "/depute.html?id=" + id; });
+$("#plot").addEventListener("click", (e) => { const id = e.target.dataset?.id; if (id) { focus = id; $("#q").value = data.points.find((p) => p.id === id).nom; draw(); } });
 $("#legend").addEventListener("click", (e) => { const g = e.target.closest("button")?.dataset.g; if (!g) return; hidden.has(g) ? hidden.delete(g) : hidden.add(g); draw(); });
 $("#scope").addEventListener("change", () => { scope = $("#scope").value; const u = new URL(location); u.searchParams.set("scope", scope); history.replaceState(null, "", u); load(); });
 $("#q").addEventListener("change", () => { const p = data.points.find((q) => q.nom === $("#q").value); focus = p?.id ?? null; draw(); });
