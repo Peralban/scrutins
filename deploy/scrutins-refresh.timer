@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily refresh of the scrutins database
+
+[Timer]
+OnCalendar=*-*-* 06:30
+RandomizedDelaySec=10min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -4,7 +4,7 @@ const BASE = "https://data.assemblee-nationale.fr/static/openData/repository/17"
 const SOURCES = {
   scrutins: `${BASE}/loi/scrutins/Scrutins.json.zip`,
   amo10: `${BASE}/amo/deputes_actifs_mandats_actifs_organes/AMO10_deputes_actifs_mandats_actifs_organes.json.zip`,
-  amo50: `${BASE}/amo/acteurs_mandats_organes_divises/AMO50_acteurs_mandats_organes_divises.json.zip`,
+  amo30: `${BASE}/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip`,
 };
 
 export const RAW = new URL("../data/raw/", import.meta.url).pathname;

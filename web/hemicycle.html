@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hémicycle</title>
+<link rel="stylesheet" href="/base.css">
+<style>
+.layout { display: grid; grid-template-columns: minmax(280px, 340px) 1fr; gap: 20px; align-items: start; }
+@media (max-width: 860px) { .layout { grid-template-columns: 1fr; } }
+.filters { display: grid; gap: 8px; margin-bottom: 10px; }
+.list { max-height: 640px; overflow: auto; border: 1px solid var(--line); background: var(--surface); }
+.item { display: block; width: 100%; text-align: left; border: 0; border-bottom: 1px solid var(--line); background: none; padding: 8px 10px; font: 12px/1.4 system-ui, sans-serif; color: var(--ink2); cursor: pointer; }
+.item:hover { background: var(--bg); }
+.item[aria-current="true"] { background: var(--bg); box-shadow: inset 3px 0 0 var(--ink); color: var(--ink); }
+.item small { display: block; font: 11px var(--mono); color: var(--muted); }
+.head { font: 600 15px/1.35 system-ui, sans-serif; margin: 0 0 4px; }
+.meta { font: 12px var(--mono); color: var(--muted); margin: 0 0 10px; }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; font: 12px var(--mono); margin: 10px 4px 0; }
+.legend i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: 6px; }
+.tally { margin-top: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Scrutins</h1>
+  <nav><a href="/">Statistiques</a><a href="/hemicycle.html" aria-current="page">Hémicycle</a><a href="/themes.html">Thèmes</a></nav>
+  <div class="layout">
+    <div>
+      <div class="filters">
+        <input id="q" type="search" placeholder="rechercher dans l'intitulé">
+        <select id="theme"><option value="">tous les thèmes</option></select>
+        <select id="kind">
+          <option value="ensemble">votes sur l'ensemble</option>
+          <option value="">tous les scrutins</option>
+          <option value="amendement">amendements</option>
+          <option value="article">articles</option>
+          <option value="motion">motions et déclarations</option>
+        </select>
+      </div>
+      <div class="list" id="list"></div>
+    </div>
+    <div>
+      <p class="head" id="head">Choisir un scrutin</p>
+      <p class="meta" id="meta"></p>
+      <div class="card"><svg id="hemi" role="img" aria-label="Hémicycle, un point par siège"></svg></div>
+      <div class="legend" id="legend"></div>
+      <details open class="tally"><summary>décompte par groupe</summary><div id="tally"></div></details>
+    </div>
+  </div>
+  <footer style="margin-top:40px">
+    Un point par siège, placé d'après les numéros de place réels des votes nominatifs. Un siège vacant n'est pas dessiné.
+    Un député qui a voté sans place connue est placé près de son groupe. Les décomptes correspondent aux chiffres officiels du scrutin.
+  </footer>
+</main>
+<div id="tip"></div>
+<script type="module">
+import { $, fmt, esc, api, NEUTRAL } from "/common.js";
+
+const POS = { pour: "pour", contre: "contre", abstention: "abstention", non_votant: "non-votant", absent: "absent" };
+const params = new URLSearchParams(location.search);
+let current = params.get("id");
+
+const themes = (await api("themes")).themes;
+$("#theme").innerHTML += themes.map((t) => `<option value="${t.id}">${esc(t.label)}</option>`).join("") + `<option value="_none">non classé</option>`;
+if (params.get("theme")) $("#theme").value = params.get("theme");
+if (params.get("kind") != null) $("#kind").value = params.get("kind");
+
+async function loadList() {
+  const qs = new URLSearchParams({ q: $("#q").value, theme: $("#theme").value, kind: $("#kind").value, limit: 200 });
+  const rows = await api("scrutins?" + qs);
+  $("#list").innerHTML = rows.map((s) => `<button class="item" data-id="${s.id}" aria-current="${s.id === current}">` +
+    `${esc((s.texte ?? s.titre).slice(0, 150))}<small>${s.date} · n°${s.numero} · ${esc(s.sort)} · ${s.pour}/${s.contre}/${s.abstentions}${s.etape ? " · " + esc(s.etape) : ""}</small></button>`).join("") || `<div class="item">aucun scrutin</div>`;
+  if (!current && rows[0]) select(rows[0].id);
+}
+$("#list").addEventListener("click", (e) => { const id = e.target.closest(".item")?.dataset.id; if (id) select(id); });
+let timer; $("#q").addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(loadList, 200); });
+$("#theme").addEventListener("change", loadList);
+$("#kind").addEventListener("change", loadList);
+
+// Parliament layout: rows of seats on concentric half-circles, seats sorted by angle
+// then by seat number, so a group's seats form a wedge like in the real chamber.
+function layout(n) {
+  const R = Math.max(5, Math.round(Math.sqrt(n / 4.7)));
+  const r0 = 0.42, r1 = 1;
+  const radii = Array.from({ length: R }, (_, i) => r0 + (i * (r1 - r0)) / (R - 1));
+  const total = radii.reduce((a, b) => a + b, 0);
+  const counts = radii.map((r) => Math.round((n * r) / total));
+  counts[R - 1] += n - counts.reduce((a, b) => a + b, 0);
+  const pts = [];
+  radii.forEach((r, i) => { for (let j = 0; j < counts[i]; j++) pts.push({ r, row: i, a: counts[i] === 1 ? Math.PI / 2 : (Math.PI * j) / (counts[i] - 1) }); });
+  pts.sort((p, q) => p.a - q.a || p.r - q.r);
+  return { pts, R, spacing: (r1 - r0) / (R - 1), arc: (Math.PI * r1) / counts[R - 1] };
+}
+
+function draw(data) {
+  const { scrutin: s, seats } = data;
+  const color = Object.fromEntries(data.groupes.map((g) => [g.id, g.couleur ?? NEUTRAL]));
+  const sigle = Object.fromEntries(data.groupes.map((g) => [g.id, g.sigle]));
+  const { pts, spacing, arc, R } = layout(seats.length);
+  const W = 960, cx = W / 2, cy = 500, scale = 450, dot = Math.min(spacing, arc) * scale * 0.42;
+  let out = "", arcs = {};
+  seats.forEach((seat, i) => {
+    const p = pts[i], x = cx + Math.cos(Math.PI - p.a) * p.r * scale, y = cy - Math.sin(p.a) * p.r * scale;
+    const tip = `${seat.nom}\n${sigle[seat.groupe] ?? ""} · ${POS[seat.position]}${seat.delegation ? " (délégation)" : ""}`;
+    const pos = seat.position;
+    const fill = pos === "pour" ? "var(--pour)" : pos === "contre" ? "var(--contre)" : "none";
+    const stroke = pos === "abstention" ? "var(--abst)" : pos === "non_votant" ? "var(--abst)" : pos === "absent" ? "var(--line)" : "none";
+    const rr = pos === "absent" ? dot * 0.55 : dot;
+    out += `<circle data-tip="${esc(tip)}" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rr.toFixed(1)}" fill="${fill}" stroke="${stroke}" stroke-width="${dot > 7 ? 2 : 1.5}"${pos === "non_votant" ? ' stroke-dasharray="2 2"' : ""}/>`;
+    if (p.row === R - 1) { // outer band: group colour, one tick per outer-row seat
+      const bx = cx + Math.cos(Math.PI - p.a) * (p.r * scale + dot + 9), by = cy - Math.sin(p.a) * (p.r * scale + dot + 9);
+      out += `<circle cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="3.2" fill="${color[seat.groupe] ?? NEUTRAL}"/>`;
+    }
+    (arcs[seat.groupe] ??= []).push(p.a);
+  });
+  for (const [g, as] of Object.entries(arcs)) {
+    if (as.length < 8) continue;
+    as.sort((a, b) => a - b); const a = as[Math.floor(as.length / 2)], rad = scale + dot + 32;
+    out += `<text x="${(cx + Math.cos(Math.PI - a) * rad).toFixed(1)}" y="${(cy - Math.sin(a) * rad + 4).toFixed(1)}" text-anchor="middle">${esc(sigle[g])}</text>`;
+  }
+  const c = {}; for (const x of seats) c[x.position] = (c[x.position] ?? 0) + 1;
+  out += `<text class="val" x="${cx}" y="${cy - 40}" text-anchor="middle" style="font-size:34px;font-weight:600">${s.sort === "adopté" ? "ADOPTÉ" : "REJETÉ"}</text>` +
+         `<text x="${cx}" y="${cy - 14}" text-anchor="middle">${s.pour} pour · ${s.contre} contre · ${s.abstentions} abst.</text>` +
+         `<text x="${cx}" y="${cy + 6}" text-anchor="middle">${s.date}</text>`;
+  $("#hemi").setAttribute("viewBox", `0 0 ${W} ${cy + 30}`);
+  $("#hemi").innerHTML = out;
+  $("#head").textContent = s.titre.charAt(0).toUpperCase() + s.titre.slice(1);
+  $("#meta").textContent = `${s.date} · scrutin n°${s.numero} · ${s.kind}${s.etape ? " · " + s.etape : ""}`;
+  $("#legend").innerHTML = `<span><i style="background:var(--pour)"></i>pour ${c.pour ?? 0}</span><span><i style="background:var(--contre)"></i>contre ${c.contre ?? 0}</span>` +
+    `<span><i style="border:2px solid var(--abst)"></i>abstention ${c.abstention ?? 0}</span><span><i style="border:2px dashed var(--abst)"></i>non-votant ${c.non_votant ?? 0}</span>` +
+    `<span><i style="border:2px solid var(--line)"></i>absent ${c.absent ?? 0}</span>`;
+  const g = {}; for (const x of seats) { (g[x.groupe] ??= { pour: 0, contre: 0, abstention: 0, non_votant: 0, absent: 0 })[x.position]++; }
+  const rows = Object.entries(g).sort((a, b) => b[1].pour + b[1].contre + b[1].abstention - (a[1].pour + a[1].contre + a[1].abstention));
+  $("#tally").innerHTML = `<table><thead><tr><th>Groupe</th><th></th><th>Pour</th><th>Contre</th><th>Abst.</th><th>Absents</th></tr></thead><tbody>` +
+    rows.map(([id, v]) => `<tr><td>${esc(sigle[id])}</td><td><i style="display:inline-block;width:10px;height:10px;background:${color[id] ?? NEUTRAL}"></i></td><td>${v.pour}</td><td>${v.contre}</td><td>${v.abstention}</td><td>${v.absent}</td></tr>`).join("") + "</tbody></table>";
+}
+
+async function select(id) {
+  current = id;
+  document.querySelectorAll(".item").forEach((b) => b.setAttribute("aria-current", b.dataset.id === id));
+  const url = new URL(location); url.searchParams.set("id", id); history.replaceState(null, "", url);
+  draw(await api("scrutin/" + id));
+}
+await loadList();
+if (current) select(current);
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thèmes</title>
+<link rel="stylesheet" href="/base.css">
+<style>
+.heat { border-collapse: separate; border-spacing: 2px; font: 12px var(--mono); width: 100%; min-width: 760px; }
+.heat th { text-align: center; cursor: default; padding: 4px 2px; border: 0; }
+.heat th:first-child { text-align: left; }
+.heat td { text-align: center; padding: 8px 2px; border: 0; font-variant-numeric: tabular-nums; }
+.heat td.lab { text-align: left; background: none; padding-left: 0; }
+.heat td.lab a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.heat td.lab small { color: var(--muted); margin-left: 6px; }
+.heat td.none { color: var(--muted); background: var(--grid); }
+.scale { display: flex; align-items: center; gap: 8px; font: 12px var(--mono); color: var(--muted); margin: 10px 0 0; }
+.scale i { display: inline-block; width: 160px; height: 10px; background: linear-gradient(90deg, var(--lo), var(--hi)); }
+:root { --lo: #eef2fa; --hi: #1f4f9f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --lo: #1d2230; --hi: #6aa3ff; } }
+.wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Scrutins</h1>
+  <nav><a href="/">Statistiques</a><a href="/hemicycle.html">Hémicycle</a><a href="/themes.html" aria-current="page">Thèmes</a></nav>
+  <section>
+    <h2>Profil de vote par thème</h2>
+    <p class="def">Part de « pour » parmi les votes exprimés de chaque groupe (pour, contre, abstention), sur les scrutins rattachés au thème. Un clic sur un thème ouvre ses scrutins dans l'hémicycle.</p>
+    <div class="tools"><button id="s-ensemble" aria-pressed="true">votes sur l'ensemble</button><button id="s-tous" aria-pressed="false">tous les scrutins</button><span id="note"></span></div>
+    <div class="card wrap"><table class="heat" id="heat"></table></div>
+    <div class="scale"><span>0 % pour</span><i></i><span>100 % pour</span><span style="margin-left:16px">cellule grise : moins de 30 votes exprimés</span></div>
+  </section>
+  <footer>
+    Le thème d'un scrutin est déduit par mots-clés dans l'intitulé du texte de loi concerné ; un scrutin peut avoir plusieurs thèmes ou aucun.
+    C'est une aide de lecture, pas une classification officielle. Sur les amendements, « pour » dépend de qui les dépose : préférer les votes sur l'ensemble.
+    <span id="unclassified"></span>
+  </footer>
+</main>
+<div id="tip"></div>
+<script type="module">
+import { $, fmt, pct, esc, api, NEUTRAL } from "/common.js";
+const ORDER = ["LFI-NFP", "GDR", "ECOS", "SOC", "EPR", "DEM", "HOR", "LIOT", "DR", "UDR", "UDDPLR", "RN", "NI"];
+let scope = "ensemble";
+
+async function render() {
+  const d = await api("themes?scope=" + scope);
+  const gs = [...d.groupes].sort((a, b) => (ORDER.indexOf(a.sigle) + 99) % 99 - (ORDER.indexOf(b.sigle) + 99) % 99);
+  const cell = new Map(d.cells.map((c) => [c.theme_id + "|" + c.groupe_id, c]));
+  const head = `<thead><tr><th>Thème</th>${gs.map((g) => `<th title="${esc(g.nom)}"><i style="display:block;height:3px;background:${g.couleur ?? NEUTRAL};margin-bottom:4px"></i>${esc(g.sigle)}</th>`).join("")}</tr></thead>`;
+  const kind = scope === "ensemble" ? "ensemble" : "";
+  const rows = d.themes.map((t) => `<tr><td class="lab"><a href="/hemicycle.html?theme=${t.id}&kind=${kind}">${esc(t.label)}</a><small>${t.scrutins}</small></td>` +
+    gs.map((g) => {
+      const c = cell.get(t.id + "|" + g.id), n = c ? c.pour + c.contre + c.abstention : 0;
+      if (n < 30) return `<td class="none" data-tip="${esc(g.sigle)} · ${esc(t.label)}\n${n} votes exprimés">·</td>`;
+      const p = (100 * c.pour) / n;
+      return `<td style="background:color-mix(in srgb, var(--hi) ${p.toFixed(0)}%, var(--lo));color:${p > 55 ? "#fff" : "var(--ink)"}" ` +
+        `data-tip="${esc(g.sigle)} · ${esc(t.label)}\npour ${c.pour} · contre ${c.contre} · abst. ${c.abstention}\n${pct(p)} pour">${p.toFixed(0)}</td>`;
+    }).join("") + "</tr>").join("");
+  $("#heat").innerHTML = head + `<tbody>${rows}</tbody>`;
+  $("#note").textContent = `${d.themes.length} thèmes · le nombre à droite du thème est son nombre de scrutins`;
+  $("#unclassified").textContent = `Scrutins sans thème : ${fmt.format(d.non_classes.n)} sur ${fmt.format(d.non_classes.total)}.`;
+}
+for (const s of ["ensemble", "tous"]) $("#s-" + s).addEventListener("click", () => {
+  scope = s; $("#s-ensemble").setAttribute("aria-pressed", s === "ensemble"); $("#s-tous").setAttribute("aria-pressed", s === "tous"); render();
+});
+render();
+</script>
+</body>
+</html>

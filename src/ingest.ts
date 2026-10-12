@@ -3,6 +3,7 @@ import { Glob } from "bun";
 import { readdirSync, renameSync, rmSync } from "node:fs";
 import { RAW } from "./fetch";
 import { MATERIALIZED } from "./stats";
+import { THEMES, parseTitre, themesOf } from "./themes";
 
 const OUT = new URL("../data/scrutins.db", import.meta.url).pathname;
 const TMP = `${OUT}.tmp`;
@@ -26,8 +27,10 @@ export async function ingest() {
 
   const insGroupe = db.prepare("INSERT OR REPLACE INTO groupe VALUES (?,?,?,?)");
   const insDepute = db.prepare("INSERT OR REPLACE INTO depute VALUES (?,?,?)");
-  const insScrutin = db.prepare("INSERT INTO scrutin VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
-  const insVote = db.prepare("INSERT INTO vote VALUES (?,?,?,?,?)");
+  const insScrutin = db.prepare("INSERT INTO scrutin VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+  const insVote = db.prepare("INSERT INTO vote VALUES (?,?,?,?,?,?)");
+  const insTheme = db.prepare("INSERT INTO scrutin_theme VALUES (?,?)");
+  for (const th of THEMES) db.prepare("INSERT INTO theme VALUES (?,?)").run(th.id, th.label);
   const insEffectif = db.prepare("INSERT INTO effectif VALUES (?,?,?)");
   // Entries whose group ref is the broken "PO0": resolved afterwards from their members.
   db.exec(`CREATE TEMP TABLE po0_entry (entry INTEGER, scrutin_id TEXT, membres INTEGER);
@@ -44,10 +47,10 @@ export async function ingest() {
       insGroupe.run(o.uid, o.libelleAbrev, o.libelle, o.couleurAssociee);
   }
 
-  // Deputies: AMO50 holds everyone, including those who left.
+  // Deputies: AMO30 holds every actor of the period, including those who left.
   const acteurs: [string, string, string][] = [];
-  for (const f of readdirSync(`${RAW}amo50/acteur`)) {
-    const a = (await json(`${RAW}amo50/acteur/${f}`)).acteur;
+  for (const f of readdirSync(`${RAW}amo30/json/acteur`)) {
+    const a = (await json(`${RAW}amo30/json/acteur/${f}`)).acteur;
     acteurs.push([a.uid["#text"], a.etatCivil.ident.prenom, a.etatCivil.ident.nom]);
   }
   db.transaction(() => acteurs.forEach((r) => insDepute.run(...r)))();
@@ -60,11 +63,13 @@ export async function ingest() {
   db.transaction(() => {
     for (const s of rows) {
       const d = s.syntheseVote.decompte;
+      const { texte, etape, kind } = parseTitre(s.titre);
       insScrutin.run(
-        s.uid, +s.numero, s.dateScrutin, s.typeVote.codeTypeVote, s.sort.code, s.titre,
+        s.uid, +s.numero, s.dateScrutin, s.typeVote.codeTypeVote, s.sort.code, s.titre, texte, etape, kind,
         +s.syntheseVote.nombreVotants, +s.syntheseVote.suffragesExprimes,
         +d.pour, +d.contre, +d.abstentions, +d.nonVotants,
       );
+      for (const id of themesOf(s.titre, texte)) insTheme.run(s.uid, id);
       for (const g of arr<any>(s.ventilationVotes.organe.groupes.groupe)) {
         const broken = g.organeRef === "PO0";
         const id = ++entry;
@@ -73,7 +78,7 @@ export async function ingest() {
         const nom = g.vote.decompteNominatif;
         for (const [key, position] of POSITIONS)
           for (const v of arr<any>(nom?.[key]?.votant)) {
-            insVote.run(s.uid, v.acteurRef, g.organeRef, position, v.parDelegation === "true" ? 1 : 0);
+            insVote.run(s.uid, v.acteurRef, g.organeRef, position, v.parDelegation === "true" ? 1 : 0, v.numPlace ? +v.numPlace : null);
             if (broken) insEntryVote.run(id, v.acteurRef);
           }
       }
@@ -83,6 +88,15 @@ export async function ingest() {
   // PO0 is a broken group reference in the source: reassign each deputy to the
   // group they are most often listed under elsewhere.
   db.exec(`
+    DELETE FROM depute WHERE id NOT IN (SELECT depute_id FROM vote);
+    INSERT INTO siege
+      SELECT v.place, v.depute_id, MIN(s.date), MAX(s.date), COUNT(*)
+      FROM vote v JOIN scrutin s ON s.id = v.scrutin_id
+      WHERE v.place IS NOT NULL AND v.delegation = 0 GROUP BY v.place, v.depute_id;
+    CREATE TABLE appartenance AS
+      SELECT v.depute_id, v.groupe_id, MIN(s.date) debut, MAX(s.date) fin
+      FROM vote v JOIN scrutin s ON s.id = v.scrutin_id WHERE v.groupe_id != 'PO0' GROUP BY 1, 2;
+    CREATE INDEX appartenance_depute ON appartenance (depute_id);
     CREATE TEMP TABLE habitual AS
       SELECT depute_id, groupe_id FROM (
         SELECT depute_id, groupe_id,
