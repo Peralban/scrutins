@@ -73,7 +73,7 @@ function render(d) {
   const hist = d.groupes.map((x) => `<span class="chip"><i style="background:${x.couleur ?? NEUTRAL}"></i>${esc(x.sigle)}</span><span class="tl">${x.debut} → ${x.fin}</span>`).join(" ");
   $("#page").innerHTML = `
     <div class="id"><div><h2>${esc(nom)}</h2><div style="margin-top:8px">${hist}</div></div>
-      <div class="tl"><a href="/accords.html?depute=${d.depute.id}" style="color:inherit">qui vote comme lui →</a><br>${d.siege ? `siège n°${d.siege.place}` : "siège inconnu"} · ${esc(g.nom)}</div></div>
+      <div class="tl"><a href="/accords.html?depute=${d.depute.id}" style="color:inherit">qui vote comme lui →</a><br><a href="https://www.assemblee-nationale.fr/dyn/deputes/${encodeURIComponent(d.depute.id)}" target="_blank" rel="noopener noreferrer" style="color:inherit">fiche sur assemblee-nationale.fr ↗</a><br>${d.siege ? `siège n°${d.siege.place}` : "siège inconnu"} · ${esc(g.nom)}</div></div>
     <div class="kpis">
       <div class="kpi"><b>${fmt.format(d.span.positions)}</b><span>positions enregistrées</span></div>
       <div class="kpi"><b>${pct(pres)}</b><span>présence aux scrutins</span></div>
