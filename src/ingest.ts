@@ -4,6 +4,7 @@ import { readdirSync, renameSync, rmSync } from "node:fs";
 import { RAW } from "./fetch";
 import { MATERIALIZED } from "./stats";
 import { computeCartes } from "./carte";
+import { ingestAmendements } from "./amendements";
 import { THEMES, parseTitre, themesOf } from "./themes";
 
 const OUT = new URL("../data/scrutins.db", import.meta.url).pathname;
@@ -141,6 +142,7 @@ export async function ingest() {
            WHERE id = 'PO847173'`);
 
   for (const [name, sql] of Object.entries(MATERIALIZED)) db.exec(`CREATE TABLE ${name} AS ${sql}`);
+  ingestAmendements(db, acteurs);
   computeCartes(db);
   db.close();
   renameSync(TMP, OUT); // atomic swap: readers never see a half-built db
