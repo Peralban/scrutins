@@ -212,15 +212,18 @@ export const MATERIALIZED = {
              ROUND(100.0 * (c.exprimes - c.dissidents) / c.exprimes, 1) AS cohesion
       FROM groupe g JOIN p ON p.groupe_id = g.id JOIN c ON c.groupe_id = g.id JOIN e ON e.groupe_id = g.id
       WHERE p.exprimes > 0`,
+  // Every deputy appears, including those with no expressed vote (members of the government
+  // vote through their substitute): their figures are 0 / NULL rather than absent.
   stat_depute: `SELECT d.id, d.prenom || ' ' || d.nom AS nom,
              (SELECT g.sigle FROM vote v2 JOIN scrutin s2 ON s2.id = v2.scrutin_id
                 JOIN groupe g ON g.id = v2.groupe_id
               WHERE v2.depute_id = d.id ORDER BY s2.date DESC, s2.numero DESC LIMIT 1) AS groupe,
-             COUNT(*) AS votes_exprimes,
-             ROUND(100.0 * SUM(v.position != m.position) / COUNT(*), 1) AS dissidence,
-             ROUND(100.0 * SUM(v.delegation) / COUNT(*), 1) AS delegation
+             COUNT(x.depute_id) AS votes_exprimes,
+             ROUND(100.0 * SUM(x.position != x.majorite) / COUNT(x.depute_id), 1) AS dissidence,
+             ROUND(100.0 * SUM(x.delegation) / COUNT(x.depute_id), 1) AS delegation
       FROM depute d
-      JOIN vote v ON v.depute_id = d.id AND ${EXPRIME}
-      JOIN majorite m ON m.scrutin_id = v.scrutin_id AND m.groupe_id = v.groupe_id
+      LEFT JOIN (SELECT v.depute_id, v.position, v.delegation, m.position AS majorite
+                 FROM vote v JOIN majorite m ON m.scrutin_id = v.scrutin_id AND m.groupe_id = v.groupe_id
+                 WHERE ${EXPRIME}) x ON x.depute_id = d.id
       GROUP BY d.id`,
 };

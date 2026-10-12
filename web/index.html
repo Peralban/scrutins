@@ -39,7 +39,7 @@
     <h2>Députés</h2>
     <p class="def">Taux de dissidence individuel. « Délégation » : part des votes exprimés par délégation.</p>
     <div class="tools"><label>min. votes exprimés <input id="min" type="number" value="200" min="1" style="width:80px"></label>
-      <label>recherche <input id="q" type="search" placeholder="nom"></label><span id="count"></span></div>
+      <label title="la recherche par nom ignore le minimum">recherche <input id="q" type="search" placeholder="nom"></label><span id="count"></span></div>
     <div class="scroll"><table id="deputes"></table></div>
   </section>
 
@@ -105,8 +105,10 @@ function monthly(svg, rows) {
 let deputes = [], sortKey = "dissidence", sortDir = -1;
 function renderDeputes() {
   const min = +$("#min").value || 1, q = $("#q").value.trim().toLowerCase();
-  const rows = deputes.filter((d) => d.votes_exprimes >= min && d.nom.toLowerCase().includes(q))
-    .sort((a, b) => (typeof a[sortKey] === "string" ? a[sortKey].localeCompare(b[sortKey]) : a[sortKey] - b[sortKey]) * sortDir);
+  // A name search ignores the minimum, so deputies with few or no votes stay findable.
+  const num = (v) => v ?? -1;
+  const rows = deputes.filter((d) => d.nom.toLowerCase().includes(q) && (q !== "" || d.votes_exprimes >= min))
+    .sort((a, b) => (typeof a[sortKey] === "string" ? a[sortKey].localeCompare(b[sortKey]) : num(a[sortKey]) - num(b[sortKey])) * sortDir);
   const cols = [["nom", "Nom"], ["groupe", "Groupe"], ["votes_exprimes", "Votes exprimés"], ["dissidence", "Dissidence"], ["delegation", "Délégation"]];
   $("#deputes").innerHTML = `<thead><tr>${cols.map(([k, l]) => `<th data-k="${k}" ${k === sortKey ? `aria-sort="${sortDir < 0 ? "descending" : "ascending"}"` : ""}>${l}${k === sortKey ? (sortDir < 0 ? " ↓" : " ↑") : ""}</th>`).join("")}</tr></thead><tbody>` +
     rows.map((d) => `<tr><td><a href="/depute.html?id=${d.id}" style="color:inherit">${esc(d.nom)}</a></td><td>${esc(d.groupe ?? "")}</td><td>${fmt.format(d.votes_exprimes)}</td><td>${pct(d.dissidence)}</td><td>${pct(d.delegation)}</td></tr>`).join("") + "</tbody>";
@@ -120,7 +122,7 @@ $("#min").addEventListener("input", renderDeputes);
 $("#q").addEventListener("input", renderDeputes);
 
 const [ov, groupes, mois, deps] = await Promise.all(
-  ["overview", "groupes", "mensuel", "deputes?min=1"].map((p) => fetch("/api/" + p).then((r) => r.json())));
+  ["overview", "groupes", "mensuel", "deputes?min=0"].map((p) => fetch("/api/" + p).then((r) => r.json())));
 
 $("#kpis").innerHTML = [
   [fmt.format(ov.scrutins), "scrutins"], [fmt.format(ov.votes), "positions nominatives"],

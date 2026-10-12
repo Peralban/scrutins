@@ -1,6 +1,6 @@
 export const $ = (s) => document.querySelector(s);
 export const fmt = new Intl.NumberFormat("fr-FR");
-export const pct = (n) => n.toFixed(1).replace(".", ",") + " %";
+export const pct = (n) => n == null ? "—" : n.toFixed(1).replace(".", ",") + " %";
 export const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 export const NEUTRAL = "#8d949a";
 export const api = (path) => fetch("/api/" + path).then((r) => r.json());

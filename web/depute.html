@@ -39,7 +39,7 @@ import { $, fmt, pct, esc, api, NEUTRAL } from "/common.js";
 const params = new URLSearchParams(location.search);
 let kind = params.get("kind") ?? "";
 
-const all = await api("deputes?min=1");
+const all = await api("deputes?min=0");
 const byName = new Map(all.map((d) => [d.nom, d.id]));
 $("#noms").innerHTML = all.map((d) => `<option value="${esc(d.nom)}">`).join("");
 $("#q").addEventListener("change", () => { const id = byName.get($("#q").value); if (id) location.search = "?id=" + id; });
@@ -74,6 +74,7 @@ function render(d) {
   $("#page").innerHTML = `
     <div class="id"><div><h2>${esc(nom)}</h2><div style="margin-top:8px">${hist}</div></div>
       <div class="tl"><a href="/accords.html?depute=${d.depute.id}" style="color:inherit">qui vote comme lui →</a><br><a href="https://www.assemblee-nationale.fr/dyn/deputes/${encodeURIComponent(d.depute.id)}" target="_blank" rel="noopener noreferrer" style="color:inherit">fiche sur assemblee-nationale.fr ↗</a><br>${d.siege ? `siège n°${d.siege.place}` : "siège inconnu"} · ${esc(g.nom)}</div></div>
+    ${d.stat && d.stat.votes_exprimes === 0 ? `<p class="def" style="border-left:3px solid var(--ink);padding-left:10px">Aucun vote exprimé (pour, contre, abstention) : les ${d.span.positions} positions enregistrées sont des non-votes, entre le ${d.span.debut} et le ${d.span.fin}. Les chiffres ci-dessous ne portent que sur ces positions.</p>` : ""}
     <div class="kpis">
       <div class="kpi"><b>${fmt.format(d.span.positions)}</b><span>positions enregistrées</span></div>
       <div class="kpi"><b>${pct(pres)}</b><span>présence aux scrutins</span></div>

@@ -64,7 +64,7 @@ const params = new URLSearchParams(location.search);
 const st = { scope: "ensemble", theme: "", a: params.get("depute"), b: params.get("b"), hors: false, kind: "" };
 const sync = () => { const u = new URL(location); for (const [k, v] of [["depute", st.a], ["b", st.b]]) v ? u.searchParams.set(k, v) : u.searchParams.delete(k); history.replaceState(null, "", u); };
 
-const [themes, all] = await Promise.all([api("themes").then((d) => d.themes), api("deputes?min=1")]);
+const [themes, all] = await Promise.all([api("themes").then((d) => d.themes), api("deputes?min=0")]);
 $("#theme").innerHTML += themes.map((t) => `<option value="${t.id}">${esc(t.label)}</option>`).join("");
 const idByName = new Map(all.map((d) => [d.nom, d.id])), nameById = new Map(all.map((d) => [d.id, d.nom]));
 $("#noms").innerHTML = all.map((d) => `<option value="${esc(d.nom)}">`).join("");
