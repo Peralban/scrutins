@@ -102,7 +102,7 @@ function draw(data) {
   const W = 960, cx = W / 2, cy = 500, scale = 450, dot = Math.min(spacing, arc) * scale * 0.42;
   let out = "", arcs = {};
   seats.forEach((seat, i) => {
-    const p = pts[i], x = cx + Math.cos(Math.PI - p.a) * p.r * scale, y = cy - Math.sin(p.a) * p.r * scale;
+    const p = pts[i], x = cx + Math.cos(p.a) * p.r * scale, y = cy - Math.sin(p.a) * p.r * scale;
     const tip = `${seat.nom}\n${sigle[seat.groupe] ?? ""} · ${POS[seat.position]}${seat.delegation ? " (délégation)" : ""}`;
     const pos = seat.position;
     const fill = pos === "pour" ? "var(--pour)" : pos === "contre" ? "var(--contre)" : "none";
@@ -110,7 +110,7 @@ function draw(data) {
     const rr = pos === "absent" ? dot * 0.55 : dot;
     out += `<circle data-id="${seat.id}" style="cursor:pointer" data-tip="${esc(tip)}" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rr.toFixed(1)}" fill="${fill}" stroke="${stroke}" stroke-width="${dot > 7 ? 2 : 1.5}"${pos === "non_votant" ? ' stroke-dasharray="2 2"' : ""}/>`;
     if (p.row === R - 1) { // outer band: group colour, one tick per outer-row seat
-      const bx = cx + Math.cos(Math.PI - p.a) * (p.r * scale + dot + 9), by = cy - Math.sin(p.a) * (p.r * scale + dot + 9);
+      const bx = cx + Math.cos(p.a) * (p.r * scale + dot + 9), by = cy - Math.sin(p.a) * (p.r * scale + dot + 9);
       out += `<circle cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="3.2" fill="${color[seat.groupe] ?? NEUTRAL}"/>`;
     }
     (arcs[seat.groupe] ??= []).push(p.a);
@@ -118,7 +118,7 @@ function draw(data) {
   for (const [g, as] of Object.entries(arcs)) {
     if (as.length < 8) continue;
     as.sort((a, b) => a - b); const a = as[Math.floor(as.length / 2)], rad = scale + dot + 32;
-    out += `<text x="${(cx + Math.cos(Math.PI - a) * rad).toFixed(1)}" y="${(cy - Math.sin(a) * rad + 4).toFixed(1)}" text-anchor="middle">${esc(sigle[g])}</text>`;
+    out += `<text x="${(cx + Math.cos(a) * rad).toFixed(1)}" y="${(cy - Math.sin(a) * rad + 4).toFixed(1)}" text-anchor="middle">${esc(sigle[g])}</text>`;
   }
   const c = {}; for (const x of seats) c[x.position] = (c[x.position] ?? 0) + 1;
   out += `<text class="val" x="${cx}" y="${cy - 40}" text-anchor="middle" style="font-size:34px;font-weight:600">${s.sort === "adopté" ? "ADOPTÉ" : "REJETÉ"}</text>` +
