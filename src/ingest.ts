@@ -5,6 +5,7 @@ import { RAW } from "./fetch";
 import { MATERIALIZED } from "./stats";
 import { computeCartes } from "./carte";
 import { ingestAmendements } from "./amendements";
+import { ingestNotionLabels } from "./notion-labels";
 import { THEMES, parseTitre, themesOf } from "./themes";
 
 const OUT = new URL("../data/scrutins.db", import.meta.url).pathname;
@@ -141,6 +142,7 @@ export async function ingest() {
              couleur = (SELECT couleur FROM groupe WHERE id = 'PO872880')
            WHERE id = 'PO847173'`);
 
+  await ingestNotionLabels(db);
   for (const [name, sql] of Object.entries(MATERIALIZED)) db.exec(`CREATE TABLE ${name} AS ${sql}`);
   ingestAmendements(db, acteurs);
   computeCartes(db);

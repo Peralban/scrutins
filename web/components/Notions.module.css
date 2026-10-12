@@ -1,0 +1,18 @@
+.banner { border: 1px solid var(--line); border-left: 3px solid var(--contre); background: var(--surface); padding: 10px 14px; margin: 0 0 24px; font-size: 13px; max-width: 80ch; }
+.banner b { font-family: var(--mono); text-transform: uppercase; font-size: 12px; letter-spacing: .06em; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-bottom: 36px; }
+.card { background: var(--surface); border: 1px solid var(--line); padding: 14px 16px; color: inherit; text-decoration: none; display: block; }
+.card:hover { border-color: var(--ink); }
+.card h3 { font: 600 16px system-ui, sans-serif; margin: 0 0 6px; }
+.card p { margin: 0 0 10px; color: var(--ink2); font-size: 13px; }
+.card small { font: 12px var(--mono); color: var(--muted); }
+.axe { color: var(--ink2); font-size: 14px; max-width: 80ch; margin: 0 0 18px; }
+.pour { color: var(--pour); } .contre { color: var(--contre); } .neutre { color: var(--ink2); } .vide { color: var(--muted); }
+.t { text-align: left !important; font-family: system-ui, sans-serif !important; }
+.t a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.sens { font: 600 12px var(--mono); }
+.note { color: var(--muted); font-size: 12px; display: block; }
+.ecarte td { opacity: .55; }
+.gauge { display: inline-block; width: 90px; height: 8px; background: var(--grid); vertical-align: middle; position: relative; }
+.gauge b { position: absolute; left: 0; top: 0; bottom: 0; background: var(--pour); }
+.back { color: var(--muted); font: 12px var(--mono); }

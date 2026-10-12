@@ -1,0 +1,1251 @@
+{
+ "notion": "ecologie",
+ "label": "Écologie et climat",
+ "axe": "Favorable : renforcer les exigences ou les moyens environnementaux et climatiques. Défavorable : les alléger, les repousser ou les supprimer.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose.",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V219",
+   "numero": 219,
+   "date": "2024-10-31",
+   "amendement": "AMANR5L17PO838901B0278P0D1N000001",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime l'article qui permettait de continuer à louer des passoires thermiques."
+  },
+  {
+   "scrutin": "VTANR5L17V556",
+   "numero": 556,
+   "date": "2025-01-21",
+   "amendement": "AMANR5L17PO838901BTC0775P0D1N000171",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Dons aux associations : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V661",
+   "numero": 661,
+   "date": "2025-01-29",
+   "amendement": "AMANR5L17PO838901BTC0629P0D1N000025",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Modifie le calendrier d'interdiction des passoires thermiques : sens non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V807",
+   "numero": 807,
+   "date": "2025-02-17",
+   "amendement": "AMANR5L17PO838901BTC0631P0D1N000057",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Conditionne des aides publiques à la publication d'informations de durabilité (CSRD)."
+  },
+  {
+   "scrutin": "VTANR5L17V809",
+   "numero": 809,
+   "date": "2025-02-17",
+   "amendement": "AMANR5L17PO838901BTC0631P0D1N000020",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Oblige les entreprises à publier leurs émissions de gaz à effet de serre."
+  },
+  {
+   "scrutin": "VTANR5L17V1232",
+   "numero": 1232,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1175P0D1N000025",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Bilan des moyens de sécurité civile : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V1356",
+   "numero": 1356,
+   "date": "2025-04-10",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001899",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit les commissions de préservation des espaces naturels, agricoles et forestiers."
+  },
+  {
+   "scrutin": "VTANR5L17V1358",
+   "numero": 1358,
+   "date": "2025-04-10",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N000748",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Maintient le plan de réduction des émissions d'ammoniac et de protoxyde d'azote."
+  },
+  {
+   "scrutin": "VTANR5L17V1399",
+   "numero": 1399,
+   "date": "2025-04-11",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001877",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'ADEME, l'agence de la transition écologique."
+  },
+  {
+   "scrutin": "VTANR5L17V1401",
+   "numero": 1401,
+   "date": "2025-04-11",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002250",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime plusieurs hauts conseils, dont celui en charge du suivi du climat."
+  },
+  {
+   "scrutin": "VTANR5L17V1504",
+   "numero": 1504,
+   "date": "2025-04-30",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001013",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Conditionne des marchés publics à des obligations : nature non établie sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V1505",
+   "numero": 1505,
+   "date": "2025-04-30",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002496",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit une obligation de verdissement de la commande publique (bilan carbone)."
+  },
+  {
+   "scrutin": "VTANR5L17V1522",
+   "numero": 1522,
+   "date": "2025-04-30",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001605",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Implantation des centres de données : aménagement, hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V1524",
+   "numero": 1524,
+   "date": "2025-04-30",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001299",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Limite les dérogations de hauteur de construction des projets d'intérêt national majeur, au nom de la sobriété foncière."
+  },
+  {
+   "scrutin": "VTANR5L17V1528",
+   "numero": 1528,
+   "date": "2025-04-30",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N000836",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'extension de la qualification de projet d'intérêt national majeur aux infrastructures."
+  },
+  {
+   "scrutin": "VTANR5L17V1530",
+   "numero": 1530,
+   "date": "2025-04-30",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001597",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'extension de la qualification de projet d'intérêt national majeur aux centres de données."
+  },
+  {
+   "scrutin": "VTANR5L17V1538",
+   "numero": 1538,
+   "date": "2025-04-30",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N000837",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Soumet les centres de données d'intérêt national majeur à un débat public national."
+  },
+  {
+   "scrutin": "VTANR5L17V1676",
+   "numero": 1676,
+   "date": "2025-05-15",
+   "amendement": "AMANR5L17PO838901BTC1378P0D1N000061",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime un article qui affaiblit des objectifs de transition écologique et de planification urbaine."
+  },
+  {
+   "scrutin": "VTANR5L17V1677",
+   "numero": 1677,
+   "date": "2025-05-15",
+   "amendement": "AMANR5L17PO838901BTC1378P0D1N000055",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Privilégie le photovoltaïque sur surfaces déjà artificialisées plutôt que sur terres naturelles ou agricoles."
+  },
+  {
+   "scrutin": "VTANR5L17V1680",
+   "numero": 1680,
+   "date": "2025-05-15",
+   "amendement": "AMANR5L17PO838901BTC1378P0D1N000132",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Nucléaire : traité par la notion « Nucléaire »."
+  },
+  {
+   "scrutin": "VTANR5L17V1695",
+   "numero": 1695,
+   "date": "2025-05-15",
+   "amendement": "AMANR5L17PO838901BTC1378P0D1N000019",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Règles de permis de construire : sens non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V1698",
+   "numero": 1698,
+   "date": "2025-05-15",
+   "amendement": "AMANR5L17PO838901BTC1378P0D1N000103",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Construction industrielle à étages : sens non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V1703",
+   "numero": 1703,
+   "date": "2025-05-15",
+   "amendement": "AMANR5L17PO838901BTC1378P0D1N000119",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Règles de permis de construire : sens non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V2108",
+   "numero": 2108,
+   "date": "2025-05-27",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001972",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "S'oppose à la construction de centres de données sur des espaces non artificialisés."
+  },
+  {
+   "scrutin": "VTANR5L17V2118",
+   "numero": 2118,
+   "date": "2025-05-27",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002152",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Transparence sur les centres de données : sens non rattaché à la notion."
+  },
+  {
+   "scrutin": "VTANR5L17V2122",
+   "numero": 2122,
+   "date": "2025-05-27",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001604",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Applique des critères environnementaux chiffrés aux centres de données d'intérêt national."
+  },
+  {
+   "scrutin": "VTANR5L17V2130",
+   "numero": 2130,
+   "date": "2025-05-27",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002587",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Supprime une disposition sur l'appréciation de la compatibilité des objectifs d'artificialisation : sens non établi."
+  },
+  {
+   "scrutin": "VTANR5L17V2133",
+   "numero": 2133,
+   "date": "2025-05-28",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001781",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Repousse les échéances de mise en compatibilité des documents d'urbanisme avec la réduction de l'artificialisation."
+  },
+  {
+   "scrutin": "VTANR5L17V2147",
+   "numero": 2147,
+   "date": "2025-05-28",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002291",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Change l'autorité de classification de projets d'intérêt général majeur : procédure."
+  },
+  {
+   "scrutin": "VTANR5L17V2152",
+   "numero": 2152,
+   "date": "2025-05-28",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001724",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime l'article qui supprimait les zones à faibles émissions."
+  },
+  {
+   "scrutin": "VTANR5L17V2153",
+   "numero": 2153,
+   "date": "2025-05-28",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N000310",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Remplace la suppression des zones à faibles émissions par un rapport sur la pollution de l'air."
+  },
+  {
+   "scrutin": "VTANR5L17V2154",
+   "numero": 2154,
+   "date": "2025-05-28",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002439",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Remplace la suppression des zones à faibles émissions par un dispositif d'accompagnement social."
+  },
+  {
+   "scrutin": "VTANR5L17V2155",
+   "numero": 2155,
+   "date": "2025-05-28",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001842",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Maintient les zones à faibles émissions mais élargit les dérogations : sens ambigu."
+  },
+  {
+   "scrutin": "VTANR5L17V2328",
+   "numero": 2328,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001549",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Contrats d'assurance : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2329",
+   "numero": 2329,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001592",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Délais d'indemnisation des assurés : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2345",
+   "numero": 2345,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001119",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fixe un objectif intermédiaire de protection des sols entre 2031 et 2050."
+  },
+  {
+   "scrutin": "VTANR5L17V2354",
+   "numero": 2354,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002235",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit l'obligation d'effectivité des mesures de compensation des atteintes à la biodiversité."
+  },
+  {
+   "scrutin": "VTANR5L17V2371",
+   "numero": 2371,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002067",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Exonère la filière minière de certaines analyses prévues par le code minier."
+  },
+  {
+   "scrutin": "VTANR5L17V2373",
+   "numero": 2373,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N000593",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Procédure minière : sens non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V2389",
+   "numero": 2389,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001167",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Antennes relais et architectes des Bâtiments de France : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2407",
+   "numero": 2407,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002332",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Revitalisation des entrées de ville : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2423",
+   "numero": 2423,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001238",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Amendement d'appel retitrant le texte : portée normative nulle."
+  },
+  {
+   "scrutin": "VTANR5L17V2429",
+   "numero": 2429,
+   "date": "2025-06-16",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000279",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Cap énergétique à soixante ans : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V2433",
+   "numero": 2433,
+   "date": "2025-06-16",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000243",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Inscrit l'objectif de réduire les émissions de gaz à effet de serre de 50 % en 2030 dans l'article de politique énergétique."
+  },
+  {
+   "scrutin": "VTANR5L17V2434",
+   "numero": 2434,
+   "date": "2025-06-16",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000693",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Réécriture générale : direction non déterminée."
+  },
+  {
+   "scrutin": "VTANR5L17V2441",
+   "numero": 2441,
+   "date": "2025-06-16",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000403",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Renforcement des interconnexions : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V2456",
+   "numero": 2456,
+   "date": "2025-06-16",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000040",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Définition de la souveraineté énergétique : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V2461",
+   "numero": 2461,
+   "date": "2025-06-17",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000066",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Autorise et développe l'exploration d'hydrocarbures nationaux."
+  },
+  {
+   "scrutin": "VTANR5L17V2468",
+   "numero": 2468,
+   "date": "2025-06-17",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000517",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Réintroduit les leviers fiscaux pour l'investissement dans les énergies bas carbone."
+  },
+  {
+   "scrutin": "VTANR5L17V2473",
+   "numero": 2473,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000587",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Programmation nucléaire : traité par la notion « Nucléaire »."
+  },
+  {
+   "scrutin": "VTANR5L17V2474",
+   "numero": 2474,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000588",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Programmation nucléaire : traité par la notion « Nucléaire »."
+  },
+  {
+   "scrutin": "VTANR5L17V2533",
+   "numero": 2533,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000067",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Réseaux électriques : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V2534",
+   "numero": 2534,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000610",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Nucléaire : traité par la notion « Nucléaire »."
+  },
+  {
+   "scrutin": "VTANR5L17V2535",
+   "numero": 2535,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000056",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fixe un objectif de 100 % d'hydrogène bas carbone en 2035."
+  },
+  {
+   "scrutin": "VTANR5L17V2544",
+   "numero": 2544,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000340",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Interdit toute aide publique aux énergies fossiles."
+  },
+  {
+   "scrutin": "VTANR5L17V2546",
+   "numero": 2546,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000251",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Réserve le captage du carbone à des cas exceptionnels : restreint une technologie de décarbonation, sens ambigu."
+  },
+  {
+   "scrutin": "VTANR5L17V2547",
+   "numero": 2547,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000546",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Réécrit la trajectoire des énergies renouvelables pour l'aligner sur les objectifs européens."
+  },
+  {
+   "scrutin": "VTANR5L17V2563",
+   "numero": 2563,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000521",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Ajuste un objectif de production en lien avec RED III : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V2565",
+   "numero": 2565,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000463",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Ajoute un objectif de production de froid renouvelable."
+  },
+  {
+   "scrutin": "VTANR5L17V2582",
+   "numero": 2582,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000031",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Conditionne la sortie des énergies fossiles au déploiement de capacités pilotables."
+  },
+  {
+   "scrutin": "VTANR5L17V2588",
+   "numero": 2588,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000294",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rend contraignant l'objectif en remplaçant « tendre vers » par « atteindre »."
+  },
+  {
+   "scrutin": "VTANR5L17V2600",
+   "numero": 2600,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000627",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Remplace « réduire » par « tendre vers une réduction » pour l'objectif d'émissions."
+  },
+  {
+   "scrutin": "VTANR5L17V2603",
+   "numero": 2603,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000318",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Précise l'objectif de baisse de l'empreinte carbone : 27 % en 2030 et 65 % en 2050."
+  },
+  {
+   "scrutin": "VTANR5L17V2604",
+   "numero": 2604,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000321",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Précise l'objectif de baisse de l'empreinte carbone : 27 % en 2030."
+  },
+  {
+   "scrutin": "VTANR5L17V2605",
+   "numero": 2605,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000324",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Précise l'objectif de baisse de l'empreinte carbone : 65 % des émissions importées en 2050."
+  },
+  {
+   "scrutin": "VTANR5L17V2606",
+   "numero": 2606,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000013",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Prend en compte la santé des forêts comme puits de carbone dans les objectifs énergétiques."
+  },
+  {
+   "scrutin": "VTANR5L17V2607",
+   "numero": 2607,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000259",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Cap énergétique à soixante ans : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V2623",
+   "numero": 2623,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000231",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur le coût de la décarbonation outre-mer."
+  },
+  {
+   "scrutin": "VTANR5L17V2756",
+   "numero": 2756,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000174",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Adapte les constructions scolaires aux risques naturels et climatiques outre-mer."
+  },
+  {
+   "scrutin": "VTANR5L17V2763",
+   "numero": 2763,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000648",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Ratification d'ordonnances : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2839",
+   "numero": 2839,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000040",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Traçabilité agricole à Mayotte : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2859",
+   "numero": 2859,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000236",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait de Mayotte une priorité de la bifurcation écologique."
+  },
+  {
+   "scrutin": "VTANR5L17V3523",
+   "numero": 3523,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000388",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Cotisations de l'armement maritime : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3656",
+   "numero": 3656,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001624",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Dépassements d'honoraires : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3906",
+   "numero": 3906,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000005",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Abonde de 100 M€ le fonds de prévention des risques naturels majeurs."
+  },
+  {
+   "scrutin": "VTANR5L17V3907",
+   "numero": 3907,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000069",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Refuse l'annulation de crédits de la mission écologie."
+  },
+  {
+   "scrutin": "VTANR5L17V3908",
+   "numero": 3908,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000004",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Refuse l'annulation de crédits du programme énergie-climat (aides aux véhicules propres)."
+  },
+  {
+   "scrutin": "VTANR5L17V4389",
+   "numero": 4389,
+   "date": "2025-11-27",
+   "amendement": "AMANR5L17PO838901BTC2123P0D1N000028",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Rapport sur la filière sidérurgique : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4390",
+   "numero": 4390,
+   "date": "2025-11-27",
+   "amendement": "AMANR5L17PO838901BTC2123P0D1N000029",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Nationalisation d'ArcelorMittal : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4413",
+   "numero": 4413,
+   "date": "2025-11-27",
+   "amendement": "AMANR5L17PO838901BTC2123P0D1N000221",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Nationalisation d'ArcelorMittal : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4492",
+   "numero": 4492,
+   "date": "2025-12-03",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000036",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Cotisations de l'armement maritime : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4823",
+   "numero": 4823,
+   "date": "2025-12-17",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000211",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Élargit la participation du public à la soutenabilité environnementale des projets olympiques."
+  },
+  {
+   "scrutin": "VTANR5L17V4884",
+   "numero": 4884,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000207",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Soumet l'estimation d'impact environnemental des JO aux avis du Haut Conseil pour le climat."
+  },
+  {
+   "scrutin": "VTANR5L17V4885",
+   "numero": 4885,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000208",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Impose un plan d'actions de neutralité carbone pour les Jeux olympiques."
+  },
+  {
+   "scrutin": "VTANR5L17V5080",
+   "numero": 5080,
+   "date": "2026-01-15",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001362",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime une exonération de taxe sur les billets d'avion."
+  },
+  {
+   "scrutin": "VTANR5L17V5299",
+   "numero": 5299,
+   "date": "2026-02-03",
+   "amendement": "AMANR5L17PO838901BTC1490P0D1N000013",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Résolution Groenland : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5314",
+   "numero": 5314,
+   "date": "2026-02-04",
+   "amendement": "AMANR5L17PO838901BTC2143P0D1N000003",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Intègre la protection de la biodiversité dans toutes les politiques climatiques européennes."
+  },
+  {
+   "scrutin": "VTANR5L17V5315",
+   "numero": 5315,
+   "date": "2026-02-04",
+   "amendement": "AMANR5L17PO838901BTC2143P0D1N000004",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Demande de peser pour une sortie effective des énergies fossiles."
+  },
+  {
+   "scrutin": "VTANR5L17V5366",
+   "numero": 5366,
+   "date": "2026-02-12",
+   "amendement": "AMANR5L17PO838901BTC2427P0D1N000072",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime des obligations imposées à la personne publique en matière de protection de l'eau potable."
+  },
+  {
+   "scrutin": "VTANR5L17V5837",
+   "numero": 5837,
+   "date": "2026-03-26",
+   "amendement": "AMANR5L17PO838901BTC2520P0D1N000013",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Moyens de protection des cultures : sens non rattaché à la notion."
+  },
+  {
+   "scrutin": "VTANR5L17V5838",
+   "numero": 5838,
+   "date": "2026-03-26",
+   "amendement": "AMANR5L17PO838901BTC2520P0D1N000011",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur la pénibilité climatique du travail agricole."
+  },
+  {
+   "scrutin": "VTANR5L17V6066",
+   "numero": 6066,
+   "date": "2026-04-08",
+   "amendement": "AMANR5L17PO838901BTC2193P0D1N000011",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Régime des catastrophes naturelles : solidarité, pas écologie."
+  },
+  {
+   "scrutin": "VTANR5L17V6068",
+   "numero": 6068,
+   "date": "2026-04-08",
+   "amendement": "AMANR5L17PO838901BTC2193P0D1N000004",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur le coût de l'adaptation au dérèglement climatique."
+  },
+  {
+   "scrutin": "VTANR5L17V6311",
+   "numero": 6311,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000369",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Outre-mer dans la loi de programmation militaire : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6350",
+   "numero": 6350,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000145",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Rôle des armées face aux catastrophes dans une loi militaire : sens non rattaché à la notion."
+  },
+  {
+   "scrutin": "VTANR5L17V6351",
+   "numero": 6351,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000153",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Casques verts climatiques de l'ONU dans une loi militaire : sens difficile à rattacher à la notion."
+  },
+  {
+   "scrutin": "VTANR5L17V6380",
+   "numero": 6380,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000345",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Outre-mer dans la loi de programmation militaire : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6434",
+   "numero": 6434,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000657",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Intelligence artificielle militaire : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6527",
+   "numero": 6527,
+   "date": "2026-05-12",
+   "amendement": "AMANR5L17PO838901BTC2615P0D1N000041",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Définition d'un navire à propulsion vélique : sens non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V6534",
+   "numero": 6534,
+   "date": "2026-05-12",
+   "amendement": "AMANR5L17PO838901BTC2615P0D1N000009",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Oriente en priorité le fonds de décarbonation du transport maritime vers la propulsion vélique."
+  },
+  {
+   "scrutin": "VTANR5L17V6535",
+   "numero": 6535,
+   "date": "2026-05-12",
+   "amendement": "AMANR5L17PO838901BTC2615P0D1N000008",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Affectation d'une recette : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V6536",
+   "numero": 6536,
+   "date": "2026-05-12",
+   "amendement": "AMANR5L17PO838901BTC2615P0D1N000038",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Critères d'éligibilité d'un fonds au siège des entreprises : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6538",
+   "numero": 6538,
+   "date": "2026-05-12",
+   "amendement": "AMANR5L17PO838901BTC2615P0D1N000014",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Supprime un régime d'accises pour le transport à la voile : motif non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V6539",
+   "numero": 6539,
+   "date": "2026-05-12",
+   "amendement": "AMANR5L17PO838901BTC2615P0D1N000015",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Supprime un régime d'accises pour le transport à la voile : motif non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V6540",
+   "numero": 6540,
+   "date": "2026-05-12",
+   "amendement": "AMANR5L17PO838901BTC2615P0D1N000012",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Demande un rapport sur le soutien à la décarbonation du transport maritime."
+  },
+  {
+   "scrutin": "VTANR5L17V6740",
+   "numero": 6740,
+   "date": "2026-05-19",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001590",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Acteurs associés à la sélection de projets agricoles : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6746",
+   "numero": 6746,
+   "date": "2026-05-19",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N002205",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Souveraineté alimentaire : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6754",
+   "numero": 6754,
+   "date": "2026-05-20",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000152",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Bien-être animal (accès au plein air) : pas la notion d'écologie et de climat."
+  },
+  {
+   "scrutin": "VTANR5L17V6760",
+   "numero": 6760,
+   "date": "2026-05-20",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000822",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Conditionne un label à un volet protéines végétales : agricole, non rattaché à la notion."
+  },
+  {
+   "scrutin": "VTANR5L17V6762",
+   "numero": 6762,
+   "date": "2026-05-20",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001606",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Souveraineté alimentaire outre-mer : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6782",
+   "numero": 6782,
+   "date": "2026-05-21",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000991",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait tenir compte de l'agriculture biologique dans la gestion de l'eau."
+  },
+  {
+   "scrutin": "VTANR5L17V6798",
+   "numero": 6798,
+   "date": "2026-05-21",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000504",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Sécurise des autorisations de prélèvement d'eau : sens contesté, non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V6806",
+   "numero": 6806,
+   "date": "2026-05-21",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001899",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Stockage d'eau agricole dans la planification : sens contesté, non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V6810",
+   "numero": 6810,
+   "date": "2026-05-21",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000247",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Instaure un moratoire sur les méga-bassines."
+  },
+  {
+   "scrutin": "VTANR5L17V6811",
+   "numero": 6811,
+   "date": "2026-05-21",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000835",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Recensement des retenues d'eau : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V6831",
+   "numero": 6831,
+   "date": "2026-05-22",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000953",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Aquaculture : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6833",
+   "numero": 6833,
+   "date": "2026-05-22",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000302",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Aquaculture : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6835",
+   "numero": 6835,
+   "date": "2026-05-22",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000344",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Accélère les retenues d'eau agricoles : sujet contesté, non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V6853",
+   "numero": 6853,
+   "date": "2026-05-22",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000797",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit un article de protection des captages d'eau menacés par les nitrates et pesticides."
+  },
+  {
+   "scrutin": "VTANR5L17V7035",
+   "numero": 7035,
+   "date": "2026-05-28",
+   "amendement": "AMANR5L17PO838901B2812P0D1N000015",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Formation professionnelle : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V7040",
+   "numero": 7040,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000051",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Retire le label HVE des critères de durabilité de la commande publique, jugé insuffisant."
+  },
+  {
+   "scrutin": "VTANR5L17V7041",
+   "numero": 7041,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001752",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "S'oppose à un recul sur la part de produits durables et de qualité dans la restauration collective."
+  },
+  {
+   "scrutin": "VTANR5L17V7042",
+   "numero": 7042,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001758",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Exclut du décompte des produits durables ceux issus d'exploitations certifiées HVE."
+  },
+  {
+   "scrutin": "VTANR5L17V7044",
+   "numero": 7044,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001762",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Exclut du décompte des produits durables ceux issus d'exploitations de la certification la plus haute (HVE)."
+  },
+  {
+   "scrutin": "VTANR5L17V7049",
+   "numero": 7049,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000284",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Impose une pondération significative des critères environnementaux dans la commande publique."
+  },
+  {
+   "scrutin": "VTANR5L17V7084",
+   "numero": 7084,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000254",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rend contraignante la séquence éviter-réduire-compenser pour les terres agricoles."
+  },
+  {
+   "scrutin": "VTANR5L17V7085",
+   "numero": 7085,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000255",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rend contraignant l'objectif de zéro artificialisation dans les études préalables agricoles."
+  },
+  {
+   "scrutin": "VTANR5L17V7086",
+   "numero": 7086,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000256",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Ajoute des critères écologiques à la compensation collective agricole."
+  },
+  {
+   "scrutin": "VTANR5L17V7115",
+   "numero": 7115,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000813",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Droit de préemption des SAFER : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V7198",
+   "numero": 7198,
+   "date": "2026-05-30",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000588",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur l'assurance agricole : pas d'exigence environnementale."
+  },
+  {
+   "scrutin": "VTANR5L17V7337",
+   "numero": 7337,
+   "date": "2026-06-04",
+   "amendement": "AMANR5L17PO838901BTC2200P0D1N000027",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Prévention du mal-être agricole : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V7358",
+   "numero": 7358,
+   "date": "2026-06-11",
+   "amendement": "AMANR5L17PO838901BTC2872P0D1N000007",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Nationalisation d'ArcelorMittal : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V7375",
+   "numero": 7375,
+   "date": "2026-06-11",
+   "amendement": "AMANR5L17PO838901BTC2872P0D1N000017",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Nationalisation d'ArcelorMittal : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V7381",
+   "numero": 7381,
+   "date": "2026-06-11",
+   "amendement": "AMANR5L17PO838901B2415P0D1N000002",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime l'article qui revenait sur l'interdiction de l'exploitation des hydrocarbures."
+  },
+  {
+   "scrutin": "VTANR5L17V7384",
+   "numero": 7384,
+   "date": "2026-06-11",
+   "amendement": "AMANR5L17PO838901B2415P0D1N000013",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Empêche un régime dérogatoire à l'interdiction des hydrocarbures outre-mer."
+  },
+  {
+   "scrutin": "VTANR5L17V8613",
+   "numero": 8613,
+   "date": "2026-10-08",
+   "amendement": "AMANR5L17PO838901B2970P0D1N000007",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime l'article qui abroge les zones à faibles émissions."
+  },
+  {
+   "scrutin": "VTANR5L17V8614",
+   "numero": 8614,
+   "date": "2026-10-08",
+   "amendement": "AMANR5L17PO838901B2970P0D1N000029",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime les dispositions qui abrogent les zones à faibles émissions."
+  },
+  {
+   "scrutin": "VTANR5L17V8621",
+   "numero": 8621,
+   "date": "2026-10-08",
+   "amendement": "AMANR5L17PO838901B2970P0D1N000011",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Conditionne les restrictions de circulation au développement d'alternatives à la voiture."
+  }
+ ]
+}

@@ -21,3 +21,11 @@ Daily refresh: `deploy/install-timer.sh` installs a systemd user timer (06:30). 
 Themes are keyword rules on the title of the legislative text (`src/themes.ts`), a reading aid rather than an official taxonomy. Edit the rules, then `bun run ingest`.
 
 Source: data.assemblee-nationale.fr, open licence.
+
+## Notions (draft, labels not yet validated)
+
+`notions/*.json` holds, for each notion (nuclear, ecology and climate, immigration, pensions), the amendments that were read one by one and given a direction: `+1` favours the notion, `-1` goes against it, `0` set aside. Each label carries a one-line justification and a confidence level; the file's `statut` says whether a human has reviewed it.
+
+- The amendment text comes from the open-data "Tous les amendements" set (327 MB, downloaded once into `data/raw/amendements/`, not part of the nightly refresh). Amendments are linked to the scrutin that voted on them from the number and author in the scrutin title: 80 % of the amendment scrutins are linked, the rest (mostly the two finance bills, where half of the amendments have no recorded outcome) are left unclassified.
+- `bun scripts/candidates.ts <notion> --json out.json` lists the candidates of a notion (keywords in `src/notions.ts`, divisive votes only).
+- A "pour" vote follows the amendment's direction and "contre" opposes it. That is not always a stance on the notion itself (an amendment can also fix a figure or a procedure): the pages say so.

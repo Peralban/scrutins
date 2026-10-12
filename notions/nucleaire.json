@@ -1,0 +1,405 @@
+{
+ "notion": "nucleaire",
+ "label": "Nucléaire",
+ "axe": "Favorable : développer, maintenir ou faciliter l'énergie nucléaire. Défavorable : la réduire, la plafonner ou la conditionner.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose.",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V819",
+   "numero": 819,
+   "date": "2025-02-17",
+   "amendement": "AMANR5L17PO838901BTC0631P0D1N000033",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Marché de l'électricité : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V822",
+   "numero": 822,
+   "date": "2025-02-17",
+   "amendement": "AMANR5L17PO838901BTC0631P0D1N000011",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Porte sur les appels d'offres de renouvelables : pas sur le nucléaire."
+  },
+  {
+   "scrutin": "VTANR5L17V902",
+   "numero": 902,
+   "date": "2025-03-06",
+   "amendement": "AMANR5L17PO838901BTC0994P0D1N000039",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Risques NRBC des pompiers : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V962",
+   "numero": 962,
+   "date": "2025-03-12",
+   "amendement": "AMANR5L17PO838901BTC1001P0D1N000052",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Résolution Ukraine : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V984",
+   "numero": 984,
+   "date": "2025-03-12",
+   "amendement": "AMANR5L17PO838901BTC1001P0D1N000034",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Résolution sur l'Ukraine : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V1348",
+   "numero": 1348,
+   "date": "2025-04-10",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001030",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Rétablit une commission sur le financement du démantèlement : gouvernance, pas développement."
+  },
+  {
+   "scrutin": "VTANR5L17V1396",
+   "numero": 1396,
+   "date": "2025-04-11",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N000032",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Supprime un comité de transparence sur la sûreté nucléaire : gouvernance, pas développement du nucléaire."
+  },
+  {
+   "scrutin": "VTANR5L17V1675",
+   "numero": 1675,
+   "date": "2025-05-15",
+   "amendement": "AMANR5L17PO838901BTC1378P0D1N000133",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Facilite l'urbanisme (grand chantier de plein droit) pour le programme EPR2."
+  },
+  {
+   "scrutin": "VTANR5L17V1680",
+   "numero": 1680,
+   "date": "2025-05-15",
+   "amendement": "AMANR5L17PO838901BTC1378P0D1N000132",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Exonère la construction de réacteurs EPR2 de règles de construction, pour accélérer le programme."
+  },
+  {
+   "scrutin": "VTANR5L17V2384",
+   "numero": 2384,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001246",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Toitures solaires : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2424",
+   "numero": 2424,
+   "date": "2025-06-16",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000622",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Supprime le monopole d'EDF pour des raisons de droit européen : pas une position sur le nucléaire lui-même."
+  },
+  {
+   "scrutin": "VTANR5L17V2430",
+   "numero": 2430,
+   "date": "2025-06-16",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000421",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Fonde la politique énergétique prioritairement sur le nucléaire."
+  },
+  {
+   "scrutin": "VTANR5L17V2433",
+   "numero": 2433,
+   "date": "2025-06-16",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000243",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Rappelle l'objectif climatique : ne porte pas sur le nucléaire."
+  },
+  {
+   "scrutin": "VTANR5L17V2434",
+   "numero": 2434,
+   "date": "2025-06-16",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000693",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Réécriture générale d'un article de politique énergétique : direction non déterminée."
+  },
+  {
+   "scrutin": "VTANR5L17V2438",
+   "numero": 2438,
+   "date": "2025-06-16",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000625",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Tarifs réglementés de l'électricité : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2454",
+   "numero": 2454,
+   "date": "2025-06-16",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000315",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Protège le nucléaire historique et l'hydroélectricité contre la prise de contrôle par des acteurs privés."
+  },
+  {
+   "scrutin": "VTANR5L17V2457",
+   "numero": 2457,
+   "date": "2025-06-16",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000046",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Remplace les quotas de renouvelables par un objectif sur les sources pilotables et décarbonées en citant le nucléaire."
+  },
+  {
+   "scrutin": "VTANR5L17V2462",
+   "numero": 2462,
+   "date": "2025-06-17",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000071",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Structure des filières industrielles dont le nucléaire."
+  },
+  {
+   "scrutin": "VTANR5L17V2471",
+   "numero": 2471,
+   "date": "2025-06-17",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000183",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait mieux rémunérer la flexibilité du nucléaire et tenir compte du coût de la variabilité des renouvelables."
+  },
+  {
+   "scrutin": "VTANR5L17V2472",
+   "numero": 2472,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000518",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit l'article en ne conservant que le maintien du parc existant, sans quotas ni nouveaux réacteurs."
+  },
+  {
+   "scrutin": "VTANR5L17V2473",
+   "numero": 2473,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000587",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit l'objectif de prolonger le parc existant jusqu'à 60 ans et de maintenir 63 GW d'ici 2035."
+  },
+  {
+   "scrutin": "VTANR5L17V2474",
+   "numero": 2474,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000588",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Repli : prolongation du parc, nouveau programme de 8 réacteurs, maintien du retraitement."
+  },
+  {
+   "scrutin": "VTANR5L17V2521",
+   "numero": 2521,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000503",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit l'article qui maintient les capacités nucléaires et prévoit de nouvelles capacités (en retirant les quotas en pourcentage)."
+  },
+  {
+   "scrutin": "VTANR5L17V2522",
+   "numero": 2522,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000006",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Inscrit le redémarrage de la centrale de Fessenheim."
+  },
+  {
+   "scrutin": "VTANR5L17V2524",
+   "numero": 2524,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000591",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Solutions de gestion des déchets de haute activité : gestion, direction non tranchée."
+  },
+  {
+   "scrutin": "VTANR5L17V2525",
+   "numero": 2525,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000590",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Encadre l'approvisionnement en uranium (droits humains) sans développer ni restreindre la filière."
+  },
+  {
+   "scrutin": "VTANR5L17V2526",
+   "numero": 2526,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000108",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée un objectif de développement de la chaleur nucléaire (60 TWh/an en 2050)."
+  },
+  {
+   "scrutin": "VTANR5L17V2527",
+   "numero": 2527,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000143",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Fait de la fermeture du cycle et d'un démonstrateur de réacteur à neutrons rapides en 2030 une priorité nationale."
+  },
+  {
+   "scrutin": "VTANR5L17V2528",
+   "numero": 2528,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000146",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Prévoit le renouvellement du parc dès 2050 pour maintenir 63 GW."
+  },
+  {
+   "scrutin": "VTANR5L17V2531",
+   "numero": 2531,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000446",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Loi de programmation sur le cycle du combustible et les déchets : gestion, direction non tranchée."
+  },
+  {
+   "scrutin": "VTANR5L17V2532",
+   "numero": 2532,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000507",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Fait de l'uranium appauvri une réserve stratégique pour les réacteurs à neutrons rapides."
+  },
+  {
+   "scrutin": "VTANR5L17V2534",
+   "numero": 2534,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000610",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Affirme le nucléaire comme fondement stratégique de la politique énergétique."
+  },
+  {
+   "scrutin": "VTANR5L17V2541",
+   "numero": 2541,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000105",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Stockage de l'électricité : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2551",
+   "numero": 2551,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000264",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Réécrit l'article pour sortir du nucléaire et viser 100 % d'énergies renouvelables en 2060."
+  },
+  {
+   "scrutin": "VTANR5L17V2563",
+   "numero": 2563,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000521",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Ajuste un objectif de production en lien avec la directive RED III : direction non tranchée sur le nucléaire."
+  },
+  {
+   "scrutin": "VTANR5L17V2569",
+   "numero": 2569,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000172",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Rythme des appels d'offres : direction non tranchée sur le nucléaire."
+  },
+  {
+   "scrutin": "VTANR5L17V2570",
+   "numero": 2570,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000211",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Fixe un objectif de 100 % d'énergies renouvelables en 2050, de la même série que la sortie du nucléaire."
+  },
+  {
+   "scrutin": "VTANR5L17V2579",
+   "numero": 2579,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000447",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Met fin à l'éolien : porte sur les renouvelables, pas sur le nucléaire."
+  },
+  {
+   "scrutin": "VTANR5L17V2580",
+   "numero": 2580,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000486",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Moratoire sur l'éolien et le photovoltaïque : porte sur les renouvelables, pas sur le nucléaire."
+  },
+  {
+   "scrutin": "VTANR5L17V2615",
+   "numero": 2615,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000025",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit la requalification de matières radioactives en stock stratégique pour les réacteurs de 4e génération."
+  },
+  {
+   "scrutin": "VTANR5L17V2622",
+   "numero": 2622,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000235",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Demande un rapport sur la maturité d'EPR2 : contrôle, pas de position sur le programme."
+  },
+  {
+   "scrutin": "VTANR5L17V4392",
+   "numero": 4392,
+   "date": "2025-11-27",
+   "amendement": "AMANR5L17PO838901BTC2123P0D1N000044",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "ArcelorMittal : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5325",
+   "numero": 5325,
+   "date": "2026-02-05",
+   "amendement": "AMANR5L17PO838901BTC2405P0D1N000007",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Barrages hydroélectriques : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V7931",
+   "numero": 7931,
+   "date": "2026-07-01",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000099",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Intrusion dans un site de dissuasion : sécurité, pas énergie."
+  }
+ ]
+}

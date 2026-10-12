@@ -1,0 +1,864 @@
+{
+ "notion": "immigration",
+ "label": "Immigration",
+ "axe": "Favorable : faciliter l'entrée, le séjour, la régularisation ou l'accueil des étrangers. Défavorable : les restreindre ou durcir les conditions.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose.",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V218",
+   "numero": 218,
+   "date": "2024-10-31",
+   "amendement": "AMANR5L17PO838901B0265P0D1N000001",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime l'article d'une proposition de loi qui assouplit les conditions d'expulsion d'étrangers."
+  },
+  {
+   "scrutin": "VTANR5L17V554",
+   "numero": 554,
+   "date": "2025-01-21",
+   "amendement": "AMANR5L17PO838901BTC0775P0D1N000163",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Interdit que des dons soient affectés à des associations d'aide aux migrants."
+  },
+  {
+   "scrutin": "VTANR5L17V573",
+   "numero": 573,
+   "date": "2025-01-21",
+   "amendement": "AMANR5L17PO838901BTC0775P0D1N000246",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Proroge la validité des titres de séjour expirés dont le renouvellement est en cours."
+  },
+  {
+   "scrutin": "VTANR5L17V605",
+   "numero": 605,
+   "date": "2025-01-23",
+   "amendement": "AMANR5L17PO838901BTC0701P0D1N000020",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Conditions d'accès au repas à 1 euro : portée non établie sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V695",
+   "numero": 695,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000001",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime l'article qui restreint le droit du sol à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V696",
+   "numero": 696,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000002",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Abroge la dérogation au droit du sol à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V697",
+   "numero": 697,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000007",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Propose l'abrogation du droit du sol, au moins à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V698",
+   "numero": 698,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000087",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Réécrit l'article pour supprimer l'application du droit du sol à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V700",
+   "numero": 700,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000012",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime les alinéas qui durcissent le droit du sol à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V702",
+   "numero": 702,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000014",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime l'alinéa qui durcit le droit du sol à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V703",
+   "numero": 703,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000024",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Réduit la durée de résidence exigée pour le droit du sol à Mayotte (repli)."
+  },
+  {
+   "scrutin": "VTANR5L17V704",
+   "numero": 704,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000023",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Réduit la durée de résidence exigée pour le droit du sol à Mayotte (repli)."
+  },
+  {
+   "scrutin": "VTANR5L17V705",
+   "numero": 705,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000095",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Réduit à quatre mois la résidence exigée pour le droit du sol à Mayotte (repli)."
+  },
+  {
+   "scrutin": "VTANR5L17V706",
+   "numero": 706,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000022",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Réduit la durée de résidence exigée pour le droit du sol à Mayotte (repli)."
+  },
+  {
+   "scrutin": "VTANR5L17V707",
+   "numero": 707,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000010",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Porte à deux ans la résidence exigée des parents pour le droit du sol à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V708",
+   "numero": 708,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000088",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Porte à trois ans la résidence exigée des parents pour le droit du sol à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V709",
+   "numero": 709,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000071",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Impose des justificatifs authentiques pour attester la résidence régulière des parents."
+  },
+  {
+   "scrutin": "VTANR5L17V711",
+   "numero": 711,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000027",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur les droits des étrangers à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V712",
+   "numero": 712,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000074",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur les droits des enfants."
+  },
+  {
+   "scrutin": "VTANR5L17V713",
+   "numero": 713,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000031",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur les droits de l'enfant."
+  },
+  {
+   "scrutin": "VTANR5L17V715",
+   "numero": 715,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000032",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur la rétention administrative."
+  },
+  {
+   "scrutin": "VTANR5L17V716",
+   "numero": 716,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000060",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport d'évaluation de la dérogation au droit du sol."
+  },
+  {
+   "scrutin": "VTANR5L17V717",
+   "numero": 717,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000062",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport d'évaluation : pas de position sur le fond."
+  },
+  {
+   "scrutin": "VTANR5L17V719",
+   "numero": 719,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000064",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur l'évolution des acquisitions de nationalité."
+  },
+  {
+   "scrutin": "VTANR5L17V720",
+   "numero": 720,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000036",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V721",
+   "numero": 721,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000035",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V722",
+   "numero": 722,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000034",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V723",
+   "numero": 723,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000042",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V724",
+   "numero": 724,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000037",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V725",
+   "numero": 725,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000039",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V726",
+   "numero": 726,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000040",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V729",
+   "numero": 729,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000041",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V730",
+   "numero": 730,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000043",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V731",
+   "numero": 731,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000038",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V732",
+   "numero": 732,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000044",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V733",
+   "numero": 733,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000090",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V734",
+   "numero": 734,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000045",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V735",
+   "numero": 735,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000046",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V736",
+   "numero": 736,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000098",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Complète le titre du texte : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V1408",
+   "numero": 1408,
+   "date": "2025-04-11",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N000948",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'Office français de l'immigration et de l'intégration."
+  },
+  {
+   "scrutin": "VTANR5L17V1682",
+   "numero": 1682,
+   "date": "2025-05-15",
+   "amendement": "AMANR5L17PO838901BTC1378P0D1N000074",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Autorisations d'urbanisme en Guyane : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2264",
+   "numero": 2264,
+   "date": "2025-06-05",
+   "amendement": "AMANR5L17PO838901BTC1473P0D1N000043",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Réserve les allocations familiales aux familles dont un parent est de nationalité française."
+  },
+  {
+   "scrutin": "VTANR5L17V2616",
+   "numero": 2616,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000641",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Rétablit un article visant les mineurs étrangers condamnés à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2635",
+   "numero": 2635,
+   "date": "2025-06-23",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000131",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime un article qui durcit les conditions d'obtention de titres de séjour."
+  },
+  {
+   "scrutin": "VTANR5L17V2636",
+   "numero": 2636,
+   "date": "2025-06-23",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000375",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime les restrictions d'accès au séjour pour motif familial à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2637",
+   "numero": 2637,
+   "date": "2025-06-23",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000132",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime l'exigence d'un visa de long séjour pour certaines cartes de séjour à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2649",
+   "numero": 2649,
+   "date": "2025-06-23",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000055",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Rend inapplicable le regroupement familial à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2650",
+   "numero": 2650,
+   "date": "2025-06-23",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000309",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Précise des motifs d'exclusion du regroupement familial."
+  },
+  {
+   "scrutin": "VTANR5L17V2659",
+   "numero": 2659,
+   "date": "2025-06-24",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000306",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Durcit les conditions de ressources du regroupement familial à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2660",
+   "numero": 2660,
+   "date": "2025-06-24",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000398",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime le document de circulation territorialisé pour mineurs étrangers."
+  },
+  {
+   "scrutin": "VTANR5L17V2662",
+   "numero": 2662,
+   "date": "2025-06-24",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000282",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rend le titre de séjour délivré à Mayotte valable sur le reste du territoire."
+  },
+  {
+   "scrutin": "VTANR5L17V2663",
+   "numero": 2663,
+   "date": "2025-06-24",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000150",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Abroge immédiatement le titre de séjour territorialisé à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2672",
+   "numero": 2672,
+   "date": "2025-06-24",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000057",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Durcit la peine pour reconnaissance frauduleuse d'enfant."
+  },
+  {
+   "scrutin": "VTANR5L17V2673",
+   "numero": 2673,
+   "date": "2025-06-24",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000058",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Étend la répression de la fraude aux documents de séjour."
+  },
+  {
+   "scrutin": "VTANR5L17V2676",
+   "numero": 2676,
+   "date": "2025-06-24",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000064",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Limite à une seule fois l'aide attribuée à un même ressortissant étranger."
+  },
+  {
+   "scrutin": "VTANR5L17V2678",
+   "numero": 2678,
+   "date": "2025-06-24",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000640",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit l'interdiction de placer des familles avec enfants en rétention."
+  },
+  {
+   "scrutin": "VTANR5L17V2683",
+   "numero": 2683,
+   "date": "2025-06-24",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000641",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Rétablit un article visant les mineurs étrangers condamnés à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2689",
+   "numero": 2689,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000642",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Conditionne les transferts de fonds à Mayotte à un titre de séjour régulier."
+  },
+  {
+   "scrutin": "VTANR5L17V2690",
+   "numero": 2690,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000279",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Rétablit un article mêlant trafic d'armes et immigration : portée non établie sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V2749",
+   "numero": 2749,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000114",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Régularisation foncière : sans lien avec l'immigration."
+  },
+  {
+   "scrutin": "VTANR5L17V2750",
+   "numero": 2750,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000443",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Régularisation foncière : sans lien avec l'immigration."
+  },
+  {
+   "scrutin": "VTANR5L17V2781",
+   "numero": 2781,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000074",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Réserve le passeport pour la mobilité des études aux élèves de nationalité française."
+  },
+  {
+   "scrutin": "VTANR5L17V2792",
+   "numero": 2792,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000060",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur la démographie à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2805",
+   "numero": 2805,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000023",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Durcit la formulation de la lutte contre l'immigration clandestine (texte déclaratif)."
+  },
+  {
+   "scrutin": "VTANR5L17V2808",
+   "numero": 2808,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000024",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Qualifie l'immigration clandestine à Mayotte de « hors de contrôle » (texte déclaratif)."
+  },
+  {
+   "scrutin": "VTANR5L17V2809",
+   "numero": 2809,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000327",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Retire l'habitat illégal de la partie immigration d'un rapport annexé (texte déclaratif)."
+  },
+  {
+   "scrutin": "VTANR5L17V2812",
+   "numero": 2812,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000026",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Étend les radars de lutte contre l'immigration clandestine à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2813",
+   "numero": 2813,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000027",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Déploie un navire de la Marine contre l'immigration clandestine."
+  },
+  {
+   "scrutin": "VTANR5L17V2815",
+   "numero": 2815,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000029",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Inscrit la suppression du droit du sol à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2816",
+   "numero": 2816,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000275",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Dénonce la restriction de l'accès à la nationalité à Mayotte (texte déclaratif)."
+  },
+  {
+   "scrutin": "VTANR5L17V2817",
+   "numero": 2817,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000264",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Lie la lutte contre l'immigration clandestine à la possibilité de suspendre des financements aux Comores."
+  },
+  {
+   "scrutin": "VTANR5L17V2818",
+   "numero": 2818,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000030",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Conditionne la délivrance de visas à la coopération des pays d'origine (texte déclaratif)."
+  },
+  {
+   "scrutin": "VTANR5L17V2821",
+   "numero": 2821,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000033",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Appelle à renforcer le délit de séjour irrégulier (texte déclaratif)."
+  },
+  {
+   "scrutin": "VTANR5L17V2826",
+   "numero": 2826,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000261",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Retire le lien entre insécurité et lutte contre l'immigration irrégulière (texte déclaratif)."
+  },
+  {
+   "scrutin": "VTANR5L17V2839",
+   "numero": 2839,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000040",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Traçabilité agricole à Mayotte : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2849",
+   "numero": 2849,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000050",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Ajoute une phrase sur l'immigration de masse saturant l'hôpital (texte déclaratif)."
+  },
+  {
+   "scrutin": "VTANR5L17V2890",
+   "numero": 2890,
+   "date": "2025-07-02",
+   "amendement": "AMANR5L17PO838901BTC1640P0D1N000023",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Abroge l'assignation à résidence de demandeurs d'asile jugés menaçants."
+  },
+  {
+   "scrutin": "VTANR5L17V3534",
+   "numero": 3534,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000378",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Transparence sur les prix des médicaments : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3600",
+   "numero": 3600,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001954",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Durcit les conditions de maintien de la protection universelle maladie pour les étrangers en situation irrégulière."
+  },
+  {
+   "scrutin": "VTANR5L17V3602",
+   "numero": 3602,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000351",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime la prise en charge des frais de santé des titulaires du titre de séjour pour soins."
+  },
+  {
+   "scrutin": "VTANR5L17V3686",
+   "numero": 3686,
+   "date": "2025-11-12",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000996",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Réserve le congé supplémentaire de naissance aux couples dont un membre est de nationalité française."
+  },
+  {
+   "scrutin": "VTANR5L17V3914",
+   "numero": 3914,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000082",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Refuse l'annulation de crédits de la mission immigration, asile et intégration."
+  },
+  {
+   "scrutin": "VTANR5L17V4721",
+   "numero": 4721,
+   "date": "2025-12-11",
+   "amendement": "AMANR5L17PO838901B2021P0D1N000046",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Restreint la prise en charge de certains anciens mineurs non accompagnés."
+  },
+  {
+   "scrutin": "VTANR5L17V4746",
+   "numero": 4746,
+   "date": "2025-12-11",
+   "amendement": "AMANR5L17PO838901BTC2199P0D1N000001",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Rétablit le contrôle des demandes de renouvellement des titres de séjour de longue durée."
+  },
+  {
+   "scrutin": "VTANR5L17V4748",
+   "numero": 4748,
+   "date": "2025-12-11",
+   "amendement": "AMANR5L17PO838901BTC2199P0D1N000012",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Rétablit le contrôle du renouvellement des titres de séjour de longue durée."
+  },
+  {
+   "scrutin": "VTANR5L17V4749",
+   "numero": 4749,
+   "date": "2025-12-11",
+   "amendement": "AMANR5L17PO838901BTC2199P0D1N000005",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'obligation d'informer l'étranger avant de s'opposer au renouvellement de son titre."
+  },
+  {
+   "scrutin": "VTANR5L17V4960",
+   "numero": 4960,
+   "date": "2026-01-12",
+   "amendement": "AMANR5L17PO838901BTC1449P0D1N000004",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Introduit la préférence nationale dans l'accès au logement social."
+  },
+  {
+   "scrutin": "VTANR5L17V5990",
+   "numero": 5990,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N001024",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Durcit les sanctions de l'emploi d'étrangers non autorisés à travailler."
+  },
+  {
+   "scrutin": "VTANR5L17V6245",
+   "numero": 6245,
+   "date": "2026-04-16",
+   "amendement": "AMANR5L17PO838901BTC2468P0D1N000062",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Abroge la durée exceptionnelle de rétention de 180 à 210 jours."
+  },
+  {
+   "scrutin": "VTANR5L17V7353",
+   "numero": 7353,
+   "date": "2026-06-11",
+   "amendement": "AMANR5L17PO838901BTC1478P0D1N000010",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Conditionne un avantage de l'ASPA à un lien avec la société française (nationalité ou activité en France)."
+  },
+  {
+   "scrutin": "VTANR5L17V8147",
+   "numero": 8147,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000675",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Trafic de protoxyde d'azote : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V8443",
+   "numero": 8443,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000778",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Étend la protection contre les violences sexistes et sexuelles sans distinction de nationalité ou de situation administrative."
+  },
+  {
+   "scrutin": "VTANR5L17V8522",
+   "numero": 8522,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000243",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Rend obligatoire l'interdiction du territoire pour certains délits commis par des étrangers."
+  },
+  {
+   "scrutin": "VTANR5L17V8641",
+   "numero": 8641,
+   "date": "2026-10-09",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000244",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'article interdisant l'OQTF contre un étranger ayant déposé plainte pour violences sexuelles ou traite."
+  },
+  {
+   "scrutin": "VTANR5L17V8642",
+   "numero": 8642,
+   "date": "2026-10-09",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000245",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'article ouvrant l'accès au marché du travail à des demandeurs d'asile victimes de violences."
+  }
+ ]
+}

@@ -46,3 +46,16 @@ export type CarteData = {
   groupes: { sigle: string; nom: string; couleur: string | null }[];
   scopes: { scope: string; label: string; scrutins: number; deputes: number }[];
 };
+
+export type NotionSummary = { id: string; label: string; axe: string; statut: string; favorables: number; defavorables: number; ecartes: number };
+export type NotionStat = { favorables: number; defavorables: number; abstentions: number };
+export type NotionDetail = {
+  notion: { id: string; label: string; axe: string; statut: string; methode: string };
+  groupes: (Groupe & NotionStat)[];
+  deputes: ({ id: string; nom: string; groupe: string | null } & NotionStat)[];
+  votes: {
+    id: string; numero: number; date: string; titre: string; sort: string; pour: number; contre: number; abstentions: number;
+    sens: -1 | 0 | 1; confiance: string; note: string; amendement_uid: string;
+  }[];
+};
+export type DeputeNotion = { id: string; label: string; statut: string } & NotionStat;
