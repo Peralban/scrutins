@@ -1,17 +1,18 @@
 import { NEUTRAL, fmt, pct } from "@/lib/format";
 
-export type BarRow = { sigle: string; nom: string; couleur: string | null; votes_exprimes: number; value: number };
+export type BarRow = { sigle: string; nom: string; couleur: string | null; votes: number; value: number };
 
 // Horizontal bars from zero, one per group, with the value written at the end of each bar.
 // Plain HTML rather than SVG so labels keep their real font size at any width (an SVG
 // viewBox scales its text down with the chart on a phone).
-export default function GroupBars({ rows, label, max }: { rows: BarRow[]; label: string; max: number }) {
+// `unite` names what `votes` counts: votes enregistrés (pour, contre, abstention) or votes exprimés (pour, contre).
+export default function GroupBars({ rows, label, max, unite = "votes enregistrés" }: { rows: BarRow[]; label: string; max: number; unite?: string }) {
   const ticks = [0, 1, 2, 3, 4, 5].map((t) => (max / 5) * t);
   return (
     <div className="bars" role="img" aria-label={label}>
       {rows.map((r) => (
         <div className="bar-row" key={r.sigle}
-          data-tip={`${r.nom}\n${label} ${pct(r.value)}\n${fmt.format(r.votes_exprimes)} votes exprimés`}>
+          data-tip={`${r.nom}\n${label} ${pct(r.value)}\n${fmt.format(r.votes)} ${unite}`}>
           <span className="bar-label">{r.sigle}</span>
           <span className="bar-track">
             <i style={{ width: `${Math.max((r.value / max) * 100, 0.5)}%`, background: r.couleur ?? NEUTRAL }} />

@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <>
       <h1 className="page-title">Les députés</h1>
-      <p className="def" style={{ marginBottom: 20 }}>Tous les députés ayant siégé pendant la législature. Cherche un nom, ou trie par dissidence, votes exprimés ou délégation ; un clic ouvre la fiche.</p>
+      <p className="def" style={{ marginBottom: 20 }}>Tous les députés ayant siégé pendant la législature. Cherche un nom, ou trie par dissidence, votes enregistrés ou délégation ; un clic ouvre la fiche.</p>
       <Suspense fallback={<p className="skeleton">Chargement des députés…</p>}>
         <List />
       </Suspense>

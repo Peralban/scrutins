@@ -7,7 +7,7 @@ export function open() {
 }
 
 // Expressed vote that differs from the group's majority position.
-const EXPRIME = "v.position IN ('pour','contre','abstention')";
+const ENREGISTRE = "v.position IN ('pour','contre','abstention')";
 
 // What a scrutin voted on: the amendment's own text when the vote is on an amendment we linked,
 // and links to the official pages (amendment, amended text, legislative file). No summary: the source text only.
@@ -45,7 +45,7 @@ export const queries = {
     const all = db.query(`SELECT id, cohesion, participation FROM stat_groupe WHERE id != 'PO847173'`).all() as any[];
     const rank = (k: string) => 1 + all.filter((x) => x[k] > g[k]).length;
     const membres = db.query(`
-      SELECT d.id, d.nom, d.votes_exprimes, d.dissidence, d.delegation FROM stat_depute d
+      SELECT d.id, d.nom, d.votes_enregistres, d.dissidence, d.delegation FROM stat_depute d
       WHERE d.id IN (SELECT a.depute_id FROM appartenance a WHERE a.groupe_id = $g
                        AND a.fin = (SELECT MAX(fin) FROM appartenance b WHERE b.depute_id = a.depute_id))
       ORDER BY d.nom`).all({ $g: id }) as any[];
@@ -93,7 +93,7 @@ export const queries = {
 
   deputes: (db: Database, limit = 2000, min = 50) =>
     db.query(`
-      SELECT * FROM stat_depute WHERE votes_exprimes >= ? ORDER BY dissidence DESC LIMIT ?
+      SELECT * FROM stat_depute WHERE votes_enregistres >= ? ORDER BY dissidence DESC LIMIT ?
     `).all(min, limit),
 
   scrutins: (db: Database, o: { q?: string; theme?: string; kind?: string; limit?: number }) =>
@@ -124,7 +124,7 @@ export const queries = {
       SELECT d.id, d.prenom || ' ' || d.nom nom, COUNT(*) communs, SUM(v1.position = v2.position) accord
       FROM vote v1 JOIN vote v2 ON v2.scrutin_id = v1.scrutin_id AND v2.depute_id != v1.depute_id
         JOIN depute d ON d.id = v2.depute_id JOIN scrutin s ON s.id = v1.scrutin_id
-      WHERE v1.depute_id = $id AND ${EXPRIME.replaceAll("v.", "v1.")} AND ${EXPRIME.replaceAll("v.", "v2.")}
+      WHERE v1.depute_id = $id AND ${ENREGISTRE.replaceAll("v.", "v1.")} AND ${ENREGISTRE.replaceAll("v.", "v2.")}
         AND ($kind = '' OR s.kind = $kind) AND ($hors = 0 OR v1.groupe_id != v2.groupe_id)
       GROUP BY d.id HAVING communs >= $min`).all({ $id: id, $kind: o.kind, $hors: o.horsGroupe ? 1 : 0, $min: o.min }) as any[];
     const groupe = new Map((db.query(`SELECT id, groupe FROM stat_depute`).all() as any[]).map((r) => [r.id, r.groupe]));
@@ -140,7 +140,7 @@ export const queries = {
       SELECT s.id, s.date, s.numero, s.kind, s.titre, v1.position pa, v2.position pb
       FROM vote v1 JOIN vote v2 ON v2.scrutin_id = v1.scrutin_id AND v2.depute_id = $b
         JOIN scrutin s ON s.id = v1.scrutin_id
-      WHERE v1.depute_id = $a AND ${EXPRIME.replaceAll("v.", "v1.")} AND ${EXPRIME.replaceAll("v.", "v2.")}
+      WHERE v1.depute_id = $a AND ${ENREGISTRE.replaceAll("v.", "v1.")} AND ${ENREGISTRE.replaceAll("v.", "v2.")}
         AND ($kind = '' OR s.kind = $kind) ORDER BY s.date DESC, s.numero DESC`).all({ $a: a, $b: b, $kind: kind }) as any[];
     const desaccords = rows.filter((r) => r.pa !== r.pb);
     return { a: names.find((n) => n.id === a), b: names.find((n) => n.id === b), communs: rows.length,
@@ -155,7 +155,7 @@ export const queries = {
                               WHERE a.depute_id = ? ORDER BY a.debut`).all(id) as any[];
     const current = groupes.reduce((a, b) => (b.fin >= a.fin ? b : a), groupes[0]);
     const siege = db.query(`SELECT place, debut, fin, votes FROM siege WHERE depute_id = ? ORDER BY votes DESC LIMIT 1`).get(id);
-    const stat: any = db.query(`SELECT votes_exprimes, dissidence, delegation FROM stat_depute WHERE id = ?`).get(id);
+    const stat: any = db.query(`SELECT votes_enregistres, dissidence, delegation FROM stat_depute WHERE id = ?`).get(id);
     const span: any = db.query(`SELECT MIN(s.date) debut, MAX(s.date) fin, COUNT(*) positions, SUM(v.delegation) delegues
                                 FROM vote v JOIN scrutin s ON s.id = v.scrutin_id WHERE v.depute_id = ?`).get(id);
     const tenure: any = db.query(`SELECT COUNT(*) n FROM scrutin WHERE date BETWEEN ? AND ?`).get(span.debut, span.fin);
@@ -290,7 +290,7 @@ const THEME_SCOPE = (scope: string, cond: string) => `
   SELECT '${scope}' AS scope, t.theme_id, v.groupe_id,
          SUM(v.position = 'pour') pour, SUM(v.position = 'contre') contre, SUM(v.position = 'abstention') abstention
   FROM vote v JOIN scrutin s ON s.id = v.scrutin_id JOIN scrutin_theme t ON t.scrutin_id = s.id
-  WHERE ${EXPRIME} ${cond} GROUP BY t.theme_id, v.groupe_id`;
+  WHERE ${ENREGISTRE} ${cond} GROUP BY t.theme_id, v.groupe_id`;
 const THEME_SCRUTINS = (scope: string, cond: string) => `
   SELECT '${scope}' AS scope, t.theme_id, COUNT(*) scrutins
   FROM scrutin_theme t JOIN scrutin s ON s.id = t.scrutin_id WHERE 1 = 1 ${cond} GROUP BY t.theme_id`;
@@ -307,7 +307,7 @@ const NOTION_SELECT = (who: string) => `
          SUM((v.position = 'contre' AND nv.sens = 1) OR (v.position = 'pour' AND nv.sens = -1)) AS defavorables,
          SUM(v.position = 'abstention') AS abstentions
   FROM vote v JOIN notion_vote nv ON nv.scrutin_id = v.scrutin_id
-  WHERE nv.sens != 0 AND ${EXPRIME}
+  WHERE nv.sens != 0 AND ${ENREGISTRE}
   GROUP BY nv.notion_id, ${who}`;
 
 export const MATERIALIZED = {
@@ -317,30 +317,30 @@ export const MATERIALIZED = {
   stat_theme: `${THEME_SCOPE("ensemble", "AND s.kind = 'ensemble'")} UNION ALL ${THEME_SCOPE("tous", "")}`,
   stat_theme_scrutins: `${THEME_SCRUTINS("ensemble", "AND s.kind = 'ensemble'")} UNION ALL ${THEME_SCRUTINS("tous", "")}`,
   stat_groupe: `WITH c AS (
-        SELECT v.groupe_id, COUNT(*) exprimes, SUM(v.position != m.position) dissidents
+        SELECT v.groupe_id, COUNT(*) enregistres, SUM(v.position != m.position) dissidents
         FROM vote v JOIN majorite m ON m.scrutin_id = v.scrutin_id AND m.groupe_id = v.groupe_id
-        WHERE ${EXPRIME} GROUP BY v.groupe_id),
+        WHERE ${ENREGISTRE} GROUP BY v.groupe_id),
       p AS (
-        SELECT v.groupe_id, COUNT(*) exprimes FROM vote v WHERE ${EXPRIME} GROUP BY v.groupe_id),
+        SELECT v.groupe_id, COUNT(*) enregistres FROM vote v WHERE ${ENREGISTRE} GROUP BY v.groupe_id),
       e AS (SELECT groupe_id, SUM(membres) places, COUNT(*) scrutins FROM effectif GROUP BY groupe_id)
       SELECT g.id, g.sigle, g.nom, g.couleur,
-             p.exprimes AS votes_exprimes, e.places, e.scrutins,
-             ROUND(100.0 * p.exprimes / e.places, 1) AS participation,
-             ROUND(100.0 * (c.exprimes - c.dissidents) / c.exprimes, 1) AS cohesion
+             p.enregistres AS votes_enregistres, e.places, e.scrutins,
+             ROUND(100.0 * p.enregistres / e.places, 1) AS participation,
+             ROUND(100.0 * (c.enregistres - c.dissidents) / c.enregistres, 1) AS cohesion
       FROM groupe g JOIN p ON p.groupe_id = g.id JOIN c ON c.groupe_id = g.id JOIN e ON e.groupe_id = g.id
-      WHERE p.exprimes > 0`,
+      WHERE p.enregistres > 0`,
   // Every deputy appears, including those with no expressed vote (members of the government
   // vote through their substitute): their figures are 0 / NULL rather than absent.
   stat_depute: `SELECT d.id, d.prenom || ' ' || d.nom AS nom,
              (SELECT g.sigle FROM vote v2 JOIN scrutin s2 ON s2.id = v2.scrutin_id
                 JOIN groupe g ON g.id = v2.groupe_id
               WHERE v2.depute_id = d.id ORDER BY s2.date DESC, s2.numero DESC LIMIT 1) AS groupe,
-             COUNT(x.depute_id) AS votes_exprimes,
+             COUNT(x.depute_id) AS votes_enregistres,
              ROUND(100.0 * SUM(x.position != x.majorite) / COUNT(x.depute_id), 1) AS dissidence,
              ROUND(100.0 * SUM(x.delegation) / COUNT(x.depute_id), 1) AS delegation
       FROM depute d
       LEFT JOIN (SELECT v.depute_id, v.position, v.delegation, m.position AS majorite
                  FROM vote v JOIN majorite m ON m.scrutin_id = v.scrutin_id AND m.groupe_id = v.groupe_id
-                 WHERE ${EXPRIME}) x ON x.depute_id = d.id
+                 WHERE ${ENREGISTRE}) x ON x.depute_id = d.id
       GROUP BY d.id`,
 };

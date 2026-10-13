@@ -5,7 +5,7 @@
     "": {
       "name": "scrutins",
       "dependencies": {
-        "glossaire-politique": "github:Peralban/glossaire-politique#v0.1.0",
+        "glossaire-politique": "github:Peralban/glossaire-politique#v0.2.0",
         "hono": "^4.13.13",
       },
       "devDependencies": {
@@ -63,7 +63,7 @@
 
     "bun-types": ["bun-types@1.4.3", "", { "dependencies": { "@types/node": "*", "undici-types": "*" } }, "sha512-tinRJNGOmUN+tEAsn2y2e942n9JHRHR42iUYzDH75NmhJqVBokGSQkkfSFdNWwsANIdrK6ACH9t01M452YyTwg=="],
 
-    "glossaire-politique": ["glossaire-politique@github:Peralban/glossaire-politique#27eb71f", {}, "Peralban-glossaire-politique-27eb71f", "sha512-JsvqWqqAy9X7yxmXN33QrM3bkJmKgey/40gMih2zPu3gwAcW3nqSGEnNs6EL+mvjYwBbZtzdf4yDry2geBw/zg=="],
+    "glossaire-politique": ["glossaire-politique@github:Peralban/glossaire-politique#f44e325", {}, "Peralban-glossaire-politique-f44e325", "sha512-tHGdbXXZCXWLK1n5jvrL1fNISf08rM+zT+ndphhZCOxyUWBjcdz8CXk7tOSWh2YC2cuRMwwEzKaWJ5g0Q9KNvQ=="],
 
     "hono": ["hono@4.13.13", "", {}, "sha512-CQ46U0ZkAGmbT/4UxdzzGJpacP2IeKgY4a5/tOI9AABbpOMfK739wfDXmv1usCk+3RkKj1hQy4/fjhiwa2xlrA=="],
 

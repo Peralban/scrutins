@@ -35,7 +35,7 @@ function Body({ d }: { d: NotionDetail }) {
   const rows = d.groupes
     .map((g) => ({ ...g, n: g.favorables + g.defavorables }))
     .filter((g) => g.n >= 5)
-    .map((g) => ({ sigle: g.sigle, nom: g.nom, couleur: g.couleur, votes_exprimes: g.n, value: +((100 * g.favorables) / g.n).toFixed(1), g }))
+    .map((g) => ({ sigle: g.sigle, nom: g.nom, couleur: g.couleur, votes: g.n, value: +((100 * g.favorables) / g.n).toFixed(1), g }))
     .sort((a, b) => b.value - a.value);
   const retenus = d.votes.filter((v) => v.sens !== 0);
   const ecartes = d.votes.filter((v) => v.sens === 0);
@@ -58,7 +58,7 @@ function Body({ d }: { d: NotionDetail }) {
         ) : (
           <>
             <p className="def">Part des votes « favorables » parmi les votes favorables et défavorables sur les {retenus.length} amendements retenus. Abstentions non comptées. Groupes à moins de 5 votes masqués.</p>
-            <div className="card"><GroupBars rows={rows} label="part favorable" max={100} /></div>
+            <div className="card"><GroupBars rows={rows} label="part favorable" max={100} unite="votes exprimés (pour ou contre)" /></div>
             <DataTable rows={rows} cols={[["Groupe", (r) => r.sigle], ["Favorables", (r) => r.g.favorables], ["Défavorables", (r) => r.g.defavorables], ["Abstentions", (r) => r.g.abstentions], ["% favorable", (r) => pct(r.value)]]} />
           </>
         )}
@@ -66,7 +66,7 @@ function Body({ d }: { d: NotionDetail }) {
 
       <section>
         <h2>Par député</h2>
-        <p className="def">Chaque vote exprimé sur un amendement retenu compte une fois. Un clic sur un nom ouvre sa page.</p>
+        <p className="def">Chaque vote exprimé (pour ou contre) sur un amendement retenu compte une fois ; les abstentions sont comptées à part. Un clic sur un nom ouvre sa page.</p>
         <NotionDeputes deputes={d.deputes} direct={direct} />
       </section>
 

@@ -5,7 +5,7 @@
     "": {
       "name": "web",
       "dependencies": {
-        "glossaire-politique": "github:Peralban/glossaire-politique#v0.1.0",
+        "glossaire-politique": "github:Peralban/glossaire-politique#v0.2.0",
         "next": "16.4.0",
         "react": "19.3.0",
         "react-dom": "19.3.0",
@@ -469,7 +469,7 @@
 
     "globalthis": ["globalthis@1.0.4", "", { "dependencies": { "define-properties": "^1.2.1", "gopd": "^1.0.1" } }, "sha512-DpLKbNU4WylpxJykQujfCcwYWiV/Jhm50Goo0wrVILAv5jOr9d+H+UR3PhSCD2rCCEIg0uc+G+muBTwD54JhDQ=="],
 
-    "glossaire-politique": ["glossaire-politique@github:Peralban/glossaire-politique#27eb71f", {}, "Peralban-glossaire-politique-27eb71f", "sha512-JsvqWqqAy9X7yxmXN33QrM3bkJmKgey/40gMih2zPu3gwAcW3nqSGEnNs6EL+mvjYwBbZtzdf4yDry2geBw/zg=="],
+    "glossaire-politique": ["glossaire-politique@github:Peralban/glossaire-politique#f44e325", {}, "Peralban-glossaire-politique-f44e325", "sha512-tHGdbXXZCXWLK1n5jvrL1fNISf08rM+zT+ndphhZCOxyUWBjcdz8CXk7tOSWh2YC2cuRMwwEzKaWJ5g0Q9KNvQ=="],
 
     "gopd": ["gopd@1.2.0", "", {}, "sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg=="],
 

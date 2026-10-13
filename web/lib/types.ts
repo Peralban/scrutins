@@ -2,11 +2,11 @@
 export type Overview = { scrutins: number; du: string; au: string; votes: number; adoptes: number };
 export type GroupeStat = {
   id: string; sigle: string; nom: string; couleur: string | null;
-  votes_exprimes: number; places: number; scrutins: number; participation: number; cohesion: number;
+  votes_enregistres: number; places: number; scrutins: number; participation: number; cohesion: number;
 };
 export type Mois = { mois: string; total: number; adoptes: number; rejetes: number };
 export type DeputeRow = {
-  id: string; nom: string; groupe: string | null; votes_exprimes: number; dissidence: number | null; delegation: number | null;
+  id: string; nom: string; groupe: string | null; votes_enregistres: number; dissidence: number | null; delegation: number | null;
 };
 export type Groupe = { id: string; sigle: string; nom: string; couleur: string | null };
 export type ScrutinItem = {
@@ -31,7 +31,7 @@ export type DeputeData = {
   groupes: (Groupe & { debut: string; fin: string })[];
   groupe_actuel: Groupe;
   siege: { place: number; debut: string; fin: string; votes: number } | null;
-  stat: { votes_exprimes: number; dissidence: number | null; delegation: number | null } | null;
+  stat: { votes_enregistres: number; dissidence: number | null; delegation: number | null } | null;
   span: { debut: string; fin: string; positions: number; delegues: number; scrutins: number };
   mois: { mois: string; scrutins: number; votes: number }[];
   themes: { id: string; label: string; n: number; pour: number; contre: number; abstention: number; dissidents: number; groupe_pour: number | null }[];
@@ -69,7 +69,7 @@ export type Hier = {
 };
 export type GroupeDetail = {
   groupe: GroupeStat; groupes: number; rangs: { cohesion: number; participation: number }; effectif: number;
-  membres: { id: string; nom: string; votes_exprimes: number; dissidence: number | null; delegation: number | null }[];
+  membres: { id: string; nom: string; votes_enregistres: number; dissidence: number | null; delegation: number | null }[];
   notions: { id: string; label: string; statut: string; favorables: number; defavorables: number; abstentions: number }[];
   accords: { id: string; sigle: string; nom: string; couleur: string | null; communs: number; accord: number }[];
 };

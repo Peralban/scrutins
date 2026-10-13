@@ -76,7 +76,7 @@ export default function CarteView() {
             return (
               <circle key={p.id} className="pt" data-on={on || undefined} cx={X(p.x)} cy={Y(p.y)} r={on ? 9 : 5.5} fill={color[p.groupe ?? "?"] ?? NEUTRAL}
                 fillOpacity={focus && !on ? 0.35 : 0.85} stroke={on ? "var(--ink)" : "var(--surface)"} strokeWidth={on ? 2.5 : 1}
-                style={{ cursor: "pointer" }} data-tip={`${p.nom}\n${p.groupe ?? ""} · ${p.votes} votes exprimés`}
+                style={{ cursor: "pointer" }} data-tip={`${p.nom}\n${p.groupe ?? ""} · ${p.votes} votes enregistrés`}
                 onClick={() => { setFocus(p.id); setTyped(p.nom); }} />
             );
           })}
@@ -100,7 +100,7 @@ export default function CarteView() {
 
       {f && side && (
         <div className={`card ${s.side}`}>
-          <b>{f.nom}</b> · {f.groupe} · {f.votes} votes exprimés · <Link href={`/depute/${f.id}`}>sa page →</Link>
+          <b>{f.nom}</b> · {f.groupe} · {f.votes} votes enregistrés · <Link href={`/depute/${f.id}`}>sa page →</Link>
           <p className="def" style={{ margin: "8px 0" }}>
             Distance au centre de son groupe : <b>{side.dist.toFixed(1)}</b>, contre <b>{side.typical.toFixed(1)}</b> pour un membre médian de {f.groupe}. Plus la distance est grande, plus il vote autrement que son groupe.
           </p>

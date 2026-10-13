@@ -71,7 +71,7 @@ async function Fiche({ params }: { params: PageProps<"/groupes/[id]">["params"] 
         <h2>Les {d.membres.length} députés qui y ont siégé</h2>
         <p className="def">Dont {d.effectif} au dernier scrutin. Les autres ont quitté l&apos;Assemblée ou le groupe en cours de législature.</p>
         <ul className={s.members}>
-          {d.membres.map((m) => <li key={m.id}><Link href={`/depute/${m.id}`} className={s.person}><span>{m.nom}</span><span>{fmt.format(m.votes_exprimes)} votes</span></Link></li>)}
+          {d.membres.map((m) => <li key={m.id}><Link href={`/depute/${m.id}`} className={s.person}><span>{m.nom}</span><span>{fmt.format(m.votes_enregistres)} votes</span></Link></li>)}
         </ul>
       </section>
     </>
@@ -113,13 +113,13 @@ function Notions({ d }: { d: GroupeDetail }) {
 }
 
 function Members({ d }: { d: GroupeDetail }) {
-  const actifs = [...d.membres].sort((a, b) => b.votes_exprimes - a.votes_exprimes).slice(0, 4);
-  const diss = d.membres.filter((m) => m.votes_exprimes >= 200 && m.dissidence != null).sort((a, b) => b.dissidence! - a.dissidence!).slice(0, 4);
+  const actifs = [...d.membres].sort((a, b) => b.votes_enregistres - a.votes_enregistres).slice(0, 4);
+  const diss = d.membres.filter((m) => m.votes_enregistres >= 200 && m.dissidence != null).sort((a, b) => b.dissidence! - a.dissidence!).slice(0, 4);
   return (
     <div>
       <h3>Qui sont-ils ?</h3>
       <div className={s.label}>les plus présents</div>
-      {actifs.map((m) => <Link key={m.id} href={`/depute/${m.id}`} className={s.person}><span>{m.nom}</span><span>{fmt.format(m.votes_exprimes)} votes</span></Link>)}
+      {actifs.map((m) => <Link key={m.id} href={`/depute/${m.id}`} className={s.person}><span>{m.nom}</span><span>{fmt.format(m.votes_enregistres)} votes</span></Link>)}
       <div className={s.label}>votent le plus souvent contre le groupe</div>
       {diss.map((m) => <Link key={m.id} href={`/depute/${m.id}`} className={s.person}><span>{m.nom}</span><span>{pct(m.dissidence)}</span></Link>)}
     </div>
