@@ -4,7 +4,6 @@ import { Suspense } from "react";
 import Nav from "@/components/Nav";
 import NavFallback from "@/components/NavFallback";
 import Tooltip from "@/components/Tooltip";
-import MobileTabs from "@/components/MobileTabs";
 
 export const metadata: Metadata = {
   title: { default: "Scrutins", template: "%s · Scrutins" },
