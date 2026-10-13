@@ -43,7 +43,7 @@ export function buildSearchIndex(db: Database) {
     for (const d of db.query(`SELECT d.id, d.prenom, d.nom, s.groupe, s.votes_exprimes FROM depute d LEFT JOIN stat_depute s ON s.id = d.id`).all() as any[])
       add("depute", d.id, `${d.prenom} ${d.nom}`, `${d.groupe ?? "—"} · ${d.votes_exprimes ?? 0} votes exprimés`, `/depute/${d.id}`, d.nom, Math.log10(10 + (d.votes_exprimes ?? 0)));
     for (const g of db.query(`SELECT id, sigle, nom FROM groupe WHERE id != 'PO847173'`).all() as any[])
-      add("groupe", g.id, g.sigle, g.nom, `/accords?groupe=${g.id}`, `${g.nom} ${GROUP_ALIASES[g.sigle] ?? ""}`, 3);
+      add("groupe", g.id, g.sigle, g.nom, `/groupes/${g.id}`, `${g.nom} ${GROUP_ALIASES[g.sigle] ?? ""}`, 3);
     // The same bill appears under several spellings (curly vs straight apostrophe, "(seconde délibération)"):
     // one entry per normalised title, and texte_key maps it back to every spelling.
     db.exec(`CREATE TABLE texte_key (key TEXT NOT NULL, texte TEXT NOT NULL)`);
@@ -69,7 +69,7 @@ export function buildSearchIndex(db: Database) {
   })();
 }
 
-const norm = (s: string) => s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+export const norm = (s: string) => s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
 // Words that carry the question, not the subject: never searched for.
 const STOP = new Set(("le la les l un une des du de d a au aux et ou en sur pour par avec comme que qui quoi quel quelle quels quelles " +
   "est sont ont a-t-il vote voter votent vote-t-il vote-t-elle votes voté votee votees votes-ils il elle ils elles ce cet cette ses son sa leur leurs " +
@@ -123,7 +123,7 @@ function entity(hits: Hit[], kind: Kind, q: string, skip?: Hit): Hit | undefined
 
 type Mot = { id: string; mot: string; cat: string; def: string; site?: string; voir?: string[] };
 let glossaire: Mot[] | null = null;
-const mots = () => glossaire ??= JSON.parse(readFileSync(new URL("../web/content/glossaire.json", import.meta.url), "utf8")).mots as Mot[];
+export const mots = () => glossaire ??= JSON.parse(readFileSync(new URL("../web/content/glossaire.json", import.meta.url), "utf8")).mots as Mot[];
 
 export function ask(db: Database, q: string): AskResult {
   const hits = search(db, q, 25);
