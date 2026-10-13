@@ -15,8 +15,14 @@ export default function HemicycleView() {
   const params = useSearchParams();
   const id = params.get("id");
   const [q, setQ] = useState("");
-  const [theme, setTheme] = useState(params.get("theme") ?? "");
-  const [kind, setKind] = useState(params.get("kind") ?? "");
+  // Next keeps a page's state when you navigate away, so the filters live in the URL, not in state.
+  const theme = params.get("theme") ?? "";
+  const kind = params.get("kind") ?? "";
+  const setParam = (key: "theme" | "kind", value: string) => {
+    const next = new URLSearchParams(params.toString());
+    if (value) next.set(key, value); else next.delete(key);
+    router.replace(`/hemicycle?${next}`, { scroll: false });
+  };
   const [debounced, setDebounced] = useState("");
   useEffect(() => { const t = setTimeout(() => setDebounced(q), 200); return () => clearTimeout(t); }, [q]);
 
@@ -26,7 +32,11 @@ export default function HemicycleView() {
   const detail = useApi<HemicycleData>(current ? `scrutin/${current}` : null).data;
   const shown = detail && detail.scrutin.id === current ? detail : undefined;
 
-  const select = (next: string) => router.replace(`/hemicycle?id=${next}`, { scroll: false });
+  const select = (scrutin: string) => {
+    const next = new URLSearchParams(params.toString());
+    next.set("id", scrutin);
+    router.replace(`/hemicycle?${next}`, { scroll: false });
+  };
 
   const tally = useMemo(() => {
     if (!shown) return [];
@@ -45,12 +55,12 @@ export default function HemicycleView() {
       <div>
         <div className={s.filters}>
           <input type="search" placeholder="rechercher dans l'intitulé" value={q} onChange={(e) => setQ(e.target.value)} />
-          <select value={theme} onChange={(e) => setTheme(e.target.value)}>
+          <select value={theme} onChange={(e) => setParam("theme", e.target.value)}>
             <option value="">tous les thèmes</option>
             {themes.map((t) => <option key={t.id} value={t.id}>{t.label}</option>)}
             <option value="_none">non classé</option>
           </select>
-          <select value={kind} onChange={(e) => setKind(e.target.value)}>
+          <select value={kind} onChange={(e) => setParam("kind", e.target.value)}>
             {KINDS.map(([k, label]) => <option key={k} value={k}>{label}</option>)}
           </select>
         </div>
