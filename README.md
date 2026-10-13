@@ -18,7 +18,7 @@ Pages: `/accords.html` (who votes with whom: group matrix, nearest and furthest 
 
 Daily refresh: `deploy/install-timer.sh` installs a systemd user timer (06:30). The server picks up the new database without restarting.
 
-The glossary (`/glossaire`, selected-word definitions, "qu'est-ce que…" questions) comes from the shared [glossaire-politique](https://github.com/Peralban/glossaire-politique) package, cloned next to this repo (`../glossaire-politique`); `web/content/glossaire-site.json` holds this site's own notes.
+The glossary (`/glossaire`, selected-word definitions, "qu'est-ce que…" questions) comes from the shared [glossaire-politique](https://github.com/Peralban/glossaire-politique) package, pinned by tag in `package.json` and `web/package.json`; `web/content/glossaire-site.json` holds this site's own notes.
 
 Themes are keyword rules on the title of the legislative text (`src/themes.ts`), a reading aid rather than an official taxonomy. Edit the rules, then `bun run ingest`.
 

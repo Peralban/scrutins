@@ -19,7 +19,7 @@
     "typescript": "^7"
   },
   "dependencies": {
-    "glossaire-politique": "file:../glossaire-politique",
+    "glossaire-politique": "github:Peralban/glossaire-politique#v0.1.0",
     "hono": "^4.13.13"
   }
 }
