@@ -24,11 +24,12 @@ export default function Hemicycle({ data }: { data: HemicycleData }) {
         const p = pts[i], x = cx + Math.cos(p.a) * p.r * scale, y = cy - Math.sin(p.a) * p.r * scale;
         const pos = seat.position;
         const fill = pos === "pour" ? "var(--pour)" : pos === "contre" ? "var(--contre)" : "none";
+        // A ring has no fill: pointerEvents="all" below keeps its inside hoverable, not just its edge.
         const stroke = pos === "abstention" || pos === "non_votant" ? "var(--abst)" : pos === "absent" ? "var(--line)" : "none";
         return (
           <g key={seat.id}>
             <circle cx={x} cy={y} r={pos === "absent" ? dot * 0.55 : dot} fill={fill} stroke={stroke}
-              strokeWidth={dot > 7 ? 2 : 1.5} strokeDasharray={pos === "non_votant" ? "2 2" : undefined} style={{ cursor: "pointer" }}
+              strokeWidth={dot > 7 ? 2 : 1.5} strokeDasharray={pos === "non_votant" ? "2 2" : undefined} pointerEvents="all" style={{ cursor: "pointer" }}
               data-tip={`${seat.nom}\n${sigle[seat.groupe] ?? ""} · ${LABEL[pos]}${seat.delegation ? " (délégation)" : ""}`}
               onClick={() => router.push(`/depute/${seat.id}`)} />
             {p.row === R - 1 && <circle cx={cx + Math.cos(p.a) * (p.r * scale + dot + 9)} cy={cy - Math.sin(p.a) * (p.r * scale + dot + 9)} r={3.2} fill={color[seat.groupe] ?? NEUTRAL} />}
