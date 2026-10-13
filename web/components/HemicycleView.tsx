@@ -122,6 +122,7 @@ export default function HemicycleView() {
           </p>
         )}
         <div className="card">{shown ? <Hemicycle data={shown} /> : <p className="skeleton">Chargement…</p>}</div>
+        {shown && <CeQuiEstVote v={shown.vote} />}
         {shown && (
           <>
             <div className={s.legend}>
@@ -150,5 +151,35 @@ export default function HemicycleView() {
         )}
       </div>
     </div>
+  );
+}
+
+// The text behind the vote, as published: the amendment's change and its author's explanation,
+// plus the official pages. Nothing rewritten.
+function CeQuiEstVote({ v }: { v: HemicycleData["vote"] }) {
+  const a = v.amendement;
+  return (
+    <section className={s.texte} aria-label="Ce qui est voté">
+      <h2>Ce qui est voté</h2>
+      {a ? (
+        <>
+          <p className={s.meta}>Amendement n° {a.numero}{a.auteur ? ` · ${a.auteur}${a.groupe ? ` (${a.groupe})` : ""}` : ""}</p>
+          {a.dispositif ? <><h3>Ce que l&apos;amendement change</h3><blockquote>{a.dispositif}</blockquote></> : <p className={s.meta}>Le texte de l&apos;amendement n&apos;est pas dans les données.</p>}
+          {a.expose && (
+            <details>
+              <summary>Exposé des motifs, l&apos;argumentaire de l&apos;auteur</summary>
+              <p className={s.expose}>{a.expose}</p>
+            </details>
+          )}
+        </>
+      ) : (
+        <p className={s.meta}>Ce vote porte sur un article ou sur un texte entier : son contenu est sur les pages officielles ci-dessous.</p>
+      )}
+      {v.liens.length > 0 && (
+        <ul className={s.liens}>
+          {v.liens.map((l) => <li key={l.url}><a href={l.url} target="_blank" rel="noopener noreferrer">{l.label} sur assemblee-nationale.fr ↗</a></li>)}
+        </ul>
+      )}
+    </section>
   );
 }

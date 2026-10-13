@@ -21,7 +21,11 @@ export type ThemesData = {
 };
 export type Position = "pour" | "contre" | "abstention" | "non_votant" | "absent";
 export type Seat = { place: number; id: string; nom: string; groupe: string; position: Position; delegation: number };
-export type HemicycleData = { scrutin: ScrutinItem & { type: string }; seats: Seat[]; groupes: Groupe[] };
+export type VoteTexte = {
+  amendement: { numero: string; sort: string | null; auteur: string | null; groupe: string | null; dispositif: string | null; expose: string | null } | null;
+  liens: { label: string; url: string }[];
+};
+export type HemicycleData = { scrutin: ScrutinItem & { type: string }; seats: Seat[]; groupes: Groupe[]; vote: VoteTexte };
 export type DeputeData = {
   depute: { id: string; prenom: string; nom: string };
   groupes: (Groupe & { debut: string; fin: string })[];
