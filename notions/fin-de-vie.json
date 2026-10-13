@@ -1,0 +1,729 @@
+{
+ "notion": "fin-de-vie",
+ "label": "Aide active à mourir",
+ "axe": "Favorable : ouvrir ou faciliter l'aide active à mourir. Défavorable : la restreindre, la conditionner davantage ou l'interdire.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose. Échantillon : les 80 amendements les plus centrés sur le sujet (par nombre d'occurrences des mots-clés) parmi les votes divisés (au moins 10 % de voix du côté minoritaire).",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V1608",
+   "numero": 1608,
+   "date": "2025-05-12",
+   "amendement": "AMANR5L17PO838901BTC1281P0D1N000234",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Précision terminologique sur l'accompagnement : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V1631",
+   "numero": 1631,
+   "date": "2025-05-13",
+   "amendement": "AMANR5L17PO838901BTC1281P0D1N000535",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Contrôle des conditions de détention des personnes détenues en fin de vie : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V1649",
+   "numero": 1649,
+   "date": "2025-05-14",
+   "amendement": "AMANR5L17PO838901BTC1281P0D1N000682",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Renforce l'information sur la fin de vie : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V1671",
+   "numero": 1671,
+   "date": "2025-05-14",
+   "amendement": "AMANR5L17PO838901BTC1281P0D1N000599",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Renforce la formation des soignants à la fin de vie : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V1728",
+   "numero": 1728,
+   "date": "2025-05-16",
+   "amendement": "AMANR5L17PO838901BTC1281P0D1N000592",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Garantit que les professionnels des maisons d'accompagnement ne participent pas à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V1732",
+   "numero": 1732,
+   "date": "2025-05-16",
+   "amendement": "AMANR5L17PO838901BTC1281P0D1N000225",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Exclut toute autre activité que les soins palliatifs des maisons d'accompagnement."
+  },
+  {
+   "scrutin": "VTANR5L17V1734",
+   "numero": 1734,
+   "date": "2025-05-16",
+   "amendement": "AMANR5L17PO838901BTC1281P0D1N000519",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Précise que les maisons d'accompagnement n'ont vocation ni à hâter ni à différer la survenue du décès."
+  },
+  {
+   "scrutin": "VTANR5L17V1752",
+   "numero": 1752,
+   "date": "2025-05-16",
+   "amendement": "AMANR5L17PO838901BTC1281P0D1N000732",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Facilite l'accès à l'information sur les directives anticipées."
+  },
+  {
+   "scrutin": "VTANR5L17V1769",
+   "numero": 1769,
+   "date": "2025-05-16",
+   "amendement": "AMANR5L17PO838901BTC1281P0D1N000655",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Renvoie les données de sédation profonde à une commission de contrôle : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V1779",
+   "numero": 1779,
+   "date": "2025-05-17",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N000009",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Remplace « aide à mourir » par « euthanasie et suicide assisté » : terminologie sans effet sur l'accès."
+  },
+  {
+   "scrutin": "VTANR5L17V1782",
+   "numero": 1782,
+   "date": "2025-05-17",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N000752",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'alinéa qui établit un droit à mourir au-delà de la simple légalisation."
+  },
+  {
+   "scrutin": "VTANR5L17V1785",
+   "numero": 1785,
+   "date": "2025-05-17",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N000010",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Remplace « aide à mourir » par « euthanasie » : changement de terminologie sans effet sur l'accès."
+  },
+  {
+   "scrutin": "VTANR5L17V1791",
+   "numero": 1791,
+   "date": "2025-05-17",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N001883",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Permet de demander l'aide à mourir directement ou par l'intermédiaire de la personne de confiance."
+  },
+  {
+   "scrutin": "VTANR5L17V1792",
+   "numero": 1792,
+   "date": "2025-05-17",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N001894",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Permet de demander l'aide à mourir via les directives anticipées ou la personne de confiance."
+  },
+  {
+   "scrutin": "VTANR5L17V1793",
+   "numero": 1793,
+   "date": "2025-05-17",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N001888",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Permet de demander l'aide à mourir via les directives anticipées ou la personne de confiance."
+  },
+  {
+   "scrutin": "VTANR5L17V1794",
+   "numero": 1794,
+   "date": "2025-05-17",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N000590",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Prend en compte les directives anticipées pour accéder à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V1804",
+   "numero": 1804,
+   "date": "2025-05-17",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N000534",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Nomme le nouveau droit « aide active à mourir » : changement de terminologie sans effet sur l'accès."
+  },
+  {
+   "scrutin": "VTANR5L17V1819",
+   "numero": 1819,
+   "date": "2025-05-19",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N000490",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'ouverture de l'aide à mourir aux situations consécutives à un accident."
+  },
+  {
+   "scrutin": "VTANR5L17V1841",
+   "numero": 1841,
+   "date": "2025-05-19",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N001454",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Resserre le critère de souffrance ouvrant l'accès à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V1855",
+   "numero": 1855,
+   "date": "2025-05-19",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N001918",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Inclut dans les conditions d'accès les cas où l'expression en pleine conscience n'est plus possible."
+  },
+  {
+   "scrutin": "VTANR5L17V1876",
+   "numero": 1876,
+   "date": "2025-05-20",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N002396",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Permet à la personne de confiance de présenter la demande à la place de la personne ayant perdu conscience."
+  },
+  {
+   "scrutin": "VTANR5L17V1890",
+   "numero": 1890,
+   "date": "2025-05-20",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N001367",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Fait s'imposer aux professionnels les directives anticipées et la personne de confiance."
+  },
+  {
+   "scrutin": "VTANR5L17V1898",
+   "numero": 1898,
+   "date": "2025-05-20",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N000657",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Élargit à l'ensemble des médecins inscrits à l'Ordre la possibilité d'accompagner les patients en fin de vie."
+  },
+  {
+   "scrutin": "VTANR5L17V1904",
+   "numero": 1904,
+   "date": "2025-05-20",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N001797",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Reconnaît la possibilité de demander l'aide à mourir via les directives anticipées ou la personne de confiance."
+  },
+  {
+   "scrutin": "VTANR5L17V1905",
+   "numero": 1905,
+   "date": "2025-05-20",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N002129",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Garantit que la volonté d'une personne en état de mort cérébrale soit respectée."
+  },
+  {
+   "scrutin": "VTANR5L17V1918",
+   "numero": 1918,
+   "date": "2025-05-21",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N000338",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait prendre en compte les directives anticipées par le médecin saisi d'une demande d'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V1938",
+   "numero": 1938,
+   "date": "2025-05-21",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N002464",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Prévoit une dérogation permettant l'accès à l'aide à mourir sur la base des directives anticipées."
+  },
+  {
+   "scrutin": "VTANR5L17V1947",
+   "numero": 1947,
+   "date": "2025-05-22",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N002153",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Permet l'accès à l'aide à mourir via les directives anticipées."
+  },
+  {
+   "scrutin": "VTANR5L17V1980",
+   "numero": 1980,
+   "date": "2025-05-22",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N002158",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Impose l'intervention d'un juge avant l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V2084",
+   "numero": 2084,
+   "date": "2025-05-24",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N002021",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Réécrit l'article sur les délits liés à l'aide à mourir en insistant sur la volonté strictement personnelle."
+  },
+  {
+   "scrutin": "VTANR5L17V2099",
+   "numero": 2099,
+   "date": "2025-05-24",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N002019",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Pénalise le fait d'inciter une personne à recourir à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V2101",
+   "numero": 2101,
+   "date": "2025-05-24",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N000862",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Impose des garanties d'autonomie supplémentaires et pénalise l'influence indue."
+  },
+  {
+   "scrutin": "VTANR5L17V5482",
+   "numero": 5482,
+   "date": "2026-02-18",
+   "amendement": "AMANR5L17PO838901BTC2457P0D1N000121",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Précision terminologique sur « fin de vie » : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V5499",
+   "numero": 5499,
+   "date": "2026-02-18",
+   "amendement": "AMANR5L17PO838901BTC2457P0D1N000066",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Impose une information systématique sur les directives anticipées pour qu'elles soient connues des soignants."
+  },
+  {
+   "scrutin": "VTANR5L17V5512",
+   "numero": 5512,
+   "date": "2026-02-18",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000511",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Remplace « fin de vie » par « euthanasie » : terminologie sans effet sur l'accès."
+  },
+  {
+   "scrutin": "VTANR5L17V5535",
+   "numero": 5535,
+   "date": "2026-02-19",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000514",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Remplace « aide à mourir » par « euthanasie et suicide assisté » : terminologie sans effet sur l'accès."
+  },
+  {
+   "scrutin": "VTANR5L17V5562",
+   "numero": 5562,
+   "date": "2026-02-19",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000318",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Remplace « affection » par « pathologie » dans les critères d'accès à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V5575",
+   "numero": 5575,
+   "date": "2026-02-19",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N001706",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Permet l'accès à l'aide à mourir via les directives anticipées lorsque la personne ne peut plus s'exprimer."
+  },
+  {
+   "scrutin": "VTANR5L17V5576",
+   "numero": 5576,
+   "date": "2026-02-19",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000294",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Permet à une personne atteinte d'une maladie neurodégénérative de recourir à l'aide à mourir sans directives anticipées écrites."
+  },
+  {
+   "scrutin": "VTANR5L17V5584",
+   "numero": 5584,
+   "date": "2026-02-20",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N001173",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Permet à la personne de confiance de présenter la demande à la place de la personne ayant perdu conscience."
+  },
+  {
+   "scrutin": "VTANR5L17V5597",
+   "numero": 5597,
+   "date": "2026-02-20",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N001167",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Prend en compte un patient qui perd irréversiblement conscience après avoir initié sa demande."
+  },
+  {
+   "scrutin": "VTANR5L17V5600",
+   "numero": 5600,
+   "date": "2026-02-20",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N001693",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Exclut les personnes porteuses de déficience intellectuelle de l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V5624",
+   "numero": 5624,
+   "date": "2026-02-20",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000350",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Interdit toute activité privée lucrative organisant régulièrement la pratique de l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V5625",
+   "numero": 5625,
+   "date": "2026-02-20",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000351",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Renvoie à décret les spécificités des lieux de l'aide à mourir : portée non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V5663",
+   "numero": 5663,
+   "date": "2026-02-23",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000707",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Garantit que nul professionnel de santé n'est tenu de participer à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V5668",
+   "numero": 5668,
+   "date": "2026-02-23",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N001371",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Étend la clause de conscience aux pharmaciens hospitaliers et à leurs équipes."
+  },
+  {
+   "scrutin": "VTANR5L17V5675",
+   "numero": 5675,
+   "date": "2026-02-23",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000374",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Rend facultative pour les établissements l'obligation d'accueillir une aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V5682",
+   "numero": 5682,
+   "date": "2026-02-23",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000722",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Réécrit l'article sur les délits liés à l'aide à mourir en insistant sur la volonté strictement personnelle."
+  },
+  {
+   "scrutin": "VTANR5L17V5683",
+   "numero": 5683,
+   "date": "2026-02-23",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000059",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Inscrit un délit d'incitation à l'aide à mourir et supprime la répression de l'entrave."
+  },
+  {
+   "scrutin": "VTANR5L17V5688",
+   "numero": 5688,
+   "date": "2026-02-24",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000533",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Remplace « aide à mourir » par « euthanasie et suicide assisté » : terminologie sans effet sur l'accès."
+  },
+  {
+   "scrutin": "VTANR5L17V5696",
+   "numero": 5696,
+   "date": "2026-02-24",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000535",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Remplace « aide à mourir » par « euthanasie et suicide assisté » : terminologie sans effet sur l'accès."
+  },
+  {
+   "scrutin": "VTANR5L17V5699",
+   "numero": 5699,
+   "date": "2026-02-24",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N001008",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Crée un délit autonome d'incitation à recourir à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V5700",
+   "numero": 5700,
+   "date": "2026-02-24",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N001587",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Crée un délit spécifique puni de trois ans d'emprisonnement lié à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V5701",
+   "numero": 5701,
+   "date": "2026-02-24",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000393",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Crée un délit d'incitation avec des peines d'emprisonnement lié à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V5718",
+   "numero": 5718,
+   "date": "2026-02-24",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000273",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Renomme la loi « légalisation de l'euthanasie » : terminologie sans effet sur l'accès."
+  },
+  {
+   "scrutin": "VTANR5L17V7440",
+   "numero": 7440,
+   "date": "2026-06-22",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000372",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Institue le droit à l'aide à mourir dans une disposition autonome, en écartant sa qualification d'acte de soin."
+  },
+  {
+   "scrutin": "VTANR5L17V7467",
+   "numero": 7467,
+   "date": "2026-06-23",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000675",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Consacre la liberté de choix des modalités d'administration en supprimant la condition d'incapacité physique."
+  },
+  {
+   "scrutin": "VTANR5L17V7470",
+   "numero": 7470,
+   "date": "2026-06-23",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000379",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Subordonne le recours à l'aide à mourir à une constatation médicale écrite."
+  },
+  {
+   "scrutin": "VTANR5L17V7477",
+   "numero": 7477,
+   "date": "2026-06-23",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N001281",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Permet au médecin, avec l'accord du patient, de déroger au principe d'auto-administration."
+  },
+  {
+   "scrutin": "VTANR5L17V7497",
+   "numero": 7497,
+   "date": "2026-06-24",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000395",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Retire du droit à une fin de vie digne la possibilité d'accéder à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V7524",
+   "numero": 7524,
+   "date": "2026-06-24",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000402",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Remplace « affection » par « pathologie » dans les critères d'accès à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V7548",
+   "numero": 7548,
+   "date": "2026-06-24",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000751",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Retire la souffrance psychologique des critères d'accès à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V7557",
+   "numero": 7557,
+   "date": "2026-06-24",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N001059",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Permet l'accès à l'aide à mourir via les directives anticipées."
+  },
+  {
+   "scrutin": "VTANR5L17V7600",
+   "numero": 7600,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000095",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Permet au médecin de faire valoir sa clause de conscience avant toute information sur l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V7601",
+   "numero": 7601,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000158",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Exige que la demande d'aide à mourir procède d'une initiative personnelle, explicite et spontanée."
+  },
+  {
+   "scrutin": "VTANR5L17V7608",
+   "numero": 7608,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N001060",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Permet de formuler ou confirmer la demande d'aide à mourir via les directives anticipées."
+  },
+  {
+   "scrutin": "VTANR5L17V7623",
+   "numero": 7623,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000547",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Interdit le don d'organes après un suicide assisté ou une euthanasie."
+  },
+  {
+   "scrutin": "VTANR5L17V7642",
+   "numero": 7642,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N001241",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Permet la mise en œuvre de directives anticipées après acceptation de la demande."
+  },
+  {
+   "scrutin": "VTANR5L17V7643",
+   "numero": 7643,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N001061",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Prend en compte un patient qui perd irréversiblement conscience après avoir initié sa demande."
+  },
+  {
+   "scrutin": "VTANR5L17V7652",
+   "numero": 7652,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000434",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Renomme la demande en « suicide assisté ou euthanasie » : terminologie sans effet sur l'accès."
+  },
+  {
+   "scrutin": "VTANR5L17V7653",
+   "numero": 7653,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N001062",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Permet l'accès à l'aide à mourir via les directives anticipées."
+  },
+  {
+   "scrutin": "VTANR5L17V7654",
+   "numero": 7654,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000089",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Exclut les personnes porteuses de déficience intellectuelle de l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V7704",
+   "numero": 7704,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N001357",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Prend en compte un patient qui perd irréversiblement conscience après acceptation de sa demande."
+  },
+  {
+   "scrutin": "VTANR5L17V7705",
+   "numero": 7705,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N001360",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Prend en compte un patient qui perd irréversiblement conscience après acceptation de sa demande."
+  },
+  {
+   "scrutin": "VTANR5L17V7797",
+   "numero": 7797,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000002",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Composition de la commission de contrôle : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V7805",
+   "numero": 7805,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000004",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit le délit d'entrave et d'incitation à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V7806",
+   "numero": 7806,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000005",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit le délit d'entrave à l'aide à mourir avec des peines réduites."
+  },
+  {
+   "scrutin": "VTANR5L17V7807",
+   "numero": 7807,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000687",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit le délit d'entrave à l'aide à mourir (version de compromis)."
+  },
+  {
+   "scrutin": "VTANR5L17V7808",
+   "numero": 7808,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N001362",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit un délit d'entrave à l'aide à mourir."
+  },
+  {
+   "scrutin": "VTANR5L17V7816",
+   "numero": 7816,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000117",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Renomme la loi « légalisation du suicide assisté et de l'euthanasie » : terminologie sans effet sur l'accès."
+  }
+ ]
+}

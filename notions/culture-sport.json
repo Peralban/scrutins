@@ -1,0 +1,729 @@
+{
+ "notion": "culture-sport",
+ "label": "Financement public de la culture et du sport",
+ "axe": "Favorable : augmenter ou protéger le financement public de la culture, de l'audiovisuel public et du sport. Défavorable : le réduire ou privatiser.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose. Échantillon : les 80 amendements les plus centrés sur le sujet (par nombre d'occurrences des mots-clés) parmi les votes divisés (au moins 10 % de voix du côté minoritaire).",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V205",
+   "numero": 205,
+   "date": "2024-10-30",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000164",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V253",
+   "numero": 253,
+   "date": "2024-11-05",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001932",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V441",
+   "numero": 441,
+   "date": "2024-11-19",
+   "amendement": "AMANR5L17PO838901B0538P0D1N000024",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Réduit de 3,98 à 1,48 milliard d'euros le financement de l'audiovisuel public."
+  },
+  {
+   "scrutin": "VTANR5L17V1118",
+   "numero": 1118,
+   "date": "2025-03-21",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000866",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1346",
+   "numero": 1346,
+   "date": "2025-04-10",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N000637",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Maintient le Haut Conseil de l'éducation artistique et culturelle."
+  },
+  {
+   "scrutin": "VTANR5L17V1421",
+   "numero": 1421,
+   "date": "2025-04-11",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001426",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Abroge la commission de la rémunération pour copie privée."
+  },
+  {
+   "scrutin": "VTANR5L17V1424",
+   "numero": 1424,
+   "date": "2025-04-11",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001588",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime le Conseil national de la culture scientifique, technique et industrielle."
+  },
+  {
+   "scrutin": "VTANR5L17V1431",
+   "numero": 1431,
+   "date": "2025-04-11",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002296",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'Agence nationale du sport."
+  },
+  {
+   "scrutin": "VTANR5L17V3555",
+   "numero": 3555,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000942",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3878",
+   "numero": 3878,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000119",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Minore de 500 000 euros la hausse de la fraction de TVA affectée à l'audiovisuel public."
+  },
+  {
+   "scrutin": "VTANR5L17V3903",
+   "numero": 3903,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000077",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission culture."
+  },
+  {
+   "scrutin": "VTANR5L17V3923",
+   "numero": 3923,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000089",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission sport, jeunesse et vie associative."
+  },
+  {
+   "scrutin": "VTANR5L17V4468",
+   "numero": 4468,
+   "date": "2025-12-03",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000849",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4759",
+   "numero": 4759,
+   "date": "2025-12-16",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000159",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4765",
+   "numero": 4765,
+   "date": "2025-12-16",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000309",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4766",
+   "numero": 4766,
+   "date": "2025-12-16",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000175",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Interdit tout financement public et garantie financière du comité d'organisation des Jeux olympiques."
+  },
+  {
+   "scrutin": "VTANR5L17V4767",
+   "numero": 4767,
+   "date": "2025-12-16",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000041",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4768",
+   "numero": 4768,
+   "date": "2025-12-16",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000174",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4803",
+   "numero": 4803,
+   "date": "2025-12-17",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000215",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4822",
+   "numero": 4822,
+   "date": "2025-12-17",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000326",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4825",
+   "numero": 4825,
+   "date": "2025-12-17",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000212",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4859",
+   "numero": 4859,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000154",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4870",
+   "numero": 4870,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000191",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4874",
+   "numero": 4874,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000121",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4883",
+   "numero": 4883,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000281",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4885",
+   "numero": 4885,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000208",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4887",
+   "numero": 4887,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000050",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4889",
+   "numero": 4889,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000282",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Garantit une billetterie populaire pour les Jeux olympiques de 2030."
+  },
+  {
+   "scrutin": "VTANR5L17V4895",
+   "numero": 4895,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000272",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4909",
+   "numero": 4909,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000148",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4925",
+   "numero": 4925,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000014",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4927",
+   "numero": 4927,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000163",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4929",
+   "numero": 4929,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000112",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4931",
+   "numero": 4931,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000146",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4937",
+   "numero": 4937,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000203",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4938",
+   "numero": 4938,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000257",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4940",
+   "numero": 4940,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000284",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4977",
+   "numero": 4977,
+   "date": "2026-01-13",
+   "amendement": "AMANR5L17PO838901B2247P0D1N002657",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Préserve la compensation versée en contrepartie de la suppression de l'impôt sur les spectacles."
+  },
+  {
+   "scrutin": "VTANR5L17V5022",
+   "numero": 5022,
+   "date": "2026-01-15",
+   "amendement": "AMANR5L17PO838901B2247P0D1N000348",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5367",
+   "numero": 5367,
+   "date": "2026-02-12",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000090",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6140",
+   "numero": 6140,
+   "date": "2026-04-13",
+   "amendement": "AMANR5L17PO838901BTC2628P0D1N000001",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6145",
+   "numero": 6145,
+   "date": "2026-04-13",
+   "amendement": "AMANR5L17PO838901BTC2628P0D1N000011",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6153",
+   "numero": 6153,
+   "date": "2026-04-13",
+   "amendement": "AMANR5L17PO838901BTC2628P0D1N000037",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6156",
+   "numero": 6156,
+   "date": "2026-04-13",
+   "amendement": "AMANR5L17PO838901BTC2628P0D1N000033",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6162",
+   "numero": 6162,
+   "date": "2026-04-13",
+   "amendement": "AMANR5L17PO838901BTC2628P0D1N000038",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6163",
+   "numero": 6163,
+   "date": "2026-04-13",
+   "amendement": "AMANR5L17PO838901BTC2628P0D1N000008",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6167",
+   "numero": 6167,
+   "date": "2026-04-13",
+   "amendement": "AMANR5L17PO838901BTC2628P0D1N000004",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6169",
+   "numero": 6169,
+   "date": "2026-04-13",
+   "amendement": "AMANR5L17PO838901BTC2628P0D1N000009",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6175",
+   "numero": 6175,
+   "date": "2026-04-13",
+   "amendement": "AMANR5L17PO838901BTC2628P0D1N000027",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6177",
+   "numero": 6177,
+   "date": "2026-04-13",
+   "amendement": "AMANR5L17PO838901BTC2628P0D1N000050",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6178",
+   "numero": 6178,
+   "date": "2026-04-13",
+   "amendement": "AMANR5L17PO838901BTC2628P0D1N000049",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6676",
+   "numero": 6676,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000720",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6715",
+   "numero": 6715,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000331",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6877",
+   "numero": 6877,
+   "date": "2026-05-22",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001613",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7122",
+   "numero": 7122,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000216",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7249",
+   "numero": 7249,
+   "date": "2026-06-01",
+   "amendement": "AMANR5L17PO838901BTC2835P0D1N000088",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7407",
+   "numero": 7407,
+   "date": "2026-06-16",
+   "amendement": "AMANR5L17PO838901B2697P0D1N000030",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7820",
+   "numero": 7820,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000371",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7824",
+   "numero": 7824,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000188",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7826",
+   "numero": 7826,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000276",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7828",
+   "numero": 7828,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000346",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7829",
+   "numero": 7829,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000277",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7843",
+   "numero": 7843,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000241",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7847",
+   "numero": 7847,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000097",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7848",
+   "numero": 7848,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000365",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7850",
+   "numero": 7850,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000192",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7853",
+   "numero": 7853,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000244",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7854",
+   "numero": 7854,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000264",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7857",
+   "numero": 7857,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000328",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7860",
+   "numero": 7860,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000296",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7865",
+   "numero": 7865,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000043",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7867",
+   "numero": 7867,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000288",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7881",
+   "numero": 7881,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000194",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7887",
+   "numero": 7887,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000136",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7888",
+   "numero": 7888,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000135",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7890",
+   "numero": 7890,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000280",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7891",
+   "numero": 7891,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000283",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8110",
+   "numero": 8110,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000708",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8194",
+   "numero": 8194,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000907",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8269",
+   "numero": 8269,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000081",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  }
+ ]
+}

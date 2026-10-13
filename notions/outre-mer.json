@@ -1,0 +1,729 @@
+{
+ "notion": "outre-mer",
+ "label": "Moyens et droits spécifiques outre-mer",
+ "axe": "Favorable : renforcer les moyens, la continuité territoriale et les droits spécifiques des outre-mer. Défavorable : les réduire ou aligner vers le droit commun défavorable.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose. Échantillon : les 80 amendements les plus centrés sur le sujet (par nombre d'occurrences des mots-clés) parmi les votes divisés (au moins 10 % de voix du côté minoritaire).",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V522",
+   "numero": 522,
+   "date": "2024-12-16",
+   "amendement": "AMANR5L17PO838901B0711P0D1N000029",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V528",
+   "numero": 528,
+   "date": "2025-01-20",
+   "amendement": "AMANR5L17PO838901BTC0775P0D1N000272",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait tenir compte de la démographie dans la reconstruction des écoles à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V557",
+   "numero": 557,
+   "date": "2025-01-21",
+   "amendement": "AMANR5L17PO838901BTC0775P0D1N000084",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Augmente la défiscalisation des dons au profit de Mayotte après le cyclone."
+  },
+  {
+   "scrutin": "VTANR5L17V558",
+   "numero": 558,
+   "date": "2025-01-21",
+   "amendement": "AMANR5L17PO838901BTC0775P0D1N000255",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Augmente la défiscalisation des dons au profit de Mayotte après le cyclone."
+  },
+  {
+   "scrutin": "VTANR5L17V566",
+   "numero": 566,
+   "date": "2025-01-21",
+   "amendement": "AMANR5L17PO838901BTC0775P0D1N000126",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Porte de cinq à dix ans la durée de la zone franche de Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V579",
+   "numero": 579,
+   "date": "2025-01-21",
+   "amendement": "AMANR5L17PO838901BTC0775P0D1N000102",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V661",
+   "numero": 661,
+   "date": "2025-01-29",
+   "amendement": "AMANR5L17PO838901BTC0629P0D1N000025",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V714",
+   "numero": 714,
+   "date": "2025-02-06",
+   "amendement": "AMANR5L17PO838901BTC0864P0D1N000076",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2641",
+   "numero": 2641,
+   "date": "2025-06-23",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000133",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2651",
+   "numero": 2651,
+   "date": "2025-06-23",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000144",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2656",
+   "numero": 2656,
+   "date": "2025-06-24",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000451",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2691",
+   "numero": 2691,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000643",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2692",
+   "numero": 2692,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000315",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2697",
+   "numero": 2697,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000448",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Souligne l'urgence de régulariser le cadastre de Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2706",
+   "numero": 2706,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000286",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Élargit le cadre d'urgence civile à l'ensemble du territoire mahorais."
+  },
+  {
+   "scrutin": "VTANR5L17V2749",
+   "numero": 2749,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000114",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Accélère la régularisation foncière à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2752",
+   "numero": 2752,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000177",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Réserve les marchés de construction scolaire à Mayotte aux entreprises mahoraises."
+  },
+  {
+   "scrutin": "VTANR5L17V2757",
+   "numero": 2757,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000182",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Intègre l'approvisionnement local dans les marchés de construction scolaire à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2758",
+   "numero": 2758,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000175",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Demande que l'État prenne en main la construction d'écoles à Mayotte pour augmenter la capacité d'accueil."
+  },
+  {
+   "scrutin": "VTANR5L17V2763",
+   "numero": 2763,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000648",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2777",
+   "numero": 2777,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000554",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Aligne le SMIC de Mayotte sur celui de l'Hexagone en deux ans."
+  },
+  {
+   "scrutin": "VTANR5L17V2784",
+   "numero": 2784,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000450",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Facilite le retour des fonctionnaires originaires de Mayotte dans leur département."
+  },
+  {
+   "scrutin": "VTANR5L17V2785",
+   "numero": 2785,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000199",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce le critère de compétence locale ultramarine dans le recrutement des agents publics."
+  },
+  {
+   "scrutin": "VTANR5L17V2787",
+   "numero": 2787,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000523",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2788",
+   "numero": 2788,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000112",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Convoque le comité de pilotage de la piste longue de l'aéroport de Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2789",
+   "numero": 2789,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000113",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Convoque le comité de pilotage de la piste longue de l'aéroport de Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2791",
+   "numero": 2791,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000620",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2793",
+   "numero": 2793,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000194",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2794",
+   "numero": 2794,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000456",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2795",
+   "numero": 2795,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000469",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2796",
+   "numero": 2796,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000566",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Améliore l'accès aux soins à Mayotte par la télémédecine."
+  },
+  {
+   "scrutin": "VTANR5L17V2797",
+   "numero": 2797,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000585",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2801",
+   "numero": 2801,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000228",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2820",
+   "numero": 2820,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000032",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2822",
+   "numero": 2822,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000034",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2823",
+   "numero": 2823,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000273",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2824",
+   "numero": 2824,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000274",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2825",
+   "numero": 2825,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000035",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2827",
+   "numero": 2827,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000036",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fidélise les effectifs de police à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2828",
+   "numero": 2828,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000037",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Favorise le recrutement de Français d'outre-mer dans la gendarmerie locale."
+  },
+  {
+   "scrutin": "VTANR5L17V2835",
+   "numero": 2835,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000341",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Dote Mayotte de moyens temporaires pour fournir de l'eau."
+  },
+  {
+   "scrutin": "VTANR5L17V2845",
+   "numero": 2845,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000044",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Met en œuvre des moyens pour l'académie de Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2846",
+   "numero": 2846,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000045",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Inscrit un engagement de recrutement d'enseignants à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2848",
+   "numero": 2848,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000049",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce l'engagement de l'État pour l'éducation à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2851",
+   "numero": 2851,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000340",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Augmente les capacités de formation médicale à Mayotte contre le désert médical."
+  },
+  {
+   "scrutin": "VTANR5L17V2855",
+   "numero": 2855,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000633",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2856",
+   "numero": 2856,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000051",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Traite le déficit de logements sociaux à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2860",
+   "numero": 2860,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000052",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Étend le service militaire adapté à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2862",
+   "numero": 2862,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000053",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Engage l'État à faire de Mayotte une base arrière stratégique du canal du Mozambique."
+  },
+  {
+   "scrutin": "VTANR5L17V3014",
+   "numero": 3014,
+   "date": "2025-07-09",
+   "amendement": "AMANR5L17PO838901BTC1603P0D1N000670",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Tient compte du surcoût de la vie outre-mer pour les budgets locaux."
+  },
+  {
+   "scrutin": "VTANR5L17V3046",
+   "numero": 3046,
+   "date": "2025-07-10",
+   "amendement": "AMANR5L17PO838901BTC1603P0D1N000640",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3919",
+   "numero": 3919,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000086",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission outre-mer."
+  },
+  {
+   "scrutin": "VTANR5L17V4276",
+   "numero": 4276,
+   "date": "2025-11-27",
+   "amendement": "AMANR5L17PO838901BTC2118P0D1N000033",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Introduit la logique de continuité territoriale pour l'accès au service postal outre-mer."
+  },
+  {
+   "scrutin": "VTANR5L17V4286",
+   "numero": 4286,
+   "date": "2025-11-27",
+   "amendement": "AMANR5L17PO838901BTC2118P0D1N000022",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Ancre le titre d'une loi postale dans la notion de continuité territoriale."
+  },
+  {
+   "scrutin": "VTANR5L17V4457",
+   "numero": 4457,
+   "date": "2025-12-02",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000819",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4489",
+   "numero": 4489,
+   "date": "2025-12-03",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000299",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4692",
+   "numero": 4692,
+   "date": "2025-12-09",
+   "amendement": "AMANR5L17PO838901B2141P0D1N001143",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4702",
+   "numero": 4702,
+   "date": "2025-12-10",
+   "amendement": "AMANR5L17PO838901BTC2119P0D1N000002",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4705",
+   "numero": 4705,
+   "date": "2025-12-10",
+   "amendement": "AMANR5L17PO838901BTC2119P0D1N000008",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Subordonne l'entrée en vigueur d'une loi organique à l'approbation de l'assemblée de la Polynésie française."
+  },
+  {
+   "scrutin": "VTANR5L17V6311",
+   "numero": 6311,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000369",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Inscrit les outre-mer parmi les priorités de la loi de programmation militaire."
+  },
+  {
+   "scrutin": "VTANR5L17V6313",
+   "numero": 6313,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000511",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce la prise en compte des territoires ultramarins dans la programmation militaire."
+  },
+  {
+   "scrutin": "VTANR5L17V6315",
+   "numero": 6315,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000078",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Réaffirme la priorité de protection des territoires ultramarins dans la stratégie de défense."
+  },
+  {
+   "scrutin": "VTANR5L17V6380",
+   "numero": 6380,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000345",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Inscrit les outre-mer parmi les priorités de la loi de programmation militaire."
+  },
+  {
+   "scrutin": "VTANR5L17V6381",
+   "numero": 6381,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000606",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Prévoit des moyens pour les outre-mer dans la loi de programmation militaire."
+  },
+  {
+   "scrutin": "VTANR5L17V6382",
+   "numero": 6382,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000608",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Prévoit un fonds pour les capacités de la France en Indo-Pacifique et outre-mer."
+  },
+  {
+   "scrutin": "VTANR5L17V6383",
+   "numero": 6383,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000513",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une base navale dans le port de Longoni, à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V6459",
+   "numero": 6459,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000688",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce les capacités de drones des forces outre-mer."
+  },
+  {
+   "scrutin": "VTANR5L17V6465",
+   "numero": 6465,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000423",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Précise l'effort de la Marine nationale outre-mer."
+  },
+  {
+   "scrutin": "VTANR5L17V6466",
+   "numero": 6466,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000448",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Souligne l'impératif de souveraineté et de réactivité outre-mer."
+  },
+  {
+   "scrutin": "VTANR5L17V6467",
+   "numero": 6467,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000691",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce les moyens de souveraineté et de sécurité de Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V6468",
+   "numero": 6468,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000692",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce la surveillance et la protection maritime de Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V6472",
+   "numero": 6472,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000538",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait du remplacement des frégates de surveillance outre-mer une priorité."
+  },
+  {
+   "scrutin": "VTANR5L17V6762",
+   "numero": 6762,
+   "date": "2026-05-20",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001606",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Demande une attention particulière à la souveraineté alimentaire des outre-mer."
+  },
+  {
+   "scrutin": "VTANR5L17V7010",
+   "numero": 7010,
+   "date": "2026-05-28",
+   "amendement": "AMANR5L17PO838901BTC2816P0D1N000022",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Introduit une dérogation tenant compte de la situation des territoires ultramarins."
+  },
+  {
+   "scrutin": "VTANR5L17V7341",
+   "numero": 7341,
+   "date": "2026-06-04",
+   "amendement": "AMANR5L17PO838901BTC2200P0D1N000028",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7381",
+   "numero": 7381,
+   "date": "2026-06-11",
+   "amendement": "AMANR5L17PO838901B2415P0D1N000002",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7919",
+   "numero": 7919,
+   "date": "2026-07-01",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000022",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8167",
+   "numero": 8167,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000200",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8451",
+   "numero": 8451,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000289",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8460",
+   "numero": 8460,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000352",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  }
+ ]
+}

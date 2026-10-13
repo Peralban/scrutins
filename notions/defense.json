@@ -1,0 +1,729 @@
+{
+ "notion": "defense",
+ "label": "Effort militaire",
+ "axe": "Favorable : augmenter les moyens militaires (budget des armées, matériel, munitions, service national). Défavorable : les réduire ou les plafonner.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose. Échantillon : les 80 amendements les plus centrés sur le sujet (par nombre d'occurrences des mots-clés) parmi les votes divisés (au moins 10 % de voix du côté minoritaire).",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V985",
+   "numero": 985,
+   "date": "2025-03-12",
+   "amendement": "AMANR5L17PO838901BTC1001P0D1N000040",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Propose un plan d'accroissement des dépenses militaires de l'Union européenne et des États membres."
+  },
+  {
+   "scrutin": "VTANR5L17V2690",
+   "numero": 2690,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000279",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2691",
+   "numero": 2691,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000643",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2692",
+   "numero": 2692,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000315",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2813",
+   "numero": 2813,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000027",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2860",
+   "numero": 2860,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000052",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4940",
+   "numero": 4940,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000284",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6294",
+   "numero": 6294,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000575",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Estime l'actualisation insuffisante et demande une réelle montée en puissance des forces."
+  },
+  {
+   "scrutin": "VTANR5L17V6296",
+   "numero": 6296,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000514",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Demande de corriger la trajectoire de la programmation militaire jugée insuffisante."
+  },
+  {
+   "scrutin": "VTANR5L17V6297",
+   "numero": 6297,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000581",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Estime que l'actualisation n'apporte ni l'ambition ni les moyens nécessaires et demande de les renforcer."
+  },
+  {
+   "scrutin": "VTANR5L17V6298",
+   "numero": 6298,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000098",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Dénonce le décalage entre le durcissement affiché et les formats capacitaires, et demande de les renforcer."
+  },
+  {
+   "scrutin": "VTANR5L17V6302",
+   "numero": 6302,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000545",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6303",
+   "numero": 6303,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000284",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6304",
+   "numero": 6304,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000601",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6305",
+   "numero": 6305,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000605",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6307",
+   "numero": 6307,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000473",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6311",
+   "numero": 6311,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000369",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6328",
+   "numero": 6328,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000669",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Maintient l'effort sur le logement des militaires."
+  },
+  {
+   "scrutin": "VTANR5L17V6330",
+   "numero": 6330,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000055",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce les objectifs de recrutement et de fidélisation des militaires."
+  },
+  {
+   "scrutin": "VTANR5L17V6332",
+   "numero": 6332,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000090",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6333",
+   "numero": 6333,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000108",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6334",
+   "numero": 6334,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000148",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Maintient le plan de fidélisation des militaires dans la programmation."
+  },
+  {
+   "scrutin": "VTANR5L17V6335",
+   "numero": 6335,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000115",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6337",
+   "numero": 6337,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000120",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6338",
+   "numero": 6338,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000375",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Poursuit les efforts en faveur des militaires et de leurs familles."
+  },
+  {
+   "scrutin": "VTANR5L17V6339",
+   "numero": 6339,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000117",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6341",
+   "numero": 6341,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000122",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6343",
+   "numero": 6343,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000676",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6345",
+   "numero": 6345,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000286",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6347",
+   "numero": 6347,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000373",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fixe un objectif de 1 000 formateurs supplémentaires pour les réservistes."
+  },
+  {
+   "scrutin": "VTANR5L17V6348",
+   "numero": 6348,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000517",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6349",
+   "numero": 6349,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000522",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6350",
+   "numero": 6350,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000145",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6352",
+   "numero": 6352,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000154",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6353",
+   "numero": 6353,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000155",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6355",
+   "numero": 6355,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000739",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6356",
+   "numero": 6356,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000532",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Corrige une formulation jugée trop optimiste sur le renouvellement des équipements."
+  },
+  {
+   "scrutin": "VTANR5L17V6361",
+   "numero": 6361,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000109",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Réaffirme les besoins d'armement de la gendarmerie dans la loi de programmation militaire."
+  },
+  {
+   "scrutin": "VTANR5L17V6369",
+   "numero": 6369,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000614",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6380",
+   "numero": 6380,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000345",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6384",
+   "numero": 6384,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000166",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6385",
+   "numero": 6385,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000528",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6386",
+   "numero": 6386,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000671",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Prévoit des stocks de munitions suffisants pour l'entraînement des forces."
+  },
+  {
+   "scrutin": "VTANR5L17V6388",
+   "numero": 6388,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000168",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6389",
+   "numero": 6389,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000170",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit une filière souveraine de munitions de petit calibre."
+  },
+  {
+   "scrutin": "VTANR5L17V6390",
+   "numero": 6390,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000171",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6391",
+   "numero": 6391,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000173",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Appelle à créer une filière nationale de production de munitions de petit calibre."
+  },
+  {
+   "scrutin": "VTANR5L17V6393",
+   "numero": 6393,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000335",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fixe l'objectif de 2 000 réservistes industriels qualifiés d'ici 2028."
+  },
+  {
+   "scrutin": "VTANR5L17V6395",
+   "numero": 6395,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000131",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Garantit la continuité des télécommunications spatiales militaires face à la fin de vie des satellites actuels."
+  },
+  {
+   "scrutin": "VTANR5L17V6396",
+   "numero": 6396,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000047",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait du satellite Syracuse V un programme prioritaire pour les théâtres de haute intensité."
+  },
+  {
+   "scrutin": "VTANR5L17V6415",
+   "numero": 6415,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000132",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Demande le respect du calendrier du système de renseignement spatial CSO."
+  },
+  {
+   "scrutin": "VTANR5L17V6424",
+   "numero": 6424,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000737",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce les capacités de lutte anti-drones."
+  },
+  {
+   "scrutin": "VTANR5L17V6431",
+   "numero": 6431,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000198",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait du développement des technologies quantiques une priorité de la programmation militaire."
+  },
+  {
+   "scrutin": "VTANR5L17V6433",
+   "numero": 6433,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000537",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce les capacités cyber défensives et offensives dans la programmation militaire."
+  },
+  {
+   "scrutin": "VTANR5L17V6437",
+   "numero": 6437,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000687",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce l'attractivité et la fidélisation du service de santé des armées."
+  },
+  {
+   "scrutin": "VTANR5L17V6439",
+   "numero": 6439,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000595",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Inscrit la montée en puissance de l'armée de terre voulue par son chef d'état-major."
+  },
+  {
+   "scrutin": "VTANR5L17V6450",
+   "numero": 6450,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000340",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce les capacités de l'arme du génie en augmentant les cibles d'équipement."
+  },
+  {
+   "scrutin": "VTANR5L17V6451",
+   "numero": 6451,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000342",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Ajoute une capacité de franchissement autonome à l'armée de terre."
+  },
+  {
+   "scrutin": "VTANR5L17V6458",
+   "numero": 6458,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000670",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Prévoit des stocks de munitions suffisants pour une guerre de haute intensité."
+  },
+  {
+   "scrutin": "VTANR5L17V6461",
+   "numero": 6461,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000265",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Prévoit la production supplémentaire de trois frégates de défense et d'intervention."
+  },
+  {
+   "scrutin": "VTANR5L17V6465",
+   "numero": 6465,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000423",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Précise l'effort de la Marine nationale outre-mer."
+  },
+  {
+   "scrutin": "VTANR5L17V6470",
+   "numero": 6470,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000418",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Inscrit le développement des infrastructures portuaires militaires à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V6474",
+   "numero": 6474,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000429",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Acte la création d'une base navale à Longoni, à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V6475",
+   "numero": 6475,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000218",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6478",
+   "numero": 6478,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000519",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Porte le format des frégates de premier rang de 15 à 18 unités."
+  },
+  {
+   "scrutin": "VTANR5L17V6480",
+   "numero": 6480,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000298",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Prévoit l'évolution du modèle des frégates de premier rang."
+  },
+  {
+   "scrutin": "VTANR5L17V6481",
+   "numero": 6481,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000140",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Modifie à la hausse le nombre d'avions de combat de la cible."
+  },
+  {
+   "scrutin": "VTANR5L17V6484",
+   "numero": 6484,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000224",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6663",
+   "numero": 6663,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000667",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6664",
+   "numero": 6664,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000681",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6705",
+   "numero": 6705,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000506",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6706",
+   "numero": 6706,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000299",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime la transformation de la journée défense et citoyenneté en journée de mobilisation."
+  },
+  {
+   "scrutin": "VTANR5L17V6707",
+   "numero": 6707,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000300",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'obligation annuelle de recensement des Français jusqu'à 50 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V6708",
+   "numero": 6708,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000509",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6711",
+   "numero": 6711,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000150",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6717",
+   "numero": 6717,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000717",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6729",
+   "numero": 6729,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000577",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6734",
+   "numero": 6734,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000124",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7016",
+   "numero": 7016,
+   "date": "2026-05-28",
+   "amendement": "AMANR5L17PO838901BTC2816P0D1N000031",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8202",
+   "numero": 8202,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000913",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  }
+ ]
+}
