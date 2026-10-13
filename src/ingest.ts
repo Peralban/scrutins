@@ -31,7 +31,7 @@ export async function ingest() {
 
   const insGroupe = db.prepare("INSERT OR REPLACE INTO groupe VALUES (?,?,?,?)");
   const insDepute = db.prepare("INSERT OR REPLACE INTO depute VALUES (?,?,?)");
-  const insScrutin = db.prepare("INSERT INTO scrutin VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+  const insScrutin = db.prepare("INSERT INTO scrutin VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
   const insVote = db.prepare("INSERT INTO vote VALUES (?,?,?,?,?,?)");
   const insTheme = db.prepare("INSERT INTO scrutin_theme VALUES (?,?)");
   for (const th of THEMES) db.prepare("INSERT INTO theme VALUES (?,?)").run(th.id, th.label);
@@ -71,7 +71,7 @@ export async function ingest() {
       insScrutin.run(
         s.uid, +s.numero, s.dateScrutin, s.typeVote.codeTypeVote, s.sort.code, s.titre, texte, etape, kind,
         +s.syntheseVote.nombreVotants, +s.syntheseVote.suffragesExprimes,
-        +d.pour, +d.contre, +d.abstentions, +d.nonVotants,
+        +d.pour, +d.contre, +d.abstentions, +d.nonVotants, s.objet?.dossierLegislatif?.dossierRef ?? null,
       );
       for (const id of themesOf(s.titre, texte)) insTheme.run(s.uid, id);
       for (const g of arr<any>(s.ventilationVotes.organe.groupes.groupe)) {

@@ -9,6 +9,33 @@ export function open() {
 // Expressed vote that differs from the group's majority position.
 const EXPRIME = "v.position IN ('pour','contre','abstention')";
 
+// What a scrutin voted on: the amendment's own text when the vote is on an amendment we linked,
+// and links to the official pages (amendment, amended text, legislative file). No summary: the source text only.
+const AN = "https://www.assemblee-nationale.fr";
+const plain = (h: string | null) => h ? h.replace(/<\/(p|li|div)>|<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&")
+  .replace(/[ \t]+/g, " ").replace(/\n\s*\n+/g, "\n").trim() || null : null;
+function voteTexte(db: Database, s: { id: string; date: string; texte: string | null; dossier: string | null }) {
+  const a: any = db.query(`SELECT a.uid, a.numero, a.texte_ref, a.article, a.sort, a.gouvernement, d.prenom || ' ' || d.nom auteur, g.sigle groupe,
+                                  t.dispositif, t.expose
+                           FROM scrutin_amendement sa JOIN amendement a ON a.uid = sa.amendement_uid
+                           LEFT JOIN amendement_texte t ON t.uid = a.uid LEFT JOIN depute d ON d.id = a.acteur_id LEFT JOIN groupe g ON g.id = a.groupe_id
+                           WHERE sa.scrutin_id = ?`).get(s.id);
+  // A vote on an article or a whole text carries no text reference: borrow one from the votes on the same
+  // text, the legislative file from any of them, the examined text from amendments voted up to that day.
+  const dossier = s.dossier ?? (s.texte ? (db.query(`SELECT dossier FROM scrutin WHERE texte = ? AND dossier IS NOT NULL LIMIT 1`).get(s.texte) as any)?.dossier : null);
+  const texteRef = a?.texte_ref ?? (s.texte ? (db.query(`SELECT am.texte_ref FROM scrutin x JOIN scrutin_amendement sa ON sa.scrutin_id = x.id JOIN amendement am ON am.uid = sa.amendement_uid
+                                                         WHERE x.texte = ? AND x.date <= ? AND am.texte_ref IS NOT NULL ORDER BY x.date DESC, x.numero DESC LIMIT 1`).get(s.texte, s.date) as any)?.texte_ref : null);
+  const liens: { label: string; url: string }[] = [];
+  if (a) liens.push({ label: `amendement n° ${a.numero}`, url: `${AN}/dyn/17/amendements/${a.uid}` });
+  if (texteRef) liens.push({ label: a ? "texte amendé, en entier" : "texte examiné en séance", url: `${AN}/dyn/opendata/${texteRef}.html` });
+  if (dossier) liens.push({ label: "dossier législatif", url: `${AN}/dyn/17/dossiers/${dossier}` });
+  return {
+    amendement: a ? { numero: a.numero, sort: a.sort, auteur: a.gouvernement ? "Gouvernement" : a.auteur, groupe: a.gouvernement ? null : a.groupe,
+      dispositif: plain(a.dispositif), expose: plain(a.expose) } : null,
+    liens,
+  };
+}
+
 export const queries = {
   // One group: headline figures with their rank, notions, members, closest and furthest groups.
   // "Current members" = deputies whose latest membership period is in this group.
@@ -254,7 +281,7 @@ export const queries = {
     for (const v of votes) if (!used.has(v.id))
       seats.push({ place: medianPlace(v.groupe_id) + 0.5 + (extra++) * 1e-3, id: v.id, nom: v.nom, groupe: v.groupe_id, position: v.position, delegation: v.delegation });
     seats.sort((a, b) => a.place - b.place);
-    return { scrutin: s, seats, groupes: db.query(`SELECT id, sigle, nom, couleur FROM groupe`).all() };
+    return { scrutin: s, seats, groupes: db.query(`SELECT id, sigle, nom, couleur FROM groupe`).all(), vote: voteTexte(db, s) };
   },
 };
 

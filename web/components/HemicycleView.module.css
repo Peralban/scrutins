@@ -37,3 +37,12 @@
 .gHead small { font: 11px var(--mono); color: var(--muted); white-space: nowrap; font-weight: 400; }
 .what { display: block; color: var(--ink); font-size: 13px; line-height: 1.35; }
 .adopte { color: var(--pour); font-weight: 600; } .rejete { color: var(--contre); font-weight: 600; }
+
+/* "Ce qui est voté": the source text behind the vote. */
+.texte { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
+.texte h2 { font-size: 20px; margin-bottom: 6px; }
+.texte h3 { font: 600 13px var(--sans); margin: 12px 0 6px; color: var(--ink2); }
+.texte blockquote { margin: 0; padding: 10px 14px; border-left: 3px solid var(--ink); background: var(--surface); white-space: pre-line; font-size: 15px; line-height: 1.55; max-height: 22em; overflow-y: auto; }
+.texte details { margin-top: 10px; } .texte summary { cursor: pointer; font-size: 14px; color: var(--ink2); }
+.expose { white-space: pre-line; font-size: 14px; line-height: 1.55; color: var(--ink2); max-height: 22em; overflow-y: auto; }
+.liens { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; }

@@ -24,7 +24,8 @@ CREATE TABLE scrutin (
   pour              INTEGER NOT NULL,
   contre            INTEGER NOT NULL,
   abstentions       INTEGER NOT NULL,
-  non_votants       INTEGER NOT NULL
+  non_votants       INTEGER NOT NULL,
+  dossier           TEXT  -- dossier législatif (DLR…), when the source gives one
 );
 -- position: 'pour' | 'contre' | 'abstention' | 'non_votant'
 CREATE TABLE vote (
