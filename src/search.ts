@@ -73,17 +73,21 @@ const norm = (s: string) => s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCas
 // Words that carry the question, not the subject: never searched for.
 const STOP = new Set(("le la les l un une des du de d a au aux et ou en sur pour par avec comme que qui quoi quel quelle quels quelles " +
   "est sont ont a-t-il vote voter votent vote-t-il vote-t-elle votes voté votee votees votes-ils il elle ils elles ce cet cette ses son sa leur leurs " +
-  "comment combien pourquoi quand est-ce t il y mon ma mes contre pas ne").split(" "));
+  "comment combien pourquoi quand est-ce t il y mon ma mes contre pas ne " +
+  "qu c ce veut dire signifie definition definir definis explique expliquer").split(" "));
 
-const ftsQuery = (q: string) => {
+const ftsQuery = (q: string, op: "AND" | "OR") => {
   const words = norm(q).replace(/[^\p{L}\p{N}\s-]/gu, " ").split(/\s+/).filter((w) => w.length > 1 && !STOP.has(w));
-  return words.length ? words.map((w) => `"${w.replace(/"/g, "")}"*`).join(" OR ") : null;
+  return words.length ? words.map((w) => `"${w.replace(/"/g, "")}"*`).join(` ${op} `) : null;
 };
 
 export function search(db: Database, q: string, limit = 10): Hit[] {
-  const m = ftsQuery(q);
+  const m = ftsQuery(q, "AND");
   if (!m) return [];
-  const rows = db.query(`SELECT kind, ref, label, sub, href, weight, bm25(search, 0, 0, 10, 0, 0, 1, 0) AS r FROM search WHERE search MATCH ? ORDER BY r LIMIT 60`).all(m) as any[];
+  // Every word of the question must match; only when that finds too little do we accept any word.
+  const run = (match: string) => db.query(`SELECT kind, ref, label, sub, href, weight, bm25(search, 0, 0, 10, 0, 0, 1, 0) AS r FROM search WHERE search MATCH ? ORDER BY r LIMIT 60`).all(match) as any[];
+  let rows = run(m);
+  if (rows.length < 3) rows = run(ftsQuery(q, "OR")!);
   let hits: Hit[] = rows.map((r) => ({ kind: r.kind, ref: r.ref, label: r.label, sub: r.sub, href: r.href, score: -r.r * BOOST[r.kind as Kind] * r.weight }));
   if (hits.length < 3 && norm(q).trim().length >= 3) {
     // Typo fallback: trigram match on the label only.
@@ -100,6 +104,7 @@ export function search(db: Database, q: string, limit = 10): Hit[] {
 // ---------- Questions ----------
 
 export type Answer =
+  | { intent: "definition"; mot: string; cat: string; def: string; site: string | null; voir: { id: string; mot: string }[]; href: string }
   | { intent: "accord"; a: Hit; b: Hit; communs: number; accord: number; taux: number; href: string }
   | { intent: "vote_texte"; depute: Hit; texte: Hit; ensemble: { id: string; date: string; titre: string; position: string }[];
       details: { total: number; pour: number; contre: number; abstention: number; absent: number }; href: string }
@@ -116,10 +121,23 @@ function entity(hits: Hit[], kind: Kind, q: string, skip?: Hit): Hit | undefined
     (kind === "texte" || nq.includes(norm(h.label.split(" ").slice(-1)[0])) || nq.includes(norm(h.label))));
 }
 
+type Mot = { id: string; mot: string; cat: string; def: string; site?: string; voir?: string[] };
+let glossaire: Mot[] | null = null;
+const mots = () => glossaire ??= JSON.parse(readFileSync(new URL("../web/content/glossaire.json", import.meta.url), "utf8")).mots as Mot[];
+
 export function ask(db: Database, q: string): AskResult {
   const hits = search(db, q, 25);
-  const nq = norm(q);
+  const nq = norm(q).replace(/[’‘']/g, " ");
   const top = hits.slice(0, 10);
+
+  // "Qu'est-ce que la TVA ?" / "c'est quoi un 49.3" / "que veut dire dissidence": the glossary entry, in full.
+  if (/\bqu est ce\b|\bc est quoi\b|\bque (veut dire|signifie)\b|\bdefinition\b|\bdefinis\b|\bexplique\b/.test(nq)) {
+    const g = hits.find((h) => h.kind === "glossaire");
+    const m = g && mots().find((x) => x.id === g.ref);
+    if (m) return { q, hits: top.filter((h) => h !== g), understood: `définition : ${m.mot}`,
+      answer: { intent: "definition", mot: m.mot, cat: m.cat, def: m.def, site: m.site ?? null,
+        voir: (m.voir ?? []).flatMap((id) => { const v = mots().find((x) => x.id === id); return v ? [{ id, mot: v.mot }] : []; }), href: `/glossaire#${m.id}` } };
+  }
 
   // "X vote comme Y" / "X et Y votent-ils pareil" / "accord entre X et Y" — two groups.
   if (/\bcomme\b|pareil|meme chose|accord|ensemble|d'accord|avec\b/.test(nq)) {

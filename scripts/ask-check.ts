@@ -27,5 +27,11 @@ const a5 = ask(db, "LFI et la censure").answer;
 check("LFI censure -> direct data", a5?.intent === "notion" && a5.statut === "données directes", a5);
 check("plain search has no answer", ask(db, "borne").answer === null, ask(db, "borne"));
 
+const a6 = ask(db, "qu'est ce que la TVA ?");
+check("définition TVA", a6.answer?.intent === "definition" && a6.answer.mot.startsWith("TVA"), a6.answer ?? a6.hits[0]);
+const a7 = ask(db, "c'est quoi la dissidence").answer;
+check("définition dissidence", a7?.intent === "definition" && a7.mot === "Dissidence", a7);
+check("pas de bruit sur 'qu'est ce que'", search(db, "qu'est ce que la TVA ?")[0]?.label?.startsWith("TVA") === true, search(db, "qu'est ce que la TVA ?")[0]);
+
 console.log(fail ? `${fail} failing` : "all ok");
 process.exit(fail ? 1 : 0);
