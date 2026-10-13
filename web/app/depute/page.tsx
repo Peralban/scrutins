@@ -1,27 +1,24 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Suspense } from "react";
 import { connection } from "next/server";
-import DeputeSearch from "@/components/DeputeSearch";
+import DeputesTable from "@/components/DeputesTable";
 import { getDeputes } from "@/lib/api";
 
-export const metadata: Metadata = { title: "Député" };
+export const metadata: Metadata = { title: "Députés" };
 
 export default function Page() {
   return (
-    <Suspense fallback={<p className="skeleton">Chargement…</p>}>
-      <Search />
-    </Suspense>
+    <>
+      <h1 className="page-title">Les députés</h1>
+      <p className="def" style={{ marginBottom: 20 }}>Tous les députés ayant siégé pendant la législature. Cherche un nom, ou trie par dissidence, votes exprimés ou délégation ; un clic ouvre la fiche.</p>
+      <Suspense fallback={<p className="skeleton">Chargement des députés…</p>}>
+        <List />
+      </Suspense>
+    </>
   );
 }
 
-async function Search() {
+async function List() {
   await connection();
-  const deputes = await getDeputes();
-  return (
-    <>
-      <DeputeSearch deputes={deputes} />
-      <p className="def">Choisir un député dans la recherche, ou depuis <Link href="/">le tableau des statistiques</Link>, l&apos;<Link href="/hemicycle">hémicycle</Link> ou la <Link href="/carte">carte</Link>.</p>
-    </>
-  );
+  return <DeputesTable deputes={await getDeputes()} />;
 }

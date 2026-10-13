@@ -9,7 +9,7 @@ import PresenceChart from "@/components/PresenceChart";
 import s from "@/components/Depute.module.css";
 import { getDepute, getDeputeNotions, getDeputes } from "@/lib/api";
 import { NEUTRAL, fmt, pct, verdict } from "@/lib/format";
-import type { DeputeData, DeputeNotion } from "@/lib/types";
+import type { DeputeData, DeputeNotion, DeputeRow } from "@/lib/types";
 import n from "@/components/Notions.module.css";
 
 export const metadata: Metadata = { title: "Député" };
@@ -31,7 +31,7 @@ async function Fiche({ params }: { params: PageProps<"/depute/[id]">["params"] }
     <>
       <DeputeSearch deputes={deputes} />
       <Identity d={d} />
-      <Body d={d} notions={notions} />
+      <Body d={d} notions={notions} deputes={deputes} />
     </>
   );
 }
@@ -42,29 +42,38 @@ function Identity({ d }: { d: DeputeData }) {
     <>
       <title>{`${d.depute.prenom} ${d.depute.nom}`}</title>
       <div className={s.id}>
-        <div>
-          <h2>{d.depute.prenom} {d.depute.nom}</h2>
-          <div style={{ marginTop: 8 }}>
-            {d.groupes.map((x) => (
-              <span key={x.id}>
-                <span className={s.chip}><i style={{ background: x.couleur ?? NEUTRAL }} />{x.sigle}</span>
-                <span className={s.tl}>{x.debut} → {x.fin} </span>
-              </span>
-            ))}
+        <div className={s.who}>
+          <span className={s.swatch} style={{ background: g.couleur ?? NEUTRAL }} />
+          <div>
+            <h1 className={s.name}>{d.depute.prenom} {d.depute.nom}</h1>
+            <p className={s.sub}>
+              <Link href={`/groupes/${g.id}`}>{g.nom}</Link>
+              {d.siege ? ` · siège n° ${d.siege.place}` : ""}
+            </p>
+            {d.groupes.length > 1 && (
+              <p className={s.history}>
+                {d.groupes.map((x) => (
+                  <span key={x.id + x.debut} className={s.chip}><i style={{ background: x.couleur ?? NEUTRAL }} />{x.sigle} <small>{x.debut} → {x.fin}</small></span>
+                ))}
+              </p>
+            )}
           </div>
         </div>
-        <div className={s.tl}>
-          <Link href={`/accords?depute=${d.depute.id}`}>qui vote comme lui →</Link><br />
-          <a href={`https://www.assemblee-nationale.fr/dyn/deputes/${encodeURIComponent(d.depute.id)}`} target="_blank" rel="noopener noreferrer">fiche sur assemblee-nationale.fr ↗</a><br />
-          {d.siege ? `siège n°${d.siege.place}` : "siège inconnu"} · {g.nom}
+        <div className={s.actions}>
+          <Link href={`/accords?depute=${d.depute.id}`} className={s.btn}>Qui vote comme lui ?</Link>
+          <a href={`https://www.assemblee-nationale.fr/dyn/deputes/${encodeURIComponent(d.depute.id)}`} target="_blank" rel="noopener noreferrer" className={s.btnGhost}>Fiche officielle ↗</a>
         </div>
       </div>
     </>
   );
 }
 
-function Body({ d, notions }: { d: DeputeData; notions: DeputeNotion[] }) {
+function Body({ d, notions, deputes }: { d: DeputeData; notions: DeputeNotion[]; deputes: DeputeRow[] }) {
   const pres = (100 * d.span.positions) / d.span.scrutins;
+  // Comparison point: the median of the other deputies of the same current group (200+ votes, as on the list).
+  const peers = deputes.filter((x) => x.groupe === d.groupe_actuel.sigle && x.id !== d.depute.id && x.votes_exprimes >= 200);
+  const median = (v: (number | null)[]) => { const a = v.filter((x): x is number => x != null).sort((p, q) => p - q); return a.length ? a[Math.floor(a.length / 2)] : null; };
+  const mDiss = median(peers.map((x) => x.dissidence)), mDel = median(peers.map((x) => x.delegation));
   return (
     <>
       {d.stat && d.stat.votes_exprimes === 0 && (
@@ -73,10 +82,9 @@ function Body({ d, notions }: { d: DeputeData; notions: DeputeNotion[] }) {
         </p>
       )}
       <div className="kpis">
-        <div className="kpi"><b>{fmt.format(d.span.positions)}</b><span>positions enregistrées</span></div>
-        <div className="kpi"><b>{pct(pres)}</b><span>présence aux scrutins</span></div>
-        <div className="kpi"><b>{pct(d.stat?.dissidence)}</b><span>dissidence</span></div>
-        <div className="kpi"><b>{pct(d.stat?.delegation)}</b><span>votes par délégation</span></div>
+        <div className="kpi"><b>{pct(pres)}</b><span>de présence aux scrutins</span><small>{fmt.format(d.span.positions)} positions sur {fmt.format(d.span.scrutins)} scrutins de son mandat</small></div>
+        <div className="kpi"><b>{pct(d.stat?.dissidence)}</b><span>de ses votes contre la ligne de son groupe</span><small>{mDiss != null ? `médiane ${d.groupe_actuel.sigle} : ${pct(mDiss)}` : "\u00a0"}</small></div>
+        <div className="kpi"><b>{pct(d.stat?.delegation)}</b><span>de ses votes par délégation</span><small>{mDel != null ? `médiane ${d.groupe_actuel.sigle} : ${pct(mDel)}` : "\u00a0"}</small></div>
       </div>
 
       <section>

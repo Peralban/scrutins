@@ -10,6 +10,45 @@ export function open() {
 const EXPRIME = "v.position IN ('pour','contre','abstention')";
 
 export const queries = {
+  // One group: headline figures with their rank, notions, members, closest and furthest groups.
+  // "Current members" = deputies whose latest membership period is in this group.
+  groupe: (db: Database, id: string) => {
+    const g: any = db.query(`SELECT * FROM stat_groupe WHERE id = ?`).get(id);
+    if (!g) return null;
+    const all = db.query(`SELECT id, cohesion, participation FROM stat_groupe WHERE id != 'PO847173'`).all() as any[];
+    const rank = (k: string) => 1 + all.filter((x) => x[k] > g[k]).length;
+    const membres = db.query(`
+      SELECT d.id, d.nom, d.votes_exprimes, d.dissidence, d.delegation FROM stat_depute d
+      WHERE d.id IN (SELECT a.depute_id FROM appartenance a WHERE a.groupe_id = $g
+                       AND a.fin = (SELECT MAX(fin) FROM appartenance b WHERE b.depute_id = a.depute_id))
+      ORDER BY d.nom`).all({ $g: id }) as any[];
+    const effectif: any = db.query(`SELECT e.membres FROM effectif e JOIN scrutin s ON s.id = e.scrutin_id WHERE e.groupe_id = ? ORDER BY s.date DESC, s.numero DESC LIMIT 1`).get(id);
+    return {
+      groupe: g, groupes: all.length,
+      rangs: { cohesion: rank("cohesion"), participation: rank("participation") },
+      effectif: effectif?.membres ?? membres.length, membres,
+      notions: db.query(`SELECT n.id, n.label, n.statut, s.favorables, s.defavorables, s.abstentions
+                         FROM notion n JOIN stat_notion_groupe s ON s.notion_id = n.id AND s.who = ? ORDER BY n.label`).all(id),
+      accords: db.query(`SELECT g.id, g.sigle, g.nom, g.couleur, a.communs, a.accord FROM stat_accord_groupes a JOIN groupe g ON g.id = a.b
+                         WHERE a.scope = 'ensemble' AND a.a = ? AND a.b != a.a AND a.communs >= 10 AND g.id != 'PO847173'
+                         ORDER BY 1.0 * a.accord / a.communs DESC`).all(id),
+    };
+  },
+
+  // The last sitting day: its scrutins grouped by text, with the vote on the whole text when there is one.
+  hier: (db: Database) => {
+    const day = (db.query(`SELECT MAX(date) d FROM scrutin`).get() as any).d as string;
+    const rows = db.query(`SELECT id, numero, kind, sort, titre, texte, pour, contre, abstentions FROM scrutin WHERE date = ? ORDER BY numero`).all(day) as any[];
+    const by = new Map<string, any[]>();
+    for (const r of rows) { const k = r.texte ?? r.titre; (by.get(k) ?? by.set(k, []).get(k)!).push(r); }
+    const textes = [...by.entries()].map(([titre, rs]) => {
+      const main = rs.find((r) => r.kind === "ensemble") ?? (rs.length === 1 ? rs[0] : null);
+      return { titre, scrutins: rs.length, id: (main ?? rs[rs.length - 1]).id,
+        vote: main ? { kind: main.kind, sort: main.sort, pour: main.pour, contre: main.contre, abstentions: main.abstentions } : null };
+    }).sort((a, b) => Number(!!b.vote) - Number(!!a.vote) || b.scrutins - a.scrutins);
+    return { date: day, scrutins: rows.length, textes };
+  },
+
   overview: (db: Database) =>
     db.query(`SELECT (SELECT COUNT(*) FROM scrutin) scrutins,
                      (SELECT MIN(date) FROM scrutin) du, (SELECT MAX(date) FROM scrutin) au,

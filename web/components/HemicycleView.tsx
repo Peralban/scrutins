@@ -8,6 +8,15 @@ import type { HemicycleData, ScrutinItem, ThemesData } from "@/lib/types";
 import Hemicycle from "./Hemicycle";
 import s from "./HemicycleView.module.css";
 
+const BILL = /^(proposition|projet) de (loi|résolution)( organique| constitutionnelle| européenne)?\s+((visant|tendant|relative?|portant|pour|sur|autorisant)\S*\s+)?(à |au |aux |l[’']|la |le |les |de |du |des )?/i;
+const cap = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
+const shortText = (t: string) => cap(t.replace(BILL, "").replace(/\.$/, ""));
+// "l'amendement n° 12 de M. Ramos à l'article premier de la proposition de loi …" -> "Amendement n° 12 de M. Ramos à l'article premier".
+function voteLabel(titre: string) {
+  const head = titre.split(/\s+(?:de la|du|de cette) (?:proposition|projet)\b/i)[0].replace(/\.$/, "").trim();
+  return /^l[’']ensemble$/i.test(head) ? "Vote sur l'ensemble" : cap(head.replace(/^(l[’']|le |la |les )/i, ""));
+}
+
 const KINDS: [string, string][] = [["", "tous les scrutins"], ["ensemble", "votes sur l'ensemble"], ["amendement", "amendements"], ["article", "articles"], ["motion", "motions et déclarations"]];
 
 export default function HemicycleView() {
@@ -35,6 +44,15 @@ export default function HemicycleView() {
   const themes = useApi<ThemesData>("themes").data?.themes ?? [];
   const list = useApi<ScrutinItem[]>(`scrutins?${new URLSearchParams({ q: debounced, theme, kind, limit: "200" })}`).data;
   const current = id ?? list?.[0]?.id ?? null;
+  // Consecutive scrutins of the same text are grouped under one heading, each labelled by what was voted.
+  const groups = useMemo(() => {
+    const out: { key: string; items: ScrutinItem[] }[] = [];
+    for (const x of list ?? []) {
+      const key = x.texte ?? x.titre, last = out[out.length - 1];
+      if (last && last.key === key) last.items.push(x); else out.push({ key, items: [x] });
+    }
+    return out;
+  }, [list]);
   const detail = useApi<HemicycleData>(current ? `scrutin/${current}` : null).data;
   const shown = detail && detail.scrutin.id === current ? detail : undefined;
 
@@ -77,11 +95,16 @@ export default function HemicycleView() {
         </div>
         <div className={s.list}>
           {list?.length === 0 && <div className={s.item}>aucun scrutin</div>}
-          {list?.map((x) => (
-            <button key={x.id} className={s.item} aria-current={x.id === current} onClick={() => select(x.id)}>
-              {(x.texte ?? x.titre).slice(0, 150)}
-              <small>{x.date} · n°{x.numero} · {x.sort} · {x.pour}/{x.contre}/{x.abstentions}{x.etape ? ` · ${x.etape}` : ""}</small>
-            </button>
+          {groups.map((g, i) => (
+            <div key={`${i}:${g.key}`} className={s.group}>
+              {g.items.length > 1 && <div className={s.gHead}><span>{shortText(g.key)}</span><small>{g.items.length} votes</small></div>}
+              {g.items.map((x) => (
+                <button key={x.id} className={s.item} aria-current={x.id === current} onClick={() => select(x.id)}>
+                  <span className={s.what}>{g.items.length > 1 ? voteLabel(x.titre) : shortText(x.texte ?? x.titre)}</span>
+                  <small><b className={x.sort === "adopté" ? s.adopte : s.rejete}>{x.sort}</b> · {x.pour}/{x.contre}/{x.abstentions} · {x.date} · n°{x.numero}{x.etape ? ` · ${x.etape}` : ""}</small>
+                </button>
+              ))}
+            </div>
           ))}
         </div>
       </div>

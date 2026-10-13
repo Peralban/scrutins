@@ -1,0 +1,51 @@
+.layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 56px; }
+.side { position: sticky; top: 24px; align-self: start; display: flex; flex-direction: column; gap: 12px; }
+.label { font: 500 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.cats { display: flex; flex-direction: column; gap: 8px; }
+.cats button { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 6px; border: 1px solid var(--line); background: none; color: var(--ink); font: 15px var(--sans); text-align: left; }
+.cats button span { font: 12px var(--mono); color: var(--muted); }
+.cats button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.cats button[aria-pressed="true"] span { color: var(--bg); opacity: .7; }
+.note { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+.main { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.lede { margin: 0; font-size: 17px; color: var(--muted); max-width: 64ch; }
+.search { display: flex; align-items: center; gap: 10px; height: 50px; padding: 0 16px; max-width: 640px; background: var(--surface); border: 1.5px solid var(--ink); border-radius: 6px; }
+.search svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; flex: none; }
+.search input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; font: 16px var(--sans); padding: 0; min-height: 0; }
+.search:focus-within { box-shadow: 0 0 0 3px color-mix(in srgb, var(--ink) 15%, transparent); }
+.letters { display: flex; flex-wrap: wrap; gap: 4px; font: 13px var(--mono); border: 0; margin: 0; padding: 0; text-transform: none; }
+.letters a, .letters span { width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border-radius: 4px; }
+.letters a { background: var(--surface); border: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+.letters a:hover { border-color: var(--ink); }
+.letters span { color: var(--line); }
+.count { margin: 0; font: 12px var(--mono); color: var(--muted); }
+.card { display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 8px 28px; padding: 20px 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; scroll-margin-top: 16px; }
+.card:target { border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 25%, transparent); }
+.body { display: flex; flex-direction: column; gap: 8px; }
+.head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.head h2 { margin: 0; font: 700 24px var(--serif); }
+.head span { font: 11px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.def { margin: 0; font-size: 16px; line-height: 1.6; }
+.site { margin: 0; font-size: 14px; color: var(--ink2); }
+.site b { color: var(--accent); }
+.ex { margin: 0; font-size: 14px; color: var(--ink2); border-left: 3px solid var(--line); padding-left: 10px; }
+.voir { display: flex; flex-direction: column; gap: 6px; border-left: 1px solid var(--grid); padding-left: 20px; }
+.voir span { font: 11px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.voir a { font-size: 14px; }
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; gap: 16px; }
+  .side { position: static; order: 2; display: contents; }
+  .side .label, .side .note { display: none; }
+  .cats { flex-direction: row; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 0 16px; }
+  .cats::-webkit-scrollbar { display: none; }
+  .cats button { flex: none; border-radius: 999px; }
+  .main { display: contents; }
+  .main > h1 { order: -3; }
+  .lede { order: -2; font-size: 15px; }
+  .search { order: -1; max-width: none; }
+  .letters { display: none; }
+  .card { grid-template-columns: 1fr; padding: 16px; }
+  .head h2 { font-size: 21px; }
+  .voir { border-left: 0; padding-left: 0; flex-direction: row; flex-wrap: wrap; gap: 6px 14px; border-top: 1px solid var(--grid); padding-top: 10px; }
+  .voir span { width: 100%; }
+}
