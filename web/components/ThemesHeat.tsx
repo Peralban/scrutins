@@ -87,7 +87,7 @@ export default function ThemesHeat({ data }: { data: Record<Scope, ThemesData> }
                 {gs.map((g) => {
                   const c = cell.get(`${t.id}|${g.id}`);
                   const n = c ? c.pour + c.contre + c.abstention : 0;
-                  if (!c || n < 30) return <td key={g.id} className={s.none} data-tip={`${g.sigle} · ${t.label}\n${n} votes exprimés`}>·</td>;
+                  if (!c || n < 30) return <td key={g.id} className={s.none} data-tip={`${g.sigle} · ${t.label}\n${n} votes enregistrés`}>·</td>;
                   const p = (100 * c.pour) / n;
                   return (
                     <td key={g.id}
@@ -104,7 +104,7 @@ export default function ThemesHeat({ data }: { data: Record<Scope, ThemesData> }
       </div>
       <div className={s.scale}>
         <span>0 % pour</span><i /><span>100 % pour</span>
-        <span style={{ marginLeft: 16 }}>cellule grise : moins de 30 votes exprimés</span>
+        <span style={{ marginLeft: 16 }}>cellule grise : moins de 30 votes enregistrés</span>
       </div>
       </div>
     </>

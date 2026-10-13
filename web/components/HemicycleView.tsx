@@ -3,7 +3,7 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { useApi } from "@/lib/client";
-import { NEUTRAL } from "@/lib/format";
+import { NEUTRAL, fmt } from "@/lib/format";
 import type { HemicycleData, ScrutinItem, ThemesData } from "@/lib/types";
 import Hemicycle from "./Hemicycle";
 import s from "./HemicycleView.module.css";
@@ -117,7 +117,7 @@ export default function HemicycleView() {
         <p className={s.head}>{sc ? sc.titre.charAt(0).toUpperCase() + sc.titre.slice(1) : "Choisir un scrutin"}</p>
         {sc && (
           <p className={s.meta}>
-            {sc.date} · scrutin n°{sc.numero} · {sc.kind}{sc.etape ? ` · ${sc.etape}` : ""} ·{" "}
+            {sc.date} · scrutin n°{sc.numero} · {sc.kind}{sc.etape ? ` · ${sc.etape}` : ""} · {fmt.format(sc.pour + sc.contre)} suffrages exprimés ·{" "}
             <a href={`https://www.assemblee-nationale.fr/dyn/17/scrutins/${sc.numero}`} target="_blank" rel="noopener noreferrer">fiche sur assemblee-nationale.fr ↗</a>
           </p>
         )}

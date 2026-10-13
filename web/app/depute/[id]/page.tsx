@@ -71,14 +71,14 @@ function Identity({ d }: { d: DeputeData }) {
 function Body({ d, notions, deputes }: { d: DeputeData; notions: DeputeNotion[]; deputes: DeputeRow[] }) {
   const pres = (100 * d.span.positions) / d.span.scrutins;
   // Comparison point: the median of the other deputies of the same current group (200+ votes, as on the list).
-  const peers = deputes.filter((x) => x.groupe === d.groupe_actuel.sigle && x.id !== d.depute.id && x.votes_exprimes >= 200);
+  const peers = deputes.filter((x) => x.groupe === d.groupe_actuel.sigle && x.id !== d.depute.id && x.votes_enregistres >= 200);
   const median = (v: (number | null)[]) => { const a = v.filter((x): x is number => x != null).sort((p, q) => p - q); return a.length ? a[Math.floor(a.length / 2)] : null; };
   const mDiss = median(peers.map((x) => x.dissidence)), mDel = median(peers.map((x) => x.delegation));
   return (
     <>
-      {d.stat && d.stat.votes_exprimes === 0 && (
+      {d.stat && d.stat.votes_enregistres === 0 && (
         <p className={`def ${s.notice}`}>
-          Aucun vote exprimé (pour, contre, abstention) : les {d.span.positions} positions enregistrées sont des non-votes, entre le {d.span.debut} et le {d.span.fin}. Les chiffres ci-dessous ne portent que sur ces positions.
+          Aucun vote enregistré (pour, contre ou abstention) : les {d.span.positions} positions enregistrées sont des non-votes, entre le {d.span.debut} et le {d.span.fin}. Les chiffres ci-dessous ne portent que sur ces positions.
         </p>
       )}
       <div className="kpis">
@@ -123,7 +123,7 @@ function Body({ d, notions, deputes }: { d: DeputeData; notions: DeputeNotion[];
 
       <section>
         <h2>Profil par thème</h2>
-        <p className="def">Votes d&apos;ensemble exprimés. Barre : part de « pour » du député ; trait orange : part de « pour » de son groupe actuel ({d.groupe_actuel.sigle}) sur les mêmes thèmes.</p>
+        <p className="def">Votes sur l&apos;ensemble d&apos;un texte, abstentions comprises. Barre : part de « pour » du député ; trait orange : part de « pour » de son groupe actuel ({d.groupe_actuel.sigle}) sur les mêmes thèmes.</p>
         <div className="scroll">
           <table>
             <thead><tr><th>Thème</th><th>n</th><th>Pour</th><th>Contre</th><th>Abst.</th><th>Dissident</th><th>Pour : lui / groupe</th></tr></thead>
@@ -153,7 +153,7 @@ function Body({ d, notions, deputes }: { d: DeputeData; notions: DeputeNotion[];
       </section>
 
       <footer>
-        Dissidence : vote exprimé différent de la position majoritaire du groupe sur le même scrutin. Elle inclut les amendements que le député a lui-même déposés ou cosignés.
+        Dissidence : vote enregistré (pour, contre ou abstention) différent de la position majoritaire du groupe sur le même scrutin. Elle inclut les amendements que le député a lui-même déposés ou cosignés.
         Présence : positions enregistrées rapportées aux scrutins tenus entre son premier et son dernier vote ; les votes par délégation y comptent.
         Les écarts par thème reposent sur peu de votes d&apos;ensemble : lire l&apos;effectif <i>n</i>.
       </footer>

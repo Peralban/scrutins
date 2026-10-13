@@ -147,7 +147,7 @@ function Neighbours({ deputes }: { deputes: DeputeRow[] }) {
     <>
       <section>
         <h2>Qui vote comme un député</h2>
-        <p className="def">Accord sur les scrutins où les deux députés ont exprimé une position (pour, contre, abstention). Minimum 100 scrutins en commun.</p>
+        <p className="def">Accord sur les scrutins où les deux députés ont un vote enregistré (pour, contre ou abstention). Minimum 100 scrutins en commun.</p>
         <div className="tools">
           <input key={a} className={s.search} type="search" list={names} placeholder="député" autoComplete="off" defaultValue={nameOf(a)}
             onChange={(e) => { const id = byName.get(e.target.value); if (id) set("depute", id); }} />

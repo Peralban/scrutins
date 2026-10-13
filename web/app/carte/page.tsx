@@ -17,7 +17,7 @@ export default function Page() {
       </Suspense>
       <footer style={{ marginTop: 32 }}>
         Méthode : matrice députés × scrutins (pour +1, abstention 0, contre −1). Une absence est remplacée par la position moyenne du groupe sur ce scrutin, pour qu&apos;elle ne crée pas de distance artificielle ;
-        seuls les députés ayant au moins 100 votes exprimés (15 par thème) sont placés. Par thème, la carte ne porte que sur les scrutins rattachés au thème (voir la page Thèmes pour les règles).
+        seuls les députés ayant au moins 100 votes enregistrés (15 par thème) sont placés. Par thème, la carte ne porte que sur les scrutins rattachés au thème (voir la page Thèmes pour les règles).
         Les axes n&apos;ont pas de sens propre : seules les distances comptent. Les noms aux extrémités indiquent quels groupes s&apos;y trouvent, pas une étiquette politique. L&apos;orientation est une convention (LFI-NFP à gauche, groupes centraux en haut).
         Les points d&apos;un même groupe se superposent souvent : c&apos;est la discipline de vote.
       </footer>
