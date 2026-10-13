@@ -14,6 +14,7 @@
   --line: #2c2c30; --grid: #232327; --adopte: #e8e8e8; --rejete: #55555c;
 }
 * { box-sizing: border-box; }
+.m-only { display: none; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, sans-serif; }
 main { max-width: 1040px; margin: 0 auto; padding: 32px 16px 64px; }
 h1 { font: 600 22px var(--mono); letter-spacing: .02em; margin: 0 0 4px; text-transform: uppercase; }

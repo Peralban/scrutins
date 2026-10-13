@@ -1,12 +1,12 @@
 export const LINKS = [
   ["/", "Accueil"],
-  ["/depute", "Députés"],
   ["/groupes", "Groupes"],
-  ["/accords", "Accords"],
   ["/hemicycle", "Votes"],
   ["/notions", "Notions"],
+  ["/accords", "Accords"],
   ["/themes", "Thèmes"],
   ["/stats", "Statistiques"],
+  ["/depute", "Députés"],
   ["/carte", "Carte"],
   ["/glossaire", "Glossaire"],
 ] as const;
