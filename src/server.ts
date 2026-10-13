@@ -14,7 +14,7 @@ const fresh = () => {
 const app = new Hono();
 
 app.get("/api/search", (c) => c.json(search(fresh(), c.req.query("q") ?? "", 10)));
-app.get("/api/definition", async (c) => c.json(await define(c.req.query("mot") ?? "")));
+app.get("/api/definition", (c) => c.json(define(c.req.query("mot") ?? "")));
 app.get("/api/ask", (c) => c.json(ask(fresh(), c.req.query("q") ?? "")));
 app.get("/api/groupe/:id", (c) => {
   const g = queries.groupe(fresh(), c.req.param("id"));

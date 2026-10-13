@@ -121,7 +121,7 @@ function entity(hits: Hit[], kind: Kind, q: string, skip?: Hit): Hit | undefined
     (kind === "texte" || nq.includes(norm(h.label.split(" ").slice(-1)[0])) || nq.includes(norm(h.label))));
 }
 
-type Mot = { id: string; mot: string; cat: string; def: string; site?: string; voir?: string[] };
+type Mot = { id: string; mot: string; cat: string; def: string; contexte?: string; site?: string; sources?: { nom: string; url: string }[]; voir?: string[] };
 let glossaire: Mot[] | null = null;
 export const mots = () => glossaire ??= JSON.parse(readFileSync(new URL("../web/content/glossaire.json", import.meta.url), "utf8")).mots as Mot[];
 
