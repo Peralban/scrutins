@@ -3,6 +3,7 @@ import "./globals.css";
 import { Suspense } from "react";
 import Nav from "@/components/Nav";
 import NavFallback from "@/components/NavFallback";
+import SelectionDefine from "@/components/SelectionDefine";
 import Tooltip from "@/components/Tooltip";
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </Suspense>
         <main>{children}</main>
         <Tooltip />
+        <SelectionDefine />
       </body>
     </html>
   );
