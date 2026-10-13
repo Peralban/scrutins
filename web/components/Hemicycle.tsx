@@ -23,8 +23,10 @@ export default function Hemicycle({ data }: { data: HemicycleData }) {
       {seats.map((seat, i) => {
         const p = pts[i], x = cx + Math.cos(p.a) * p.r * scale, y = cy - Math.sin(p.a) * p.r * scale;
         const pos = seat.position;
-        const fill = pos === "pour" ? "var(--pour)" : pos === "contre" ? "var(--contre)" : "none";
-        const stroke = pos === "abstention" || pos === "non_votant" ? "var(--abst)" : pos === "absent" ? "var(--line)" : "none";
+        // Every seat is a filled dot (a bare ring is hard to see at this size); the non-votant keeps a dashed edge.
+        const fill = pos === "pour" ? "var(--pour)" : pos === "contre" ? "var(--contre)" : pos === "abstention" ? "var(--abst)"
+          : pos === "non_votant" ? "color-mix(in srgb, var(--abst) 45%, var(--surface))" : "var(--line)";
+        const stroke = pos === "non_votant" ? "var(--abst)" : "none";
         return (
           <g key={seat.id}>
             <circle cx={x} cy={y} r={pos === "absent" ? dot * 0.55 : dot} fill={fill} stroke={stroke}
