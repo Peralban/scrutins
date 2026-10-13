@@ -13,13 +13,14 @@ export default function Hemicycle({ data }: { data: HemicycleData }) {
   const color = Object.fromEntries(data.groupes.map((g) => [g.id, g.couleur ?? NEUTRAL]));
   const sigle = Object.fromEntries(data.groupes.map((g) => [g.id, g.sigle]));
   const { pts, spacing, arc, R } = layout(seats.length);
-  const W = 960, cx = W / 2, cy = 500, scale = 450, dot = Math.min(spacing, arc) * scale * 0.42;
+  const W = 960, M = 70, cx = W / 2, cy = 500, scale = 450, dot = Math.min(spacing, arc) * scale * 0.42;
 
   const labels: Record<string, number[]> = {};
   seats.forEach((seat, i) => (labels[seat.groupe] ??= []).push(pts[i].a));
 
   return (
-    <svg viewBox={`0 0 ${W} ${cy + 30}`} role="img" aria-label="Hémicycle, un point par siège">
+    // Margins leave room for the group labels, which sit outside the arc.
+    <svg viewBox={`${-M} ${-M / 2} ${W + 2 * M} ${cy + 30 + M / 2}`} role="img" aria-label="Hémicycle, un point par siège">
       {seats.map((seat, i) => {
         const p = pts[i], x = cx + Math.cos(p.a) * p.r * scale, y = cy - Math.sin(p.a) * p.r * scale;
         const pos = seat.position;
@@ -37,8 +38,9 @@ export default function Hemicycle({ data }: { data: HemicycleData }) {
         );
       })}
       {Object.entries(labels).filter(([, as]) => as.length >= 8).map(([g, as]) => {
-        const a = [...as].sort((u, v) => u - v)[Math.floor(as.length / 2)], rad = scale + dot + 32;
-        return <text key={g} x={cx + Math.cos(a) * rad} y={cy - Math.sin(a) * rad + 4} textAnchor="middle">{sigle[g]}</text>;
+        // Labels on the sides grow outward (start/end anchor) instead of spilling back over the seats.
+        const a = [...as].sort((u, v) => u - v)[Math.floor(as.length / 2)], rad = scale + dot + 22, c = Math.cos(a);
+        return <text key={g} x={cx + c * rad} y={cy - Math.sin(a) * rad + 5 * Math.abs(c) - 2} textAnchor={c > 0.25 ? "start" : c < -0.25 ? "end" : "middle"}>{sigle[g]}</text>;
       })}
       <text className="val" x={cx} y={cy - 40} textAnchor="middle" style={{ fontSize: 34, fontWeight: 600 }}>{s.sort === "adopté" ? "ADOPTÉ" : "REJETÉ"}</text>
       <text className="hemi-sub" x={cx} y={cy - 14} textAnchor="middle">{s.pour} pour · {s.contre} contre · {s.abstentions} abst.</text>
