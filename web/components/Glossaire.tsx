@@ -1,14 +1,14 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import data from "@/content/glossaire.json";
+import { avecNotes, normaliser as norm } from "glossaire-politique";
+import notes from "@/content/glossaire-site.json";
 import s from "./Glossaire.module.css";
 
-type Source = { nom: string; url: string; type: string };
-type Mot = { id: string; mot: string; cat: string; def: string; contexte?: string; site?: string; ex?: string; voir: string[]; sources: Source[]; statut: string };
-const MOTS = (data.mots as Mot[]).slice().sort((a, b) => a.mot.localeCompare(b.mot, "fr"));
-const BY_ID = new Map(MOTS.map((m) => [m.id, m]));
-const norm = (t: string) => t.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+// Shared entries (glossaire-politique package) with this site's notes laid over them.
+const data = avecNotes<{ site?: string; ex?: string }>(notes);
+type Mot = (typeof data.mots)[number];
+const MOTS = data.mots.slice().sort((a, b) => a.mot.localeCompare(b.mot, "fr"));
 const letter = (m: Mot) => norm(m.mot).replace(/[^a-z0-9]/g, "")[0].toUpperCase();
 
 export default function Glossaire() {
@@ -60,10 +60,10 @@ export default function Glossaire() {
                 ? <>Sources : {m.sources.map((x, i) => <span key={x.url}>{i > 0 && ", "}<a href={x.url} target="_blank" rel="noreferrer">{x.nom}</a></span>)}</>
                 : "Source officielle à ajouter."}</p>
             </div>
-            {m.voir.length > 0 && (
+            {m.voir && m.voir.length > 0 && (
               <div className={s.voir}>
                 <span>voir aussi</span>
-                {m.voir.map((v) => BY_ID.get(v)).filter(Boolean).map((v) => (
+                {m.voir.map((v) => data.parId(v)).filter(Boolean).map((v) => (
                   <a key={v!.id} href={`#${v!.id}`} onClick={() => { setCat("Tous"); setQ(""); }}>{v!.mot}</a>
                 ))}
               </div>
