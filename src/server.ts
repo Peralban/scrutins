@@ -40,6 +40,12 @@ app.get("/api/carte", (c) => {
   const r = queries.carte(fresh(), c.req.query("scope") ?? "all");
   return r ? c.json(r) : c.json({ error: "not found" }, 404);
 });
+app.get("/api/notions", (c) => c.json(queries.notions(fresh())));
+app.get("/api/notions/:id", (c) => {
+  const r = queries.notion(fresh(), c.req.param("id"));
+  return r ? c.json(r) : c.json({ error: "not found" }, 404);
+});
+app.get("/api/depute/:id/notions", (c) => c.json(queries.deputeNotions(fresh(), c.req.param("id"))));
 app.get("/api/scrutin/:id", (c) => {
   const r = queries.hemicycle(fresh(), c.req.param("id"));
   return r ? c.json(r) : c.json({ error: "not found" }, 404);

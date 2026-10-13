@@ -1,0 +1,522 @@
+{
+ "notion": "prestations-sociales",
+ "label": "Prestations sociales et minima",
+ "axe": "Favorable : augmenter, étendre ou protéger les prestations sociales (RSA, APL, allocations, pensions d'invalidité). Défavorable : les réduire, les geler, les conditionner.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose.",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V239",
+   "numero": 239,
+   "date": "2024-11-04",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000142",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Retraites : traité par la notion « Retraites »."
+  },
+  {
+   "scrutin": "VTANR5L17V252",
+   "numero": 252,
+   "date": "2024-11-05",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001246",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Dispositif Mon Soutien Psy : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V512",
+   "numero": 512,
+   "date": "2024-12-03",
+   "amendement": "AMANR5L17PO838901BTC0625P0D1N000004",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Expérimentation d'ouverture des droits MDPH : portée non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V570",
+   "numero": 570,
+   "date": "2025-01-21",
+   "amendement": "AMANR5L17PO838901BTC0775P0D1N000068",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Prolonge de trois mois le maintien des droits et prestations sociales à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V620",
+   "numero": 620,
+   "date": "2025-01-27",
+   "amendement": "AMANR5L17PO838901BTC0633P0D1N000006",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Restreint le champ des aides publiques pouvant être suspendues."
+  },
+  {
+   "scrutin": "VTANR5L17V1110",
+   "numero": 1110,
+   "date": "2025-03-21",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000077",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Suspend le versement des allocations familiales aux parents d'enfants coupables de trafic de stupéfiants."
+  },
+  {
+   "scrutin": "VTANR5L17V2263",
+   "numero": 2263,
+   "date": "2025-06-05",
+   "amendement": "AMANR5L17PO838901BTC1473P0D1N000026",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Modifie un rapport sur les allocations familiales dès le premier enfant : pas d'effet direct."
+  },
+  {
+   "scrutin": "VTANR5L17V2264",
+   "numero": 2264,
+   "date": "2025-06-05",
+   "amendement": "AMANR5L17PO838901BTC1473P0D1N000043",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Réserve les allocations familiales aux familles dont un parent est de nationalité française."
+  },
+  {
+   "scrutin": "VTANR5L17V2265",
+   "numero": 2265,
+   "date": "2025-06-05",
+   "amendement": "AMANR5L17PO838901BTC1473P0D1N000044",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Réserve les allocations familiales à certaines familles selon la nationalité (repli)."
+  },
+  {
+   "scrutin": "VTANR5L17V2268",
+   "numero": 2268,
+   "date": "2025-06-05",
+   "amendement": "AMANR5L17PO838901BTC1473P0D1N000027",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Précise que l'universalité des allocations familiales implique la fin de leur modulation selon les revenus."
+  },
+  {
+   "scrutin": "VTANR5L17V2269",
+   "numero": 2269,
+   "date": "2025-06-05",
+   "amendement": "AMANR5L17PO838901BTC1473P0D1N000046",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Précise l'universalité des allocations familiales : sens non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V2271",
+   "numero": 2271,
+   "date": "2025-06-05",
+   "amendement": "AMANR5L17PO838901BTC1473P0D1N000019",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur les allocations familiales."
+  },
+  {
+   "scrutin": "VTANR5L17V2773",
+   "numero": 2773,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000073",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Exclut l'aide médicale d'État d'un élargissement."
+  },
+  {
+   "scrutin": "VTANR5L17V2806",
+   "numero": 2806,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000243",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Aligne immédiatement le SMIC et les prestations sociales de Mayotte sur l'Hexagone."
+  },
+  {
+   "scrutin": "VTANR5L17V2991",
+   "numero": 2991,
+   "date": "2025-07-09",
+   "amendement": "AMANR5L17PO838901BTC1603P0D1N000111",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Protection des élus salariés : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3046",
+   "numero": 3046,
+   "date": "2025-07-10",
+   "amendement": "AMANR5L17PO838901BTC1603P0D1N000640",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur la vie chère."
+  },
+  {
+   "scrutin": "VTANR5L17V3441",
+   "numero": 3441,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000833",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Contribution sur les superprofits : traité par les notions de fiscalité."
+  },
+  {
+   "scrutin": "VTANR5L17V3486",
+   "numero": 3486,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002008",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Conditionnement de la réduction de cotisations : traité par les notions d'entreprises."
+  },
+  {
+   "scrutin": "VTANR5L17V3523",
+   "numero": 3523,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000388",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Cotisations de l'armement maritime : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3574",
+   "numero": 3574,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001629",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Répartition d'une fraction de taxe : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3599",
+   "numero": 3599,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000358",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Instaure une franchise médicale pour les bénéficiaires de l'aide médicale d'État."
+  },
+  {
+   "scrutin": "VTANR5L17V3685",
+   "numero": 3685,
+   "date": "2025-11-12",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000706",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime le gel des prestations sociales en 2026."
+  },
+  {
+   "scrutin": "VTANR5L17V3884",
+   "numero": 3884,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000019",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Compensation de dépenses aux départements : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3887",
+   "numero": 3887,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000018",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Compensation de dépenses aux départements : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4492",
+   "numero": 4492,
+   "date": "2025-12-03",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000036",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Cotisations de l'armement maritime : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4538",
+   "numero": 4538,
+   "date": "2025-12-04",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000451",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Baisse de la CSG : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4577",
+   "numero": 4577,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000527",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Statut des sages-femmes : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4579",
+   "numero": 4579,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000384",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Retraites : traité par la notion « Retraites »."
+  },
+  {
+   "scrutin": "VTANR5L17V4589",
+   "numero": 4589,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000966",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Orientation de la politique familiale : sans effet direct."
+  },
+  {
+   "scrutin": "VTANR5L17V4597",
+   "numero": 4597,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000090",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime une restriction de la domiciliation qui limiterait l'accès aux droits."
+  },
+  {
+   "scrutin": "VTANR5L17V4641",
+   "numero": 4641,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000199",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime le gel des prestations sociales en 2026."
+  },
+  {
+   "scrutin": "VTANR5L17V4965",
+   "numero": 4965,
+   "date": "2026-01-13",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001589",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Dotation globale de fonctionnement : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5012",
+   "numero": 5012,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N000017",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Barème de l'impôt sur le revenu : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5776",
+   "numero": 5776,
+   "date": "2026-02-26",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000337",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Sanctions du travail dissimulé : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5777",
+   "numero": 5777,
+   "date": "2026-02-26",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000341",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Sanctions du travail dissimulé : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5803",
+   "numero": 5803,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000086",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime la déchéance de l'ensemble des prestations sociales en cas de fraude."
+  },
+  {
+   "scrutin": "VTANR5L17V5815",
+   "numero": 5815,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000200",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Étend l'accès aux données patrimoniales aux agents instructeurs du RSA (contrôle)."
+  },
+  {
+   "scrutin": "VTANR5L17V5816",
+   "numero": 5816,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000165",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Étend l'accès direct aux fichiers pour les agents instructeurs du RSA (contrôle)."
+  },
+  {
+   "scrutin": "VTANR5L17V5817",
+   "numero": 5817,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000433",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Étend l'accès direct aux données pour les agents instructeurs du RSA (contrôle)."
+  },
+  {
+   "scrutin": "VTANR5L17V5820",
+   "numero": 5820,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000229",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Ajoute une mesure de contrôle du RSA."
+  },
+  {
+   "scrutin": "VTANR5L17V5859",
+   "numero": 5859,
+   "date": "2026-03-30",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N001012",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Limite l'usage de traitements automatisés sur les données des allocataires du RSA."
+  },
+  {
+   "scrutin": "VTANR5L17V5860",
+   "numero": 5860,
+   "date": "2026-03-30",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000363",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Limite le contrôle des allocataires en l'absence d'élément de fraude."
+  },
+  {
+   "scrutin": "VTANR5L17V5865",
+   "numero": 5865,
+   "date": "2026-03-30",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000245",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Information des collectivités sur le RSA : portée non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V5866",
+   "numero": 5866,
+   "date": "2026-03-30",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000041",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'automaticité et le renforcement des sanctions pour fraude aux prestations."
+  },
+  {
+   "scrutin": "VTANR5L17V5948",
+   "numero": 5948,
+   "date": "2026-03-31",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000415",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Permet de supprimer les prestations versées aux narcotrafiquants condamnés."
+  },
+  {
+   "scrutin": "VTANR5L17V5988",
+   "numero": 5988,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000545",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Durcit la réponse pénale à la fraude aux prestations sociales."
+  },
+  {
+   "scrutin": "VTANR5L17V6009",
+   "numero": 6009,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000077",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime un article pénalisant les allocataires du RSA surendettés."
+  },
+  {
+   "scrutin": "VTANR5L17V6013",
+   "numero": 6013,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000884",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Durcit la lutte contre la fraude aux prestations sociales."
+  },
+  {
+   "scrutin": "VTANR5L17V6305",
+   "numero": 6305,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000605",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Soutenabilité financière de la défense : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6332",
+   "numero": 6332,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000090",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Solde des militaires : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6371",
+   "numero": 6371,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000596",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Prévoit la revalorisation de l'allocation de reconnaissance du combattant."
+  },
+  {
+   "scrutin": "VTANR5L17V6372",
+   "numero": 6372,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000382",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Fixe une revalorisation immédiate de 16 % du point de pension militaire d'invalidité."
+  },
+  {
+   "scrutin": "VTANR5L17V6504",
+   "numero": 6504,
+   "date": "2026-05-11",
+   "amendement": "AMANR5L17PO838901B1827P0D1N000004",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport : pas de position sur le fond."
+  },
+  {
+   "scrutin": "VTANR5L17V7322",
+   "numero": 7322,
+   "date": "2026-06-04",
+   "amendement": "AMANR5L17PO838901BTC2842P0D1N000009",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur les retraités agricoles."
+  },
+  {
+   "scrutin": "VTANR5L17V7352",
+   "numero": 7352,
+   "date": "2026-06-11",
+   "amendement": "AMANR5L17PO838901BTC1478P0D1N000014",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Récupération sur succession de l'ASPA : sens non tranché sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V8236",
+   "numero": 8236,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000150",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Suspend les allocations familiales en cas de condamnation d'un enfant."
+  },
+  {
+   "scrutin": "VTANR5L17V8489",
+   "numero": 8489,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000700",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Violences économiques : hors sujet."
+  }
+ ]
+}

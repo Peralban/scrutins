@@ -139,6 +139,32 @@ export const queries = {
     };
   },
 
+  notions: (db: Database) =>
+    db.query(`SELECT n.id, n.label, n.axe, n.statut,
+                     SUM(nv.sens = 1) favorables, SUM(nv.sens = -1) defavorables, SUM(nv.sens = 0) ecartes
+              FROM notion n LEFT JOIN notion_vote nv ON nv.notion_id = n.id GROUP BY n.id ORDER BY n.label`).all(),
+
+  notion: (db: Database, id: string) => {
+    const n: any = db.query(`SELECT id, label, axe, statut, methode FROM notion WHERE id = ?`).get(id);
+    if (!n) return null;
+    return {
+      notion: n,
+      groupes: db.query(`SELECT g.id, g.sigle, g.nom, g.couleur, s.favorables, s.defavorables, s.abstentions
+                         FROM stat_notion_groupe s JOIN groupe g ON g.id = s.who WHERE s.notion_id = ?`).all(id),
+      deputes: db.query(`SELECT d.id, d.nom, d.groupe, s.favorables, s.defavorables, s.abstentions
+                         FROM stat_notion_depute s JOIN stat_depute d ON d.id = s.who WHERE s.notion_id = ?`).all(id),
+      votes: db.query(`SELECT sc.id, sc.numero, sc.date, sc.titre, sc.sort, sc.pour, sc.contre, sc.abstentions,
+                              nv.sens, nv.confiance, nv.note, nv.amendement_uid
+                       FROM notion_vote nv JOIN scrutin sc ON sc.id = nv.scrutin_id
+                       WHERE nv.notion_id = ? ORDER BY nv.sens = 0, sc.date DESC, sc.numero DESC`).all(id),
+    };
+  },
+
+  deputeNotions: (db: Database, id: string) =>
+    db.query(`SELECT n.id, n.label, n.statut, COALESCE(s.favorables, 0) favorables, COALESCE(s.defavorables, 0) defavorables,
+                     COALESCE(s.abstentions, 0) abstentions
+              FROM notion n LEFT JOIN stat_notion_depute s ON s.notion_id = n.id AND s.who = ? ORDER BY n.label`).all(id),
+
   themes: (db: Database, scope: "ensemble" | "tous") => ({
     themes: db.query(`SELECT t.id, t.label, st.scrutins FROM theme t
                       JOIN stat_theme_scrutins st ON st.theme_id = t.id AND st.scope = ? ORDER BY t.label`).all(scope),
@@ -208,7 +234,19 @@ const ACCORD = (scope: string, cond: string) => `
   FROM majorite a JOIN majorite b ON b.scrutin_id = a.scrutin_id JOIN scrutin s ON s.id = a.scrutin_id
   WHERE 1 = 1 ${cond} GROUP BY a.groupe_id, b.groupe_id`;
 
+// Votes on labelled amendments: a vote "pour" follows the amendment's direction, "contre" opposes it.
+const NOTION_SELECT = (who: string) => `
+  SELECT nv.notion_id, ${who} AS who,
+         SUM((v.position = 'pour' AND nv.sens = 1) OR (v.position = 'contre' AND nv.sens = -1)) AS favorables,
+         SUM((v.position = 'contre' AND nv.sens = 1) OR (v.position = 'pour' AND nv.sens = -1)) AS defavorables,
+         SUM(v.position = 'abstention') AS abstentions
+  FROM vote v JOIN notion_vote nv ON nv.scrutin_id = v.scrutin_id
+  WHERE nv.sens != 0 AND ${EXPRIME}
+  GROUP BY nv.notion_id, ${who}`;
+
 export const MATERIALIZED = {
+  stat_notion_depute: NOTION_SELECT("v.depute_id"),
+  stat_notion_groupe: NOTION_SELECT("v.groupe_id"),
   stat_accord_groupes: `${ACCORD("ensemble", "AND s.kind = 'ensemble'")} UNION ALL ${ACCORD("tous", "")}`,
   stat_theme: `${THEME_SCOPE("ensemble", "AND s.kind = 'ensemble'")} UNION ALL ${THEME_SCOPE("tous", "")}`,
   stat_theme_scrutins: `${THEME_SCRUTINS("ensemble", "AND s.kind = 'ensemble'")} UNION ALL ${THEME_SCRUTINS("tous", "")}`,

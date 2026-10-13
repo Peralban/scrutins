@@ -1,0 +1,729 @@
+{
+ "notion": "europe",
+ "label": "Intégration européenne",
+ "axe": "Favorable : approfondir l'intégration européenne (compétences de l'Union, primauté du droit européen, solidarité financière). Défavorable : limiter les compétences de l'Union ou affirmer la primauté nationale.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose. Échantillon : les 80 amendements les plus centrés sur le sujet (par nombre d'occurrences des mots-clés) parmi les votes divisés (au moins 10 % de voix du côté minoritaire).",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V520",
+   "numero": 520,
+   "date": "2024-12-16",
+   "amendement": "AMANR5L17PO838901B0711P0D1N000006",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Instaure un rabais sur la contribution française au budget de l'Union européenne."
+  },
+  {
+   "scrutin": "VTANR5L17V521",
+   "numero": 521,
+   "date": "2024-12-16",
+   "amendement": "AMANR5L17PO838901B0711P0D1N000019",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Inscrit les prélèvements sur recettes à destination de l'Union européenne dans la loi spéciale."
+  },
+  {
+   "scrutin": "VTANR5L17V590",
+   "numero": 590,
+   "date": "2025-01-22",
+   "amendement": "AMANR5L17PO838901BTC0631P0D1N000218",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V605",
+   "numero": 605,
+   "date": "2025-01-23",
+   "amendement": "AMANR5L17PO838901BTC0701P0D1N000020",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V686",
+   "numero": 686,
+   "date": "2025-01-30",
+   "amendement": "AMANR5L17PO838901BTC0695P0D1N000007",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V687",
+   "numero": 687,
+   "date": "2025-01-30",
+   "amendement": "AMANR5L17PO838901BTC0695P0D1N000006",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V807",
+   "numero": 807,
+   "date": "2025-02-17",
+   "amendement": "AMANR5L17PO838901BTC0631P0D1N000057",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V811",
+   "numero": 811,
+   "date": "2025-02-17",
+   "amendement": "AMANR5L17PO838901BTC0631P0D1N000177",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V834",
+   "numero": 834,
+   "date": "2025-02-17",
+   "amendement": "AMANR5L17PO838901BTC0631P0D1N000111",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V962",
+   "numero": 962,
+   "date": "2025-03-12",
+   "amendement": "AMANR5L17PO838901BTC1001P0D1N000052",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V973",
+   "numero": 973,
+   "date": "2025-03-12",
+   "amendement": "AMANR5L17PO838901BTC1001P0D1N000033",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime la mention de l'accélération de l'adhésion de l'Ukraine à l'Union européenne."
+  },
+  {
+   "scrutin": "VTANR5L17V981",
+   "numero": 981,
+   "date": "2025-03-12",
+   "amendement": "AMANR5L17PO838901BTC1001P0D1N000005",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V984",
+   "numero": 984,
+   "date": "2025-03-12",
+   "amendement": "AMANR5L17PO838901BTC1001P0D1N000034",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V986",
+   "numero": 986,
+   "date": "2025-03-12",
+   "amendement": "AMANR5L17PO838901BTC1001P0D1N000042",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Invite l'Union européenne et les États membres à adopter une préférence européenne pour les équipements de défense."
+  },
+  {
+   "scrutin": "VTANR5L17V987",
+   "numero": 987,
+   "date": "2025-03-12",
+   "amendement": "AMANR5L17PO838901BTC1001P0D1N000051",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1446",
+   "numero": 1446,
+   "date": "2025-04-11",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001944",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1490",
+   "numero": 1490,
+   "date": "2025-04-30",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001946",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1528",
+   "numero": 1528,
+   "date": "2025-04-30",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N000836",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1536",
+   "numero": 1536,
+   "date": "2025-04-30",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002136",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1558",
+   "numero": 1558,
+   "date": "2025-05-06",
+   "amendement": "AMANR5L17PO838901BTC1021P0D1N000021",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1563",
+   "numero": 1563,
+   "date": "2025-05-06",
+   "amendement": "AMANR5L17PO838901BTC1021P0D1N000022",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1565",
+   "numero": 1565,
+   "date": "2025-05-06",
+   "amendement": "AMANR5L17PO838901BTC1021P0D1N000018",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2116",
+   "numero": 2116,
+   "date": "2025-05-27",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002586",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2117",
+   "numero": 2117,
+   "date": "2025-05-27",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001945",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2120",
+   "numero": 2120,
+   "date": "2025-05-27",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N000840",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2281",
+   "numero": 2281,
+   "date": "2025-06-10",
+   "amendement": "AMANR5L17PO838901BTC0913P0D1N000008",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Appelle à élargir les compétences du Parquet européen."
+  },
+  {
+   "scrutin": "VTANR5L17V2343",
+   "numero": 2343,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002597",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2547",
+   "numero": 2547,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000546",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2548",
+   "numero": 2548,
+   "date": "2025-06-18",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000549",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2560",
+   "numero": 2560,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000523",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2563",
+   "numero": 2563,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000521",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2619",
+   "numero": 2619,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000343",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Demande d'obtenir une dérogation à la directive européenne « Concessions »."
+  },
+  {
+   "scrutin": "VTANR5L17V2708",
+   "numero": 2708,
+   "date": "2025-06-26",
+   "amendement": "AMANR5L17PO838901B1415P0D1N000002",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2803",
+   "numero": 2803,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000022",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3263",
+   "numero": 3263,
+   "date": "2025-10-30",
+   "amendement": "AMANR5L17PO838901BTC1985P0D1N000001",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3455",
+   "numero": 3455,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000841",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3523",
+   "numero": 3523,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000388",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3543",
+   "numero": 3543,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002437",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3544",
+   "numero": 3544,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002288",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3676",
+   "numero": 3676,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001329",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4242",
+   "numero": 4242,
+   "date": "2025-11-26",
+   "amendement": "AMANR5L17PO838901BTC1241P0D1N000001",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4377",
+   "numero": 4377,
+   "date": "2025-11-27",
+   "amendement": "AMANR5L17PO838901BTC2123P0D1N000136",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4492",
+   "numero": 4492,
+   "date": "2025-12-03",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000036",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4505",
+   "numero": 4505,
+   "date": "2025-12-03",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000126",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4514",
+   "numero": 4514,
+   "date": "2025-12-03",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000505",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4515",
+   "numero": 4515,
+   "date": "2025-12-03",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000235",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4806",
+   "numero": 4806,
+   "date": "2025-12-17",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000218",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4943",
+   "numero": 4943,
+   "date": "2025-12-23",
+   "amendement": "AMANR5L17PO838901B2269P0D1N000005",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Instaure un rabais sur la contribution française au budget de l'Union européenne."
+  },
+  {
+   "scrutin": "VTANR5L17V5052",
+   "numero": 5052,
+   "date": "2026-01-15",
+   "amendement": "AMANR5L17PO838901B2247P0D1N003326",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5161",
+   "numero": 5161,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000046",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5305",
+   "numero": 5305,
+   "date": "2026-02-04",
+   "amendement": "AMANR5L17PO838901BTC1482P0D1N000001",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5311",
+   "numero": 5311,
+   "date": "2026-02-04",
+   "amendement": "AMANR5L17PO838901BTC2072P0D1N000001",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5312",
+   "numero": 5312,
+   "date": "2026-02-04",
+   "amendement": "AMANR5L17PO838901BTC2072P0D1N000014",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5317",
+   "numero": 5317,
+   "date": "2026-02-05",
+   "amendement": "AMANR5L17PO838901BTC2405P0D1N000002",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5318",
+   "numero": 5318,
+   "date": "2026-02-05",
+   "amendement": "AMANR5L17PO838901BTC2405P0D1N000043",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5319",
+   "numero": 5319,
+   "date": "2026-02-05",
+   "amendement": "AMANR5L17PO838901BTC2405P0D1N000003",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5322",
+   "numero": 5322,
+   "date": "2026-02-05",
+   "amendement": "AMANR5L17PO838901BTC2405P0D1N000004",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5323",
+   "numero": 5323,
+   "date": "2026-02-05",
+   "amendement": "AMANR5L17PO838901BTC2405P0D1N000044",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5750",
+   "numero": 5750,
+   "date": "2026-02-26",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000891",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5797",
+   "numero": 5797,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000136",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5855",
+   "numero": 5855,
+   "date": "2026-03-30",
+   "amendement": "AMANR5L17PO838901BTC2577P0D1N000013",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5909",
+   "numero": 5909,
+   "date": "2026-03-31",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000494",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5958",
+   "numero": 5958,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000664",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6293",
+   "numero": 6293,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000571",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Affirme que la défense de la France doit rester française face aux initiatives de défense européenne."
+  },
+  {
+   "scrutin": "VTANR5L17V6305",
+   "numero": 6305,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000605",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6359",
+   "numero": 6359,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000588",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Dénonce l'extension des compétences de la Commission européenne en matière de défense."
+  },
+  {
+   "scrutin": "VTANR5L17V6369",
+   "numero": 6369,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000614",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Affirme que la défense relève de la compétence exclusive des États, contre une enveloppe européenne."
+  },
+  {
+   "scrutin": "VTANR5L17V6419",
+   "numero": 6419,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000186",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6422",
+   "numero": 6422,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000189",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6438",
+   "numero": 6438,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000516",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6513",
+   "numero": 6513,
+   "date": "2026-05-11",
+   "amendement": "AMANR5L17PO838901BTC2251P0D1N000005",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6515",
+   "numero": 6515,
+   "date": "2026-05-11",
+   "amendement": "AMANR5L17PO838901BTC2251P0D1N000018",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6516",
+   "numero": 6516,
+   "date": "2026-05-11",
+   "amendement": "AMANR5L17PO838901BTC2251P0D1N000019",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6523",
+   "numero": 6523,
+   "date": "2026-05-11",
+   "amendement": "AMANR5L17PO838901BTC2251P0D1N000003",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Invite le Gouvernement à s'opposer à un élargissement précipité de l'Union européenne."
+  },
+  {
+   "scrutin": "VTANR5L17V6967",
+   "numero": 6967,
+   "date": "2026-05-27",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001888",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6970",
+   "numero": 6970,
+   "date": "2026-05-27",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001488",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6977",
+   "numero": 6977,
+   "date": "2026-05-27",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000379",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6988",
+   "numero": 6988,
+   "date": "2026-05-27",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001515",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7079",
+   "numero": 7079,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001617",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7305",
+   "numero": 7305,
+   "date": "2026-06-04",
+   "amendement": "AMANR5L17PO838901BTC2838P0D1N000008",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  }
+ ]
+}

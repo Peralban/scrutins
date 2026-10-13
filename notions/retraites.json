@@ -1,0 +1,1071 @@
+{
+ "notion": "retraites",
+ "label": "Retraites",
+ "axe": "Favorable : abaisser l'âge de départ, augmenter les pensions ou les droits à la retraite, ou en financer le niveau. Défavorable : reculer l'âge, durcir les conditions ou baisser les pensions.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose.",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V182",
+   "numero": 182,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000146",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Abroge la réforme des retraites et le report de l'âge légal à 64 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V185",
+   "numero": 185,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N002257",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Cumul emploi-retraite des médecins : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V186",
+   "numero": 186,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N002357",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Cumul emploi-retraite des médecins : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V187",
+   "numero": 187,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000475",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Cotisation patronale CNRACL : finalité non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V188",
+   "numero": 188,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001088",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une contribution sur les superprofits au bénéfice du système de retraite."
+  },
+  {
+   "scrutin": "VTANR5L17V189",
+   "numero": 189,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001267",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une contribution sur les dividendes pour financer le système de retraites."
+  },
+  {
+   "scrutin": "VTANR5L17V190",
+   "numero": 190,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001431",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur l'exonération de cotisations des médecins retraités."
+  },
+  {
+   "scrutin": "VTANR5L17V207",
+   "numero": 207,
+   "date": "2024-10-30",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000276",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Certificat de vie des retraités à l'étranger : portée non établie sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V213",
+   "numero": 213,
+   "date": "2024-10-31",
+   "amendement": "AMANR5L17PO838901BTC0475P0D1N000005",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Organise une conférence de financement : pas de position sur l'âge ou les pensions."
+  },
+  {
+   "scrutin": "VTANR5L17V216",
+   "numero": 216,
+   "date": "2024-10-31",
+   "amendement": "AMANR5L17PO838901BTC0475P0D1N000007",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur la pension de réversion."
+  },
+  {
+   "scrutin": "VTANR5L17V239",
+   "numero": 239,
+   "date": "2024-11-04",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000142",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Abroge la réforme des retraites et le report de l'âge légal de 62 à 64 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V457",
+   "numero": 457,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000869",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Change un intitulé : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V463",
+   "numero": 463,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000872",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Complète un intitulé : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V464",
+   "numero": 464,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000884",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Complète un intitulé : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V466",
+   "numero": 466,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000878",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Complète un intitulé : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V467",
+   "numero": 467,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000875",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Complète un intitulé : aucune portée normative."
+  },
+  {
+   "scrutin": "VTANR5L17V470",
+   "numero": 470,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000390",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Remplace l'abrogation de la réforme par un rapport sur le coût du retour à 60 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V471",
+   "numero": 471,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000796",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur le versement des pensions en début de mois."
+  },
+  {
+   "scrutin": "VTANR5L17V472",
+   "numero": 472,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000798",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Remplace l'abrogation de la réforme par une demande de rapport du Conseil d'orientation des retraites."
+  },
+  {
+   "scrutin": "VTANR5L17V473",
+   "numero": 473,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000797",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur la solidarité entre régimes."
+  },
+  {
+   "scrutin": "VTANR5L17V475",
+   "numero": 475,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000392",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'abrogation du report de l'âge légal à 64 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V476",
+   "numero": 476,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000451",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'abrogation du report de l'âge légal à 64 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V477",
+   "numero": 477,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000337",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'abrogation du report de l'âge légal à 64 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V478",
+   "numero": 478,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000514",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'abrogation du report de l'âge légal à 64 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V479",
+   "numero": 479,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000773",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime les alinéas qui abrogent les réformes des retraites."
+  },
+  {
+   "scrutin": "VTANR5L17V480",
+   "numero": 480,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000083",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'abrogation du report de l'âge légal (maintient la réforme de 2023)."
+  },
+  {
+   "scrutin": "VTANR5L17V483",
+   "numero": 483,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000336",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'abrogation du report de l'âge légal à 64 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V484",
+   "numero": 484,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000809",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Fixe l'âge d'ouverture des droits à 64 ans pour les professions libérales."
+  },
+  {
+   "scrutin": "VTANR5L17V486",
+   "numero": 486,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000531",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'abrogation du report de l'âge légal à 64 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V487",
+   "numero": 487,
+   "date": "2024-11-28",
+   "amendement": "AMANR5L17PO838901BTC0613P0D1N000415",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'abrogation du report de l'âge légal à 64 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V593",
+   "numero": 593,
+   "date": "2025-01-22",
+   "amendement": "AMANR5L17PO838901BTC0631P0D1N000015",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Sanctions de blanchiment sur l'épargne-retraite européenne : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V1233",
+   "numero": 1233,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1175P0D1N000024",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur des trimestres pour les bénévoles."
+  },
+  {
+   "scrutin": "VTANR5L17V2905",
+   "numero": 2905,
+   "date": "2025-07-03",
+   "amendement": "AMANR5L17PO838901BTC1617P0D1N000034",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Sanctions sur des engagements d'employeurs : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2906",
+   "numero": 2906,
+   "date": "2025-07-03",
+   "amendement": "AMANR5L17PO838901BTC1617P0D1N000035",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Sanctions sur des engagements d'employeurs : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2918",
+   "numero": 2918,
+   "date": "2025-07-03",
+   "amendement": "AMANR5L17PO838901BTC1617P0D1N000052",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Contrat de valorisation de l'expérience des seniors : emploi, pas retraite stricto sensu."
+  },
+  {
+   "scrutin": "VTANR5L17V2919",
+   "numero": 2919,
+   "date": "2025-07-03",
+   "amendement": "AMANR5L17PO838901BTC1617P0D1N000053",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Expérimentation du contrat seniors : emploi, non retraite."
+  },
+  {
+   "scrutin": "VTANR5L17V2927",
+   "numero": 2927,
+   "date": "2025-07-03",
+   "amendement": "AMANR5L17PO838901BTC1617P0D1N000003",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'obligation de transmettre une date prévisionnelle de départ à la retraite à l'employeur."
+  },
+  {
+   "scrutin": "VTANR5L17V2959",
+   "numero": 2959,
+   "date": "2025-07-08",
+   "amendement": "AMANR5L17PO838901BTC1603P0D1N000865",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime une majoration de durée d'assurance pour les élus locaux."
+  },
+  {
+   "scrutin": "VTANR5L17V2960",
+   "numero": 2960,
+   "date": "2025-07-08",
+   "amendement": "AMANR5L17PO838901BTC1603P0D1N000717",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime la majoration de durée d'assurance pour les élus locaux."
+  },
+  {
+   "scrutin": "VTANR5L17V2965",
+   "numero": 2965,
+   "date": "2025-07-08",
+   "amendement": "AMANR5L17PO838901BTC1603P0D1N000780",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Exonération fiscale des indemnités de maires : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3048",
+   "numero": 3048,
+   "date": "2025-07-10",
+   "amendement": "AMANR5L17PO838901BTC1603P0D1N000224",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur les cotisations Ircantec des élus : pas de position sur le fond."
+  },
+  {
+   "scrutin": "VTANR5L17V3049",
+   "numero": 3049,
+   "date": "2025-07-10",
+   "amendement": "AMANR5L17PO838901BTC1603P0D1N000386",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur les retraites des élus locaux."
+  },
+  {
+   "scrutin": "VTANR5L17V3417",
+   "numero": 3417,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000114",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Augmente la cotisation des plus hauts revenus pour abonder la branche vieillesse agricole."
+  },
+  {
+   "scrutin": "VTANR5L17V3418",
+   "numero": 3418,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001572",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Déplafonne les cotisations d'assurance vieillesse de base pour financer le régime."
+  },
+  {
+   "scrutin": "VTANR5L17V3420",
+   "numero": 3420,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000110",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une sur-cotisation dédiée à la branche vieillesse sur les hauts revenus."
+  },
+  {
+   "scrutin": "VTANR5L17V3421",
+   "numero": 3421,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000015",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Cotisation vieillesse des employeurs territoriaux : finalité non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V3422",
+   "numero": 3422,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000122",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'article gelant le barème de CSG sur les pensions."
+  },
+  {
+   "scrutin": "VTANR5L17V3423",
+   "numero": 3423,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001020",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Relève la CSG sur les revenus du capital pour financer la suspension de la réforme des retraites."
+  },
+  {
+   "scrutin": "VTANR5L17V3425",
+   "numero": 3425,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000125",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "CSG sur le capital pour la sécurité sociale en général : finalité retraite non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V3427",
+   "numero": 3427,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000127",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Hausse de la CSG sur le capital : finalité non établie sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V3428",
+   "numero": 3428,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000133",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "CSG sur les revenus du travail : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3429",
+   "numero": 3429,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000157",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "CSG sur le capital pour la sécurité sociale en général : finalité retraite non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V3430",
+   "numero": 3430,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000158",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Prélèvement fléché vers la branche autonomie : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3431",
+   "numero": 3431,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000233",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une contribution à l'assurance vieillesse sur les successions et donations."
+  },
+  {
+   "scrutin": "VTANR5L17V3433",
+   "numero": 3433,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000828",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une contribution sur le patrimoine des milliardaires pour financer les retraites."
+  },
+  {
+   "scrutin": "VTANR5L17V3441",
+   "numero": 3441,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000833",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une contribution sur les superprofits au bénéfice du système de retraite."
+  },
+  {
+   "scrutin": "VTANR5L17V3442",
+   "numero": 3442,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000234",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une contribution sur les fonds de pension affectée à l'assurance vieillesse."
+  },
+  {
+   "scrutin": "VTANR5L17V3444",
+   "numero": 3444,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000165",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Contribution sur les fonds de pension : lien avec le niveau des pensions non établi."
+  },
+  {
+   "scrutin": "VTANR5L17V3445",
+   "numero": 3445,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000844",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une contribution sur les dividendes pour financer les retraites."
+  },
+  {
+   "scrutin": "VTANR5L17V3446",
+   "numero": 3446,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000173",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une contribution sur les dividendes affectée à la caisse nationale d'assurance vieillesse."
+  },
+  {
+   "scrutin": "VTANR5L17V3447",
+   "numero": 3447,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000174",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait contribuer les revenus financiers des sociétés au financement de l'assurance vieillesse."
+  },
+  {
+   "scrutin": "VTANR5L17V3448",
+   "numero": 3448,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000180",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Taux de taxe sur les assurances santé complémentaires : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3449",
+   "numero": 3449,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000179",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Taxe sur les assurances santé : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3454",
+   "numero": 3454,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000840",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une contribution sur les superprofits pétroliers au bénéfice du système de retraite."
+  },
+  {
+   "scrutin": "VTANR5L17V3455",
+   "numero": 3455,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000841",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait contribuer les plateformes numériques au financement des caisses de retraite."
+  },
+  {
+   "scrutin": "VTANR5L17V3456",
+   "numero": 3456,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001569",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Abroge la réforme des retraites, notamment le report de l'âge légal à 64 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V3457",
+   "numero": 3457,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000021",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Prélèvement sur les titres-restaurant : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3458",
+   "numero": 3458,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000183",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Exonérations de cotisations : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3464",
+   "numero": 3464,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000212",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Abattement de CSG : finalité retraite non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V3466",
+   "numero": 3466,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001606",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Majore la contribution sur les retraites chapeau : finalité non établie sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V3467",
+   "numero": 3467,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000216",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Taxe les retraites chapeau : finalité non établie sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V3468",
+   "numero": 3468,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000217",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Taxe les retraites chapeau : finalité non établie sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V3471",
+   "numero": 3471,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000222",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Contribution solidarité autonomie : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3472",
+   "numero": 3472,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000224",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Contribution solidarité autonomie : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3474",
+   "numero": 3474,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000226",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Cotisations patronales : finalité retraite non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V3476",
+   "numero": 3476,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000247",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Cotisations accidents du travail : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3490",
+   "numero": 3490,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000258",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Heures supplémentaires : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3491",
+   "numero": 3491,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000257",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Heures supplémentaires : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3495",
+   "numero": 3495,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000259",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Cotisations sur revenus du capital en général : finalité retraite non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V3496",
+   "numero": 3496,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000221",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Compléments de salaire : hors sujet pour les retraites."
+  },
+  {
+   "scrutin": "VTANR5L17V3497",
+   "numero": 3497,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000267",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Supprime des exonérations de cotisations sur l'épargne salariale : rapport indirect aux retraites."
+  },
+  {
+   "scrutin": "VTANR5L17V3498",
+   "numero": 3498,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000895",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Égalité salariale : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3503",
+   "numero": 3503,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000280",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Prime de partage de la valeur : hors sujet pour les retraites."
+  },
+  {
+   "scrutin": "VTANR5L17V3504",
+   "numero": 3504,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000235",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Cotisation des entreprises à fort burn-out : finalité retraite non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V3512",
+   "numero": 3512,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001346",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Logement : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3550",
+   "numero": 3550,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000457",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Nutriscore : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3567",
+   "numero": 3567,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000459",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Taxe sur la publicité alimentaire : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3568",
+   "numero": 3568,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000943",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Transferts entre l'État et la sécurité sociale : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3583",
+   "numero": 3583,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001685",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Cotisation de retraités étrangers : santé, hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3592",
+   "numero": 3592,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000565",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Interdit au fonds de réserve d'investir dans des secteurs polluants : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3593",
+   "numero": 3593,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001040",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Objectifs de la CADES : sens non tranché."
+  },
+  {
+   "scrutin": "VTANR5L17V3595",
+   "numero": 3595,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001592",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Réduit les versements du fonds de réserve des retraites vers la CADES."
+  },
+  {
+   "scrutin": "VTANR5L17V3650",
+   "numero": 3650,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000651",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Tarification des actes de santé : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3680",
+   "numero": 3680,
+   "date": "2025-11-12",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000653",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'article de suspension de la réforme des retraites de 2023."
+  },
+  {
+   "scrutin": "VTANR5L17V3683",
+   "numero": 3683,
+   "date": "2025-11-12",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002686",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Élargit les générations couvertes par la suspension du relèvement de l'âge légal."
+  },
+  {
+   "scrutin": "VTANR5L17V3685",
+   "numero": 3685,
+   "date": "2025-11-12",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000706",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime le gel des prestations sociales, dont les pensions, en 2026."
+  },
+  {
+   "scrutin": "VTANR5L17V4446",
+   "numero": 4446,
+   "date": "2025-12-02",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000455",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Rectification de recettes de la sécurité sociale : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4475",
+   "numero": 4475,
+   "date": "2025-12-03",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000151",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Malus sur l'emploi des seniors : emploi, non retraite."
+  },
+  {
+   "scrutin": "VTANR5L17V4477",
+   "numero": 4477,
+   "date": "2025-12-03",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000049",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Taux de taxe sur les assurances santé complémentaires : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4537",
+   "numero": 4537,
+   "date": "2025-12-04",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000001",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'article maintenant les barèmes de CSG pour les pensions."
+  },
+  {
+   "scrutin": "VTANR5L17V4572",
+   "numero": 4572,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000385",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait inscrire dans la trajectoire une bonification de retraite pour les sapeurs-pompiers volontaires."
+  },
+  {
+   "scrutin": "VTANR5L17V4579",
+   "numero": 4579,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000384",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Abroge la réforme des retraites et le report de l'âge légal de 62 à 64 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V4585",
+   "numero": 4585,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000534",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime la désindexation partielle des pensions de retraite pour 2026."
+  },
+  {
+   "scrutin": "VTANR5L17V4641",
+   "numero": 4641,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000199",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime le gel des prestations sociales, dont les pensions, en 2026."
+  },
+  {
+   "scrutin": "VTANR5L17V4642",
+   "numero": 4642,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000840",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit l'absence de relèvement de l'âge légal de départ à la retraite (62 ans et 9 mois) jusqu'en 2028."
+  },
+  {
+   "scrutin": "VTANR5L17V4643",
+   "numero": 4643,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000401",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Tarification des actes de santé : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5735",
+   "numero": 5735,
+   "date": "2026-02-26",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000607",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Contrôle d'existence des retraités à l'étranger : portée non établie sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V5815",
+   "numero": 5815,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000200",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Accès aux données patrimoniales : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5823",
+   "numero": 5823,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000417",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Durcit le contrôle des prestations de retraite versées à l'étranger."
+  },
+  {
+   "scrutin": "VTANR5L17V5824",
+   "numero": 5824,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N001019",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Durcit les sanctions de la fraude aux pensions versées à l'étranger."
+  },
+  {
+   "scrutin": "VTANR5L17V5944",
+   "numero": 5944,
+   "date": "2026-03-31",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000275",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Répertoire des carrières : portée non établie sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V5972",
+   "numero": 5972,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000357",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Sanctions du travail dissimulé : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5974",
+   "numero": 5974,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000359",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Sanctions du travail dissimulé : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5976",
+   "numero": 5976,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000360",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Sanctions du travail dissimulé : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V7316",
+   "numero": 7316,
+   "date": "2026-06-04",
+   "amendement": "AMANR5L17PO838901BTC2842P0D1N000003",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Garantit le versement de la pension agricole dès le premier mois de retraite."
+  },
+  {
+   "scrutin": "VTANR5L17V7321",
+   "numero": 7321,
+   "date": "2026-06-04",
+   "amendement": "AMANR5L17PO838901BTC2842P0D1N000008",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur un plafond de retraite complémentaire."
+  },
+  {
+   "scrutin": "VTANR5L17V7322",
+   "numero": 7322,
+   "date": "2026-06-04",
+   "amendement": "AMANR5L17PO838901BTC2842P0D1N000009",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur les retraités agricoles."
+  },
+  {
+   "scrutin": "VTANR5L17V7323",
+   "numero": 7323,
+   "date": "2026-06-04",
+   "amendement": "AMANR5L17PO838901BTC2842P0D1N000010",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport sur la durée de cotisation à taux plein."
+  }
+ ]
+}

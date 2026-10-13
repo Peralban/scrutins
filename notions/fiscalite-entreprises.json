@@ -1,0 +1,387 @@
+{
+ "notion": "fiscalite-entreprises",
+ "label": "Fiscalité et charges des entreprises",
+ "axe": "Favorable : alléger la fiscalité et les charges des entreprises. Défavorable : les alourdir ou supprimer des allègements.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose.",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V182",
+   "numero": 182,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000146",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Retraites : traité par la notion « Retraites »."
+  },
+  {
+   "scrutin": "VTANR5L17V188",
+   "numero": 188,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001088",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Crée une contribution exceptionnelle sur les superprofits."
+  },
+  {
+   "scrutin": "VTANR5L17V191",
+   "numero": 191,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001494",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime la pérennisation de l'exonération de cotisations patronales TO-DE."
+  },
+  {
+   "scrutin": "VTANR5L17V200",
+   "numero": 200,
+   "date": "2024-10-30",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000666",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Rétablit la compensation intégrale des exonérations pour limiter les nouveaux dispositifs d'exonération."
+  },
+  {
+   "scrutin": "VTANR5L17V201",
+   "numero": 201,
+   "date": "2024-10-30",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000936",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Impose la compensation des exonérations de cotisations à la sécurité sociale : n'allège ni n'alourdit directement."
+  },
+  {
+   "scrutin": "VTANR5L17V2920",
+   "numero": 2920,
+   "date": "2025-07-03",
+   "amendement": "AMANR5L17PO838901BTC1617P0D1N000025",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Réduit à trois ans la durée d'une exonération expérimentale."
+  },
+  {
+   "scrutin": "VTANR5L17V3441",
+   "numero": 3441,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000833",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Crée une contribution exceptionnelle sur les superprofits."
+  },
+  {
+   "scrutin": "VTANR5L17V3447",
+   "numero": 3447,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000174",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Soumet les revenus financiers des sociétés à une contribution pour l'assurance vieillesse."
+  },
+  {
+   "scrutin": "VTANR5L17V3453",
+   "numero": 3453,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000111",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime la contribution sociale de solidarité des sociétés (impôt de production)."
+  },
+  {
+   "scrutin": "VTANR5L17V3454",
+   "numero": 3454,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000840",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Crée une contribution sur les superprofits pétroliers."
+  },
+  {
+   "scrutin": "VTANR5L17V3478",
+   "numero": 3478,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000238",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Gèle le plafond de la réduction générale de cotisations patronales."
+  },
+  {
+   "scrutin": "VTANR5L17V3479",
+   "numero": 3479,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000302",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime les exonérations de cotisations sociales sur les salaires supérieurs à 2 SMIC."
+  },
+  {
+   "scrutin": "VTANR5L17V3484",
+   "numero": 3484,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000867",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Impose le remboursement des exonérations de cotisations en cas de plan de sauvegarde de l'emploi."
+  },
+  {
+   "scrutin": "VTANR5L17V3486",
+   "numero": 3486,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002008",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Conditionne la réduction générale de cotisations patronales à une politique salariale en faveur des bas salaires."
+  },
+  {
+   "scrutin": "VTANR5L17V3487",
+   "numero": 3487,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000367",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Conditionne les allègements de cotisations patronales à l'égalité salariale femmes-hommes."
+  },
+  {
+   "scrutin": "VTANR5L17V3488",
+   "numero": 3488,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000271",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime des exonérations et déductions de cotisations sur les heures supplémentaires."
+  },
+  {
+   "scrutin": "VTANR5L17V3492",
+   "numero": 3492,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000879",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Étend l'exonération de cotisations sur les heures supplémentaires."
+  },
+  {
+   "scrutin": "VTANR5L17V3499",
+   "numero": 3499,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002491",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Impose le remboursement des exonérations après un licenciement économique sans cause réelle et sérieuse."
+  },
+  {
+   "scrutin": "VTANR5L17V3502",
+   "numero": 3502,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000898",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Conditionne l'exonération de cotisations de la prime de partage de la valeur à l'absence de filiale dans les paradis fiscaux."
+  },
+  {
+   "scrutin": "VTANR5L17V3505",
+   "numero": 3505,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000399",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'article qui réduit, plafonne ou supprime des exonérations de cotisations."
+  },
+  {
+   "scrutin": "VTANR5L17V3506",
+   "numero": 3506,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000881",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Maintient l'exonération de cotisations attribuée à la création et reprise d'entreprise (ACRE)."
+  },
+  {
+   "scrutin": "VTANR5L17V3515",
+   "numero": 3515,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001202",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Étend le champ de l'exonération de cotisations agricoles pour travailleurs occasionnels."
+  },
+  {
+   "scrutin": "VTANR5L17V3524",
+   "numero": 3524,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000918",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une exonération de cotisations pour les entreprises expérimentant les 32 heures."
+  },
+  {
+   "scrutin": "VTANR5L17V3576",
+   "numero": 3576,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000031",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Rétablit la compensation intégrale des exonérations pour limiter les nouveaux dispositifs d'exonération."
+  },
+  {
+   "scrutin": "VTANR5L17V4538",
+   "numero": 4538,
+   "date": "2025-12-04",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000451",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Baisse de la CSG des ménages : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4564",
+   "numero": 4564,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000028",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Garantit une exonération de 50 % de cotisations pour les bénéficiaires de l'ACRE."
+  },
+  {
+   "scrutin": "VTANR5L17V4761",
+   "numero": 4761,
+   "date": "2025-12-16",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000164",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Retire l'exonération de plein droit d'impôt sur les sociétés des organisateurs de compétitions sportives internationales."
+  },
+  {
+   "scrutin": "VTANR5L17V4879",
+   "numero": 4879,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000237",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Soumet à une taxe la publicité des partenaires de marketing olympique."
+  },
+  {
+   "scrutin": "VTANR5L17V4926",
+   "numero": 4926,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000157",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Demande un rapport : pas de position sur le fond."
+  },
+  {
+   "scrutin": "VTANR5L17V5016",
+   "numero": 5016,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001465",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Taxe sur les holdings patrimoniales : traité par la notion sur la fiscalité du capital."
+  },
+  {
+   "scrutin": "VTANR5L17V5018",
+   "numero": 5018,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001439",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Taxe sur les holdings patrimoniales : traité par la notion sur la fiscalité du capital."
+  },
+  {
+   "scrutin": "VTANR5L17V5019",
+   "numero": 5019,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N000945",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Taxe sur les holdings patrimoniales : traité par la notion sur la fiscalité du capital."
+  },
+  {
+   "scrutin": "VTANR5L17V5020",
+   "numero": 5020,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N003000",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Taxe sur les holdings patrimoniales : traité par la notion sur la fiscalité du capital."
+  },
+  {
+   "scrutin": "VTANR5L17V5064",
+   "numero": 5064,
+   "date": "2026-01-15",
+   "amendement": "AMANR5L17PO838901B2247P0D1N000168",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime la CVAE dès 2026 (impôts de production)."
+  },
+  {
+   "scrutin": "VTANR5L17V5971",
+   "numero": 5971,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000352",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Retire le bénéfice de la réduction générale de cotisations aux entreprises coupables de travail dissimulé."
+  },
+  {
+   "scrutin": "VTANR5L17V5972",
+   "numero": 5972,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000357",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Retire le bénéfice de la déduction forfaitaire aux entreprises coupables de travail dissimulé."
+  },
+  {
+   "scrutin": "VTANR5L17V5973",
+   "numero": 5973,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000354",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Retire le bénéfice de la réduction générale de cotisations aux entreprises coupables de travail dissimulé."
+  },
+  {
+   "scrutin": "VTANR5L17V5974",
+   "numero": 5974,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000359",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Retire le bénéfice de la déduction forfaitaire aux entreprises coupables de travail dissimulé."
+  },
+  {
+   "scrutin": "VTANR5L17V5975",
+   "numero": 5975,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000355",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Retire le bénéfice de la réduction générale de cotisations aux entreprises coupables de travail dissimulé."
+  },
+  {
+   "scrutin": "VTANR5L17V5976",
+   "numero": 5976,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000360",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Retire le bénéfice de la déduction forfaitaire aux entreprises coupables de travail dissimulé."
+  },
+  {
+   "scrutin": "VTANR5L17V6529",
+   "numero": 6529,
+   "date": "2026-05-12",
+   "amendement": "AMANR5L17PO838901BTC2615P0D1N000004",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime un régime d'exonération de cotisations sociales pour les navires."
+  },
+  {
+   "scrutin": "VTANR5L17V6564",
+   "numero": 6564,
+   "date": "2026-05-13",
+   "amendement": "AMANR5L17PO838901BTC2190P0D1N000001",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Fléchage de fonds vers la recherche médicale : hors sujet."
+  }
+ ]
+}

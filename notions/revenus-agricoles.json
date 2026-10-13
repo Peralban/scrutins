@@ -1,0 +1,387 @@
+{
+ "notion": "revenus-agricoles",
+ "label": "Revenus agricoles et protection des prix",
+ "axe": "Favorable : protéger les revenus des agriculteurs (prix planchers, Egalim, encadrement des marges de la grande distribution). Défavorable : les assouplir.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose.",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V191",
+   "numero": 191,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001494",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V192",
+   "numero": 192,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001497",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V211",
+   "numero": 211,
+   "date": "2024-10-30",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000252",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1020",
+   "numero": 1020,
+   "date": "2025-03-17",
+   "amendement": "AMANR5L17PO838901BTC1104P0D1N000020",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Encadre les marges de la distribution à 40 % entre prix d'achat et prix de vente."
+  },
+  {
+   "scrutin": "VTANR5L17V1021",
+   "numero": 1021,
+   "date": "2025-03-17",
+   "amendement": "AMANR5L17PO838901BTC1104P0D1N000021",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Encadre les marges de la distribution à 30 % entre prix d'achat et prix de vente."
+  },
+  {
+   "scrutin": "VTANR5L17V1022",
+   "numero": 1022,
+   "date": "2025-03-17",
+   "amendement": "AMANR5L17PO838901BTC1104P0D1N000022",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Encadre les marges de la distribution à 20 % entre prix d'achat et prix de vente."
+  },
+  {
+   "scrutin": "VTANR5L17V1028",
+   "numero": 1028,
+   "date": "2025-03-17",
+   "amendement": "AMANR5L17PO838901BTC1104P0D1N000026",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce les sanctions du non-respect de la communication des éléments d'appréciation des prix."
+  },
+  {
+   "scrutin": "VTANR5L17V1029",
+   "numero": 1029,
+   "date": "2025-03-17",
+   "amendement": "AMANR5L17PO838901BTC1104P0D1N000026",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce les sanctions du non-respect de la communication des éléments d'appréciation des prix."
+  },
+  {
+   "scrutin": "VTANR5L17V1031",
+   "numero": 1031,
+   "date": "2025-03-17",
+   "amendement": "AMANR5L17PO838901BTC1104P0D1N000028",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce les sanctions du non-respect de la communication des éléments d'appréciation des prix."
+  },
+  {
+   "scrutin": "VTANR5L17V1032",
+   "numero": 1032,
+   "date": "2025-03-17",
+   "amendement": "AMANR5L17PO838901BTC1104P0D1N000033",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce la transparence sur les marges et les rapports de force dans la chaîne alimentaire."
+  },
+  {
+   "scrutin": "VTANR5L17V1036",
+   "numero": 1036,
+   "date": "2025-03-17",
+   "amendement": "AMANR5L17PO838901BTC1104P0D1N000012",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce les sanctions en cas de revente à perte d'un produit."
+  },
+  {
+   "scrutin": "VTANR5L17V1449",
+   "numero": 1449,
+   "date": "2025-04-11",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002445",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Maintient les données du rapport sur l'atteinte des objectifs de la loi Egalim."
+  },
+  {
+   "scrutin": "VTANR5L17V2329",
+   "numero": 2329,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001592",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2330",
+   "numero": 2330,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001595",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2336",
+   "numero": 2336,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002122",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2397",
+   "numero": 2397,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002245",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3526",
+   "numero": 3526,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000379",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3527",
+   "numero": 3527,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001388",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3533",
+   "numero": 3533,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000972",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3584",
+   "numero": 3584,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001839",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4446",
+   "numero": 4446,
+   "date": "2025-12-02",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000455",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4556",
+   "numero": 4556,
+   "date": "2025-12-04",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000469",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6130",
+   "numero": 6130,
+   "date": "2026-04-09",
+   "amendement": "AMANR5L17PO838901BTC2605P0D1N000002",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6986",
+   "numero": 6986,
+   "date": "2026-05-27",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000366",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6987",
+   "numero": 6987,
+   "date": "2026-05-27",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000934",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6989",
+   "numero": 6989,
+   "date": "2026-05-27",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000050",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6990",
+   "numero": 6990,
+   "date": "2026-05-27",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001952",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6992",
+   "numero": 6992,
+   "date": "2026-05-27",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000451",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7041",
+   "numero": 7041,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001752",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7043",
+   "numero": 7043,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001618",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7053",
+   "numero": 7053,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000052",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Oblige à demander le prix de revient dans au moins un marché alimentaire public."
+  },
+  {
+   "scrutin": "VTANR5L17V7058",
+   "numero": 7058,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001774",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Instaure un prix plancher d'achat des produits agricoles pour les acheteurs publics."
+  },
+  {
+   "scrutin": "VTANR5L17V7150",
+   "numero": 7150,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000054",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Fixe des prix planchers pour garantir des prix rémunérateurs aux agriculteurs."
+  },
+  {
+   "scrutin": "VTANR5L17V7151",
+   "numero": 7151,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000055",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Fixe des prix planchers pour garantir des prix rémunérateurs aux agriculteurs."
+  },
+  {
+   "scrutin": "VTANR5L17V7154",
+   "numero": 7154,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001744",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait mieux refléter les coûts de production dans les indicateurs de référence."
+  },
+  {
+   "scrutin": "VTANR5L17V7156",
+   "numero": 7156,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001736",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rend obligatoire l'usage des indicateurs interprofessionnels dans la construction du prix des produits agricoles."
+  },
+  {
+   "scrutin": "VTANR5L17V7165",
+   "numero": 7165,
+   "date": "2026-05-30",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000637",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Interdit de céder des produits agricoles à un prix inférieur aux indicateurs de coûts de production."
+  },
+  {
+   "scrutin": "VTANR5L17V7167",
+   "numero": 7167,
+   "date": "2026-05-30",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000057",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce un dispositif de protection du revenu des agriculteurs dans les relations commerciales."
+  },
+  {
+   "scrutin": "VTANR5L17V7174",
+   "numero": 7174,
+   "date": "2026-05-30",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N001680",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Empêche le contournement des règles Egalim protégeant le coût de la matière première agricole."
+  },
+  {
+   "scrutin": "VTANR5L17V7199",
+   "numero": 7199,
+   "date": "2026-05-30",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000074",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7202",
+   "numero": 7202,
+   "date": "2026-05-30",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000426",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7203",
+   "numero": 7203,
+   "date": "2026-05-30",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000598",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  }
+ ]
+}

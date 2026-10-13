@@ -1,0 +1,216 @@
+{
+ "notion": "censure",
+ "label": "Censure du Gouvernement",
+ "axe": "Favorable : censurer le Gouvernement (voter pour une motion de censure). Défavorable : lui maintenir la confiance (voter contre).",
+ "statut": "données directes",
+ "methode": "Les 23 motions de censure de la législature. Chaque scrutin est un vote direct sur la notion : aucun étiquetage manuel. Pour une motion de censure, seuls les votes « pour » sont enregistrés (ceux qui ne censurent pas ne votent pas) : on compte donc les votes pour la censure, jamais un pourcentage.",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V1",
+   "numero": 1,
+   "date": "2024-10-08",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V519",
+   "numero": 519,
+   "date": "2024-12-04",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V526",
+   "numero": 526,
+   "date": "2025-01-16",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V693",
+   "numero": 693,
+   "date": "2025-02-05",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V694",
+   "numero": 694,
+   "date": "2025-02-05",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V739",
+   "numero": 739,
+   "date": "2025-02-10",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V791",
+   "numero": 791,
+   "date": "2025-02-12",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V842",
+   "numero": 842,
+   "date": "2025-02-19",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V2222",
+   "numero": 2222,
+   "date": "2025-06-04",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V2876",
+   "numero": 2876,
+   "date": "2025-07-01",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V3058",
+   "numero": 3058,
+   "date": "2025-10-16",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V3059",
+   "numero": 3059,
+   "date": "2025-10-16",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V4986",
+   "numero": 4986,
+   "date": "2026-01-14",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V4987",
+   "numero": 4987,
+   "date": "2026-01-14",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V5154",
+   "numero": 5154,
+   "date": "2026-01-23",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V5155",
+   "numero": 5155,
+   "date": "2026-01-23",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V5193",
+   "numero": 5193,
+   "date": "2026-01-27",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V5194",
+   "numero": 5194,
+   "date": "2026-01-27",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V5284",
+   "numero": 5284,
+   "date": "2026-02-02",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V5285",
+   "numero": 5285,
+   "date": "2026-02-02",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V5730",
+   "numero": 5730,
+   "date": "2026-02-25",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V5731",
+   "numero": 5731,
+   "date": "2026-02-25",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V7979",
+   "numero": 7979,
+   "date": "2026-07-06",
+   "amendement": "",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Motion de censure : voter pour, c'est voter pour renverser le Gouvernement."
+  }
+ ]
+}

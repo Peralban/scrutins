@@ -12,3 +12,5 @@ Cold, factual statistics on National Assembly votes (17th legislature). No edito
 - Front: `web/` is a Next.js app (App Router, Cache Components). Read `web/node_modules/next/dist/docs/` before changing it: this version differs from older Next.js. Server pages call `lib/api.ts` (cached `'use cache'` getters, preceded by `await connection()` so nothing is fetched at build time); interactive pages are client components using `lib/client.ts` through the `/api` rewrite.
 - Two processes in dev: `bun run dev` (API :3001) and `cd web && bun run dev` (front :3000).
 - Git flow: feature branch -> PR into `develop` -> PR `develop` -> `main` (main is protected: PR required).
+- Notions: `notions/*.json` are hand-written labels (committed; never regenerate them blindly). They are loaded by `src/notion-labels.ts` and aggregated in `stat_notion_*`. Anything shown from them must keep the "labels in validation" banner until `statut` changes.
+- Amendments raw data (327 MB) is optional: without `data/raw/amendements/` the ingest skips it and the notion pages are empty.

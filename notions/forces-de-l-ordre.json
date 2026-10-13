@@ -1,0 +1,729 @@
+{
+ "notion": "forces-de-l-ordre",
+ "label": "Moyens et pouvoirs des forces de l'ordre",
+ "axe": "Favorable : renforcer les moyens, les pouvoirs ou la protection juridique des forces de l'ordre (police municipale, armement, vidéoprotection, fichiers). Défavorable : les encadrer ou les restreindre.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose. Échantillon : les 80 amendements les plus centrés sur le sujet (par nombre d'occurrences des mots-clés) parmi les votes divisés (au moins 10 % de voix du côté minoritaire).",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V493",
+   "numero": 493,
+   "date": "2024-12-02",
+   "amendement": "AMANR5L17PO838901BTC0637P0D1N000033",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'interdiction d'utiliser des drones à moins de 250 mètres de certains lieux."
+  },
+  {
+   "scrutin": "VTANR5L17V744",
+   "numero": 744,
+   "date": "2025-02-10",
+   "amendement": "AMANR5L17PO838901BTC0636P0D1N000002",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'extension des cas où les agents de sécurité RATP et SNCF peuvent intervenir."
+  },
+  {
+   "scrutin": "VTANR5L17V745",
+   "numero": 745,
+   "date": "2025-02-10",
+   "amendement": "AMANR5L17PO838901BTC0636P0D1N000100",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V747",
+   "numero": 747,
+   "date": "2025-02-10",
+   "amendement": "AMANR5L17PO838901BTC0636P0D1N000101",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V760",
+   "numero": 760,
+   "date": "2025-02-11",
+   "amendement": "AMANR5L17PO838901BTC0636P0D1N000018",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V761",
+   "numero": 761,
+   "date": "2025-02-11",
+   "amendement": "AMANR5L17PO838901BTC0636P0D1N000005",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'élargissement du périmètre d'intervention des agents de sécurité de la RATP et de la SNCF."
+  },
+  {
+   "scrutin": "VTANR5L17V769",
+   "numero": 769,
+   "date": "2025-02-11",
+   "amendement": "AMANR5L17PO838901BTC0636P0D1N000200",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Unifie les missions de sûreté dans les transports en commun franciliens."
+  },
+  {
+   "scrutin": "VTANR5L17V1066",
+   "numero": 1066,
+   "date": "2025-03-19",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000405",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime des mesures jugées attentatoires aux droits fondamentaux des personnes contrôlées."
+  },
+  {
+   "scrutin": "VTANR5L17V1067",
+   "numero": 1067,
+   "date": "2025-03-19",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000350",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime le caractère systématique des fouilles intégrales."
+  },
+  {
+   "scrutin": "VTANR5L17V1074",
+   "numero": 1074,
+   "date": "2025-03-20",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000548",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Systématise les fouilles intégrales des personnes détenues pour lutter contre les objets illicites."
+  },
+  {
+   "scrutin": "VTANR5L17V1075",
+   "numero": 1075,
+   "date": "2025-03-20",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000272",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1084",
+   "numero": 1084,
+   "date": "2025-03-20",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000277",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'installation de caméras sur des drones dans les prisons."
+  },
+  {
+   "scrutin": "VTANR5L17V1124",
+   "numero": 1124,
+   "date": "2025-03-21",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000853",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1126",
+   "numero": 1126,
+   "date": "2025-03-21",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000745",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1151",
+   "numero": 1151,
+   "date": "2025-03-24",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000827",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1174",
+   "numero": 1174,
+   "date": "2025-03-27",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000394",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2370",
+   "numero": 2370,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002797",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2690",
+   "numero": 2690,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000279",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit l'encadrement des visites domiciliaires pour la recherche d'armes."
+  },
+  {
+   "scrutin": "VTANR5L17V2691",
+   "numero": 2691,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000643",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit l'encadrement des visites domiciliaires pour la recherche d'armes."
+  },
+  {
+   "scrutin": "VTANR5L17V2692",
+   "numero": 2692,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000315",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit l'article sur les visites domiciliaires pour la recherche d'armes."
+  },
+  {
+   "scrutin": "VTANR5L17V2827",
+   "numero": 2827,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000036",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fidélise les effectifs de police à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2828",
+   "numero": 2828,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000037",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Favorise le recrutement de Français d'outre-mer dans la gendarmerie locale."
+  },
+  {
+   "scrutin": "VTANR5L17V2829",
+   "numero": 2829,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000038",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Engage l'État à valoriser le travail des forces de l'ordre à Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V3961",
+   "numero": 3961,
+   "date": "2025-11-19",
+   "amendement": "AMANR5L17PO838901BTC1437P0D1N003447",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4805",
+   "numero": 4805,
+   "date": "2025-12-17",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000228",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Interdit l'usage de procédés de reconnaissance faciale."
+  },
+  {
+   "scrutin": "VTANR5L17V4811",
+   "numero": 4811,
+   "date": "2025-12-17",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000226",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime une disposition étendant la surveillance de masse par des technologies intrusives."
+  },
+  {
+   "scrutin": "VTANR5L17V4814",
+   "numero": 4814,
+   "date": "2025-12-17",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000216",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4833",
+   "numero": 4833,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2243P0D1N000005",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4937",
+   "numero": 4937,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000203",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5127",
+   "numero": 5127,
+   "date": "2026-01-22",
+   "amendement": "AMANR5L17PO838901B0691P0D1N000001",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'article unique d'une proposition de loi sur la protection juridique des forces de l'ordre."
+  },
+  {
+   "scrutin": "VTANR5L17V5147",
+   "numero": 5147,
+   "date": "2026-01-22",
+   "amendement": "AMANR5L17PO838901B0691P0D1N000039",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Réécrit les conditions d'usage des armes par les forces de l'ordre pour renforcer leur protection juridique."
+  },
+  {
+   "scrutin": "VTANR5L17V5148",
+   "numero": 5148,
+   "date": "2026-01-22",
+   "amendement": "AMANR5L17PO838901B0691P0D1N000009",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5149",
+   "numero": 5149,
+   "date": "2026-01-22",
+   "amendement": "AMANR5L17PO838901B0691P0D1N000010",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5151",
+   "numero": 5151,
+   "date": "2026-01-22",
+   "amendement": "AMANR5L17PO838901B0691P0D1N000012",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5152",
+   "numero": 5152,
+   "date": "2026-01-22",
+   "amendement": "AMANR5L17PO838901B0691P0D1N000029",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5288",
+   "numero": 5288,
+   "date": "2026-02-02",
+   "amendement": "AMANR5L17PO838901BTC2400P0D1N000002",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Interdit la vidéosurveillance algorithmique aux personnes privées."
+  },
+  {
+   "scrutin": "VTANR5L17V5902",
+   "numero": 5902,
+   "date": "2026-03-30",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000091",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6361",
+   "numero": 6361,
+   "date": "2026-05-06",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000109",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6421",
+   "numero": 6421,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000533",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6422",
+   "numero": 6422,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000189",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6423",
+   "numero": 6423,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000602",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6424",
+   "numero": 6424,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000737",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6459",
+   "numero": 6459,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000688",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6675",
+   "numero": 6675,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000738",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Renforce l'encadrement de l'usage des dispositifs anti-drones par les opérateurs."
+  },
+  {
+   "scrutin": "VTANR5L17V6676",
+   "numero": 6676,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000720",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Étend aux agents de police municipale la lutte anti-drone."
+  },
+  {
+   "scrutin": "VTANR5L17V6953",
+   "numero": 6953,
+   "date": "2026-05-27",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000476",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7292",
+   "numero": 7292,
+   "date": "2026-06-03",
+   "amendement": "AMANR5L17PO838901BTC2840P0D1N000001",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7899",
+   "numero": 7899,
+   "date": "2026-06-30",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000038",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7924",
+   "numero": 7924,
+   "date": "2026-07-01",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000066",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime des dispositions étendant les prérogatives de certains officiers et agents de police judiciaire."
+  },
+  {
+   "scrutin": "VTANR5L17V7927",
+   "numero": 7927,
+   "date": "2026-07-01",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000187",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Retire des infractions du champ du fichier national des empreintes génétiques."
+  },
+  {
+   "scrutin": "VTANR5L17V7930",
+   "numero": 7930,
+   "date": "2026-07-01",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000181",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'extension du fichier national des empreintes génétiques à un délit."
+  },
+  {
+   "scrutin": "VTANR5L17V7941",
+   "numero": 7941,
+   "date": "2026-07-02",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000189",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Limite la durée de conservation des données du fichier des empreintes génétiques."
+  },
+  {
+   "scrutin": "VTANR5L17V7946",
+   "numero": 7946,
+   "date": "2026-07-02",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000080",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime la création de psychologues de police judiciaire."
+  },
+  {
+   "scrutin": "VTANR5L17V7947",
+   "numero": 7947,
+   "date": "2026-07-02",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000250",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7948",
+   "numero": 7948,
+   "date": "2026-07-02",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000253",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7949",
+   "numero": 7949,
+   "date": "2026-07-02",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000083",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7983",
+   "numero": 7983,
+   "date": "2026-07-07",
+   "amendement": "AMANR5L17PO838901B0691P0D1N000016",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8070",
+   "numero": 8070,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000626",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'usage de drones pour la prévention et la surveillance."
+  },
+  {
+   "scrutin": "VTANR5L17V8077",
+   "numero": 8077,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000038",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8111",
+   "numero": 8111,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000807",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8167",
+   "numero": 8167,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000200",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime la substitution d'unités de police et de gendarmerie aux douaniers."
+  },
+  {
+   "scrutin": "VTANR5L17V8168",
+   "numero": 8168,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000796",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime la substitution d'unités de police et de gendarmerie aux douaniers."
+  },
+  {
+   "scrutin": "VTANR5L17V8171",
+   "numero": 8171,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000511",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Encadre la faculté de contrôles d'identité et de visites par certains services de police et de gendarmerie."
+  },
+  {
+   "scrutin": "VTANR5L17V8179",
+   "numero": 8179,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000471",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'autorisation de recourir à la fouille corporelle."
+  },
+  {
+   "scrutin": "VTANR5L17V8187",
+   "numero": 8187,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000898",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit une procédure allégée pour autoriser l'usage de drones face à une situation d'urgence."
+  },
+  {
+   "scrutin": "VTANR5L17V8188",
+   "numero": 8188,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000517",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Encadre plus strictement l'usage de drones pour le maintien de l'ordre."
+  },
+  {
+   "scrutin": "VTANR5L17V8192",
+   "numero": 8192,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000902",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit un dispositif expérimental de trois ans au bénéfice des forces de sécurité."
+  },
+  {
+   "scrutin": "VTANR5L17V8194",
+   "numero": 8194,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000907",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Reconduit jusqu'en 2030 l'expérimentation de la vidéo algorithmique."
+  },
+  {
+   "scrutin": "VTANR5L17V8195",
+   "numero": 8195,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000844",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Autorise à titre expérimental des commerçants à analyser automatiquement des images vidéo contre le vol."
+  },
+  {
+   "scrutin": "VTANR5L17V8202",
+   "numero": 8202,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000913",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit la répartition des compétences entre officiers, agents et agents adjoints de police judiciaire."
+  },
+  {
+   "scrutin": "VTANR5L17V8260",
+   "numero": 8260,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000900",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit l'expérimentation de caméras frontales embarquées sur les trains."
+  },
+  {
+   "scrutin": "VTANR5L17V8261",
+   "numero": 8261,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000903",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit la pseudonymisation protégeant l'identité des agents."
+  },
+  {
+   "scrutin": "VTANR5L17V8262",
+   "numero": 8262,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000665",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8275",
+   "numero": 8275,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000679",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8527",
+   "numero": 8527,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000336",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8529",
+   "numero": 8529,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N001096",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8532",
+   "numero": 8532,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000367",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8534",
+   "numero": 8534,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N001028",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8535",
+   "numero": 8535,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000270",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8636",
+   "numero": 8636,
+   "date": "2026-10-09",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000242",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  }
+ ]
+}

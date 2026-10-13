@@ -7,9 +7,10 @@ import DeputeSearch from "@/components/DeputeSearch";
 import Dissidences from "@/components/Dissidences";
 import PresenceChart from "@/components/PresenceChart";
 import s from "@/components/Depute.module.css";
-import { getDepute, getDeputes } from "@/lib/api";
-import { NEUTRAL, fmt, pct } from "@/lib/format";
-import type { DeputeData } from "@/lib/types";
+import { getDepute, getDeputeNotions, getDeputes } from "@/lib/api";
+import { NEUTRAL, fmt, pct, verdict } from "@/lib/format";
+import type { DeputeData, DeputeNotion } from "@/lib/types";
+import n from "@/components/Notions.module.css";
 
 export const metadata: Metadata = { title: "Député" };
 
@@ -24,13 +25,13 @@ export default function Page({ params }: PageProps<"/depute/[id]">) {
 async function Fiche({ params }: { params: PageProps<"/depute/[id]">["params"] }) {
   const { id } = await params;
   await connection();
-  const [d, deputes] = await Promise.all([getDepute(id), getDeputes()]);
+  const [d, deputes, notions] = await Promise.all([getDepute(id), getDeputes(), getDeputeNotions(id)]);
   if ("error" in d) notFound();
   return (
     <>
       <DeputeSearch deputes={deputes} />
       <Identity d={d} />
-      <Body d={d} />
+      <Body d={d} notions={notions} />
     </>
   );
 }
@@ -62,7 +63,7 @@ function Identity({ d }: { d: DeputeData }) {
   );
 }
 
-function Body({ d }: { d: DeputeData }) {
+function Body({ d, notions }: { d: DeputeData; notions: DeputeNotion[] }) {
   const pres = (100 * d.span.positions) / d.span.scrutins;
   return (
     <>
@@ -77,6 +78,34 @@ function Body({ d }: { d: DeputeData }) {
         <div className="kpi"><b>{pct(d.stat?.dissidence)}</b><span>dissidence</span></div>
         <div className="kpi"><b>{pct(d.stat?.delegation)}</b><span>votes par délégation</span></div>
       </div>
+
+      <section>
+        <h2>Positions par notion</h2>
+        <p className="def">Lecture de ses votes sur des amendements classés par sens (étiquettes en cours de validation). Voter contre un amendement n&apos;est pas toujours voter contre la notion ; le détail est sur la page de chaque notion.</p>
+        <div className="scroll">
+          <table>
+            <thead><tr><th>Notion</th><th>Favorables</th><th>Défavorables</th><th>Abst.</th><th>% favorable</th><th>Lecture</th></tr></thead>
+            <tbody>
+              {notions.map((x) => {
+                const v = verdict(x.favorables, x.defavorables);
+                if (x.statut === "données directes") return (
+                  <tr key={x.id}>
+                    <td className={s.t}><Link href={`/notions/${x.id}`}>{x.label}</Link></td>
+                    <td>{x.favorables}</td><td colSpan={4}>motions votées « pour » (seuls les votes pour sont enregistrés)</td>
+                  </tr>
+                );
+                return (
+                  <tr key={x.id}>
+                    <td className={s.t}><Link href={`/notions/${x.id}`}>{x.label}</Link></td>
+                    <td>{x.favorables}</td><td>{x.defavorables}</td><td>{x.abstentions}</td>
+                    <td>{pct(v.part)}</td><td className={n[v.tone]}>{v.label}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       <section>
         <h2>Présence par mois</h2>
