@@ -8,3 +8,4 @@
 .near { font: 12px var(--mono); color: var(--muted); }
 .chip { display: inline-block; border: 1px solid var(--line); padding: 2px 8px; margin: 4px 6px 0 0; font: 12px var(--mono); }
 .chip i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
+@media (max-width: 640px) { .legend { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 10px -16px 0; padding: 0 16px; } .legend button { flex: none; min-height: 36px; } .side { margin-top: 12px; } }

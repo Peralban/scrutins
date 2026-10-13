@@ -12,3 +12,23 @@
 .legend { display: flex; gap: 16px; flex-wrap: wrap; font: 12px var(--mono); margin: 10px 4px 0; }
 .legend i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: 6px; }
 .tally { margin-top: 14px; }
+
+@media (max-width: 640px) { .list { max-height: 38vh; } .item { padding: 10px 12px; font-size: 13px; } }
+
+.sheetHead, .change { display: none; }
+@media (max-width: 640px) {
+  .picker { display: none; }
+  .picker[data-open="true"] { display: flex; flex-direction: column; position: fixed; inset: 0; z-index: 30;
+    background: var(--bg); padding: max(12px, env(safe-area-inset-top)) 16px 16px; }
+  .picker[data-open="true"] .list { max-height: none; flex: 1; }
+  .sheetHead { display: flex; justify-content: space-between; align-items: center; font: 600 15px system-ui, sans-serif; margin-bottom: 12px; }
+  .sheetHead button { min-height: 44px; padding: 0 14px; }
+  .change { display: flex; width: 100%; justify-content: space-between; align-items: center; gap: 12px;
+    min-height: 52px; padding: 10px 14px; margin-bottom: 16px; border: 1px solid var(--line); background: var(--surface);
+    font: 600 14px system-ui, sans-serif; color: var(--ink); text-align: left; }
+  .change::after { content: "›"; font-size: 22px; color: var(--muted); }
+  .change span { flex: 1; }
+  .change small { font: 12px var(--mono); color: var(--muted); }
+  .head { font-size: 16px; }
+  .legend { gap: 8px 14px; }
+}

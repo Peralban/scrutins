@@ -95,14 +95,14 @@ function VoteTable({ votes }: { votes: NotionDetail["votes"] }) {
         <tbody>
           {votes.map((v) => (
             <tr key={v.id} className={v.sens === 0 ? s.ecarte : undefined}>
-              <td>{v.date}</td>
-              <td className={`${s.sens} ${v.sens > 0 ? s.pour : v.sens < 0 ? s.contre : s.vide}`}>{v.sens > 0 ? "+1" : v.sens < 0 ? "−1" : "0"}</td>
-              <td className={s.t}>
+              <td data-label="Date">{v.date}</td>
+              <td data-label="Sens" className={`${s.sens} ${v.sens > 0 ? s.pour : v.sens < 0 ? s.contre : s.vide}`}>{v.sens > 0 ? "+1" : v.sens < 0 ? "−1" : "0"}</td>
+              <td className={s.t} data-main="">
                 <Link href={`/hemicycle?id=${v.id}`}>{v.titre.slice(0, 160)}</Link>
                 <span className={s.note}>{v.note} · <a href={`https://www.assemblee-nationale.fr/dyn/17/scrutins/${v.numero}`} target="_blank" rel="noopener noreferrer">fiche ↗</a></span>
               </td>
-              <td>{v.pour} / {v.contre} / {v.abstentions}</td>
-              <td>{v.confiance}</td>
+              <td data-label="Pour / contre / abst.">{v.pour} / {v.contre} / {v.abstentions}</td>
+              <td data-label="Confiance">{v.confiance}</td>
             </tr>
           ))}
         </tbody>

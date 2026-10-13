@@ -17,7 +17,7 @@ export const THEMES: Theme[] = [
   t("securite", "Sécurité et police", /sécurité (?!sociale)|police|ordre public|délinquan|terroris|armes?\b|gendarmerie|vidéoprotection|narcotrafic|stupéfiant|drogue|criminalité|radicalis|tranquillité/),
   t("justice", "Justice et pénal", /justice|pénal|peine|prison|carcéral|magistrat|judiciaire|procédure|mineurs? délinquants|récidive|détention|tribunal|avocat/),
   t("immigration", "Immigration et nationalité", /immigration|étrangers?|asile|nationalité|séjour|réfugi|migrat|intégration|naturalis/),
-  t("ecologie", "Écologie et climat", /climat|environnement|écolog|biodiversité|pollution|\beau\b|assainissement|inondation|déchets?|\bplastique|zéro artificialisation|artificialisation|transition énergétique|sobriété|carbone|zones à faibles émissions|\bzfe\b|nature|forêt|incendie/),
+  t("ecologie", "Écologie et climat", /climat|environnement|écolog|biodiversité|pollution|\beau\b|assainissement|inondation|déchets?|\bplastique|zéro artificialisation|artificialisation|transition énergétique|sobriété|carbone|zones à faibles émissions|\bzfe\b|nature|forêt|incendie|animaux|animal|faune|chasse|espèces/),
   t("energie", "Énergie", /énergie|nucléaire|électri|hydrogène|renouvelable|éolien|photovoltaïque|\bgaz\b|carburant|pétrole|hydrocarbure|\bmines?\b/),
   t("agriculture", "Agriculture et alimentation", /agricol|agricult|alimentation|élevage|pêche|viticol|\bvin\b|paysan|pesticide|phytosanitaire|sécheresse|agriculteur|souveraineté alimentaire/),
   t("logement", "Logement et urbanisme", /logement|urbanisme|loyer|habitat|hlm|locataire|bailleur|copropriété|immobilier|squat|construction/),

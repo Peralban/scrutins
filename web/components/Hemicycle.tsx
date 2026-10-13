@@ -40,8 +40,8 @@ export default function Hemicycle({ data }: { data: HemicycleData }) {
         return <text key={g} x={cx + Math.cos(a) * rad} y={cy - Math.sin(a) * rad + 4} textAnchor="middle">{sigle[g]}</text>;
       })}
       <text className="val" x={cx} y={cy - 40} textAnchor="middle" style={{ fontSize: 34, fontWeight: 600 }}>{s.sort === "adopté" ? "ADOPTÉ" : "REJETÉ"}</text>
-      <text x={cx} y={cy - 14} textAnchor="middle">{s.pour} pour · {s.contre} contre · {s.abstentions} abst.</text>
-      <text x={cx} y={cy + 6} textAnchor="middle">{s.date}</text>
+      <text className="hemi-sub" x={cx} y={cy - 14} textAnchor="middle">{s.pour} pour · {s.contre} contre · {s.abstentions} abst.</text>
+      <text className="hemi-sub" x={cx} y={cy + 6} textAnchor="middle">{s.date}</text>
     </svg>
   );
 }

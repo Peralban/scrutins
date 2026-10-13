@@ -10,3 +10,20 @@
 .wrap { overflow-x: auto; }
 .scale { display: flex; align-items: center; gap: 8px; font: 12px var(--mono); color: var(--muted); margin: 10px 0 0; flex-wrap: wrap; }
 .scale i { display: inline-block; width: 160px; height: 10px; background: linear-gradient(90deg, var(--lo), var(--hi)); }
+.heat td.lab, .heat thead th:first-child { position: sticky; left: 0; z-index: 1; background: var(--surface); }
+@media (max-width: 640px) { .heat td.lab { min-width: 150px; white-space: normal; font-family: system-ui, sans-serif; font-size: 13px; } .heat td { padding: 10px 2px; } }
+.chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin: 0 -16px 12px; padding: 2px 16px; }
+.chips::-webkit-scrollbar { display: none; }
+.chips button { flex: none; display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 0 14px; border-radius: 999px; font: 13px var(--mono); }
+.chips button i { width: 10px; height: 10px; border-radius: 50%; }
+.chips button[aria-selected="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.focus { font-size: 13px; color: var(--muted); margin: 0 0 8px; }
+.plist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.plist li { border-bottom: 1px solid var(--line); }
+.plist a, .prow { display: grid; grid-template-columns: 1fr 42px; grid-template-areas: "lab num" "bar num"; gap: 6px 12px; align-items: center; padding: 12px 0; color: inherit; text-decoration: none; }
+.plab { grid-area: lab; font: 500 14px system-ui, sans-serif; }
+.plab small { margin-left: 8px; font: 11px var(--mono); color: var(--muted); }
+.stack { grid-area: bar; display: flex; height: 8px; background: var(--grid); overflow: hidden; border-radius: 2px; }
+.plist b { grid-area: num; text-align: right; font: 600 15px var(--mono); }
+.plist em { grid-area: bar; font: 12px var(--mono); color: var(--muted); font-style: normal; }
+.dot { display: inline-block; width: 9px !important; height: 9px !important; border-radius: 50%; margin-right: 6px; background: none; }

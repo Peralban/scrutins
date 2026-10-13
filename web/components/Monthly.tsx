@@ -2,7 +2,7 @@ import type { Mois } from "@/lib/types";
 
 // Stacked columns per month: adopted (dark) and rejected (light).
 export default function Monthly({ rows }: { rows: Mois[] }) {
-  const W = 960, H = 260, L = 44, B = 28, T = 8;
+  const W = 960, H = 260, L = 64, B = 28, T = 8;
   const max = Math.ceil(Math.max(...rows.map((r) => r.total)) / 100) * 100;
   const bw = (W - L) / rows.length, y = (v: number) => T + (H - T - B) * (1 - v / max);
   return (
@@ -24,7 +24,7 @@ export default function Monthly({ rows }: { rows: Mois[] }) {
       })}
       <g transform={`translate(${L},${H + 14})`}>
         <rect width={10} height={10} fill="var(--adopte)" /><text x={16} y={9}>adopté</text>
-        <rect x={90} width={10} height={10} fill="var(--rejete)" /><text x={106} y={9}>rejeté</text>
+        <rect x={170} width={10} height={10} fill="var(--rejete)" /><text x={186} y={9}>rejeté</text>
       </g>
     </svg>
   );

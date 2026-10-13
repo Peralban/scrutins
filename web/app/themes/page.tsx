@@ -22,7 +22,7 @@ async function Themes() {
     <>
       <section>
         <h2>Profil de vote par thème</h2>
-        <p className="def">Part de « pour » parmi les votes exprimés de chaque groupe (pour, contre, abstention), sur les scrutins rattachés au thème. Un clic sur un thème ouvre ses scrutins dans l&apos;hémicycle.</p>
+        <p className="def">Part de « pour » parmi les votes exprimés de chaque groupe (pour, contre, abstention), sur les scrutins rattachés au thème. « Pour » signifie un vote favorable au texte soumis, pas au thème : voter pour un texte classé « Écologie » ne dit pas s&apos;il protège ou dégrade l&apos;environnement (pour une lecture orientée, voir les notions). Un clic sur un thème ouvre ses scrutins dans l&apos;hémicycle.</p>
         <ThemesHeat data={{ ensemble, tous }} />
       </section>
       <footer>

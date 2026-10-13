@@ -74,7 +74,7 @@ export default function CarteView() {
           {pts.filter((p) => !hidden.has(p.groupe ?? "?")).map((p) => {
             const on = focus === p.id;
             return (
-              <circle key={p.id} cx={X(p.x)} cy={Y(p.y)} r={on ? 9 : 5.5} fill={color[p.groupe ?? "?"] ?? NEUTRAL}
+              <circle key={p.id} className="pt" data-on={on || undefined} cx={X(p.x)} cy={Y(p.y)} r={on ? 9 : 5.5} fill={color[p.groupe ?? "?"] ?? NEUTRAL}
                 fillOpacity={focus && !on ? 0.35 : 0.85} stroke={on ? "var(--ink)" : "var(--surface)"} strokeWidth={on ? 2.5 : 1}
                 style={{ cursor: "pointer" }} data-tip={`${p.nom}\n${p.groupe ?? ""} · ${p.votes} votes exprimés`}
                 onClick={() => { setFocus(p.id); setTyped(p.nom); }} />

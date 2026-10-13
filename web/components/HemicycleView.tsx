@@ -15,6 +15,12 @@ export default function HemicycleView() {
   const params = useSearchParams();
   const id = params.get("id");
   const [q, setQ] = useState("");
+  // Phones: the scrutin list is a full-screen sheet opened on demand, so the hemicycle comes first.
+  const [picking, setPicking] = useState(false);
+  useEffect(() => {
+    document.body.style.overflow = picking ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [picking]);
   // Next keeps a page's state when you navigate away, so the filters live in the URL, not in state.
   const theme = params.get("theme") ?? "";
   const kind = params.get("kind") ?? "";
@@ -36,6 +42,7 @@ export default function HemicycleView() {
     const next = new URLSearchParams(params.toString());
     next.set("id", scrutin);
     router.replace(`/hemicycle?${next}`, { scroll: false });
+    setPicking(false);
   };
 
   const tally = useMemo(() => {
@@ -52,7 +59,11 @@ export default function HemicycleView() {
 
   return (
     <div className={s.layout}>
-      <div>
+      <div className={s.picker} data-open={picking}>
+        <div className={s.sheetHead}>
+          <span>Choisir un scrutin</span>
+          <button type="button" onClick={() => setPicking(false)} aria-label="Fermer">Fermer</button>
+        </div>
         <div className={s.filters}>
           <input type="search" placeholder="rechercher dans l'intitulé" value={q} onChange={(e) => setQ(e.target.value)} />
           <select value={theme} onChange={(e) => setParam("theme", e.target.value)}>
@@ -76,6 +87,10 @@ export default function HemicycleView() {
       </div>
 
       <div>
+        <button type="button" className={s.change} onClick={() => setPicking(true)}>
+          <span>Changer de scrutin</span>
+          <small>{list ? `${list.length}${list.length === 200 ? "+" : ""} résultats` : "…"}{theme || kind ? " · filtres actifs" : ""}</small>
+        </button>
         <p className={s.head}>{sc ? sc.titre.charAt(0).toUpperCase() + sc.titre.slice(1) : "Choisir un scrutin"}</p>
         {sc && (
           <p className={s.meta}>

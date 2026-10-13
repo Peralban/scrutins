@@ -51,11 +51,11 @@ export default function NotionDeputes({ deputes, direct = false }: { deputes: Ro
               const v = verdict(r.favorables, r.defavorables);
               return (
                 <tr key={r.id}>
-                  <td className={s.t}><Link href={`/depute/${r.id}`}>{r.nom}</Link></td>
-                  <td>{r.groupe}</td><td>{r.favorables}</td>
-                  {!direct && <><td>{r.defavorables}</td>
-                  <td><span className={s.gauge}><b style={{ width: `${v.part ?? 0}%` }} /></span> {v.part == null ? "—" : pct(v.part)}</td>
-                  <td className={s[v.tone]}>{v.label}</td></>}
+                  <td className={s.t} data-main=""><Link href={`/depute/${r.id}`}>{r.nom}</Link></td>
+                  <td data-label="Groupe">{r.groupe}</td><td data-label="Favorables">{r.favorables}</td>
+                  {!direct && <><td data-label="Défavorables">{r.defavorables}</td>
+                  <td data-label="% favorable"><span className={s.gauge}><b style={{ width: `${v.part ?? 0}%` }} /></span> {v.part == null ? "—" : pct(v.part)}</td>
+                  <td data-label="Lecture" className={s[v.tone]}>{v.label}</td></>}
                 </tr>
               );
             })}

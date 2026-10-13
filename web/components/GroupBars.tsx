@@ -3,32 +3,28 @@ import { NEUTRAL, fmt, pct } from "@/lib/format";
 export type BarRow = { sigle: string; nom: string; couleur: string | null; votes_exprimes: number; value: number };
 
 // Horizontal bars from zero, one per group, with the value written at the end of each bar.
+// Plain HTML rather than SVG so labels keep their real font size at any width (an SVG
+// viewBox scales its text down with the chart on a phone).
 export default function GroupBars({ rows, label, max }: { rows: BarRow[]; label: string; max: number }) {
-  const W = 960, L = 96, R = 70, row = 30, H = rows.length * row + 24;
-  const x = (v: number) => L + (v / max) * (W - L - R);
+  const ticks = [0, 1, 2, 3, 4, 5].map((t) => (max / 5) * t);
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={label}>
-      {[0, 1, 2, 3, 4, 5].map((t) => {
-        const v = (max / 5) * t;
-        return (
-          <g key={t}>
-            <line className="grid" x1={x(v)} x2={x(v)} y1={0} y2={H - 20} />
-            <text x={x(v)} y={H - 4} textAnchor="middle">{Math.round(v)}</text>
-          </g>
-        );
-      })}
-      {rows.map((r, i) => {
-        const y = i * row + 5, w = Math.max(x(r.value) - L, 1);
-        return (
-          <g key={r.sigle}>
-            <text x={L - 10} y={y + 14} textAnchor="end">{r.sigle}</text>
-            <rect x={L} y={y} width={w} height={18} fill={r.couleur ?? NEUTRAL}
-              data-tip={`${r.nom}\n${label} ${pct(r.value)}\n${fmt.format(r.votes_exprimes)} votes exprimés`} />
-            <rect x={L} y={y} width={w} height={18} fill="none" stroke="var(--ink)" strokeOpacity={0.25} />
-            <text className="val" x={L + w + 8} y={y + 14}>{pct(r.value)}</text>
-          </g>
-        );
-      })}
-    </svg>
+    <div className="bars" role="img" aria-label={label}>
+      {rows.map((r) => (
+        <div className="bar-row" key={r.sigle}
+          data-tip={`${r.nom}\n${label} ${pct(r.value)}\n${fmt.format(r.votes_exprimes)} votes exprimés`}>
+          <span className="bar-label">{r.sigle}</span>
+          <span className="bar-track">
+            <i style={{ width: `${Math.max((r.value / max) * 100, 0.5)}%`, background: r.couleur ?? NEUTRAL }} />
+            <b>{pct(r.value)}</b>
+          </span>
+        </div>
+      ))}
+      <div className="bar-row bar-axis" aria-hidden="true">
+        <span className="bar-label" />
+        <span className="bar-track">
+          {ticks.map((v, i) => <span key={i} style={{ left: `${(i / 5) * 100}%` }}>{Math.round(v)}</span>)}
+        </span>
+      </div>
+    </div>
   );
 }

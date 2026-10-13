@@ -90,15 +90,15 @@ function Body({ d, notions }: { d: DeputeData; notions: DeputeNotion[] }) {
                 const v = verdict(x.favorables, x.defavorables);
                 if (x.statut === "données directes") return (
                   <tr key={x.id}>
-                    <td className={s.t}><Link href={`/notions/${x.id}`}>{x.label}</Link></td>
-                    <td>{x.favorables}</td><td colSpan={4}>motions votées « pour » (seuls les votes pour sont enregistrés)</td>
+                    <td className={s.t} data-main=""><Link href={`/notions/${x.id}`}>{x.label}</Link></td>
+                    <td data-label="Favorables">{x.favorables}</td><td data-label="" colSpan={4}>motions votées « pour » (seuls les votes pour sont enregistrés)</td>
                   </tr>
                 );
                 return (
                   <tr key={x.id}>
-                    <td className={s.t}><Link href={`/notions/${x.id}`}>{x.label}</Link></td>
-                    <td>{x.favorables}</td><td>{x.defavorables}</td><td>{x.abstentions}</td>
-                    <td>{pct(v.part)}</td><td className={n[v.tone]}>{v.label}</td>
+                    <td className={s.t} data-main=""><Link href={`/notions/${x.id}`}>{x.label}</Link></td>
+                    <td data-label="Favorables">{x.favorables}</td><td data-label="Défavorables">{x.defavorables}</td><td data-label="Abst.">{x.abstentions}</td>
+                    <td data-label="% favorable">{pct(v.part)}</td><td data-label="Lecture" className={n[v.tone]}>{v.label}</td>
                   </tr>
                 );
               })}
@@ -120,13 +120,13 @@ function Body({ d, notions }: { d: DeputeData; notions: DeputeNotion[] }) {
           <table>
             <thead><tr><th>Thème</th><th>n</th><th>Pour</th><th>Contre</th><th>Abst.</th><th>Dissident</th><th>Pour : lui / groupe</th></tr></thead>
             <tbody>
-              {d.themes.length === 0 && <tr><td className={s.t} colSpan={7}>aucun vote d&apos;ensemble classé</td></tr>}
+              {d.themes.length === 0 && <tr><td className={s.t} data-main="" colSpan={7}>aucun vote d&apos;ensemble classé</td></tr>}
               {d.themes.map((t) => {
                 const p = (100 * t.pour) / t.n;
                 return (
                   <tr key={t.id}>
-                    <td className={s.t}>{t.label}</td><td>{t.n}</td><td>{t.pour}</td><td>{t.contre}</td><td>{t.abstention}</td><td>{t.dissidents}</td>
-                    <td>
+                    <td className={s.t} data-main="">{t.label}</td><td data-label="n">{t.n}</td><td data-label="Pour">{t.pour}</td><td data-label="Contre">{t.contre}</td><td data-label="Abst.">{t.abstention}</td><td data-label="Dissident">{t.dissidents}</td>
+                    <td data-label="Pour : lui / groupe">
                       <span className={s.cmp}><b style={{ width: `${p}%` }} />{t.groupe_pour != null && <u style={{ left: `calc(${t.groupe_pour}% - 1px)` }} />}</span>{" "}
                       {p.toFixed(0)} / {t.groupe_pour != null ? t.groupe_pour.toFixed(0) : "—"}
                     </td>

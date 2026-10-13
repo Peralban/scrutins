@@ -34,6 +34,13 @@ function GroupMatrix() {
       .sort((a, b) => politicalRank(a.sigle) - politicalRank(b.sigle));
   }, [cells, groupes]);
   const cell = new Map((cells ?? []).map((r) => [`${r.a}|${r.b}`, r]));
+  // Phones: pick one group, list the others from closest to furthest.
+  const [focus, setFocus] = useState<string | null>(null);
+  const fa = g.find((x) => x.id === focus) ?? g[0];
+  const ranked = fa ? g.filter((b) => b.id !== fa.id).map((b) => {
+    const c = cell.get(`${fa.id}|${b.id}`);
+    return { b, c, p: c && c.communs >= 10 ? (100 * c.accord) / c.communs : -1 };
+  }).sort((u, v) => v.p - u.p) : [];
 
   return (
     <section>
@@ -48,7 +55,30 @@ function GroupMatrix() {
         </select>
         <span>{g.length} groupes</span>
       </div>
-      <div className={`card ${heat.wrap}`}>
+      <div className="m-only">
+        <div className={heat.chips} role="tablist" aria-label="Groupe">
+          {g.map((x) => (
+            <button key={x.id} role="tab" aria-selected={x.id === fa?.id} onClick={() => setFocus(x.id)}>
+              <i style={{ background: x.couleur ?? NEUTRAL }} />{x.sigle}
+            </button>
+          ))}
+        </div>
+        <p className={heat.focus}>Avec qui {fa?.sigle} vote le plus souvent comme lui, du plus proche au plus éloigné.</p>
+        <ul className={heat.plist}>
+          {ranked.map(({ b, c, p }) => (
+            <li key={b.id}>
+              <div className={heat.prow}>
+                <span className={heat.plab}><i className={heat.dot} style={{ background: b.couleur ?? NEUTRAL }} />{b.sigle}<small>{c ? `${c.communs} scrutins` : ""}</small></span>
+                {p >= 0 ? <>
+                  <span className={heat.stack} aria-hidden="true"><i style={{ width: `${p}%`, background: b.couleur ?? NEUTRAL }} /></span>
+                  <b>{p.toFixed(0)} %</b>
+                </> : <em>trop peu de scrutins communs</em>}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className={`card ${heat.wrap} d-only`}>
         <table className={heat.heat} style={{ minWidth: 640 }}>
           <thead>
             <tr><th />{g.map((x) => <th key={x.id} title={x.nom}><i style={{ display: "block", height: 3, background: x.couleur ?? NEUTRAL, marginBottom: 4 }} />{x.sigle}</th>)}</tr>
@@ -72,7 +102,7 @@ function GroupMatrix() {
           </tbody>
         </table>
       </div>
-      <div className={heat.scale}><span>0 % d&apos;accord</span><i /><span>100 %</span><span style={{ marginLeft: 16 }}>cellule grise : moins de 10 scrutins en commun</span></div>
+      <div className={`${heat.scale} d-only`}><span>0 % d&apos;accord</span><i /><span>100 %</span><span style={{ marginLeft: 16 }}>cellule grise : moins de 10 scrutins en commun</span></div>
     </section>
   );
 }
@@ -85,7 +115,7 @@ function NeighbourTable({ list, onPick }: { list: Voisin[]; onPick: (id: string)
         <tbody>
           {list.map((r) => (
             <tr key={r.id} className={s.pick} onClick={() => onPick(r.id)}>
-              <td className={s.t}>{r.nom}</td><td>{r.groupe}</td><td>{pct(r.taux)}</td><td>{r.communs}</td>
+              <td className={s.t} data-main="">{r.nom}</td><td data-label="Groupe">{r.groupe}</td><td data-label="Accord">{pct(r.taux)}</td><td data-label="Communs">{r.communs}</td>
             </tr>
           ))}
         </tbody>
@@ -167,10 +197,10 @@ function Duo({ duo }: { duo: AccordDuo }) {
           <tbody>
             {duo.desaccords.map((d) => (
               <tr key={d.id}>
-                <td>{d.date}</td>
-                <td className={s.t}><Link href={`/hemicycle?id=${d.id}`}>{d.titre.slice(0, 170)}</Link></td>
-                <td className={d.pa === "pour" ? s.pour : s.contre}>{d.pa}</td>
-                <td className={d.pb === "pour" ? s.pour : s.contre}>{d.pb}</td>
+                <td data-label="Date">{d.date}</td>
+                <td className={s.t} data-main=""><Link href={`/hemicycle?id=${d.id}`}>{d.titre.slice(0, 170)}</Link></td>
+                <td data-label={duo.a.nom} className={d.pa === "pour" ? s.pour : s.contre}>{d.pa}</td>
+                <td data-label={duo.b.nom} className={d.pb === "pour" ? s.pour : s.contre}>{d.pb}</td>
               </tr>
             ))}
           </tbody>

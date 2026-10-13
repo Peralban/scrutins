@@ -25,10 +25,10 @@ export default function Dissidences({ id, initial }: { id: string; initial: Depu
           <tbody>
             {rows.map((r) => (
               <tr key={r.id}>
-                <td>{r.date}</td>
-                <td className={s.t}><Link href={`/hemicycle?id=${r.id}`}>{r.titre.slice(0, 190)}</Link></td>
-                <td className={r.position === "pour" ? s.pour : s.contre}>{r.position}</td>
-                <td>{r.majorite}</td>
+                <td data-label="Date">{r.date}</td>
+                <td className={s.t} data-main=""><Link href={`/hemicycle?id=${r.id}`}>{r.titre.slice(0, 190)}</Link></td>
+                <td data-label="Lui" className={r.position === "pour" ? s.pour : s.contre}>{r.position}</td>
+                <td data-label="Groupe">{r.majorite}</td>
               </tr>
             ))}
           </tbody>
