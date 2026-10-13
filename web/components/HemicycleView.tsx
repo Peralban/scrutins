@@ -128,9 +128,9 @@ export default function HemicycleView() {
             <div className={s.legend}>
               <span><i style={{ background: "var(--pour)" }} />pour {counts.pour ?? 0}</span>
               <span><i style={{ background: "var(--contre)" }} />contre {counts.contre ?? 0}</span>
-              <span><i style={{ background: "var(--abst)" }} />abstention {counts.abstention ?? 0}</span>
-              <span><i style={{ background: "color-mix(in srgb, var(--abst) 45%, var(--surface))", border: "1.5px dashed var(--abst)" }} />non-votant {counts.non_votant ?? 0}</span>
-              <span><i style={{ background: "var(--line)" }} />absent {counts.absent ?? 0}</span>
+              <span><i style={{ border: "2px solid var(--abst)" }} />abstention {counts.abstention ?? 0}</span>
+              <span><i style={{ border: "2px dashed var(--abst)" }} />non-votant {counts.non_votant ?? 0}</span>
+              <span><i style={{ border: "2px solid var(--line)" }} />absent {counts.absent ?? 0}</span>
             </div>
             <details open className={s.tally}>
               <summary>décompte par groupe</summary>
