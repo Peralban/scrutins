@@ -5,16 +5,16 @@ import { useEffect, useRef, useState } from "react";
 import { api } from "@/lib/client";
 
 type Def =
-  | { source: "glossaire"; mot: string; defs: string[]; site: string | null; href: string }
-  | { source: "wiktionnaire"; mot: string; nature: string | null; defs: string[]; href: string }
+  | { source: "glossaire"; mot: string; defs: string[]; contexte: string | null; site: string | null; sources: { nom: string; url: string }[]; href: string }
   | { source: null; mot: string };
 
 // Select a word anywhere in the page content: a small "Définition" button appears next to it.
-// The answer comes from the glossary first, then from the French Wiktionary (through our API).
+// The answer comes from the site's glossary only; a word that is not in it says so.
 export default function SelectionDefine() {
   const [sel, setSel] = useState<{ word: string; x: number; y: number } | null>(null);
   const [def, setDef] = useState<Def | "loading" | null>(null);
-  const box = useRef<HTMLDivElement>(null);
+  const card = useRef<HTMLDivElement>(null);
+  const request = useRef(0);
 
   useEffect(() => {
     const read = () => {
@@ -29,27 +29,45 @@ export default function SelectionDefine() {
     };
     let t: ReturnType<typeof setTimeout>;
     const later = () => { clearTimeout(t); t = setTimeout(read, 250); };
-    const esc = (e: KeyboardEvent) => { if (e.key === "Escape") { setSel(null); setDef(null); } };
+    const close = () => { request.current++; setSel(null); setDef(null); };
+    const esc = (e: KeyboardEvent) => { if (e.key === "Escape") close(); };
     document.addEventListener("selectionchange", later);
     addEventListener("keydown", esc);
-    return () => { document.removeEventListener("selectionchange", later); removeEventListener("keydown", esc); clearTimeout(t); };
+    addEventListener("scroll", close, { passive: true }); // the box is fixed: it would drift away from its word
+    return () => { document.removeEventListener("selectionchange", later); removeEventListener("keydown", esc); removeEventListener("scroll", close); clearTimeout(t); };
   }, []);
 
+  useEffect(() => { if (def && def !== "loading") card.current?.focus(); }, [def]);
+
   if (!sel) return null;
-  const ask = () => { setDef("loading"); api<Def>(`definition?mot=${encodeURIComponent(sel.word)}`).then(setDef).catch(() => setDef({ source: null, mot: sel.word })); };
+  const ask = () => {
+    const id = ++request.current;
+    setDef("loading");
+    // A late answer for an earlier selection is dropped.
+    api<Def>(`definition?mot=${encodeURIComponent(sel.word)}`).then((d) => { if (id === request.current) setDef(d); })
+      .catch(() => { if (id === request.current) setDef({ source: null, mot: sel.word }); });
+  };
   const left = Math.min(sel.x, innerWidth - (def ? 340 : 120));
   return (
-    <div ref={box} className="define" style={{ left, top: def ? Math.min(sel.y, innerHeight * 0.45) : sel.y }} onMouseDown={(e) => e.preventDefault()}>
+    <div className="define" style={{ left, top: def ? Math.min(sel.y, innerHeight * 0.45) : sel.y }} onMouseDown={(e) => e.preventDefault()} onTouchStart={(e) => e.stopPropagation()} aria-live="polite">
       {!def && <button type="button" onClick={ask}>Définition</button>}
       {def === "loading" && <p className="define-wait">Recherche…</p>}
       {def && def !== "loading" && (
-        <div role="dialog" aria-label={`Définition de ${def.mot}`}>
-          <button type="button" className="define-x" aria-label="Fermer" onClick={() => { setDef(null); setSel(null); }}>×</button>
-          <p><b>{def.mot}</b>{def.source === "wiktionnaire" && def.nature ? <i> · {def.nature}</i> : null}</p>
-          {def.source === null && <p className="define-none">Aucune définition trouvée pour « {def.mot} ».</p>}
-          {def.source && <ol>{def.defs.map((d, i) => <li key={i}>{d}</li>)}</ol>}
-          {def.source === "glossaire" && <>{def.site && <p className="define-site">Sur ce site : {def.site}</p>}<Link href={def.href}>Dans le glossaire →</Link></>}
-          {def.source === "wiktionnaire" && <small>Source : <a href={def.href} target="_blank" rel="noreferrer">Wiktionnaire</a> (CC BY-SA)</small>}
+        <div ref={card} tabIndex={-1} role="dialog" aria-label={`Définition de ${def.mot}`}>
+          <button type="button" className="define-x" aria-label="Fermer" onClick={() => { request.current++; setDef(null); setSel(null); }}>×</button>
+          <p><b>{def.mot}</b></p>
+          {def.source === null && <p className="define-none">Pas de définition pour « {def.mot} » dans le glossaire.</p>}
+          {def.source === "glossaire" && (
+            <>
+              {def.contexte && <p className="define-site">{def.contexte}</p>}
+              <ol>{def.defs.map((d, i) => <li key={i}>{d}</li>)}</ol>
+              {def.site && <p className="define-site">Sur ce site : {def.site}</p>}
+              {def.sources.length > 0 && (
+                <small>Sources : {def.sources.map((s, i) => <span key={s.url}>{i > 0 && ", "}<a href={s.url} target="_blank" rel="noreferrer">{s.nom}</a></span>)}</small>
+              )}
+              <Link href={def.href}>Dans le glossaire →</Link>
+            </>
+          )}
         </div>
       )}
     </div>

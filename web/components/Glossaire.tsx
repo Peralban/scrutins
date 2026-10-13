@@ -4,7 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import data from "@/content/glossaire.json";
 import s from "./Glossaire.module.css";
 
-type Mot = { id: string; mot: string; cat: string; def: string; site?: string; ex?: string; voir: string[] };
+type Source = { nom: string; url: string; type: string };
+type Mot = { id: string; mot: string; cat: string; def: string; contexte?: string; site?: string; ex?: string; voir: string[]; sources: Source[]; statut: string };
 const MOTS = (data.mots as Mot[]).slice().sort((a, b) => a.mot.localeCompare(b.mot, "fr"));
 const BY_ID = new Map(MOTS.map((m) => [m.id, m]));
 const norm = (t: string) => t.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
@@ -30,7 +31,7 @@ export default function Glossaire() {
             </button>
           ))}
         </div>
-        <p className={s.note}>Partout sur le site, un mot souligné en pointillé renvoie ici. Les définitions sont relues à la main.</p>
+        <p className={s.note}>Partout sur le site, un mot souligné en pointillé renvoie ici. Les définitions sont écrites à la main, et chacune doit être adossée à une source officielle : celles qui indiquent « Source officielle à ajouter » ne le sont pas encore.</p>
       </aside>
       <div className={s.main}>
         <h1 className="page-title">Glossaire</h1>
@@ -52,8 +53,12 @@ export default function Glossaire() {
             <div className={s.body}>
               <div className={s.head}><h2>{m.mot}</h2><span>{m.cat}</span></div>
               <p className={s.def}>{m.def}</p>
+              {m.contexte && <p className={s.site}>{m.contexte}</p>}
               {m.site && <p className={s.site}><b>Sur ce site · </b>{m.site}</p>}
               {m.ex && <p className={s.ex}><i>Exemple :</i> {m.ex}</p>}
+              <p className={s.site}>{m.sources.length > 0
+                ? <>Sources : {m.sources.map((x, i) => <span key={x.url}>{i > 0 && ", "}<a href={x.url} target="_blank" rel="noreferrer">{x.nom}</a></span>)}</>
+                : "Source officielle à ajouter."}</p>
             </div>
             {m.voir.length > 0 && (
               <div className={s.voir}>
