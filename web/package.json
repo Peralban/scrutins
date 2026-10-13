@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "rm -rf node_modules/glossaire-politique && ln -s ../../../glossaire-politique node_modules/glossaire-politique"
   },
   "dependencies": {
+    "glossaire-politique": "file:../../glossaire-politique",
     "next": "16.4.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"

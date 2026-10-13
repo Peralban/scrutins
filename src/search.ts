@@ -8,7 +8,7 @@
 //      "comment X a voté sur T") from the entities found in the question plus keyword cues,
 //      and answers them from the database. Anything else falls back to the search results.
 import type { Database } from "bun:sqlite";
-import { readFileSync } from "node:fs";
+import { glossaire } from "./glossaire";
 
 export type Kind = "depute" | "groupe" | "texte" | "notion" | "theme" | "glossaire";
 export type Hit = { kind: Kind; ref: string; label: string; sub: string; href: string; score: number };
@@ -62,8 +62,7 @@ export function buildSearchIndex(db: Database) {
       add("notion", n.id, n.label, "notion · votes lus amendement par amendement", `/notions/${n.id}`, n.axe, 2);
     for (const t of db.query(`SELECT id, label FROM theme`).all() as any[])
       add("theme", t.id, t.label, "thème", `/themes#${t.id}`, "", 1.5);
-    // Glossary entries live with the front (web/content/glossaire.json), hand-written like the notions.
-    const glossaire = JSON.parse(readFileSync(new URL("../web/content/glossaire.json", import.meta.url), "utf8"));
+    // Glossary entries: the shared glossaire-politique package plus this site's notes (src/glossaire.ts).
     for (const m of glossaire.mots)
       add("glossaire", m.id, m.mot, m.def.length > 90 ? m.def.slice(0, 88).replace(/\s\S*$/, "") + "…" : m.def, `/glossaire#${m.id}`, `${m.def} ${m.site ?? ""}`, 2);
   })();
@@ -121,9 +120,6 @@ function entity(hits: Hit[], kind: Kind, q: string, skip?: Hit): Hit | undefined
     (kind === "texte" || nq.includes(norm(h.label.split(" ").slice(-1)[0])) || nq.includes(norm(h.label))));
 }
 
-type Mot = { id: string; mot: string; cat: string; def: string; contexte?: string; site?: string; sources?: { nom: string; url: string }[]; voir?: string[] };
-let glossaire: Mot[] | null = null;
-export const mots = () => glossaire ??= JSON.parse(readFileSync(new URL("../web/content/glossaire.json", import.meta.url), "utf8")).mots as Mot[];
 
 export function ask(db: Database, q: string): AskResult {
   const hits = search(db, q, 25);
@@ -133,10 +129,10 @@ export function ask(db: Database, q: string): AskResult {
   // "Qu'est-ce que la TVA ?" / "c'est quoi un 49.3" / "que veut dire dissidence": the glossary entry, in full.
   if (/\bqu est ce\b|\bc est quoi\b|\bque (veut dire|signifie)\b|\bdefinition\b|\bdefinis\b|\bexplique\b/.test(nq)) {
     const g = hits.find((h) => h.kind === "glossaire");
-    const m = g && mots().find((x) => x.id === g.ref);
+    const m = g && glossaire.parId(g.ref);
     if (m) return { q, hits: top.filter((h) => h !== g), understood: `définition : ${m.mot}`,
       answer: { intent: "definition", mot: m.mot, cat: m.cat, def: m.def, site: m.site ?? null,
-        voir: (m.voir ?? []).flatMap((id) => { const v = mots().find((x) => x.id === id); return v ? [{ id, mot: v.mot }] : []; }), href: `/glossaire#${m.id}` } };
+        voir: (m.voir ?? []).flatMap((id) => { const v = glossaire.parId(id); return v ? [{ id, mot: v.mot }] : []; }), href: `/glossaire#${m.id}` } };
   }
 
   // "X vote comme Y" / "X et Y votent-ils pareil" / "accord entre X et Y" — two groups.

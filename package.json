@@ -4,7 +4,6 @@
     "fetch": "bun src/fetch.ts",
     "ingest": "bun src/ingest.ts",
     "refresh": "bun src/fetch.ts && bun src/ingest.ts",
-    "glossaire:sync": "bun scripts/sync-glossaire.ts",
     "dev": "bun --hot src/server.ts",
     "start": "bun src/server.ts",
     "web:dev": "cd web && bun run dev",
@@ -20,6 +19,7 @@
     "typescript": "^7"
   },
   "dependencies": {
+    "glossaire-politique": "file:../glossaire-politique",
     "hono": "^4.13.13"
   }
 }
