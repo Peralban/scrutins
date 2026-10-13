@@ -88,6 +88,12 @@ function Body({ d, notions }: { d: DeputeData; notions: DeputeNotion[] }) {
             <tbody>
               {notions.map((x) => {
                 const v = verdict(x.favorables, x.defavorables);
+                if (x.statut === "données directes") return (
+                  <tr key={x.id}>
+                    <td className={s.t}><Link href={`/notions/${x.id}`}>{x.label}</Link></td>
+                    <td>{x.favorables}</td><td colSpan={4}>motions votées « pour » (seuls les votes pour sont enregistrés)</td>
+                  </tr>
+                );
                 return (
                   <tr key={x.id}>
                     <td className={s.t}><Link href={`/notions/${x.id}`}>{x.label}</Link></td>

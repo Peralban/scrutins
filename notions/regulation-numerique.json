@@ -1,0 +1,441 @@
+{
+ "notion": "regulation-numerique",
+ "label": "Régulation des plateformes et du numérique",
+ "axe": "Favorable : réguler davantage les plateformes et protéger les usagers (réseaux sociaux, mineurs, données, algorithmes). Défavorable : alléger ces obligations.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose.",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V257",
+   "numero": 257,
+   "date": "2024-11-05",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001725",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Encadre les plateformes proposant des arrêts de travail en ligne."
+  },
+  {
+   "scrutin": "VTANR5L17V1016",
+   "numero": 1016,
+   "date": "2025-03-13",
+   "amendement": "AMANR5L17PO838901BTC1030P0D1N000017",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Prévoit une analyse comparative des algorithmes et des protections des mineurs de TikTok."
+  },
+  {
+   "scrutin": "VTANR5L17V2295",
+   "numero": 2295,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001621",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2296",
+   "numero": 2296,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001775",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "S'oppose à une réforme du collège de la CNIL jugée favorable aux intérêts privés."
+  },
+  {
+   "scrutin": "VTANR5L17V2297",
+   "numero": 2297,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001923",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "S'oppose à une réforme du collège de la CNIL jugée favorable aux intérêts privés."
+  },
+  {
+   "scrutin": "VTANR5L17V3610",
+   "numero": 3610,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002095",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4804",
+   "numero": 4804,
+   "date": "2025-12-17",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000217",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Impose la destruction immédiate des données de vidéosurveillance algorithmique à la fin de l'expérimentation."
+  },
+  {
+   "scrutin": "VTANR5L17V5157",
+   "numero": 5157,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000007",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Impose aux fournisseurs de réseaux sociaux des obligations sur leur modèle économique fondé sur l'attention."
+  },
+  {
+   "scrutin": "VTANR5L17V5161",
+   "numero": 5161,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000046",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Réécrit l'article instaurant l'interdiction d'accès aux réseaux sociaux pour les mineurs de moins de quinze ans."
+  },
+  {
+   "scrutin": "VTANR5L17V5162",
+   "numero": 5162,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000108",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Impose aux réseaux sociaux de fournir des outils d'accompagnement parental."
+  },
+  {
+   "scrutin": "VTANR5L17V5163",
+   "numero": 5163,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000109",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Impose aux plateformes de garantir l'absence de pression commerciale ciblée sur les mineurs."
+  },
+  {
+   "scrutin": "VTANR5L17V5164",
+   "numero": 5164,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000013",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Repousse d'un an l'entrée en vigueur de l'interdiction des réseaux sociaux aux moins de 15 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V5165",
+   "numero": 5165,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000042",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce l'effectivité de l'interdiction d'accès des mineurs aux réseaux sociaux."
+  },
+  {
+   "scrutin": "VTANR5L17V5166",
+   "numero": 5166,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000043",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait peser l'interdiction d'accès sur les fournisseurs de réseaux sociaux plutôt que sur le mineur."
+  },
+  {
+   "scrutin": "VTANR5L17V5168",
+   "numero": 5168,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000057",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce l'obligation de contrôle parental sur les appareils connectés."
+  },
+  {
+   "scrutin": "VTANR5L17V5170",
+   "numero": 5170,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000061",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Oblige les plateformes à proposer un paramètre de limitation du temps passé."
+  },
+  {
+   "scrutin": "VTANR5L17V5171",
+   "numero": 5171,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000068",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce les obligations des plateformes pour la santé mentale des mineurs."
+  },
+  {
+   "scrutin": "VTANR5L17V5172",
+   "numero": 5172,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000074",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Distingue la responsabilité d'un simple hébergeur de celle d'une plateforme qui recommande par algorithme."
+  },
+  {
+   "scrutin": "VTANR5L17V5173",
+   "numero": 5173,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000075",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Distingue la responsabilité d'un simple hébergeur de celle d'une plateforme qui recommande par algorithme."
+  },
+  {
+   "scrutin": "VTANR5L17V5174",
+   "numero": 5174,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000069",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Impose aux opérateurs de jeux en ligne des obligations d'information."
+  },
+  {
+   "scrutin": "VTANR5L17V5175",
+   "numero": 5175,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000067",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Interdit au mineur de quinze ans l'accès à des contenus publicitaires sur les réseaux sociaux."
+  },
+  {
+   "scrutin": "VTANR5L17V5176",
+   "numero": 5176,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000086",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5178",
+   "numero": 5178,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000014",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit un article de prévention des risques de surexposition aux écrans."
+  },
+  {
+   "scrutin": "VTANR5L17V5180",
+   "numero": 5180,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000115",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Encadre le marketing des réseaux sociaux auprès des mineurs."
+  },
+  {
+   "scrutin": "VTANR5L17V5183",
+   "numero": 5183,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000065",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Responsabilise les influenceurs qui promeuvent les réseaux sociaux."
+  },
+  {
+   "scrutin": "VTANR5L17V5184",
+   "numero": 5184,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000066",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5186",
+   "numero": 5186,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000079",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit des mesures de prévention contre les usages numériques excessifs."
+  },
+  {
+   "scrutin": "VTANR5L17V5187",
+   "numero": 5187,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000016",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit un article de prévention des risques liés aux usages du numérique."
+  },
+  {
+   "scrutin": "VTANR5L17V5191",
+   "numero": 5191,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000083",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5287",
+   "numero": 5287,
+   "date": "2026-02-02",
+   "amendement": "AMANR5L17PO838901BTC2400P0D1N000001",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime l'autorisation de la vidéosurveillance algorithmique dans les commerces."
+  },
+  {
+   "scrutin": "VTANR5L17V5288",
+   "numero": 5288,
+   "date": "2026-02-02",
+   "amendement": "AMANR5L17PO838901BTC2400P0D1N000002",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Interdit la vidéosurveillance algorithmique aux personnes privées."
+  },
+  {
+   "scrutin": "VTANR5L17V5752",
+   "numero": 5752,
+   "date": "2026-02-26",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000369",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime le transfert de données de santé aux entreprises d'assurance."
+  },
+  {
+   "scrutin": "VTANR5L17V5797",
+   "numero": 5797,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000136",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime un accès jugé excessif de France Travail aux données personnelles des demandeurs d'emploi."
+  },
+  {
+   "scrutin": "VTANR5L17V5810",
+   "numero": 5810,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000105",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5859",
+   "numero": 5859,
+   "date": "2026-03-30",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N001012",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5860",
+   "numero": 5860,
+   "date": "2026-03-30",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000363",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5877",
+   "numero": 5877,
+   "date": "2026-03-30",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000394",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'élargissement de la liste des agents autorisés à échanger des données personnelles."
+  },
+  {
+   "scrutin": "VTANR5L17V5878",
+   "numero": 5878,
+   "date": "2026-03-30",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000393",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'extension de l'échange d'informations à des agents départementaux."
+  },
+  {
+   "scrutin": "VTANR5L17V5916",
+   "numero": 5916,
+   "date": "2026-03-31",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000408",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6014",
+   "numero": 6014,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000277",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée des comités d'éthique et de transparence sur les outils de traitement des données."
+  },
+  {
+   "scrutin": "VTANR5L17V6309",
+   "numero": 6309,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000017",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6434",
+   "numero": 6434,
+   "date": "2026-05-07",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000657",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8141",
+   "numero": 8141,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000525",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8146",
+   "numero": 8146,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000526",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce les sanctions applicables aux plateformes numériques passives face aux trafics."
+  },
+  {
+   "scrutin": "VTANR5L17V8147",
+   "numero": 8147,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000675",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8149",
+   "numero": 8149,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000680",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8151",
+   "numero": 8151,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000757",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8338",
+   "numero": 8338,
+   "date": "2026-07-16",
+   "amendement": "AMANR5L17PO838901BTC3018P0D1N001031",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  }
+ ]
+}

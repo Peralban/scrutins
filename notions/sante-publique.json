@@ -1,0 +1,729 @@
+{
+ "notion": "sante-publique",
+ "label": "Moyens et accès à la santé publique",
+ "axe": "Favorable : renforcer les moyens de l'hôpital public et l'accès aux soins (remboursements, personnel, déserts médicaux). Défavorable : réduire ces moyens, augmenter la participation des patients ou alléger les obligations.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose. Échantillon : les 80 amendements les plus centrés sur le sujet (par nombre d'occurrences des mots-clés) parmi les votes divisés (au moins 10 % de voix du côté minoritaire).",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V178",
+   "numero": 178,
+   "date": "2024-10-28",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000001",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime un article liminaire sur les dépenses de santé contesté sur le fond."
+  },
+  {
+   "scrutin": "VTANR5L17V180",
+   "numero": 180,
+   "date": "2024-10-28",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000003",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'article qui rectifie l'objectif de dépenses d'assurance maladie 2024."
+  },
+  {
+   "scrutin": "VTANR5L17V185",
+   "numero": 185,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N002257",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V190",
+   "numero": 190,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001431",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V238",
+   "numero": 238,
+   "date": "2024-11-04",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000231",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Empêche la hausse du reste à charge après consultation chez le médecin."
+  },
+  {
+   "scrutin": "VTANR5L17V245",
+   "numero": 245,
+   "date": "2024-11-04",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000018",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime un article permettant de subordonner le remboursement de soins à certaines conditions."
+  },
+  {
+   "scrutin": "VTANR5L17V261",
+   "numero": 261,
+   "date": "2024-11-05",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000230",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Empêche la hausse du reste à charge après consultation chez le médecin."
+  },
+  {
+   "scrutin": "VTANR5L17V578",
+   "numero": 578,
+   "date": "2025-01-21",
+   "amendement": "AMANR5L17PO838901BTC0775P0D1N000101",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V936",
+   "numero": 936,
+   "date": "2025-03-10",
+   "amendement": "AMANR5L17PO838901BTC1029P0D1N000157",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V940",
+   "numero": 940,
+   "date": "2025-03-10",
+   "amendement": "AMANR5L17PO838901BTC1029P0D1N000138",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V942",
+   "numero": 942,
+   "date": "2025-03-10",
+   "amendement": "AMANR5L17PO838901BTC1029P0D1N000035",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V943",
+   "numero": 943,
+   "date": "2025-03-10",
+   "amendement": "AMANR5L17PO838901BTC1029P0D1N000166",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1627",
+   "numero": 1627,
+   "date": "2025-05-13",
+   "amendement": "AMANR5L17PO838901BTC1281P0D1N000746",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1993",
+   "numero": 1993,
+   "date": "2025-05-22",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N002548",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2466",
+   "numero": 2466,
+   "date": "2025-06-17",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000586",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2594",
+   "numero": 2594,
+   "date": "2025-06-19",
+   "amendement": "AMANR5L17PO838901BTC1522P0D1N000380",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2849",
+   "numero": 2849,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000050",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3013",
+   "numero": 3013,
+   "date": "2025-07-09",
+   "amendement": "AMANR5L17PO838901BTC1603P0D1N000668",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3016",
+   "numero": 3016,
+   "date": "2025-07-09",
+   "amendement": "AMANR5L17PO838901BTC1603P0D1N000805",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3277",
+   "numero": 3277,
+   "date": "2025-10-30",
+   "amendement": "AMANR5L17PO838901B1826P0D1N000008",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3401",
+   "numero": 3401,
+   "date": "2025-11-04",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000789",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'article qui rectifie l'objectif de dépenses d'assurance maladie 2025."
+  },
+  {
+   "scrutin": "VTANR5L17V3402",
+   "numero": 3402,
+   "date": "2025-11-04",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000243",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'article qui diminue de 60 millions d'euros la contribution de l'assurance maladie au fonds de modernisation des établissements."
+  },
+  {
+   "scrutin": "VTANR5L17V3435",
+   "numero": 3435,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000832",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Exonère les hôpitaux publics de la taxe sur les salaires."
+  },
+  {
+   "scrutin": "VTANR5L17V3449",
+   "numero": 3449,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000179",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3484",
+   "numero": 3484,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000867",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3490",
+   "numero": 3490,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000258",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3491",
+   "numero": 3491,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000257",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3499",
+   "numero": 3499,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002491",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3578",
+   "numero": 3578,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002115",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3579",
+   "numero": 3579,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002114",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3588",
+   "numero": 3588,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001661",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Relève l'objectif de dépenses pour répondre à la pression budgétaire des hôpitaux."
+  },
+  {
+   "scrutin": "VTANR5L17V3596",
+   "numero": 3596,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D2N000002",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3599",
+   "numero": 3599,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000358",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Instaure une franchise sur chaque acte médical et médicament pour les bénéficiaires de l'aide médicale d'État."
+  },
+  {
+   "scrutin": "VTANR5L17V3607",
+   "numero": 3607,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001573",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3608",
+   "numero": 3608,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001049",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "S'oppose au statut d'affection de longue durée de niveau 1 et aux déremboursements associés."
+  },
+  {
+   "scrutin": "VTANR5L17V3610",
+   "numero": 3610,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002095",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3628",
+   "numero": 3628,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000622",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3640",
+   "numero": 3640,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001064",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Demande la mise en œuvre de l'accès direct aux infirmières en pratique avancée."
+  },
+  {
+   "scrutin": "VTANR5L17V3641",
+   "numero": 3641,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000431",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée des équipes de soins pluridisciplinaires dans les territoires où l'offre de soins diminue."
+  },
+  {
+   "scrutin": "VTANR5L17V3645",
+   "numero": 3645,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001151",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime le report à 2028 de la protection sociale complémentaire des agents publics."
+  },
+  {
+   "scrutin": "VTANR5L17V3652",
+   "numero": 3652,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001086",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3653",
+   "numero": 3653,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000483",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3656",
+   "numero": 3656,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001624",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Interdit les dépassements d'honoraires pour les consultations de santé sexuelle."
+  },
+  {
+   "scrutin": "VTANR5L17V3657",
+   "numero": 3657,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001179",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3659",
+   "numero": 3659,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001806",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Encadre les rémunérations des praticiens en contrat temporaire à l'hôpital public."
+  },
+  {
+   "scrutin": "VTANR5L17V3691",
+   "numero": 3691,
+   "date": "2025-11-12",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000712",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'article fixant l'objectif de dépenses d'assurance maladie 2026, jugé insuffisant."
+  },
+  {
+   "scrutin": "VTANR5L17V4448",
+   "numero": 4448,
+   "date": "2025-12-02",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000457",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'article qui rectifie l'objectif de dépenses d'assurance maladie 2025."
+  },
+  {
+   "scrutin": "VTANR5L17V4449",
+   "numero": 4449,
+   "date": "2025-12-02",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000458",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Relève les dotations versées aux hôpitaux, aux EHPAD et aux établissements pour personnes handicapées."
+  },
+  {
+   "scrutin": "VTANR5L17V4450",
+   "numero": 4450,
+   "date": "2025-12-02",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000459",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Relève les dotations versées aux hôpitaux, aux EHPAD et aux établissements pour personnes handicapées."
+  },
+  {
+   "scrutin": "VTANR5L17V4555",
+   "numero": 4555,
+   "date": "2025-12-04",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000468",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Empêche l'application d'une contribution aux complémentaires santé dont les prix ne sont pas répercutés."
+  },
+  {
+   "scrutin": "VTANR5L17V4581",
+   "numero": 4581,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000532",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime la projection pluriannuelle de l'objectif de dépenses d'assurance maladie jusqu'en 2029."
+  },
+  {
+   "scrutin": "VTANR5L17V4583",
+   "numero": 4583,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000062",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Prévoit au moins une équipe mobile de psychiatrie par secteur."
+  },
+  {
+   "scrutin": "VTANR5L17V4584",
+   "numero": 4584,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000064",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4618",
+   "numero": 4618,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000680",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4628",
+   "numero": 4628,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000585",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4646",
+   "numero": 4646,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000545",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fixe légalement à 5 % la cotisation additionnelle sur les dépassements d'honoraires."
+  },
+  {
+   "scrutin": "VTANR5L17V4647",
+   "numero": 4647,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000543",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Maintient la cotisation additionnelle sur les dépassements d'honoraires."
+  },
+  {
+   "scrutin": "VTANR5L17V4648",
+   "numero": 4648,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000411",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4649",
+   "numero": 4649,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000719",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4650",
+   "numero": 4650,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000413",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4652",
+   "numero": 4652,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000414",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4692",
+   "numero": 4692,
+   "date": "2025-12-09",
+   "amendement": "AMANR5L17PO838901B2141P0D1N001143",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit l'article fixant l'objectif de dépenses d'assurance maladie 2026 à un niveau relevé."
+  },
+  {
+   "scrutin": "VTANR5L17V4930",
+   "numero": 4930,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000142",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4931",
+   "numero": 4931,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000146",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5247",
+   "numero": 5247,
+   "date": "2026-01-29",
+   "amendement": "AMANR5L17PO838901BTC2362P0D1N000005",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Garantit une gratuité totale à l'ensemble des usagers de l'hôpital."
+  },
+  {
+   "scrutin": "VTANR5L17V5251",
+   "numero": 5251,
+   "date": "2026-01-29",
+   "amendement": "AMANR5L17PO838901BTC2362P0D1N000019",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5445",
+   "numero": 5445,
+   "date": "2026-02-17",
+   "amendement": "AMANR5L17PO838901BTC2457P0D1N000153",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5527",
+   "numero": 5527,
+   "date": "2026-02-19",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000101",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5528",
+   "numero": 5528,
+   "date": "2026-02-19",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000103",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5636",
+   "numero": 5636,
+   "date": "2026-02-23",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000110",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5766",
+   "numero": 5766,
+   "date": "2026-02-26",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000322",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5980",
+   "numero": 5980,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000052",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6060",
+   "numero": 6060,
+   "date": "2026-04-08",
+   "amendement": "AMANR5L17PO838901BTC2616P0D1N000010",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7263",
+   "numero": 7263,
+   "date": "2026-06-02",
+   "amendement": "AMANR5L17PO838901BTC2754P0D1N000012",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime le ticket modérateur sur l'hébergement temporaire non médicalisé."
+  },
+  {
+   "scrutin": "VTANR5L17V7464",
+   "numero": 7464,
+   "date": "2026-06-23",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000178",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7465",
+   "numero": 7465,
+   "date": "2026-06-23",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000270",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7733",
+   "numero": 7733,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000212",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7737",
+   "numero": 7737,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000145",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7751",
+   "numero": 7751,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000271",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7766",
+   "numero": 7766,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000133",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  }
+ ]
+}

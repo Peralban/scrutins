@@ -1,0 +1,432 @@
+{
+ "notion": "fiscalite-capital",
+ "label": "Fiscalité du capital et des hauts patrimoines",
+ "axe": "Favorable : alourdir l'imposition du capital, des hauts revenus et des grandes fortunes (ISF, dividendes, superprofits, successions). Défavorable : l'alléger.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose.",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V188",
+   "numero": 188,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001088",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée une contribution exceptionnelle sur les superprofits."
+  },
+  {
+   "scrutin": "VTANR5L17V189",
+   "numero": 189,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001267",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée une contribution exceptionnelle sur les dividendes."
+  },
+  {
+   "scrutin": "VTANR5L17V239",
+   "numero": 239,
+   "date": "2024-11-04",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000142",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Retraites : traité par la notion « Retraites »."
+  },
+  {
+   "scrutin": "VTANR5L17V853",
+   "numero": 853,
+   "date": "2025-02-20",
+   "amendement": "AMANR5L17PO838901BTC0930P0D1N000034",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'impôt plancher de 2 % sur le patrimoine des ultra-riches."
+  },
+  {
+   "scrutin": "VTANR5L17V859",
+   "numero": 859,
+   "date": "2025-02-20",
+   "amendement": "AMANR5L17PO838901BTC0930P0D1N000055",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Recentre l'impôt plancher sur la croissance nette des actifs plutôt que sur leur valeur."
+  },
+  {
+   "scrutin": "VTANR5L17V866",
+   "numero": 866,
+   "date": "2025-02-20",
+   "amendement": "AMANR5L17PO838901BTC0930P0D1N000044",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Exclut les dividendes non distribués de l'assiette de l'impôt plancher sur la fortune."
+  },
+  {
+   "scrutin": "VTANR5L17V919",
+   "numero": 919,
+   "date": "2025-03-06",
+   "amendement": "AMANR5L17PO838901BTC1004P0D1N000002",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Succession d'édifices dégradés : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2337",
+   "numero": 2337,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001071",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Franchise d'assurance : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2906",
+   "numero": 2906,
+   "date": "2025-07-03",
+   "amendement": "AMANR5L17PO838901BTC1617P0D1N000035",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Sanctions sur des engagements d'employeurs : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3430",
+   "numero": 3430,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000158",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée un prélèvement de 1 % sur les transmissions de capital à titre gratuit."
+  },
+  {
+   "scrutin": "VTANR5L17V3431",
+   "numero": 3431,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000233",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée une contribution à l'assurance vieillesse sur les successions et donations."
+  },
+  {
+   "scrutin": "VTANR5L17V3432",
+   "numero": 3432,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000827",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée une contribution sur les successions et donations."
+  },
+  {
+   "scrutin": "VTANR5L17V3433",
+   "numero": 3433,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000828",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée une contribution exceptionnelle sur le patrimoine des milliardaires."
+  },
+  {
+   "scrutin": "VTANR5L17V3441",
+   "numero": 3441,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000833",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée une contribution exceptionnelle sur les superprofits."
+  },
+  {
+   "scrutin": "VTANR5L17V3445",
+   "numero": 3445,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000844",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée une contribution exceptionnelle sur les dividendes."
+  },
+  {
+   "scrutin": "VTANR5L17V3446",
+   "numero": 3446,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000173",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée une contribution exceptionnelle de 10 % sur les dividendes."
+  },
+  {
+   "scrutin": "VTANR5L17V3447",
+   "numero": 3447,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000174",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Soumet les revenus financiers des sociétés à une contribution pour l'assurance vieillesse."
+  },
+  {
+   "scrutin": "VTANR5L17V3452",
+   "numero": 3452,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000849",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Instaure une journée de solidarité des actionnaires."
+  },
+  {
+   "scrutin": "VTANR5L17V3454",
+   "numero": 3454,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000840",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée une contribution sur les superprofits pétroliers."
+  },
+  {
+   "scrutin": "VTANR5L17V3460",
+   "numero": 3460,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000213",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Soumet aux cotisations sociales les dividendes des dirigeants assimilés salariés."
+  },
+  {
+   "scrutin": "VTANR5L17V3465",
+   "numero": 3465,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000077",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Assiette des cotisations des indépendants : sens non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V3484",
+   "numero": 3484,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000867",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Remboursement d'exonérations de cotisations en cas de PSE : traité par la notion sur les entreprises."
+  },
+  {
+   "scrutin": "VTANR5L17V3494",
+   "numero": 3494,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002216",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Pénalise les rémunérations hors salaire : finalité fiscale sur le capital non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V3495",
+   "numero": 3495,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000259",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Soumet aux cotisations sociales certains revenus du capital (dividendes, intéressement, épargne salariale)."
+  },
+  {
+   "scrutin": "VTANR5L17V3528",
+   "numero": 3528,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000925",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Module à la hausse la contribution des laboratoires selon les dividendes versés."
+  },
+  {
+   "scrutin": "VTANR5L17V4539",
+   "numero": 4539,
+   "date": "2025-12-04",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000050",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit une hausse de la CSG sur les revenus du capital (12 %)."
+  },
+  {
+   "scrutin": "VTANR5L17V4540",
+   "numero": 4540,
+   "date": "2025-12-04",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000051",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit une hausse de la CSG sur les revenus du capital (11,6 %)."
+  },
+  {
+   "scrutin": "VTANR5L17V4542",
+   "numero": 4542,
+   "date": "2025-12-04",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000052",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit une hausse de la CSG sur les revenus du capital (11 %)."
+  },
+  {
+   "scrutin": "VTANR5L17V4544",
+   "numero": 4544,
+   "date": "2025-12-04",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000053",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit la hausse de 1,4 point de CSG sur les revenus du capital."
+  },
+  {
+   "scrutin": "VTANR5L17V4552",
+   "numero": 4552,
+   "date": "2025-12-04",
+   "amendement": "AMANR5L17PO838901B2141P0D1N001104",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit une hausse de la CSG sur une partie des revenus du capital, en en excluant les revenus fonciers et plus-values."
+  },
+  {
+   "scrutin": "VTANR5L17V4579",
+   "numero": 4579,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000384",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Retraites : traité par la notion « Retraites »."
+  },
+  {
+   "scrutin": "VTANR5L17V5008",
+   "numero": 5008,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001426",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Pérennise la contribution différentielle sur les hauts revenus."
+  },
+  {
+   "scrutin": "VTANR5L17V5016",
+   "numero": 5016,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001465",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Intègre les biens professionnels des holdings dans l'assiette de la taxe."
+  },
+  {
+   "scrutin": "VTANR5L17V5018",
+   "numero": 5018,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001439",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit la taxe holding dans sa rédaction initiale."
+  },
+  {
+   "scrutin": "VTANR5L17V5019",
+   "numero": 5019,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N000945",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit la taxe sur les holdings patrimoniales."
+  },
+  {
+   "scrutin": "VTANR5L17V5023",
+   "numero": 5023,
+   "date": "2026-01-15",
+   "amendement": "AMANR5L17PO838901B2247P0D1N000160",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Remplace une contribution sur les hauts patrimoines par un impôt sur la fortune financière : poids relatif non établi."
+  },
+  {
+   "scrutin": "VTANR5L17V5027",
+   "numero": 5027,
+   "date": "2026-01-15",
+   "amendement": "AMANR5L17PO838901B2247P0D1N000055",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Maintient le seuil de déclenchement de l'imposition à 1,3 M€."
+  },
+  {
+   "scrutin": "VTANR5L17V5039",
+   "numero": 5039,
+   "date": "2026-01-15",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001496",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'allongement du report des plus-values dans le régime d'apport-cession (niche fiscale)."
+  },
+  {
+   "scrutin": "VTANR5L17V5050",
+   "numero": 5050,
+   "date": "2026-01-15",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001588",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime la réduction d'impôt IR-PME (niche fiscale)."
+  },
+  {
+   "scrutin": "VTANR5L17V5051",
+   "numero": 5051,
+   "date": "2026-01-15",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001592",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "S'oppose à l'augmentation du plafond de la réduction d'impôt IR-PME (niche fiscale)."
+  },
+  {
+   "scrutin": "VTANR5L17V5059",
+   "numero": 5059,
+   "date": "2026-01-15",
+   "amendement": "AMANR5L17PO838901B2247P0D1N003498",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Mécénat de Radio France : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5096",
+   "numero": 5096,
+   "date": "2026-01-22",
+   "amendement": "AMANR5L17PO838901BTC2344P0D1N000004",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Séparatisme : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5413",
+   "numero": 5413,
+   "date": "2026-02-12",
+   "amendement": "AMANR5L17PO838901BTC2429P0D1N000003",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Concentration dans les médias : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5904",
+   "numero": 5904,
+   "date": "2026-03-30",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000673",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Secret professionnel des notaires : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V7352",
+   "numero": 7352,
+   "date": "2026-06-11",
+   "amendement": "AMANR5L17PO838901BTC1478P0D1N000014",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Récupération sur succession de l'ASPA : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V7353",
+   "numero": 7353,
+   "date": "2026-06-11",
+   "amendement": "AMANR5L17PO838901BTC1478P0D1N000010",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Récupération sur succession de l'ASPA : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V7861",
+   "numero": 7861,
+   "date": "2026-06-29",
+   "amendement": "AMANR5L17PO838901BTC2797P0D1N000034",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Droits aux dividendes des clubs professionnels : hors sujet."
+  }
+ ]
+}

@@ -10,10 +10,10 @@ type Row = NotionDetail["deputes"][number];
 type Key = "nom" | "groupe" | "favorables" | "defavorables" | "part";
 const COLS: [Key, string][] = [["nom", "Nom"], ["groupe", "Groupe"], ["favorables", "Favorables"], ["defavorables", "Défavorables"], ["part", "% favorable"]];
 
-export default function NotionDeputes({ deputes }: { deputes: Row[] }) {
-  const [min, setMin] = useState(MIN_VOTES_VERDICT);
+export default function NotionDeputes({ deputes, direct = false }: { deputes: Row[]; direct?: boolean }) {
+  const [min, setMin] = useState(direct ? 1 : MIN_VOTES_VERDICT);
   const [q, setQ] = useState("");
-  const [sort, setSort] = useState<{ key: Key; dir: 1 | -1 }>({ key: "part", dir: -1 });
+  const [sort, setSort] = useState<{ key: Key; dir: 1 | -1 }>({ key: direct ? "favorables" : "part", dir: -1 });
 
   const rows = useMemo(() => {
     const needle = q.trim().toLowerCase();
@@ -40,10 +40,10 @@ export default function NotionDeputes({ deputes }: { deputes: Row[] }) {
         <table>
           <thead>
             <tr>
-              {COLS.map(([k, label]) => (
+              {COLS.filter(([k]) => !direct || k === "nom" || k === "groupe" || k === "favorables").map(([k, label]) => (
                 <th key={k} onClick={() => onSort(k)} aria-sort={sort.key === k ? (sort.dir < 0 ? "descending" : "ascending") : undefined}>{label}{sort.key === k ? (sort.dir < 0 ? " ↓" : " ↑") : ""}</th>
               ))}
-              <th>Lecture</th>
+              {!direct && <th>Lecture</th>}
             </tr>
           </thead>
           <tbody>
@@ -52,9 +52,10 @@ export default function NotionDeputes({ deputes }: { deputes: Row[] }) {
               return (
                 <tr key={r.id}>
                   <td className={s.t}><Link href={`/depute/${r.id}`}>{r.nom}</Link></td>
-                  <td>{r.groupe}</td><td>{r.favorables}</td><td>{r.defavorables}</td>
+                  <td>{r.groupe}</td><td>{r.favorables}</td>
+                  {!direct && <><td>{r.defavorables}</td>
                   <td><span className={s.gauge}><b style={{ width: `${v.part ?? 0}%` }} /></span> {v.part == null ? "—" : pct(v.part)}</td>
-                  <td className={s[v.tone]}>{v.label}</td>
+                  <td className={s[v.tone]}>{v.label}</td></>}
                 </tr>
               );
             })}

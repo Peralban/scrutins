@@ -33,7 +33,7 @@ async function Cards() {
         <Link key={n.id} href={`/notions/${n.id}`} className={s.card}>
           <h3>{n.label}</h3>
           <p>{n.axe}</p>
-          <small>{n.favorables} amendements favorables · {n.defavorables} défavorables · {n.ecartes} écartés</small>
+          <small>{n.statut === "données directes" ? `${n.favorables} scrutins` : `${n.favorables} amendements favorables · ${n.defavorables} défavorables · ${n.ecartes} écartés`}</small>
         </Link>
       ))}
     </div>

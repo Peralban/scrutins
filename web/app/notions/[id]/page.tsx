@@ -31,6 +31,7 @@ async function Notion({ params }: { params: PageProps<"/notions/[id]">["params"]
 }
 
 function Body({ d }: { d: NotionDetail }) {
+  const direct = d.notion.statut === "données directes";
   const rows = d.groupes
     .map((g) => ({ ...g, n: g.favorables + g.defavorables }))
     .filter((g) => g.n >= 5)
@@ -45,32 +46,41 @@ function Body({ d }: { d: NotionDetail }) {
       <p><Link href="/notions" className={s.back}>← toutes les notions</Link></p>
       <h2 style={{ fontSize: 20 }}>{d.notion.label}</h2>
       <p className={s.axe}>{d.notion.axe}</p>
-      <NotionBanner />
+      <NotionBanner statut={d.notion.statut} />
 
       <section>
         <h2>Par groupe</h2>
-        <p className="def">Part des votes « favorables » parmi les votes favorables et défavorables sur les {retenus.length} amendements retenus. Abstentions non comptées. Groupes à moins de 5 votes masqués.</p>
-        <div className="card"><GroupBars rows={rows} label="part favorable" max={100} /></div>
-        <DataTable rows={rows} cols={[["Groupe", (r) => r.sigle], ["Favorables", (r) => r.g.favorables], ["Défavorables", (r) => r.g.defavorables], ["Abstentions", (r) => r.g.abstentions], ["% favorable", (r) => pct(r.value)]]} />
+        {direct ? (
+          <>
+            <p className="def">Nombre de votes « pour » la censure, par groupe, sur les {retenus.length} motions. Pour une motion de censure, seuls les votes « pour » sont enregistrés : les autres députés ne votent pas.</p>
+            <DataTable rows={[...d.groupes].sort((a, b) => b.favorables - a.favorables)} cols={[["Groupe", (g) => g.sigle], ["Votes pour la censure", (g) => g.favorables]]} />
+          </>
+        ) : (
+          <>
+            <p className="def">Part des votes « favorables » parmi les votes favorables et défavorables sur les {retenus.length} amendements retenus. Abstentions non comptées. Groupes à moins de 5 votes masqués.</p>
+            <div className="card"><GroupBars rows={rows} label="part favorable" max={100} /></div>
+            <DataTable rows={rows} cols={[["Groupe", (r) => r.sigle], ["Favorables", (r) => r.g.favorables], ["Défavorables", (r) => r.g.defavorables], ["Abstentions", (r) => r.g.abstentions], ["% favorable", (r) => pct(r.value)]]} />
+          </>
+        )}
       </section>
 
       <section>
         <h2>Par député</h2>
         <p className="def">Chaque vote exprimé sur un amendement retenu compte une fois. Un clic sur un nom ouvre sa page.</p>
-        <NotionDeputes deputes={d.deputes} />
+        <NotionDeputes deputes={d.deputes} direct={direct} />
       </section>
 
       <section>
-        <h2>Les amendements retenus ({retenus.length})</h2>
+        <h2>{direct ? `Les motions (${retenus.length})` : `Les amendements retenus (${retenus.length})`}</h2>
         <p className="def">Sens +1 : l&apos;amendement va dans le sens favorable de la notion ; −1 : dans le sens défavorable. Un vote « pour » soutient ce sens, « contre » s&apos;y oppose.</p>
         <VoteTable votes={retenus} />
       </section>
 
-      <section>
+      {!direct && <section>
         <h2>Les amendements écartés ({ecartes.length})</h2>
         <p className="def">Trouvés par mots-clés mais laissés de côté : hors sujet, texte déclaratif sans effet, ou direction non tranchée sur l&apos;extrait lu.</p>
         <VoteTable votes={ecartes} />
-      </section>
+      </section>}
 
       <footer>{d.notion.methode}</footer>
     </>

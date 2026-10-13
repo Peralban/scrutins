@@ -24,8 +24,13 @@ Source: data.assemblee-nationale.fr, open licence.
 
 ## Notions (draft, labels not yet validated)
 
-`notions/*.json` holds, for each notion (nuclear, ecology and climate, immigration, pensions), the amendments that were read one by one and given a direction: `+1` favours the notion, `-1` goes against it, `0` set aside. Each label carries a one-line justification and a confidence level; the file's `statut` says whether a human has reviewed it.
+`notions/*.json` holds, for each notion, the amendments that were read one by one and given a direction: `+1` favours the notion, `-1` goes against it, `0` set aside. Each label carries a one-line justification and a confidence level; the file's `statut` says whether a human has reviewed it.
+
+23 notions are published: nuclear power, ecology and climate, immigration, pensions, wealth and capital taxation, business taxation and charges, social benefits, public health, assisted dying, employees' rights, law-enforcement powers, penal severity, social housing, public education, defence effort, digital regulation, culture and sport funding, overseas territories, women's rights and anti-discrimination, farm incomes, public spending, and the censure of the government (the latter is direct data: the 23 motions of censure, no labelling).
+
+Four more were defined but not published for lack of usable amendments: parliamentary democracy (4 retained), free trade (4), abortion/ART (1), rail transport (the keywords only found security amendments). They stay in `src/notions.ts`.
 
 - The amendment text comes from the open-data "Tous les amendements" set (327 MB, downloaded once into `data/raw/amendements/`, not part of the nightly refresh). Amendments are linked to the scrutin that voted on them from the number and author in the scrutin title: 80 % of the amendment scrutins are linked, the rest (mostly the two finance bills, where half of the amendments have no recorded outcome) are left unclassified.
-- `bun scripts/candidates.ts <notion> --json out.json` lists the candidates of a notion (keywords in `src/notions.ts`, divisive votes only).
+- Candidates of a notion: `bun scripts/candidates.ts <notion> --limit 80 --json out.json` (keywords in `src/notions.ts`, divisive votes only, the 80 most on-topic by keyword count). The labels of 22 of the 23 notions come from that sample, not from every amendment on the subject.
 - A "pour" vote follows the amendment's direction and "contre" opposes it. That is not always a stance on the notion itself (an amendment can also fix a figure or a procedure): the pages say so.
+- Only the labels are versioned. Adding a notion = a definition in `src/notions.ts`, a candidate list, a label file in `notions/`, then `bun run ingest`.

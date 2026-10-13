@@ -1,0 +1,261 @@
+{
+ "notion": "logement-social",
+ "label": "Logement social et encadrement des loyers",
+ "axe": "Favorable : renforcer le logement social et protéger les locataires (loi SRU, encadrement des loyers, trêve hivernale). Défavorable : assouplir ces règles.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose.",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V219",
+   "numero": 219,
+   "date": "2024-10-31",
+   "amendement": "AMANR5L17PO838901B0278P0D1N000001",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'article qui permettait de continuer à louer des passoires thermiques."
+  },
+  {
+   "scrutin": "VTANR5L17V661",
+   "numero": 661,
+   "date": "2025-01-29",
+   "amendement": "AMANR5L17PO838901BTC0629P0D1N000025",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Calendrier d'interdiction des passoires thermiques : sens non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V669",
+   "numero": 669,
+   "date": "2025-01-29",
+   "amendement": "AMANR5L17PO838901BTC0629P0D1N000015",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'autorisation de travaux de rénovation en cours de bail."
+  },
+  {
+   "scrutin": "VTANR5L17V670",
+   "numero": 670,
+   "date": "2025-01-29",
+   "amendement": "AMANR5L17PO838901BTC0629P0D1N000026",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Contraintes sur les bailleurs pour la rénovation thermique : sens non établi."
+  },
+  {
+   "scrutin": "VTANR5L17V672",
+   "numero": 672,
+   "date": "2025-01-29",
+   "amendement": "AMANR5L17PO838901BTC0629P0D1N000008",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime la prise en compte de la diligence du bailleur dans la baisse de loyer pour non-rénovation."
+  },
+  {
+   "scrutin": "VTANR5L17V1108",
+   "numero": 1108,
+   "date": "2025-03-21",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000627",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Expulsion de locataires du parc social par le préfet : portée non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V1381",
+   "numero": 1381,
+   "date": "2025-04-10",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N000018",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Fonds national d'aide à la pierre : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V1714",
+   "numero": 1714,
+   "date": "2025-05-15",
+   "amendement": "AMANR5L17PO838901BTC1378P0D1N000092",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Lutte contre les recours abusifs visant des projets de logements sociaux."
+  },
+  {
+   "scrutin": "VTANR5L17V2199",
+   "numero": 2199,
+   "date": "2025-05-28",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N000424",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Couverture téléphonique des locataires : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2284",
+   "numero": 2284,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001641",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime un article qui limiterait le droit de préférence du locataire d'un local commercial."
+  },
+  {
+   "scrutin": "VTANR5L17V2313",
+   "numero": 2313,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001674",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Instaure un encadrement des loyers commerciaux."
+  },
+  {
+   "scrutin": "VTANR5L17V2856",
+   "numero": 2856,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000051",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Logement social à Mayotte : portée non établie sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V3513",
+   "numero": 3513,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000074",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Régime social des agriculteurs bailleurs de matériel : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4724",
+   "numero": 4724,
+   "date": "2025-12-11",
+   "amendement": "AMANR5L17PO838901BTC2197P0D1N000040",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'article qui étend et pérennise l'encadrement des loyers."
+  },
+  {
+   "scrutin": "VTANR5L17V4725",
+   "numero": 4725,
+   "date": "2025-12-11",
+   "amendement": "AMANR5L17PO838901BTC2197P0D1N000035",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Réécrit l'encadrement des loyers en l'assouplissant."
+  },
+  {
+   "scrutin": "VTANR5L17V4730",
+   "numero": 4730,
+   "date": "2025-12-11",
+   "amendement": "AMANR5L17PO838901BTC2197P0D1N000024",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Interdit le complément de loyer, principal contournement de l'encadrement."
+  },
+  {
+   "scrutin": "VTANR5L17V4734",
+   "numero": 4734,
+   "date": "2025-12-11",
+   "amendement": "AMANR5L17PO838901BTC2197P0D1N000030",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Plafonne le complément de loyer à 10 % du loyer de référence majoré."
+  },
+  {
+   "scrutin": "VTANR5L17V4736",
+   "numero": 4736,
+   "date": "2025-12-11",
+   "amendement": "AMANR5L17PO838901BTC2197P0D1N000010",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Maintient le délai de trois mois pour contester le complément de loyer."
+  },
+  {
+   "scrutin": "VTANR5L17V4737",
+   "numero": 4737,
+   "date": "2025-12-11",
+   "amendement": "AMANR5L17PO838901BTC2197P0D1N000020",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Champ de l'encadrement des loyers aux meublés professionnels : sens non établi."
+  },
+  {
+   "scrutin": "VTANR5L17V4948",
+   "numero": 4948,
+   "date": "2026-01-12",
+   "amendement": "AMANR5L17PO838901BTC1449P0D1N000010",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Logements de fonction des agents publics : sens non établi."
+  },
+  {
+   "scrutin": "VTANR5L17V4950",
+   "numero": 4950,
+   "date": "2026-01-12",
+   "amendement": "AMANR5L17PO838901BTC1449P0D1N000005",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Droit de réservation lors de cessions de terrain public : sens non établi."
+  },
+  {
+   "scrutin": "VTANR5L17V4951",
+   "numero": 4951,
+   "date": "2026-01-12",
+   "amendement": "AMANR5L17PO838901BTC1449P0D1N000002",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Plafond du droit de réservation : sens non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V4998",
+   "numero": 4998,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001619",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'exonération de taxe sur les résidences secondaires pour les meublés de tourisme."
+  },
+  {
+   "scrutin": "VTANR5L17V8119",
+   "numero": 8119,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000085",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'extension de l'évacuation administrative forcée des squats."
+  },
+  {
+   "scrutin": "VTANR5L17V8122",
+   "numero": 8122,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000125",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Étend la procédure facilitant les expulsions à tout maintien sans titre après expiration du bail."
+  },
+  {
+   "scrutin": "VTANR5L17V8124",
+   "numero": 8124,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000088",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime des sanctions pénales liées à l'extension de l'évacuation forcée aux meublés de tourisme."
+  },
+  {
+   "scrutin": "VTANR5L17V8126",
+   "numero": 8126,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000089",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Abroge le délit d'incitation au squat."
+  },
+  {
+   "scrutin": "VTANR5L17V8248",
+   "numero": 8248,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000476",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Abroge un article élargissant les cas d'expulsion de locataires du parc social."
+  }
+ ]
+}

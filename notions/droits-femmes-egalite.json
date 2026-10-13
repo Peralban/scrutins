@@ -1,0 +1,729 @@
+{
+ "notion": "droits-femmes-egalite",
+ "label": "Droits des femmes et lutte contre les discriminations",
+ "axe": "Favorable : renforcer la protection contre les violences sexistes et sexuelles, l'égalité femmes-hommes et la lutte contre les discriminations. Défavorable : les alléger ou les restreindre.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose. Échantillon : les 80 amendements les plus centrés sur le sujet (par nombre d'occurrences des mots-clés) parmi les votes divisés (au moins 10 % de voix du côté minoritaire).",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V508",
+   "numero": 508,
+   "date": "2024-12-03",
+   "amendement": "AMANR5L17PO838901BTC0625P0D1N000015",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Interdit les discriminations à l'embauche et dans l'emploi envers les parents d'enfants gravement malades."
+  },
+  {
+   "scrutin": "VTANR5L17V745",
+   "numero": 745,
+   "date": "2025-02-10",
+   "amendement": "AMANR5L17PO838901BTC0636P0D1N000100",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Impose une formation à la non-discrimination aux agents de sécurité de la SNCF."
+  },
+  {
+   "scrutin": "VTANR5L17V747",
+   "numero": 747,
+   "date": "2025-02-10",
+   "amendement": "AMANR5L17PO838901BTC0636P0D1N000101",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Impose une formation à la non-discrimination aux agents de sécurité de la SNCF."
+  },
+  {
+   "scrutin": "VTANR5L17V812",
+   "numero": 812,
+   "date": "2025-02-17",
+   "amendement": "AMANR5L17PO838901BTC0631P0D1N000022",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Facilite l'action de groupe en matière de discrimination."
+  },
+  {
+   "scrutin": "VTANR5L17V883",
+   "numero": 883,
+   "date": "2025-03-06",
+   "amendement": "AMANR5L17PO838901BTC0996P0D1N000007",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1174",
+   "numero": 1174,
+   "date": "2025-03-27",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000394",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1198",
+   "numero": 1198,
+   "date": "2025-04-01",
+   "amendement": "AMANR5L17PO838901BTC1181P0D1N000014",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Renforce la définition légale du consentement pour mieux protéger les victimes."
+  },
+  {
+   "scrutin": "VTANR5L17V1201",
+   "numero": 1201,
+   "date": "2025-04-01",
+   "amendement": "AMANR5L17PO838901BTC1181P0D1N000015",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1571",
+   "numero": 1571,
+   "date": "2025-05-06",
+   "amendement": "AMANR5L17PO838901BTC1357P0D1N000033",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1572",
+   "numero": 1572,
+   "date": "2025-05-06",
+   "amendement": "AMANR5L17PO838901BTC1357P0D1N000053",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Ajoute un module de formation sur l'histoire de l'antisémitisme."
+  },
+  {
+   "scrutin": "VTANR5L17V1578",
+   "numero": 1578,
+   "date": "2025-05-07",
+   "amendement": "AMANR5L17PO838901BTC1357P0D1N000035",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Donne une formation juridique aux référents de lutte contre l'antisémitisme."
+  },
+  {
+   "scrutin": "VTANR5L17V1581",
+   "numero": 1581,
+   "date": "2025-05-07",
+   "amendement": "AMANR5L17PO838901BTC1357P0D1N000048",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime un motif de signalement de faits de violence ou de discrimination dans l'établissement."
+  },
+  {
+   "scrutin": "VTANR5L17V1593",
+   "numero": 1593,
+   "date": "2025-05-07",
+   "amendement": "AMANR5L17PO838901BTC1357P0D1N000046",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit un article de lutte contre l'antisémitisme et les discriminations dans l'enseignement supérieur."
+  },
+  {
+   "scrutin": "VTANR5L17V1597",
+   "numero": 1597,
+   "date": "2025-05-07",
+   "amendement": "AMANR5L17PO838901BTC1357P0D1N000061",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Reprend une recommandation des assises de la lutte contre l'antisémitisme."
+  },
+  {
+   "scrutin": "VTANR5L17V1600",
+   "numero": 1600,
+   "date": "2025-05-07",
+   "amendement": "AMANR5L17PO838901BTC1357P0D1N000043",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime le rapport évaluant les moyens du plan national contre le racisme et l'antisémitisme."
+  },
+  {
+   "scrutin": "VTANR5L17V1852",
+   "numero": 1852,
+   "date": "2025-05-19",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N000395",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1885",
+   "numero": 1885,
+   "date": "2025-05-20",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N002335",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1970",
+   "numero": 1970,
+   "date": "2025-05-22",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N002128",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2033",
+   "numero": 2033,
+   "date": "2025-05-23",
+   "amendement": "AMANR5L17PO838901BTC1364P0D1N002329",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3660",
+   "numero": 3660,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001122",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4574",
+   "numero": 4574,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000522",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5100",
+   "numero": 5100,
+   "date": "2026-01-22",
+   "amendement": "AMANR5L17PO838901BTC2344P0D1N000008",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5102",
+   "numero": 5102,
+   "date": "2026-01-22",
+   "amendement": "AMANR5L17PO838901BTC2344P0D1N000010",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5223",
+   "numero": 5223,
+   "date": "2026-01-28",
+   "amendement": "AMANR5L17PO838901BTC2363P0D1N000001",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait évaluer les moyens budgétaires nécessaires pour lutter contre l'inceste."
+  },
+  {
+   "scrutin": "VTANR5L17V5241",
+   "numero": 5241,
+   "date": "2026-01-28",
+   "amendement": "AMANR5L17PO838901BTC2360P0D1N000003",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Inscrit dans le code civil que les époux s'engagent à vivre leur union sans violence ni viol."
+  },
+  {
+   "scrutin": "VTANR5L17V5573",
+   "numero": 5573,
+   "date": "2026-02-19",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N000324",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5608",
+   "numero": 5608,
+   "date": "2026-02-20",
+   "amendement": "AMANR5L17PO838901BTC2453P0D1N001172",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6109",
+   "numero": 6109,
+   "date": "2026-04-09",
+   "amendement": "AMANR5L17PO838901BTC2618P0D1N000054",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6185",
+   "numero": 6185,
+   "date": "2026-04-14",
+   "amendement": "AMANR5L17PO838901BTC2468P0D1N000002",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6341",
+   "numero": 6341,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000122",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait de la lutte contre les violences sexistes et sexuelles une priorité des armées."
+  },
+  {
+   "scrutin": "VTANR5L17V6717",
+   "numero": 6717,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000717",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Inscrit l'appartenance à la réserve opérationnelle parmi les critères de discrimination à l'embauche."
+  },
+  {
+   "scrutin": "VTANR5L17V7553",
+   "numero": 7553,
+   "date": "2026-06-24",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000411",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7570",
+   "numero": 7570,
+   "date": "2026-06-24",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N001371",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7648",
+   "numero": 7648,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000433",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7656",
+   "numero": 7656,
+   "date": "2026-06-26",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N001114",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7778",
+   "numero": 7778,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N001376",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7936",
+   "numero": 7936,
+   "date": "2026-07-02",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000076",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7949",
+   "numero": 7949,
+   "date": "2026-07-02",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000083",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Encadre la formation des psychologues de police judiciaire sur les violences faites aux victimes."
+  },
+  {
+   "scrutin": "VTANR5L17V8208",
+   "numero": 8208,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000607",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8221",
+   "numero": 8221,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000103",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8225",
+   "numero": 8225,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000105",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8336",
+   "numero": 8336,
+   "date": "2026-07-16",
+   "amendement": "AMANR5L17PO838901BTC3018P0D1N000187",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Étend aux discriminations les infractions faisant obstacle à l'agrément d'assistant familial."
+  },
+  {
+   "scrutin": "VTANR5L17V8393",
+   "numero": 8393,
+   "date": "2026-07-17",
+   "amendement": "AMANR5L17PO838901BTC3018P0D1N000914",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8400",
+   "numero": 8400,
+   "date": "2026-07-17",
+   "amendement": "AMANR5L17PO838901BTC3018P0D1N000937",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8435",
+   "numero": 8435,
+   "date": "2026-10-01",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000373",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8437",
+   "numero": 8437,
+   "date": "2026-10-01",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000371",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8440",
+   "numero": 8440,
+   "date": "2026-10-01",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000971",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8443",
+   "numero": 8443,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000778",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Étend la protection contre les violences sexistes et sexuelles sans distinction de nationalité ou de situation administrative."
+  },
+  {
+   "scrutin": "VTANR5L17V8450",
+   "numero": 8450,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000354",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait évaluer par l'autorité les moyens humains et financiers de la lutte contre les violences."
+  },
+  {
+   "scrutin": "VTANR5L17V8451",
+   "numero": 8451,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000289",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait entrer des associations issues des collectivités d'outre-mer dans l'autorité de lutte contre les violences sexuelles."
+  },
+  {
+   "scrutin": "VTANR5L17V8456",
+   "numero": 8456,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000339",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Confie à l'autorité de lutte contre les violences sexuelles et intrafamiliales une mission de convocation."
+  },
+  {
+   "scrutin": "VTANR5L17V8457",
+   "numero": 8457,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000343",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fait travailler la future autorité contre les violences sexuelles avec la délégation contre le racisme."
+  },
+  {
+   "scrutin": "VTANR5L17V8460",
+   "numero": 8460,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000352",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Associe les centres LGBTI aux travaux de l'observatoire territorial contre les violences."
+  },
+  {
+   "scrutin": "VTANR5L17V8475",
+   "numero": 8475,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000364",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Encadre l'audition des personnes victimes d'infractions sexuelles."
+  },
+  {
+   "scrutin": "VTANR5L17V8476",
+   "numero": 8476,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000366",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Prévoit l'accompagnement systématique des victimes d'infractions sexuelles par un psychologue formé."
+  },
+  {
+   "scrutin": "VTANR5L17V8479",
+   "numero": 8479,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N001047",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8486",
+   "numero": 8486,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000229",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Étend aux violences sexistes les expertises encadrées pour les mineurs victimes."
+  },
+  {
+   "scrutin": "VTANR5L17V8497",
+   "numero": 8497,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000945",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Précise que certains éléments ne peuvent constituer la preuve du consentement d'une victime."
+  },
+  {
+   "scrutin": "VTANR5L17V8507",
+   "numero": 8507,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N001036",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Introduit la notion de contrôle coercitif comme circonstance aggravante."
+  },
+  {
+   "scrutin": "VTANR5L17V8517",
+   "numero": 8517,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000418",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8519",
+   "numero": 8519,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000016",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée une circonstance aggravante pour un viol commis sur une personne en état de vulnérabilité chimique."
+  },
+  {
+   "scrutin": "VTANR5L17V8522",
+   "numero": 8522,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000243",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8527",
+   "numero": 8527,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000336",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rend la formation continue préalable à toute affectation sur les violences sexuelles."
+  },
+  {
+   "scrutin": "VTANR5L17V8545",
+   "numero": 8545,
+   "date": "2026-10-06",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000236",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8546",
+   "numero": 8546,
+   "date": "2026-10-06",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000234",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8547",
+   "numero": 8547,
+   "date": "2026-10-06",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000237",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8548",
+   "numero": 8548,
+   "date": "2026-10-06",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000235",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8554",
+   "numero": 8554,
+   "date": "2026-10-06",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N001089",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit un entretien annuel obligatoire pour prévenir et dépister les violences subies par les élèves."
+  },
+  {
+   "scrutin": "VTANR5L17V8583",
+   "numero": 8583,
+   "date": "2026-10-07",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N001099",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Met fin au maintien du droit de visite exposant un enfant à un parent violent."
+  },
+  {
+   "scrutin": "VTANR5L17V8589",
+   "numero": 8589,
+   "date": "2026-10-07",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000521",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Inclut la prévention des violences intrafamiliales dans les négociations collectives."
+  },
+  {
+   "scrutin": "VTANR5L17V8590",
+   "numero": 8590,
+   "date": "2026-10-07",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000469",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Restreint la définition des violences sexistes et sexuelles liées au cadre professionnel."
+  },
+  {
+   "scrutin": "VTANR5L17V8599",
+   "numero": 8599,
+   "date": "2026-10-07",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N001198",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8601",
+   "numero": 8601,
+   "date": "2026-10-07",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000558",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Précise les obligations de l'employeur en matière de prévention des violences sexuelles et sexistes au travail."
+  },
+  {
+   "scrutin": "VTANR5L17V8604",
+   "numero": 8604,
+   "date": "2026-10-07",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000475",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'abaissement de 250 à 50 salariés du seuil de désignation d'un référent contre le harcèlement sexuel."
+  },
+  {
+   "scrutin": "VTANR5L17V8608",
+   "numero": 8608,
+   "date": "2026-10-07",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000738",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée un temps de formation à la prévention des violences sexistes et sexuelles au travail."
+  },
+  {
+   "scrutin": "VTANR5L17V8626",
+   "numero": 8626,
+   "date": "2026-10-09",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000516",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Exige que l'enquête interne sur des violences sexistes soit menée par des personnes formées."
+  },
+  {
+   "scrutin": "VTANR5L17V8638",
+   "numero": 8638,
+   "date": "2026-10-09",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N001091",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Ouvre un droit à aménagement de poste pour les victimes de violences sexistes et sexuelles au travail."
+  },
+  {
+   "scrutin": "VTANR5L17V8641",
+   "numero": 8641,
+   "date": "2026-10-09",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000244",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8664",
+   "numero": 8664,
+   "date": "2026-10-09",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000240",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Accorde du temps aux victimes de violences pour leurs démarches (plainte, soins, relogement)."
+  },
+  {
+   "scrutin": "VTANR5L17V8667",
+   "numero": 8667,
+   "date": "2026-10-09",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000684",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Fléche des crédits de la lutte contre les violences vers l'éducation à la vie affective."
+  }
+ ]
+}

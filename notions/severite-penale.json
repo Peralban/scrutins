@@ -1,0 +1,729 @@
+{
+ "notion": "severite-penale",
+ "label": "Sévérité pénale",
+ "axe": "Favorable : durcir les sanctions et la réponse pénale (peines, mineurs délinquants, détention). Défavorable : les adoucir ou privilégier d'autres réponses.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose. Échantillon : les 80 amendements les plus centrés sur le sujet (par nombre d'occurrences des mots-clés) parmi les votes divisés (au moins 10 % de voix du côté minoritaire).",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V775",
+   "numero": 775,
+   "date": "2025-02-11",
+   "amendement": "AMANR5L17PO838901BTC0636P0D1N000055",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit une peine complémentaire d'interdiction pour les auteurs de certains crimes et délits."
+  },
+  {
+   "scrutin": "VTANR5L17V776",
+   "numero": 776,
+   "date": "2025-02-11",
+   "amendement": "AMANR5L17PO838901BTC0636P0D1N000061",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit une peine complémentaire d'interdiction de paraître dans les transports publics."
+  },
+  {
+   "scrutin": "VTANR5L17V793",
+   "numero": 793,
+   "date": "2025-02-12",
+   "amendement": "AMANR5L17PO838901BTC0628P0D1N000007",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "S'oppose à l'extension d'un délit de soustraction d'un parent à ses obligations."
+  },
+  {
+   "scrutin": "VTANR5L17V794",
+   "numero": 794,
+   "date": "2025-02-13",
+   "amendement": "AMANR5L17PO838901BTC0628P0D1N000051",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit un article accélérant la réponse pénale à l'égard des mineurs."
+  },
+  {
+   "scrutin": "VTANR5L17V796",
+   "numero": 796,
+   "date": "2025-02-13",
+   "amendement": "AMANR5L17PO838901BTC0628P0D1N000059",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit un article modifiant l'excuse atténuante de minorité dans un sens plus sévère."
+  },
+  {
+   "scrutin": "VTANR5L17V1055",
+   "numero": 1055,
+   "date": "2025-03-19",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000174",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1076",
+   "numero": 1076,
+   "date": "2025-03-20",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000196",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'allongement des délais de détention provisoire en matière délictuelle."
+  },
+  {
+   "scrutin": "VTANR5L17V1090",
+   "numero": 1090,
+   "date": "2025-03-20",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000753",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1091",
+   "numero": 1091,
+   "date": "2025-03-20",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000463",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1110",
+   "numero": 1110,
+   "date": "2025-03-21",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000077",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Suspend le versement des allocations familiales aux parents d'enfants coupables de trafic de stupéfiants."
+  },
+  {
+   "scrutin": "VTANR5L17V1144",
+   "numero": 1144,
+   "date": "2025-03-24",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000585",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Limite l'exception au principe de confusion des peines aux infractions les plus graves de criminalité organisée."
+  },
+  {
+   "scrutin": "VTANR5L17V1146",
+   "numero": 1146,
+   "date": "2025-03-24",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000375",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée une peine systématique d'interdiction en dérogeant au droit commun."
+  },
+  {
+   "scrutin": "VTANR5L17V1148",
+   "numero": 1148,
+   "date": "2025-03-24",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000744",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Écarte le régime alternatif obligatoire pour les courtes peines d'emprisonnement dans certains cas."
+  },
+  {
+   "scrutin": "VTANR5L17V1149",
+   "numero": 1149,
+   "date": "2025-03-24",
+   "amendement": "AMANR5L17PO838901BTC1043P0D1N000011",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rend la sévérité pénale la règle pour les délinquants liés à des réseaux criminels, en dérogeant aux alternatives."
+  },
+  {
+   "scrutin": "VTANR5L17V1235",
+   "numero": 1235,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1187P0D1N000007",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime un article jugé source d'inflation carcérale."
+  },
+  {
+   "scrutin": "VTANR5L17V1236",
+   "numero": 1236,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1187P0D1N000009",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'interdiction d'infliger certaines peines prévue par une loi visant à les faire exécuter."
+  },
+  {
+   "scrutin": "VTANR5L17V1237",
+   "numero": 1237,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1187P0D1N000008",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'interdiction d'infliger certaines peines prévue par une loi visant à les faire exécuter."
+  },
+  {
+   "scrutin": "VTANR5L17V1238",
+   "numero": 1238,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1187P0D1N000037",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Précise le calcul de la durée de peine ouvrant droit à aménagement, dans un sens restrictif."
+  },
+  {
+   "scrutin": "VTANR5L17V1239",
+   "numero": 1239,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1187P0D1N000063",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Réaffirme que l'aménagement de peine doit être la règle et l'emprisonnement l'exception."
+  },
+  {
+   "scrutin": "VTANR5L17V1244",
+   "numero": 1244,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1187P0D1N000011",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime un article imposant des conditions drastiques aux aménagements de peine."
+  },
+  {
+   "scrutin": "VTANR5L17V1245",
+   "numero": 1245,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1187P0D1N000012",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Rehausse les seuils d'aménagement des peines d'emprisonnement ab initio."
+  },
+  {
+   "scrutin": "VTANR5L17V1246",
+   "numero": 1246,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1187P0D1N000038",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Précise le calcul de la durée de peine ouvrant droit à aménagement, dans un sens restrictif."
+  },
+  {
+   "scrutin": "VTANR5L17V1247",
+   "numero": 1247,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1187P0D1N000013",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Rend l'aménagement des courtes peines de principe plutôt qu'exceptionnel."
+  },
+  {
+   "scrutin": "VTANR5L17V1255",
+   "numero": 1255,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1187P0D1N000023",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime un article durcissant les conditions de mandat d'arrêt ou de dépôt."
+  },
+  {
+   "scrutin": "VTANR5L17V1259",
+   "numero": 1259,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901BTC1187P0D1N000017",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1263",
+   "numero": 1263,
+   "date": "2025-04-03",
+   "amendement": "AMANR5L17PO838901B0959P0D1N000001",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'article unique d'une proposition de loi instaurant des peines planchers."
+  },
+  {
+   "scrutin": "VTANR5L17V2236",
+   "numero": 2236,
+   "date": "2025-06-04",
+   "amendement": "AMANR5L17PO838901BTC1475P0D1N000004",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2309",
+   "numero": 2309,
+   "date": "2025-06-13",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N001851",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime la peine d'emprisonnement encourue par le chef d'entreprise pour atteinte à la sécurité des salariés."
+  },
+  {
+   "scrutin": "VTANR5L17V2690",
+   "numero": 2690,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000279",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2691",
+   "numero": 2691,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000643",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2692",
+   "numero": 2692,
+   "date": "2025-06-25",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000315",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V2708",
+   "numero": 2708,
+   "date": "2025-06-26",
+   "amendement": "AMANR5L17PO838901B1415P0D1N000002",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4785",
+   "numero": 4785,
+   "date": "2025-12-16",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000037",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime la peine d'emprisonnement prévue par un article du projet de loi."
+  },
+  {
+   "scrutin": "VTANR5L17V5016",
+   "numero": 5016,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001465",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5018",
+   "numero": 5018,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N001439",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5019",
+   "numero": 5019,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N000945",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5020",
+   "numero": 5020,
+   "date": "2026-01-14",
+   "amendement": "AMANR5L17PO838901B2247P0D1N003000",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5780",
+   "numero": 5780,
+   "date": "2026-02-26",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000633",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime un article d'inflation pénale jugé inefficace."
+  },
+  {
+   "scrutin": "VTANR5L17V5828",
+   "numero": 5828,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000167",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V5992",
+   "numero": 5992,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000636",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime un article d'inflation pénale jugé inefficace."
+  },
+  {
+   "scrutin": "VTANR5L17V6001",
+   "numero": 6001,
+   "date": "2026-04-01",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000513",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime le renforcement des peines encourues en cas de fraude fiscale aggravée."
+  },
+  {
+   "scrutin": "VTANR5L17V6201",
+   "numero": 6201,
+   "date": "2026-04-15",
+   "amendement": "AMANR5L17PO838901BTC2468P0D1N000044",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime la création d'une rétention de sûreté terroriste."
+  },
+  {
+   "scrutin": "VTANR5L17V6202",
+   "numero": 6202,
+   "date": "2026-04-15",
+   "amendement": "AMANR5L17PO838901BTC2468P0D1N000045",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime la création d'une rétention de sûreté terroriste."
+  },
+  {
+   "scrutin": "VTANR5L17V6209",
+   "numero": 6209,
+   "date": "2026-04-15",
+   "amendement": "AMANR5L17PO838901BTC2468P0D1N000046",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "S'oppose au recours à la dangerosité pour justifier le maintien en rétention."
+  },
+  {
+   "scrutin": "VTANR5L17V6211",
+   "numero": 6211,
+   "date": "2026-04-15",
+   "amendement": "AMANR5L17PO838901BTC2468P0D1N000047",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "S'oppose au recours à la rétention de sûreté."
+  },
+  {
+   "scrutin": "VTANR5L17V6213",
+   "numero": 6213,
+   "date": "2026-04-15",
+   "amendement": "AMANR5L17PO838901BTC2468P0D1N000050",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'extension du régime de prévention de la récidive terroriste."
+  },
+  {
+   "scrutin": "VTANR5L17V6216",
+   "numero": 6216,
+   "date": "2026-04-15",
+   "amendement": "AMANR5L17PO838901BTC2468P0D1N000109",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Restreint l'extension d'une mesure de prévention de la récidive terroriste à des personnes n'ayant jamais commis de tels actes."
+  },
+  {
+   "scrutin": "VTANR5L17V6549",
+   "numero": 6549,
+   "date": "2026-05-12",
+   "amendement": "AMANR5L17PO838901BTC2761P0D1N000023",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Limite à six mois les interdictions de paraître et de résidence."
+  },
+  {
+   "scrutin": "VTANR5L17V6562",
+   "numero": 6562,
+   "date": "2026-05-12",
+   "amendement": "AMANR5L17PO838901BTC2761P0D1N000012",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7806",
+   "numero": 7806,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000005",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7807",
+   "numero": 7807,
+   "date": "2026-06-27",
+   "amendement": "AMANR5L17PO838901BTC2915P0D1N000687",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V7896",
+   "numero": 7896,
+   "date": "2026-06-30",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000012",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime la procédure de jugement des crimes reconnus."
+  },
+  {
+   "scrutin": "VTANR5L17V7964",
+   "numero": 7964,
+   "date": "2026-07-02",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000198",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Rétablit la détention provisoire comme exception plutôt que comme principe."
+  },
+  {
+   "scrutin": "VTANR5L17V7965",
+   "numero": 7965,
+   "date": "2026-07-02",
+   "amendement": "AMANR5L17PO838901B2681P0D1N000199",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Rétablit la détention provisoire comme exception plutôt que comme principe."
+  },
+  {
+   "scrutin": "VTANR5L17V8037",
+   "numero": 8037,
+   "date": "2026-07-08",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000884",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8055",
+   "numero": 8055,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000616",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime un alinéa aggravant les peines encourues."
+  },
+  {
+   "scrutin": "VTANR5L17V8057",
+   "numero": 8057,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000657",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Remplace des peines aggravées par des peines moins lourdes, au motif de leur inefficacité."
+  },
+  {
+   "scrutin": "VTANR5L17V8061",
+   "numero": 8061,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000621",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'aggravation des peines encourues pour certaines infractions."
+  },
+  {
+   "scrutin": "VTANR5L17V8073",
+   "numero": 8073,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000672",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Instaure des peines minimales pour le refus d'obtempérer et le rodéo motorisé."
+  },
+  {
+   "scrutin": "VTANR5L17V8147",
+   "numero": 8147,
+   "date": "2026-07-09",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000675",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8239",
+   "numero": 8239,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000434",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime un article qui aggrave la répression de la vente à la sauvette."
+  },
+  {
+   "scrutin": "VTANR5L17V8251",
+   "numero": 8251,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000483",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'interdiction de suspendre ou fractionner la peine."
+  },
+  {
+   "scrutin": "VTANR5L17V8252",
+   "numero": 8252,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000670",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Renforce l'effectivité des peines prononcées pour les infractions créées ou aggravées."
+  },
+  {
+   "scrutin": "VTANR5L17V8254",
+   "numero": 8254,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000482",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime l'interdiction du recours aux aménagements de peine."
+  },
+  {
+   "scrutin": "VTANR5L17V8267",
+   "numero": 8267,
+   "date": "2026-07-10",
+   "amendement": "AMANR5L17PO838901BTC2984P0D1N000905",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8309",
+   "numero": 8309,
+   "date": "2026-07-16",
+   "amendement": "AMANR5L17PO838901BTC3018P0D1N000660",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée des peines planchers pour les viols et agressions sexuelles."
+  },
+  {
+   "scrutin": "VTANR5L17V8393",
+   "numero": 8393,
+   "date": "2026-07-17",
+   "amendement": "AMANR5L17PO838901BTC3018P0D1N000914",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime l'extension de la réclusion criminelle à perpétuité aux auteurs de viols."
+  },
+  {
+   "scrutin": "VTANR5L17V8394",
+   "numero": 8394,
+   "date": "2026-07-17",
+   "amendement": "AMANR5L17PO838901BTC3018P0D1N000936",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Ramène de la perpétuité à trente ans la peine encourue pour certains faits."
+  },
+  {
+   "scrutin": "VTANR5L17V8396",
+   "numero": 8396,
+   "date": "2026-07-17",
+   "amendement": "AMANR5L17PO838901BTC3018P0D1N000056",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Ramène la peine pour viol sériel sur mineur de moins de 15 ans de la perpétuité à 30 ans."
+  },
+  {
+   "scrutin": "VTANR5L17V8400",
+   "numero": 8400,
+   "date": "2026-07-17",
+   "amendement": "AMANR5L17PO838901BTC3018P0D1N000937",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Supprime la dérogation permettant de cumuler des peines sans limitation de quantum."
+  },
+  {
+   "scrutin": "VTANR5L17V8401",
+   "numero": 8401,
+   "date": "2026-07-17",
+   "amendement": "AMANR5L17PO838901BTC3018P0D1N000092",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime la réintroduction de peines planchers à perpétuité."
+  },
+  {
+   "scrutin": "VTANR5L17V8507",
+   "numero": 8507,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N001036",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V8517",
+   "numero": 8517,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000418",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Supprime la création d'une peine de réclusion criminelle à perpétuité."
+  },
+  {
+   "scrutin": "VTANR5L17V8522",
+   "numero": 8522,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000243",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rend obligatoire l'interdiction du territoire pour certains délits commis par des étrangers."
+  },
+  {
+   "scrutin": "VTANR5L17V8523",
+   "numero": 8523,
+   "date": "2026-10-05",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000714",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Exclut les personnes condamnées pour infractions sexuelles de la libération sous contrainte aux deux tiers de la peine."
+  },
+  {
+   "scrutin": "VTANR5L17V8545",
+   "numero": 8545,
+   "date": "2026-10-06",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000236",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit des peines planchers pour les crimes de violences intrafamiliales et sexuelles."
+  },
+  {
+   "scrutin": "VTANR5L17V8546",
+   "numero": 8546,
+   "date": "2026-10-06",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000234",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Rétablit des peines planchers pour les crimes de violences intrafamiliales et sexuelles (repli)."
+  },
+  {
+   "scrutin": "VTANR5L17V8547",
+   "numero": 8547,
+   "date": "2026-10-06",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000237",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Fait exécuter la peine de sursis en cas de nouvelle infraction."
+  },
+  {
+   "scrutin": "VTANR5L17V8548",
+   "numero": 8548,
+   "date": "2026-10-06",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000235",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Restreint les aménagements et réductions de peine pour certains condamnés."
+  },
+  {
+   "scrutin": "VTANR5L17V8550",
+   "numero": 8550,
+   "date": "2026-10-06",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000715",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Prévoit la réclusion criminelle à perpétuité pour le viol incestueux commis en concours avec d'autres viols."
+  }
+ ]
+}

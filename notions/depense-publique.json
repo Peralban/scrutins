@@ -1,0 +1,486 @@
+{
+ "notion": "depense-publique",
+ "label": "Réduction de la dépense publique",
+ "axe": "Favorable : réduire la dépense publique ou le déficit (économies, gel, annulations de crédits, suppression d'organismes). Défavorable : augmenter les dépenses ou maintenir les crédits.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose.",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V256",
+   "numero": 256,
+   "date": "2024-11-05",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001812",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V1365",
+   "numero": 1365,
+   "date": "2025-04-10",
+   "amendement": "AMANR5L17PO838901BTC1191P0D1N002062",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3420",
+   "numero": 3420,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000110",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3425",
+   "numero": 3425,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000125",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3427",
+   "numero": 3427,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000127",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3428",
+   "numero": 3428,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000133",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3429",
+   "numero": 3429,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000157",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3430",
+   "numero": 3430,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000158",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3446",
+   "numero": 3446,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000173",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3447",
+   "numero": 3447,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000174",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3449",
+   "numero": 3449,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000179",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3464",
+   "numero": 3464,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000212",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3467",
+   "numero": 3467,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000216",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3468",
+   "numero": 3468,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000217",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3471",
+   "numero": 3471,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000222",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3472",
+   "numero": 3472,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000224",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3476",
+   "numero": 3476,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000247",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3490",
+   "numero": 3490,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000258",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3491",
+   "numero": 3491,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000257",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3495",
+   "numero": 3495,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000259",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3496",
+   "numero": 3496,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000221",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3497",
+   "numero": 3497,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000267",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3503",
+   "numero": 3503,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000280",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3550",
+   "numero": 3550,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000457",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3567",
+   "numero": 3567,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000459",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3650",
+   "numero": 3650,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000651",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3877",
+   "numero": 3877,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000008",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V3892",
+   "numero": 3892,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000067",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission administration générale et territoriale de l'État."
+  },
+  {
+   "scrutin": "VTANR5L17V3895",
+   "numero": 3895,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000040",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission aide économique et financière au développement."
+  },
+  {
+   "scrutin": "VTANR5L17V3898",
+   "numero": 3898,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000074",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission anciens combattants, mémoire et liens avec la Nation."
+  },
+  {
+   "scrutin": "VTANR5L17V3899",
+   "numero": 3899,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000002",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission urbanisme, territoires et amélioration de l'habitat."
+  },
+  {
+   "scrutin": "VTANR5L17V3902",
+   "numero": 3902,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000076",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission conseil et contrôle de l'État."
+  },
+  {
+   "scrutin": "VTANR5L17V3903",
+   "numero": 3903,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000077",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission culture."
+  },
+  {
+   "scrutin": "VTANR5L17V3904",
+   "numero": 3904,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000078",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission direction de l'action du Gouvernement."
+  },
+  {
+   "scrutin": "VTANR5L17V3907",
+   "numero": 3907,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000069",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission écologie."
+  },
+  {
+   "scrutin": "VTANR5L17V3909",
+   "numero": 3909,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000079",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission économie."
+  },
+  {
+   "scrutin": "VTANR5L17V3911",
+   "numero": 3911,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000080",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission enseignement scolaire."
+  },
+  {
+   "scrutin": "VTANR5L17V3912",
+   "numero": 3912,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000081",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission gestion des finances publiques."
+  },
+  {
+   "scrutin": "VTANR5L17V3914",
+   "numero": 3914,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000082",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission immigration, asile et intégration."
+  },
+  {
+   "scrutin": "VTANR5L17V3916",
+   "numero": 3916,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000083",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission Investir pour la France de 2030."
+  },
+  {
+   "scrutin": "VTANR5L17V3917",
+   "numero": 3917,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000084",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission justice."
+  },
+  {
+   "scrutin": "VTANR5L17V3918",
+   "numero": 3918,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000085",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission médias, livre et industries culturelles."
+  },
+  {
+   "scrutin": "VTANR5L17V3919",
+   "numero": 3919,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000086",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission outre-mer."
+  },
+  {
+   "scrutin": "VTANR5L17V3920",
+   "numero": 3920,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000092",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission recherche et enseignement supérieur."
+  },
+  {
+   "scrutin": "VTANR5L17V3921",
+   "numero": 3921,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000088",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission relations avec les collectivités territoriales."
+  },
+  {
+   "scrutin": "VTANR5L17V3923",
+   "numero": 3923,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000089",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission sport, jeunesse et vie associative."
+  },
+  {
+   "scrutin": "VTANR5L17V3924",
+   "numero": 3924,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000090",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission transformation et fonction publiques."
+  },
+  {
+   "scrutin": "VTANR5L17V3925",
+   "numero": 3925,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D1N000091",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Refuse l'annulation de crédits de la mission travail, emploi et administration des ministères sociaux."
+  },
+  {
+   "scrutin": "VTANR5L17V3935",
+   "numero": 3935,
+   "date": "2025-11-18",
+   "amendement": "AMANR5L17PO838901B2068P0D2N000001",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Traduit au tableau d'équilibre les votes déjà intervenus : pas une position sur le niveau de dépense."
+  },
+  {
+   "scrutin": "VTANR5L17V4433",
+   "numero": 4433,
+   "date": "2025-11-27",
+   "amendement": "AMANR5L17PO838901BTC2123P0D1N000012",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V4643",
+   "numero": 4643,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000401",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6060",
+   "numero": 6060,
+   "date": "2026-04-08",
+   "amendement": "AMANR5L17PO838901BTC2616P0D1N000010",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  },
+  {
+   "scrutin": "VTANR5L17V6303",
+   "numero": 6303,
+   "date": "2026-05-04",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000284",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Hors sujet ou sens non établi sur l'extrait lu."
+  }
+ ]
+}

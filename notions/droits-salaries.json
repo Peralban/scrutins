@@ -1,0 +1,729 @@
+{
+ "notion": "droits-salaries",
+ "label": "Droits et protection des salariés",
+ "axe": "Favorable : renforcer les droits et la protection des salariés (salaire, licenciement, temps de travail, droit syndical, assurance chômage). Défavorable : les assouplir ou les réduire.",
+ "statut": "proposition non validée",
+ "methode": "Amendements rapprochés d'un scrutin, retenus par mots-clés dans leur texte puis lus un par un. sens = +1 si l'amendement va dans le sens favorable de l'axe, -1 s'il va dans le sens défavorable, 0 s'il est écarté (hors sujet, déclaratif sans effet, ou direction non tranchée sur l'extrait). Un vote « pour » soutient la direction de l'amendement, « contre » s'y oppose. Échantillon : les 80 amendements les plus centrés sur le sujet (par nombre d'occurrences des mots-clés) parmi les votes divisés (au moins 10 % de voix du côté minoritaire).",
+ "etiquettes": [
+  {
+   "scrutin": "VTANR5L17V182",
+   "numero": 182,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000146",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Retraites : traité par la notion « Retraites »."
+  },
+  {
+   "scrutin": "VTANR5L17V192",
+   "numero": 192,
+   "date": "2024-10-29",
+   "amendement": "AMANR5L17PO838901B0325P0D1N001497",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Exonération TO-DE : traité par les notions de fiscalité."
+  },
+  {
+   "scrutin": "VTANR5L17V198",
+   "numero": 198,
+   "date": "2024-10-30",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000626",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une exonération expérimentale pour les entreprises passant aux 32 heures."
+  },
+  {
+   "scrutin": "VTANR5L17V199",
+   "numero": 199,
+   "date": "2024-10-30",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000249",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Supprime un article réformant les allègements de charges patronales : traité par la notion sur les entreprises."
+  },
+  {
+   "scrutin": "VTANR5L17V203",
+   "numero": 203,
+   "date": "2024-10-30",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000903",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Services à domicile : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V239",
+   "numero": 239,
+   "date": "2024-11-04",
+   "amendement": "AMANR5L17PO838901B0325P0D1N000142",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Retraites : traité par la notion « Retraites »."
+  },
+  {
+   "scrutin": "VTANR5L17V508",
+   "numero": 508,
+   "date": "2024-12-03",
+   "amendement": "AMANR5L17PO838901BTC0625P0D1N000015",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Interdit les discriminations à l'embauche et dans l'emploi envers les parents d'enfants gravement malades."
+  },
+  {
+   "scrutin": "VTANR5L17V663",
+   "numero": 663,
+   "date": "2025-01-29",
+   "amendement": "AMANR5L17PO838901BTC0629P0D1N000004",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Copropriété : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V665",
+   "numero": 665,
+   "date": "2025-01-29",
+   "amendement": "AMANR5L17PO838901BTC0629P0D1N000024",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Logement indécent : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V2777",
+   "numero": 2777,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000554",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Aligne le SMIC de Mayotte sur celui de l'Hexagone en deux ans."
+  },
+  {
+   "scrutin": "VTANR5L17V2806",
+   "numero": 2806,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000243",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Aligne immédiatement le SMIC de Mayotte sur l'Hexagone."
+  },
+  {
+   "scrutin": "VTANR5L17V2855",
+   "numero": 2855,
+   "date": "2025-06-27",
+   "amendement": "AMANR5L17PO838901BTC1573P0D1N000633",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Repousse à 2031 l'alignement du SMIC de Mayotte."
+  },
+  {
+   "scrutin": "VTANR5L17V2931",
+   "numero": 2931,
+   "date": "2025-07-03",
+   "amendement": "AMANR5L17PO838901BTC1617P0D1N000071",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Évolutions de l'assurance chômage issues d'un avenant : sens non établi sur l'extrait."
+  },
+  {
+   "scrutin": "VTANR5L17V2991",
+   "numero": 2991,
+   "date": "2025-07-09",
+   "amendement": "AMANR5L17PO838901BTC1603P0D1N000111",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Rétablit la protection des élus salariés dans l'exercice de leur mandat."
+  },
+  {
+   "scrutin": "VTANR5L17V3428",
+   "numero": 3428,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000133",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Baisse de la CSG : pouvoir d'achat, pas droits des salariés."
+  },
+  {
+   "scrutin": "VTANR5L17V3429",
+   "numero": 3429,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000157",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "CSG sur le capital : traité par la notion sur le capital."
+  },
+  {
+   "scrutin": "VTANR5L17V3435",
+   "numero": 3435,
+   "date": "2025-11-05",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000832",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Taxe sur les salaires des hôpitaux : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3436",
+   "numero": 3436,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000156",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Taxe sur les salaires des centres de santé : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3437",
+   "numero": 3437,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000112",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Intéressement dans le secteur non lucratif : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3445",
+   "numero": 3445,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000844",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Contribution sur les dividendes : traité par la notion sur le capital."
+  },
+  {
+   "scrutin": "VTANR5L17V3452",
+   "numero": 3452,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000849",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Journée de solidarité des actionnaires : traité par la notion sur le capital."
+  },
+  {
+   "scrutin": "VTANR5L17V3457",
+   "numero": 3457,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000021",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Prélèvement sur les aides aux salariés : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3462",
+   "numero": 3462,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000878",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Exonération des heures supplémentaires : effet sur les droits des salariés non établi."
+  },
+  {
+   "scrutin": "VTANR5L17V3471",
+   "numero": 3471,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000222",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Contribution solidarité autonomie : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3472",
+   "numero": 3472,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000224",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Contribution solidarité autonomie : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3473",
+   "numero": 3473,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000891",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une contribution pour les entreprises à fort taux de licenciement pour inaptitude."
+  },
+  {
+   "scrutin": "VTANR5L17V3478",
+   "numero": 3478,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000238",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Gel de la réduction de cotisations patronales : traité par les notions de fiscalité."
+  },
+  {
+   "scrutin": "VTANR5L17V3479",
+   "numero": 3479,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000302",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Exonérations de cotisations au-dessus de 2 SMIC : traité par les notions de fiscalité."
+  },
+  {
+   "scrutin": "VTANR5L17V3483",
+   "numero": 3483,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001353",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Conditionne des allègements de cotisations à la revalorisation des minima de branche."
+  },
+  {
+   "scrutin": "VTANR5L17V3484",
+   "numero": 3484,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000867",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Remboursement d'exonérations : traité par la notion sur les entreprises."
+  },
+  {
+   "scrutin": "VTANR5L17V3485",
+   "numero": 3485,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001354",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Conditionne les exonérations de cotisations à la revalorisation des minima de branche sous le SMIC."
+  },
+  {
+   "scrutin": "VTANR5L17V3486",
+   "numero": 3486,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002008",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Conditionne la réduction générale de cotisations à une politique salariale en faveur des salariés au SMIC."
+  },
+  {
+   "scrutin": "VTANR5L17V3491",
+   "numero": 3491,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000257",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Exonérations sur heures supplémentaires : traité par les notions de fiscalité."
+  },
+  {
+   "scrutin": "VTANR5L17V3493",
+   "numero": 3493,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000299",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Dispositifs de partage de la valeur : traité par les notions de fiscalité."
+  },
+  {
+   "scrutin": "VTANR5L17V3494",
+   "numero": 3494,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002216",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Incite les entreprises à augmenter les salaires plutôt que d'autres formes de rémunération."
+  },
+  {
+   "scrutin": "VTANR5L17V3495",
+   "numero": 3495,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000259",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Cotisations sur les revenus du capital : traité par la notion sur le capital."
+  },
+  {
+   "scrutin": "VTANR5L17V3496",
+   "numero": 3496,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000221",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Plafond d'exemption des compléments de salaire : traité par les notions de fiscalité."
+  },
+  {
+   "scrutin": "VTANR5L17V3497",
+   "numero": 3497,
+   "date": "2025-11-06",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000267",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Exonérations sur l'épargne salariale : traité par les notions de fiscalité."
+  },
+  {
+   "scrutin": "VTANR5L17V3498",
+   "numero": 3498,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000895",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Augmente la pénalité pour les entreprises qui ne réduisent pas les écarts de rémunération femmes-hommes."
+  },
+  {
+   "scrutin": "VTANR5L17V3499",
+   "numero": 3499,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002491",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Impose le remboursement des aides après un licenciement économique sans cause réelle et sérieuse."
+  },
+  {
+   "scrutin": "VTANR5L17V3500",
+   "numero": 3500,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000842",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Conversion de congés payés en rémunération sur demande : sens ambigu."
+  },
+  {
+   "scrutin": "VTANR5L17V3501",
+   "numero": 3501,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000897",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Soumet les primes de partage de la valeur aux cotisations : effet sur les droits des salariés non établi."
+  },
+  {
+   "scrutin": "VTANR5L17V3503",
+   "numero": 3503,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000280",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Plafond d'exemption de la prime de partage de la valeur : traité par les notions de fiscalité."
+  },
+  {
+   "scrutin": "VTANR5L17V3516",
+   "numero": 3516,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000816",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Exonération TO-DE : traité par les notions de fiscalité."
+  },
+  {
+   "scrutin": "VTANR5L17V3520",
+   "numero": 3520,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000916",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime l'assujettissement des apprentis à la CSG et à la CRDS."
+  },
+  {
+   "scrutin": "VTANR5L17V3523",
+   "numero": 3523,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000388",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Cotisations de l'armement maritime : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V3524",
+   "numero": 3524,
+   "date": "2025-11-07",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000918",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une exonération pour les entreprises expérimentant les 32 heures."
+  },
+  {
+   "scrutin": "VTANR5L17V3584",
+   "numero": 3584,
+   "date": "2025-11-08",
+   "amendement": "AMANR5L17PO838901B1907P0D1N001839",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Protège les ressources de l'Unédic contre les décisions gouvernementales."
+  },
+  {
+   "scrutin": "VTANR5L17V3669",
+   "numero": 3669,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N002449",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Indemnités journalières maladie : portée non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V3670",
+   "numero": 3670,
+   "date": "2025-11-09",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000757",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Télétravail en alternative à l'arrêt de travail : portée non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V3686",
+   "numero": 3686,
+   "date": "2025-11-12",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000996",
+   "sens": -1,
+   "confiance": "haute",
+   "note": "Réserve le congé supplémentaire de naissance aux couples dont un membre est de nationalité française."
+  },
+  {
+   "scrutin": "VTANR5L17V3687",
+   "numero": 3687,
+   "date": "2025-11-12",
+   "amendement": "AMANR5L17PO838901B1907P0D1N000997",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Subordonne le congé de naissance à six mois d'activité cotisée."
+  },
+  {
+   "scrutin": "VTANR5L17V4446",
+   "numero": 4446,
+   "date": "2025-12-02",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000455",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Rectification des recettes de la sécurité sociale : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4463",
+   "numero": 4463,
+   "date": "2025-12-03",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000077",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Représentation des artistes-auteurs : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4492",
+   "numero": 4492,
+   "date": "2025-12-03",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000036",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Cotisations de l'armement maritime : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4538",
+   "numero": 4538,
+   "date": "2025-12-04",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000451",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Baisse de la CSG : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4561",
+   "numero": 4561,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000027",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Plafond d'exemption des compléments de salaire : traité par les notions de fiscalité."
+  },
+  {
+   "scrutin": "VTANR5L17V4579",
+   "numero": 4579,
+   "date": "2025-12-05",
+   "amendement": "AMANR5L17PO838901B2141P0D1N000384",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Retraites : traité par la notion « Retraites »."
+  },
+  {
+   "scrutin": "VTANR5L17V4860",
+   "numero": 4860,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000328",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Rénovation de l'habitat : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V4897",
+   "numero": 4897,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000287",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Limite l'écart de rémunération au sein du comité d'organisation des JO à un facteur 20."
+  },
+  {
+   "scrutin": "VTANR5L17V4914",
+   "numero": 4914,
+   "date": "2025-12-18",
+   "amendement": "AMANR5L17PO838901BTC2233P0D1N000046",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Restreint la dérogation au repos dominical autour des Jeux olympiques."
+  },
+  {
+   "scrutin": "VTANR5L17V5189",
+   "numero": 5189,
+   "date": "2026-01-26",
+   "amendement": "AMANR5L17PO838901BTC2341P0D1N000009",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Téléphone portable au lycée : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5765",
+   "numero": 5765,
+   "date": "2026-02-26",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000238",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Contrôles de la formation professionnelle : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V5788",
+   "numero": 5788,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000897",
+   "sens": 0,
+   "confiance": "moyenne",
+   "note": "Délai avant exécution d'une contrainte pour travail dissimulé : portée non établie."
+  },
+  {
+   "scrutin": "VTANR5L17V5793",
+   "numero": 5793,
+   "date": "2026-02-27",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000284",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime la possibilité pour France Travail de saisir des sommes chez des tiers."
+  },
+  {
+   "scrutin": "VTANR5L17V5919",
+   "numero": 5919,
+   "date": "2026-03-31",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N000320",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Crée une voie de recours quand la garantie de salaire est refusée pour fraude."
+  },
+  {
+   "scrutin": "VTANR5L17V5949",
+   "numero": 5949,
+   "date": "2026-03-31",
+   "amendement": "AMANR5L17PO838901BTC2250P0D1N001022",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Interdit le cumul d'allocations chômage avec des revenus d'activités illicites graves."
+  },
+  {
+   "scrutin": "VTANR5L17V6283",
+   "numero": 6283,
+   "date": "2026-04-16",
+   "amendement": "AMANR5L17PO838901BTC2633P0D1N000001",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Supprime l'article qui module la durée d'indemnisation chômage selon le motif de rupture."
+  },
+  {
+   "scrutin": "VTANR5L17V6332",
+   "numero": 6332,
+   "date": "2026-05-05",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000090",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Solde des militaires : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6529",
+   "numero": 6529,
+   "date": "2026-05-12",
+   "amendement": "AMANR5L17PO838901BTC2615P0D1N000004",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Exonérations de cotisations des navires : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V6726",
+   "numero": 6726,
+   "date": "2026-05-18",
+   "amendement": "AMANR5L17PO838901BTC2695P0D1N000068",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Supprime un article qui renvoie à un décret la définition de règles jusque-là fixées par le code du travail."
+  },
+  {
+   "scrutin": "VTANR5L17V7028",
+   "numero": 7028,
+   "date": "2026-05-28",
+   "amendement": "AMANR5L17PO838901B2812P0D1N000003",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Majore de 20 % la rémunération des salariés en contrat de professionnalisation expérimental."
+  },
+  {
+   "scrutin": "VTANR5L17V7034",
+   "numero": 7034,
+   "date": "2026-05-28",
+   "amendement": "AMANR5L17PO838901BTC2633P0D1N000012",
+   "sens": 1,
+   "confiance": "moyenne",
+   "note": "Limite la pénalisation des allocataires chômage issus d'une rupture conventionnelle."
+  },
+  {
+   "scrutin": "VTANR5L17V7150",
+   "numero": 7150,
+   "date": "2026-05-29",
+   "amendement": "AMANR5L17PO838901BTC2765P0D1N000054",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Prix planchers agricoles : traité par la notion sur les revenus agricoles."
+  },
+  {
+   "scrutin": "VTANR5L17V7340",
+   "numero": 7340,
+   "date": "2026-06-04",
+   "amendement": "AMANR5L17PO838901BTC2200P0D1N000023",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Représentation syndicale dans une mission de santé mentale : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V8313",
+   "numero": 8313,
+   "date": "2026-07-16",
+   "amendement": "AMANR5L17PO838901BTC3018P0D1N000655",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Protection de l'enfance : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V8489",
+   "numero": 8489,
+   "date": "2026-10-02",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000700",
+   "sens": 0,
+   "confiance": "haute",
+   "note": "Violences économiques : hors sujet."
+  },
+  {
+   "scrutin": "VTANR5L17V8590",
+   "numero": 8590,
+   "date": "2026-10-07",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N000469",
+   "sens": -1,
+   "confiance": "moyenne",
+   "note": "Restreint la définition des violences sexistes et sexuelles liées au cadre professionnel."
+  },
+  {
+   "scrutin": "VTANR5L17V8599",
+   "numero": 8599,
+   "date": "2026-10-07",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N001198",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Crée le conseiller des salariés des entreprises de moins de onze salariés."
+  },
+  {
+   "scrutin": "VTANR5L17V8638",
+   "numero": 8638,
+   "date": "2026-10-09",
+   "amendement": "AMANR5L17PO838901BTC3190P0D1N001091",
+   "sens": 1,
+   "confiance": "haute",
+   "note": "Ouvre un droit à aménagement de poste pour les victimes de violences sexistes et sexuelles au travail."
+  }
+ ]
+}
