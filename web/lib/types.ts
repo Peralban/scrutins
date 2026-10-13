@@ -59,3 +59,13 @@ export type NotionDetail = {
   }[];
 };
 export type DeputeNotion = { id: string; label: string; statut: string } & NotionStat;
+export type Hier = {
+  date: string; scrutins: number;
+  textes: { titre: string; scrutins: number; id: string; vote: { kind: string; sort: string; pour: number; contre: number; abstentions: number } | null }[];
+};
+export type GroupeDetail = {
+  groupe: GroupeStat; groupes: number; rangs: { cohesion: number; participation: number }; effectif: number;
+  membres: { id: string; nom: string; votes_exprimes: number; dissidence: number | null; delegation: number | null }[];
+  notions: { id: string; label: string; statut: string; favorables: number; defavorables: number; abstentions: number }[];
+  accords: { id: string; sigle: string; nom: string; couleur: string | null; communs: number; accord: number }[];
+};

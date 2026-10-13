@@ -1,6 +1,7 @@
 import { Hono } from "hono";
 import { statSync } from "node:fs";
 import { DB_PATH, open, queries } from "./stats";
+import { ask, search } from "./search";
 
 // The nightly ingest swaps the file atomically; reopen when it changes.
 let db = open(), mtime = statSync(DB_PATH).mtimeMs;
@@ -11,6 +12,13 @@ const fresh = () => {
 };
 const app = new Hono();
 
+app.get("/api/search", (c) => c.json(search(fresh(), c.req.query("q") ?? "", 10)));
+app.get("/api/ask", (c) => c.json(ask(fresh(), c.req.query("q") ?? "")));
+app.get("/api/groupe/:id", (c) => {
+  const g = queries.groupe(fresh(), c.req.param("id"));
+  return g ? c.json(g) : c.json({ error: "not found" }, 404);
+});
+app.get("/api/hier", (c) => c.json(queries.hier(fresh())));
 app.get("/api/overview", (c) => c.json(queries.overview(fresh())));
 app.get("/api/groupes", (c) => c.json(queries.groupes(fresh())));
 app.get("/api/mensuel", (c) => c.json(queries.mensuel(fresh())));

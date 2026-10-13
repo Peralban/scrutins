@@ -4,7 +4,6 @@ import { Suspense } from "react";
 import Nav from "@/components/Nav";
 import NavFallback from "@/components/NavFallback";
 import Tooltip from "@/components/Tooltip";
-import MobileTabs from "@/components/MobileTabs";
 
 export const metadata: Metadata = {
   title: { default: "Scrutins", template: "%s · Scrutins" },
@@ -16,15 +15,17 @@ export const viewport: Viewport = { width: "device-width", initialScale: 1, view
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+      </head>
       <body>
-        <main>
-          <h1>Scrutins</h1>
-          <Suspense fallback={<NavFallback />}>
-            <Nav />
-          </Suspense>
-          {children}
-        </main>
-        <Suspense fallback={null}><MobileTabs /></Suspense>
+        <Suspense fallback={<NavFallback />}>
+          <Nav />
+        </Suspense>
+        <main>{children}</main>
         <Tooltip />
       </body>
     </html>

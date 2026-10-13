@@ -3,6 +3,7 @@ import { Glob } from "bun";
 import { readdirSync, renameSync, rmSync } from "node:fs";
 import { RAW } from "./fetch";
 import { MATERIALIZED } from "./stats";
+import { buildSearchIndex } from "./search";
 import { computeCartes } from "./carte";
 import { ingestAmendements } from "./amendements";
 import { ingestNotionLabels } from "./notion-labels";
@@ -146,6 +147,7 @@ export async function ingest() {
   for (const [name, sql] of Object.entries(MATERIALIZED)) db.exec(`CREATE TABLE ${name} AS ${sql}`);
   ingestAmendements(db, acteurs);
   computeCartes(db);
+  buildSearchIndex(db);
   db.close();
   renameSync(TMP, OUT); // atomic swap: readers never see a half-built db
 }

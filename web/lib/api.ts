@@ -1,5 +1,5 @@
 import { cacheLife } from "next/cache";
-import type { DeputeData, DeputeNotion, DeputeRow, GroupeStat, Mois, NotionDetail, NotionSummary, Overview, ThemesData } from "./types";
+import type { GroupeDetail, Hier, DeputeData, DeputeNotion, DeputeRow, GroupeStat, Mois, NotionDetail, NotionSummary, Overview, ThemesData } from "./types";
 
 // Server-side access to the data API. The data only changes with the nightly refresh,
 // so every getter is cached for hours. Callers run `await connection()` first so that
@@ -12,6 +12,15 @@ async function get<T>(path: string): Promise<T> {
   return res.json() as Promise<T>;
 }
 
+export async function getGroupe(id: string): Promise<GroupeDetail | { error: string }> {
+  "use cache";
+  cacheLife("hours");
+  const res = await fetch(`${API}/api/groupe/${encodeURIComponent(id)}`);
+  if (res.status === 404) return { error: "not found" };
+  if (!res.ok) throw new Error(`API groupe: HTTP ${res.status}`);
+  return res.json();
+}
+export async function getHier() { "use cache"; cacheLife("minutes"); return get<Hier>("hier"); }
 export async function getOverview() { "use cache"; cacheLife("hours"); return get<Overview>("overview"); }
 export async function getGroupes() { "use cache"; cacheLife("hours"); return get<GroupeStat[]>("groupes"); }
 export async function getMensuel() { "use cache"; cacheLife("hours"); return get<Mois[]>("mensuel"); }

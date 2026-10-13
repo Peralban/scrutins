@@ -1,0 +1,54 @@
+.back { font-size: 13px; color: var(--muted); text-decoration: none; }
+.head { display: flex; align-items: center; gap: 14px; margin: 10px 0 4px; }
+.swatch { width: 12px; align-self: stretch; min-height: 44px; border-radius: 3px; flex: none; }
+.title { margin: 0; font: 700 44px/1.05 var(--serif); letter-spacing: -.015em; text-transform: none; }
+.meta { font: 13px var(--mono); color: var(--muted); margin: 0 0 28px 26px; }
+.kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: 48px; }
+.kpi { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px; }
+.kpi b { display: block; font: 600 30px var(--mono); }
+.kpi span { display: block; font-size: 14px; line-height: 1.4; color: var(--ink2); text-transform: none; letter-spacing: 0; }
+.kpi small { display: block; margin-top: 6px; font: 12px var(--mono); color: var(--muted); }
+.grid { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 48px; }
+.banner { display: inline-block; font: 12px var(--mono); color: var(--ink); background: color-mix(in srgb, var(--contre) 12%, var(--surface)); border-radius: 4px; padding: 6px 10px; margin: 4px 0 8px; }
+.nhead, .nrow { display: grid; grid-template-columns: minmax(0, 260px) 1fr 64px; gap: 0 16px; align-items: center; }
+.nhead { font: 11px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; padding: 12px 0 6px; border-bottom: 1px solid var(--line); }
+.nhead span:nth-child(2) { display: flex; justify-content: space-between; }
+.nrow { padding: 9px 0; border-bottom: 1px solid var(--grid); color: var(--ink); text-decoration: none; font-size: 15px; }
+.nrow:hover .nlab { text-decoration: underline; }
+.track { position: relative; height: 14px; background: var(--soft); border-radius: 2px; }
+.track::before { content: ""; position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--muted); opacity: .5; }
+.fill { position: absolute; top: 0; bottom: 0; border-radius: 2px; }
+.part { text-align: right; font: 600 13px var(--mono); }
+.thin { color: var(--muted); font: 12px var(--mono); text-align: right; }
+.box { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px; }
+.box h3, .side h3 { margin: 0 0 8px; font: 700 20px var(--serif); }
+.box p { margin: 0; font-size: 14px; color: var(--ink2); }
+.side { display: flex; flex-direction: column; gap: 28px; }
+.label { font: 11px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin: 12px 0 2px; }
+.person { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--grid); color: var(--ink); text-decoration: none; font-size: 14px; }
+.person span:last-child { font: 12px var(--mono); color: var(--muted); white-space: nowrap; }
+.acc { display: grid; grid-template-columns: 70px 1fr 44px; gap: 10px; align-items: center; padding: 5px 0; font: 12px var(--mono); color: var(--ink); text-decoration: none; }
+.acc i { display: block; height: 8px; background: var(--soft); border-radius: 2px; overflow: hidden; }
+.acc i b { display: block; height: 100%; }
+.acc span:last-child { text-align: right; }
+.members { columns: 3 220px; column-gap: 24px; margin: 0; padding: 0; list-style: none; }
+.members li { break-inside: avoid; }
+.list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.card { display: flex; gap: 14px; padding: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; color: var(--ink); text-decoration: none; }
+.card:hover { border-color: var(--ink); }
+.card b { display: block; font: 700 20px var(--serif); }
+.card span { font-size: 13px; color: var(--muted); }
+.card small { display: block; margin-top: 8px; font: 12px var(--mono); color: var(--ink2); }
+@media (max-width: 860px) {
+  .title { font-size: 28px; }
+  .kpi b { font-size: 24px; }
+  .meta { margin-left: 26px; }
+  .kpis { grid-template-columns: 1fr 1fr; }
+  .kpis > :last-child { grid-column: 1 / -1; }
+  .grid { grid-template-columns: 1fr; gap: 36px; }
+  .nhead { display: none; }
+  .nrow { grid-template-columns: 1fr 52px; grid-template-areas: "lab part" "bar bar"; gap: 6px 10px; }
+  .nlab { grid-area: lab; }
+  .track { grid-area: bar; height: 8px; }
+  .part, .thin { grid-area: part; }
+}
