@@ -110,6 +110,19 @@
       "voir": ["amendement", "lecture-definitive"] },
     { "id": "vote-exprime", "mot": "Vote exprimé", "cat": "Les votes",
       "def": "Un vote pour, contre ou une abstention. Les absents et les non-votants n'en font pas partie.",
-      "voir": ["abstention", "non-votant"] }
+      "voir": ["abstention", "non-votant"] },
+    { "id": "tva", "mot": "TVA (taxe sur la valeur ajoutée)", "cat": "Les textes",
+      "def": "Impôt sur la consommation, ajouté au prix de la plupart des biens et services. Les entreprises la collectent à chaque étape de la production, et c'est en pratique le consommateur final qui la paie. En France, le taux normal est de 20 %, avec des taux réduits de 10 %, 5,5 % et 2,1 % selon les produits.",
+      "site": "Ses taux se modifient par amendement dans les lois de finances ; ces votes sont classés dans le thème « Fiscalité et impôts » quand le titre le mentionne.",
+      "voir": ["loi-de-finances", "amendement"] },
+    { "id": "loi-de-finances", "mot": "Loi de finances (PLF)", "cat": "Les textes",
+      "def": "Texte qui fixe chaque année les recettes et les dépenses de l'État : impôts, budgets des ministères, déficit. Le Gouvernement dépose le projet de loi de finances (PLF) à l'automne, et l'Assemblée l'examine en premier.",
+      "voir": ["49-3", "amendement", "plfss"] },
+    { "id": "plfss", "mot": "PLFSS (financement de la Sécurité sociale)", "cat": "Les textes",
+      "def": "Projet de loi de financement de la Sécurité sociale : il fixe chaque année les recettes et les dépenses de l'assurance maladie, des retraites et des allocations familiales.",
+      "voir": ["loi-de-finances"] },
+    { "id": "niche-parlementaire", "mot": "Niche parlementaire", "cat": "L'Assemblée",
+      "def": "Journée de séance réservée à l'ordre du jour d'un groupe d'opposition ou minoritaire, qui y choisit les textes examinés. Chaque groupe concerné en dispose à tour de rôle, une journée par mois en session ordinaire.",
+      "voir": ["groupe", "projet-proposition"] }
   ]
 }

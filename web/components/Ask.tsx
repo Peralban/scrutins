@@ -10,6 +10,7 @@ import { pct } from "@/lib/format";
 type Hit = { kind: string; ref: string; label: string; sub: string; href: string };
 type Ensemble = { id: string; date: string; titre: string; position: string };
 type Answer =
+  | { intent: "definition"; mot: string; cat: string; def: string; site: string | null; voir: { id: string; mot: string }[]; href: string }
   | { intent: "accord"; a: Hit; b: Hit; communs: number; accord: number; taux: number; href: string }
   | { intent: "vote_texte"; depute: Hit; texte: Hit; ensemble: Ensemble[]; details: { total: number; pour: number; contre: number; abstention: number; absent: number }; href: string }
   | { intent: "qui_a_vote"; texte: Hit; position: "pour" | "contre"; scrutin: { id: string; date: string; sort: string; pour: number; contre: number; abstentions: number }; groupes: { sigle: string; couleur: string | null; n: number }[]; href: string }
@@ -66,6 +67,14 @@ export default function Ask() {
 }
 
 function AnswerCard({ a }: { a: Answer }) {
+  if (a.intent === "definition") return (
+    <div className="ask-answer">
+      <p><b>{a.mot}</b></p>
+      <p>{a.def}</p>
+      {a.site && <p className="ask-detail">Sur ce site : {a.site}</p>}
+      <Link href={a.href}>Dans le glossaire →</Link>
+    </div>
+  );
   if (a.intent === "accord") return (
     <div className="ask-answer">
       <p><b>{a.a.label}</b> et <b>{a.b.label}</b> ont eu la même position majoritaire sur <b>{pct(a.taux)}</b> des votes sur l&apos;ensemble d&apos;un texte ({a.accord} sur {a.communs}).</p>
