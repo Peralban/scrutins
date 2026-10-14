@@ -16,7 +16,7 @@ Two processes: `src/` is the data layer (Bun, SQLite, JSON API on :3001) and `we
 
 Pages: `/accords.html` (who votes with whom: group matrix, nearest and furthest deputies, two-deputy comparison), `/` (group and deputy statistics), `/depute.html?id=PA…` (one deputy: groups, presence, dissent, theme profile), `/hemicycle.html` (one dot per seat, coloured by position on a chosen scrutin), `/themes.html` (vote profile of each group by theme).
 
-Daily refresh: `deploy/install-timer.sh` installs a systemd user timer (06:30). The server picks up the new database without restarting.
+Services: `deploy/install.sh` installs systemd user units: the API (`scrutins-api`, port 3001) and the front (`scrutins-web`, port 3000, serves the last `bun run build`) start at boot, and a timer refreshes the data daily at 06:30. The API picks up the new database without restarting; to ship front changes, rebuild then `systemctl --user restart scrutins-web`.
 
 The glossary (`/glossaire`, selected-word definitions, "qu'est-ce que…" questions) comes from the shared [glossaire-politique](https://github.com/Peralban/glossaire-politique) package, pinned by tag in `package.json` and `web/package.json`; `web/content/glossaire-site.json` holds this site's own notes.
 
