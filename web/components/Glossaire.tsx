@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { avecNotes, normaliser as norm } from "glossaire-politique";
 import notes from "@/content/glossaire-site.json";
+import Signaler from "./Signaler";
 import s from "./Glossaire.module.css";
 
 // Shared entries (glossaire-politique package) with this site's notes laid over them.
@@ -32,6 +33,7 @@ export default function Glossaire() {
           ))}
         </div>
         <p className={s.note}>Partout sur le site, un mot souligné en pointillé renvoie ici. Les définitions sont écrites à la main, et chacune doit être adossée à une source officielle : celles qui indiquent « Source officielle à ajouter » ne le sont pas encore.</p>
+        <p className={s.note}>Une erreur, un mot qui manque ? <Signaler>Signale-le</Signaler>, sans compte à créer.</p>
       </aside>
       <div className={s.main}>
         <h1 className="page-title">Glossaire</h1>
@@ -47,7 +49,7 @@ export default function Glossaire() {
             : <span key={l} aria-hidden="true">{l}</span>)}
         </nav>
         <p className={s.count} aria-live="polite">{list.length} mot{list.length > 1 ? "s" : ""}{cat !== "Tous" ? ` · ${cat}` : ""}{q ? ` · « ${q} »` : ""}</p>
-        {list.length === 0 && <p className={s.lede}>Aucun mot ne correspond. Il manque un mot ? Dis-le nous.</p>}
+        {list.length === 0 && <p className={s.lede}>Aucun mot ne correspond. Il manque un mot ? <Signaler manquant={q}>Dis-le nous.</Signaler></p>}
         {list.map((m) => (
           <article key={m.id} id={m.id} className={s.card}>
             <div className={s.body}>
@@ -59,6 +61,7 @@ export default function Glossaire() {
               <p className={s.site}>{m.sources.length > 0
                 ? <>Sources : {m.sources.map((x, i) => <span key={x.url}>{i > 0 && ", "}<a href={x.url} target="_blank" rel="noreferrer">{x.nom}</a></span>)}</>
                 : "Source officielle à ajouter."}</p>
+              <Signaler entree={m} />
             </div>
             {m.voir && m.voir.length > 0 && (
               <div className={s.voir}>

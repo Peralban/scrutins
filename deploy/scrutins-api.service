@@ -5,6 +5,8 @@ After=network.target
 [Service]
 WorkingDirectory=%h/dev/perso/scrutins
 Environment=PATH=%h/.bun/bin:/usr/local/bin:/usr/bin:/bin
+# Secrets kept out of the repository: GITHUB_TOKEN for the glossary reports (see README). Optional.
+EnvironmentFile=-%h/.config/scrutins/env
 ExecStart=%h/.bun/bin/bun src/server.ts
 Restart=on-failure
 RestartSec=3
