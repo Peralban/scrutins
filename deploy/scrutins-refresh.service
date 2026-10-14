@@ -6,5 +6,7 @@ Wants=network-online.target
 [Service]
 Type=oneshot
 WorkingDirectory=%h/dev/perso/scrutins
+# `bun run refresh` calls bun again from package.json: systemd's PATH does not have it.
+Environment=PATH=%h/.bun/bin:/usr/local/bin:/usr/bin:/bin
 ExecStart=%h/.bun/bin/bun run refresh
 Nice=10

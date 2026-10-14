@@ -1,0 +1,15 @@
+[Unit]
+Description=scrutins front (Next.js production server, port 3000)
+After=scrutins-api.service
+Wants=scrutins-api.service
+
+[Service]
+WorkingDirectory=%h/dev/perso/scrutins/web
+Environment=PATH=%h/.bun/bin:/usr/local/bin:/usr/bin:/bin
+# Serves the last `bun run build`; rebuild, then restart this unit, to ship a change.
+ExecStart=%h/.bun/bin/bun run start
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
