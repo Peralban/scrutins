@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { fmt, pct } from "@/lib/format";
+import { etiquette } from "@/lib/palette";
 import type { DeputeRow } from "@/lib/types";
 
 type Key = "nom" | "groupe" | "votes_enregistres" | "dissidence" | "delegation";
@@ -71,7 +72,7 @@ export default function DeputesTable({ deputes }: { deputes: DeputeRow[] }) {
             {rows.map((d) => (
               <tr key={d.id}>
                 <td><Link href={`/depute/${d.id}`} style={{ color: "inherit" }}>{d.nom}</Link></td>
-                <td>{d.groupe}</td>
+                <td>{d.groupe && <span className="etiquette" style={etiquette(d.groupe)}>{d.groupe}</span>}</td>
                 <td>{fmt.format(d.votes_enregistres)}</td>
                 <td>{pct(d.dissidence)}</td>
                 <td>{pct(d.delegation)}</td>

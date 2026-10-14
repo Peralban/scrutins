@@ -185,8 +185,10 @@ html, body { overflow-x: clip; }
 :root {
   --bg: #FDFCF8; --surface: #FFFFFF; --ink: #141B2D; --ink2: #3A4256; --muted: #5A6173;
   --line: #DEDDD6; --grid: #EEEDE7; --soft: #EEF0F5; --accent: #1D3A8A;
-  --pour: #1D3A8A; --contre: #C2410C; --abst: #A8A69E; --adopte: #141B2D; --rejete: #B5B3AC;
-  --lo: #EEF1F8; --hi: #1D3A8A;
+  /* Vote colours from the design canvas (Pour 600, Contre 500, Abstention 500): a brighter blue than
+     the accent, so a "pour" seat no longer reads as an RN seat (#313567) on the hemicycle. */
+  --pour: #1F5FBF; --contre: #D4640A; --abst: #8A8A84; --adopte: #141B2D; --rejete: #B5B3AC;
+  --lo: #E0ECFF; --hi: #1F5FBF;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "IBM Plex Sans", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
@@ -195,8 +197,8 @@ html, body { overflow-x: clip; }
   :root:not([data-theme="light"]) {
     --bg: #10141F; --surface: #171C29; --ink: #E8ECF5; --ink2: #C3C9D6; --muted: #A3AABB;
     --line: #2A3142; --grid: #1F2533; --soft: #1F2533; --accent: #9DB4F5;
-    --pour: #7FA0FF; --contre: #F28A4E; --abst: #6B7080; --adopte: #E8ECF5; --rejete: #4A5063;
-    --lo: #1C2232; --hi: #7FA0FF;
+    --pour: #6CA5FD; --contre: #F97D28; --abst: #6F6F69; --adopte: #E8ECF5; --rejete: #4A5063;
+    --lo: #081C3A; --hi: #6CA5FD;
   }
 }
 body { font: 16px/1.55 var(--sans); }
@@ -278,3 +280,6 @@ a { color: var(--accent); }
 .define a { display: inline-block; margin-top: 4px; }
 .define-site, .define-none, .define small { color: var(--muted); font-size: 13px; }
 .define-x { position: absolute; top: 0; right: 0; width: 44px; height: 44px; border: 0; background: none; font-size: 20px; line-height: 1; color: var(--muted); cursor: pointer; }
+
+/* Group label (lib/palette.ts etiquette): the group's own 100/800 pair from the design canvas. */
+.etiquette { display: inline-block; padding: 2px 8px; border-radius: 999px; font: 500 12px var(--mono); white-space: nowrap; background: var(--soft); color: var(--ink2); }
