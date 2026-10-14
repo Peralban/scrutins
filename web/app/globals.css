@@ -1,7 +1,7 @@
 :root {
   --bg: #f6f6f4; --surface: #ffffff; --ink: #111; --ink2: #444; --muted: #777;
   --line: #d8d8d4; --grid: #e8e8e4; --adopte: #1a1a1a; --rejete: #b3b3ad;
-  --mono: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+  --mono: ui-monospace, "IBM Plex Mono", "SF Mono", Menlo, monospace;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -180,7 +180,7 @@ html, body { overflow-x: clip; }
 
 /* =====================================================================
    Identity v3 "encre": Newsreader (titles) + IBM Plex Sans (text),
-   JetBrains Mono for figures and metadata. Overrides the tokens above.
+   IBM Plex Mono for figures and metadata (same family as the text face). Overrides the tokens above.
    ===================================================================== */
 :root {
   --bg: #FDFCF8; --surface: #FFFFFF; --ink: #141B2D; --ink2: #3A4256; --muted: #5A6173;
@@ -191,7 +191,7 @@ html, body { overflow-x: clip; }
   --lo: #E0ECFF; --hi: #1F5FBF;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "IBM Plex Sans", system-ui, sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
