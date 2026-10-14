@@ -18,6 +18,14 @@ Pages: `/accords.html` (who votes with whom: group matrix, nearest and furthest 
 
 Services: `deploy/install.sh` installs systemd user units: the API (`scrutins-api`, port 3001) and the front (`scrutins-web`, port 3000, serves the last `bun run build`) start at boot, and a timer refreshes the data daily at 06:30. The API picks up the new database without restarting; to ship front changes, rebuild then `systemctl --user restart scrutins-web`.
 
+Glossary reports: the « Signaler » panel on `/glossaire` posts to `POST /api/signalement`, and the API opens an issue labelled `signalement` on [glossaire-politique](https://github.com/Peralban/glossaire-politique), so readers need no GitHub account. It needs a fine-grained GitHub token limited to that repository with **Issues: read and write**, in `~/.config/scrutins/env` (`chmod 600`):
+
+```
+GITHUB_TOKEN=github_pat_…
+```
+
+then `systemctl --user restart scrutins-api`. Without it the panel answers that reporting is not configured. Reports are capped at 5 per address and 40 in total per hour; a hidden field catches bots.
+
 The glossary (`/glossaire`, selected-word definitions, "qu'est-ce que…" questions) comes from the shared [glossaire-politique](https://github.com/Peralban/glossaire-politique) package, pinned by tag in `package.json` and `web/package.json`; `web/content/glossaire-site.json` holds this site's own notes.
 
 Themes are keyword rules on the title of the legislative text (`src/themes.ts`), a reading aid rather than an official taxonomy. Edit the rules, then `bun run ingest`.

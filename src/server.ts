@@ -3,6 +3,7 @@ import { statSync } from "node:fs";
 import { DB_PATH, open, queries } from "./stats";
 import { ask, search } from "./search";
 import { define } from "./definition";
+import { signaler } from "./signalement";
 
 // The nightly ingest swaps the file atomically; reopen when it changes.
 let db = open(), mtime = statSync(DB_PATH).mtimeMs;
@@ -15,6 +16,13 @@ const app = new Hono();
 
 app.get("/api/search", (c) => c.json(search(fresh(), c.req.query("q") ?? "", 10)));
 app.get("/api/definition", (c) => c.json(define(c.req.query("mot") ?? "")));
+// The front proxies /api through Next, which forwards the reader's address in x-forwarded-for.
+app.post("/api/signalement", async (c) => {
+  const body = await c.req.json().catch(() => ({}));
+  const ip = c.req.header("x-forwarded-for")?.split(",")[0]?.trim() || "local";
+  const { status, reponse } = await signaler(body && typeof body === "object" ? body : {}, ip);
+  return c.json(reponse, status as 200);
+});
 app.get("/api/ask", (c) => c.json(ask(fresh(), c.req.query("q") ?? "")));
 app.get("/api/groupe/:id", (c) => {
   const g = queries.groupe(fresh(), c.req.param("id"));
